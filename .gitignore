@@ -1,0 +1,8 @@
+*.suo
+Src/DotNet/JustReadIt.Core/bin
+Src/DotNet/JustReadIt.Core/obj
+Src/DotNet/JustReadIt.WebApp/bin
+Src/DotNet/JustReadIt.WebApp/obj
+Src/DotNet/packages
+*.csproj.user
+*.csproj.DotSettings

@@ -1,0 +1,40 @@
+﻿@using JustReadIt.WebApp.Core.Models.Home
+@model IndexViewModel
+
+<div class="container">
+  <div class="demo-headline">
+    <h1 class="demo-logo">
+      <div class="logo"></div>
+      justRead.it
+      <small>it's all about the reading experience</small>
+    </h1>
+  </div>
+  
+  <p>
+    <a href="@Url.Action("Fancybox", "Home")" class="fancybox-link fancybox.ajax">
+      Fancy Me!
+    </a>
+  </p>
+</div>
+
+<footer id="footer" class="navbar navbar-fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <h3 class="footer-title">Lorem ipsum?</h3>
+        <p>
+          Donec eu nulla eros. Nulla blandit arcu eu lorem bibendum, nec gravida dolor commodo. Mauris pretium mi eu posuere porta. Vivamus varius non lacus non pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        </p>
+      </div>
+      <div class="span5">
+        <div class="footer-banner">
+          <h3 class="footer-title">Dolor Et Amet!</h3>
+          <ul>
+            <li>Phasellus eu varius tellus.</li>
+            <li>Suspendisse vitae tincidunt neque.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
