@@ -39,11 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Guard.cs" />
+    <Compile Include="DataAccess\DapperFeedRepository.cs" />
+    <Compile Include="DataAccess\DapperRepository.cs" />
+    <Compile Include="DataAccess\Dapper\SqlMapper.cs" />
+    <Compile Include="Domain\Feed.cs" />
+    <Compile Include="Domain\IFeedRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

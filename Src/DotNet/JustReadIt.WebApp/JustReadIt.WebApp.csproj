@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Controllers\HomeController.cs" />
+    <Compile Include="Core\App\IoC.cs" />
     <Compile Include="Core\Controllers\JustReadItController.cs" />
     <Compile Include="Core\Models\Home\IndexViewModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -219,6 +220,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JustReadIt.Core\JustReadIt.Core.csproj">
+      <Project>{11E70650-CF7A-4034-8539-63D850D8B7E1}</Project>
+      <Name>JustReadIt.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
