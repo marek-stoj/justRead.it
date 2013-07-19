@@ -6,3 +6,6 @@ Src/DotNet/JustReadIt.WebApp/obj
 Src/DotNet/packages
 *.csproj.user
 *.csproj.DotSettings
+Src/DotNet/_ReSharper.JustReadIt
+JustReadIt.sln — skrót.lnk
+*.DotSettings
