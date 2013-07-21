@@ -110,6 +110,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Controllers\TestController.cs" />
     <Compile Include="Core\Controllers\HomeController.cs" />
     <Compile Include="Core\App\IoC.cs" />
     <Compile Include="Core\Controllers\JustReadItController.cs" />

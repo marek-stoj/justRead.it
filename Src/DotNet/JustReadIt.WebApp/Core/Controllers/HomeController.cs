@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain;
+using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.WebApp.Core.App;
 using System.Linq;
 
@@ -12,7 +13,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
     private readonly IFeedRepository _feedRepository;
 
     public HomeController(IFeedRepository feedRepository) {
-      Guard.NotNull(feedRepository, "feedRepository");
+      Guard.ArgNotNull(feedRepository, "feedRepository");
 
       _feedRepository = feedRepository;
     }

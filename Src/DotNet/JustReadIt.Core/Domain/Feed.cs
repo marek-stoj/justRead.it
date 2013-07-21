@@ -6,9 +6,9 @@
 
     public string Title { get; set; }
 
-    public string Url { get; set; }
-
-    public int UrlChecksum { get; set; }
+    public string FeedUrl { get; set; }
+    
+    public string SiteUrl { get; set; }
 
   }
 

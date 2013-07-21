@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 
-namespace JustReadIt.Core.DataAccess {
+namespace JustReadIt.Core.DataAccess.Dapper {
 
   public abstract class DapperRepository {
     private readonly string _connectionString;

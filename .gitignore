@@ -10,3 +10,8 @@ Src/DotNet/_ReSharper.JustReadIt
 JustReadIt.sln — skrót.lnk
 *.DotSettings
 Src/DotNet/JustReadIt.sln.ide
+JustReadIt.sln - Shortcut.lnk
+Src/DotNet/JustReadIt.Database/bin
+*.sqlproj.user
+Src/DotNet/JustReadIt.Database/obj
+*.DotSettings.user
