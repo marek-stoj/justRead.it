@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImmRafSoft.Security</name>
+    </assembly>
+    <members>
+        <member name="M:ImmRafSoft.Security.ICryptoUtils.ComputePasswordHash(System.String)">
+            <summary>
+            Returns the base64-encoded hash of the password.
+            </summary>
+        </member>
+        <member name="M:ImmRafSoft.Security.RijndaelBase64CryptoUtils.#ctor(System.Byte[],System.Byte[])">
+            <param name="iv">16 bytes</param>
+            <param name="key">32 bytes</param>
+        </member>
+        <member name="M:ImmRafSoft.Security.RijndaelBase64CryptoUtils.ComputePasswordHash(System.String)">
+            <summary>
+            Returns the base64-encoded hash of the password.
+            </summary>
+        </member>
+    </members>
+</doc>

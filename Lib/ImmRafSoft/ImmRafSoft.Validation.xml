@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImmRafSoft.Validation</name>
+    </assembly>
+    <members>
+        <member name="T:ImmRafSoft.Validation.EmailValidator">
+            <summary>
+            Validates a string against a simple e-mail regex.
+            Null and empty strings are be treated as valid.
+            </summary>
+        </member>
+    </members>
+</doc>

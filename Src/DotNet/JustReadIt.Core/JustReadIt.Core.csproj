@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImmRafSoft.Net">
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ImmRafSoft.Security">
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Security.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Transactions" />
@@ -41,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Guard.cs" />
+    <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="DataAccess\Dapper\EmailVerificationTokenRepository.cs" />
     <Compile Include="DataAccess\Dapper\UserFeedGroupFeedRepository.cs" />
     <Compile Include="DataAccess\Dapper\Exceptions\IdentityInsertFailedException.cs" />
     <Compile Include="DataAccess\Dapper\UserFeedGroupRepository.cs" />
@@ -48,14 +56,27 @@
     <Compile Include="DataAccess\Dapper\FeedRepository.cs" />
     <Compile Include="DataAccess\Dapper\DapperRepository.cs" />
     <Compile Include="DataAccess\Dapper\SqlMapper.cs" />
+    <Compile Include="Domain\EmailVerificationToken.cs" />
     <Compile Include="Domain\Feed.cs" />
+    <Compile Include="Domain\Repositories\IEmailVerificationTokenRepository.cs" />
     <Compile Include="Domain\Repositories\IUserFeedGroupFeedRepository.cs" />
     <Compile Include="Domain\Repositories\IFeedRepository.cs" />
     <Compile Include="Domain\Repositories\IUserAccountRepository.cs" />
     <Compile Include="Domain\Repositories\IUserFeedGroupRepository.cs" />
+    <Compile Include="Domain\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\MailingResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailingResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CreateUserResult.cs" />
     <Compile Include="Services\Exceptions\InternalException.cs" />
+    <Compile Include="Services\IMailingService.cs" />
+    <Compile Include="Services\IMembershipService.cs" />
     <Compile Include="Services\IOpmlImporter.cs" />
+    <Compile Include="Services\MailingService.cs" />
+    <Compile Include="Services\MembershipService.cs" />
     <Compile Include="Services\Opml\IOpmlParser.cs" />
     <Compile Include="Services\Opml\OpmlParser.cs" />
     <Compile Include="Services\Opml\ParseResult.cs" />
@@ -68,6 +89,13 @@
     <Compile Include="Domain\UserFeedGroup.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MailingResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MailingResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

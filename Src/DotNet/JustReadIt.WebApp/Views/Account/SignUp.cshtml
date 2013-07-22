@@ -1,0 +1,59 @@
+﻿@using JustReadIt.WebApp.Core.Controllers
+@using JustReadIt.WebApp.Core.Models.Account
+@using JustReadIt.WebApp.Core.Mvc
+@using JustReadIt.WebApp.Core.Resources
+
+@model SignUpViewModel
+
+@{
+  ViewBag.Title = "Sign Up";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <div id="signup-form-container">
+    <h1>
+      Sign Up
+    </h1>
+
+    @using (Html.BeginForm()) {
+      @Html.Label("EmailAddress", "E-mail address:")
+      @Html.TextBoxFor(m => m.EmailAddress, new { @class = "email-address-textbox" })
+      @Html.ValidationMessageFor(m => m.EmailAddress)
+      <br />
+      <br />
+      
+      @Html.Label("Password", "Password:")
+      @Html.PasswordFor(m => m.Password, new { @class = "password-textbox" })
+      @Html.ValidationMessageFor(m => m.Password)
+      <br />
+      <br />
+
+      @Html.Label("PasswordConfirmation", "Password confirmation:")
+      @Html.PasswordFor(m => m.PasswordConfirmation, new { @class = "password-textbox" })
+      @Html.ValidationMessageFor(m => m.PasswordConfirmation)
+      <br />
+      <br />
+      
+      <div class="form-buttons">
+        @Html.Button(Buttons.Account_SignUp, ButtonResources.Account_SignUp, new { @class = "btn btn-primary" })
+      </div>
+      
+      if (Model.SignUpFailed) {
+      <div class="form-errors">
+        <span class="field-validation-error">
+          @Model.SignUpFailedMessage
+        </span>
+      </div>
+      }
+    }
+  </div>
+</div>
+
+<script type="text/javascript">
+  @* ReSharper disable once Html.IdNotResolved *@
+
+  $('#EmailAddress').focus();
+  
+  @* ReSharper restore once Html.IdNotResolved *@
+</script>

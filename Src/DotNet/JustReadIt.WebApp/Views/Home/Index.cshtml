@@ -10,6 +10,26 @@
     </h1>
   </div>
   
+  @if (Request.IsAuthenticated) {
+    <p>
+      Hello @User.Identity.Name!
+    </p>
+    <p>
+      @Html.ActionLink("Sign Out", "SignOut", "Account")
+    </p>
+  }
+  else {
+    <p>
+      @Html.ActionLink("Sign In", "SignIn", "Account")
+      |
+      @Html.ActionLink("Sign Up", "SignUp", "Account")
+    </p>
+  }
+
+  <br />
+  <br />
+  <br />
+
   <p>
     <a href="@Url.Action("Fancybox", "Home")" class="fancybox-link fancybox.ajax">
       Fancy Me!

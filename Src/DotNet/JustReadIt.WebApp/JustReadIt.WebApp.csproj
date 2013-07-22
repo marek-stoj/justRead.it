@@ -41,7 +41,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImmRafSoft.Configuration">
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="ImmRafSoft.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5b4493c0c0843b79, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ImmRafSoft.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5b4493c0c0843b79, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="ImmRafSoft.Validation">
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Validation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\..\Lib\ImmRafSoft\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation">
+      <HintPath>..\..\..\Lib\ImmRafSoft\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -110,11 +130,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Mvc\ActionLink.cs" />
+    <Compile Include="Core\Mvc\HtmlHelperExtensions.cs" />
+    <Compile Include="Core\Mvc\MvcModelValidator.cs" />
+    <Compile Include="Core\Mvc\SubmitFilterAttribute.cs" />
+    <Compile Include="Core\Common\InternalException.cs" />
+    <Compile Include="Core\Controllers\AccountController.cs" />
+    <Compile Include="Core\Controllers\Buttons.cs" />
     <Compile Include="Core\Controllers\TestController.cs" />
     <Compile Include="Core\Controllers\HomeController.cs" />
     <Compile Include="Core\App\IoC.cs" />
     <Compile Include="Core\Controllers\JustReadItController.cs" />
+    <Compile Include="Core\Models\Account\SignInViewModel.cs" />
+    <Compile Include="Core\Models\Account\SignUpSuccessViewModel.cs" />
+    <Compile Include="Core\Models\Account\SignUpViewModel.cs" />
+    <Compile Include="Core\Models\Account\ValidationTags.cs" />
     <Compile Include="Core\Models\Home\IndexViewModel.cs" />
+    <Compile Include="Core\Resources\AccountResources.Designer.cs">
+      <DependentUpon>AccountResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Resources\ButtonResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ButtonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Resources\ValidationResources.Designer.cs">
+      <DependentUpon>ValidationResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Core\Services\FormsAuthenticationService.cs" />
+    <Compile Include="Core\Services\IAuthenticationService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -227,6 +275,30 @@
       <Project>{11E70650-CF7A-4034-8539-63D850D8B7E1}</Project>
       <Name>JustReadIt.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Core\Resources\AccountResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AccountResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Resources\ButtonResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ButtonResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Resources\ValidationResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\EmailVerificationTokenInvalid.cshtml" />
+    <Content Include="Views\Account\EmailVerificationTokenValid.cshtml" />
+    <Content Include="Views\Account\SignIn.cshtml" />
+    <Content Include="Views\Account\SignUp.cshtml" />
+    <Content Include="Views\Account\SignUpSuccess.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

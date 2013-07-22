@@ -15,3 +15,5 @@ Src/DotNet/JustReadIt.Database/bin
 *.sqlproj.user
 Src/DotNet/JustReadIt.Database/obj
 *.DotSettings.user
+*.dbmdl
+/Src/DotNet/JustReadIt.WebApp/Web-IMMDESKTOP.config

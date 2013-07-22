@@ -89,7 +89,7 @@ namespace JustReadIt.Core.Services {
 
           _userFeedGroupRepository.Add(userFeedGroup);
 
-          Debug.Assert(userFeedGroup.Id != 0);
+          Debug.Assert(userFeedGroup.Id > 0);
 
           userFeedGroupId = userFeedGroup.Id;
         }
@@ -114,7 +114,7 @@ namespace JustReadIt.Core.Services {
 
         _feedRepository.Add(feed);
 
-        Debug.Assert(feed.Id != 0);
+        Debug.Assert(feed.Id > 0);
 
         feedId = feed.Id;
       }
@@ -131,7 +131,7 @@ namespace JustReadIt.Core.Services {
 
         _userFeedGroupFeedRepository.Add(userFeedGroupFeed);
 
-        Debug.Assert(userFeedGroupFeed.Id != 0);
+        Debug.Assert(userFeedGroupFeed.Id > 0);
       }
     }
 

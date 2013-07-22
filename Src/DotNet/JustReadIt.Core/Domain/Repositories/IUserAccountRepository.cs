@@ -4,6 +4,14 @@
 
     bool UserAccountExists(int id);
 
+    bool UserWithEmailAddressExists(string emailAddress);
+
+    void Add(UserAccount userAccount);
+
+    UserAccount FindUserAccountByEmailAddress(string emailAddress);
+
+    int? FindUserAccountIdByEmailAddress(string emailAddress);
+
   }
 
 }

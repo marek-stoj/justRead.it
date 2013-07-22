@@ -1,0 +1,59 @@
+﻿@using JustReadIt.WebApp.Core.Controllers
+@using JustReadIt.WebApp.Core.Mvc
+@using JustReadIt.WebApp.Core.Resources
+@using JustReadIt.WebApp.Core.Models.Account
+@model SignInViewModel
+
+@{
+  ViewBag.Title = "Sign In";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <h1>
+    Sign In
+  </h1>
+
+  <div class="col_left">
+    @using (Html.BeginForm()) {
+      @Html.Label("EmailAddress", "E-mail address:")
+      @Html.TextBoxFor(m => m.EmailAddress, new { @class = "email-address-textbox" })
+      @Html.ValidationMessageFor(m => m.EmailAddress)
+      <br />
+      <br />
+
+      @Html.Label("Password", "Password:")
+      @Html.PasswordFor(m => m.Password, new { @class = "password-textbox" })
+      @Html.ValidationMessageFor(m => m.Password)
+      <br />
+      <br />
+      
+      <div class="form-buttons">
+        @Html.Button(Buttons.Account_SignIn, ButtonResources.Account_SignIn, new { @class = "btn btn-primary" })
+      </div>
+      
+      if (Model.SignInFailed) {
+      <div class="form-errors">
+        <span class="field-validation-error">
+          @AccountResources.Message_SignInFailed
+        </span>
+      </div>
+      }
+    }
+  </div>
+  <div>
+    <strong>Haven't registered yet?
+      <br />
+      @Html.ActionLink("Create an account!", "SignUp")
+    </strong>
+  </div>
+</div>
+
+<script type="text/javascript">
+  @* ReSharper disable Html.IdNotResolved *@
+
+  $('#EmailAddress').focus();
+
+  @* ReSharper restore Html.IdNotResolved *@
+</script>
+
