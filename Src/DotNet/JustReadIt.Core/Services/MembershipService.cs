@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.Transactions;
 using ImmRafSoft.Security;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain;
@@ -9,15 +11,18 @@ namespace JustReadIt.Core.Services {
   public class MembershipService : IMembershipService {
 
     private readonly IUserAccountRepository _userAccountRepository;
+    private readonly IEmailVerificationTokenRepository _emailVerificationTokenRepository;
     private readonly ICryptoUtils _cryptoUtils;
     private readonly IMailingService _mailingService;
 
-    public MembershipService(IUserAccountRepository userAccountRepository, ICryptoUtils cryptoUtils, IMailingService mailingService) {
+    public MembershipService(IUserAccountRepository userAccountRepository, IEmailVerificationTokenRepository emailVerificationTokenRepository, ICryptoUtils cryptoUtils, IMailingService mailingService) {
       Guard.ArgNotNull(userAccountRepository, "userAccountRepository");
+      Guard.ArgNotNull(emailVerificationTokenRepository, "_emailVerificationTokenRepository");
       Guard.ArgNotNull(cryptoUtils, "cryptoUtils");
       Guard.ArgNotNull(mailingService, "mailingService");
 
       _userAccountRepository = userAccountRepository;
+      _emailVerificationTokenRepository = emailVerificationTokenRepository;
       _cryptoUtils = cryptoUtils;
       _mailingService = mailingService;
     }
@@ -58,7 +63,7 @@ namespace JustReadIt.Core.Services {
       UserAccount userAccount =
         _userAccountRepository.FindUserAccountByEmailAddress(emailAddress);
 
-      if (userAccount == null || !userAccount.IsEmailVerified) {
+      if (userAccount == null || !userAccount.IsEmailAddressVerified) {
         return false;
       }
 
@@ -74,6 +79,17 @@ namespace JustReadIt.Core.Services {
         _userAccountRepository.FindUserAccountIdByEmailAddress(emailAddress);
 
       return userAccountId;
+    }
+
+    public void VerifyEmailAddress(int userAccountId, Guid emailVerificationToken) {
+      Guard.ArgNotEmpty(emailVerificationToken, "emailVerificationToken");
+
+      using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
+        _emailVerificationTokenRepository.MarkTokenAsUsed(emailVerificationToken);
+        _userAccountRepository.VerifyEmailAddress(userAccountId);
+
+        ts.Complete();
+      }
     }
 
   }

@@ -17,7 +17,7 @@ namespace JustReadIt.Core.Domain {
 
     public string PasswordHash { get; set; }
 
-    public bool IsEmailVerified { get; set; }
+    public bool IsEmailAddressVerified { get; set; }
 
   }
 

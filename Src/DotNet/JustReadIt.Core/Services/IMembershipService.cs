@@ -1,4 +1,6 @@
-﻿namespace JustReadIt.Core.Services {
+﻿using System;
+
+namespace JustReadIt.Core.Services {
 
   public interface IMembershipService {
 
@@ -7,6 +9,8 @@
     bool ValidateUser(string emailAddress, string password);
 
     int? FindUserAccountId(string emailAddress);
+
+    void VerifyEmailAddress(int userAccountId, Guid emailVerificationToken);
 
   }
 

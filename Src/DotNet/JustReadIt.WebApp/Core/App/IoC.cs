@@ -71,7 +71,12 @@ namespace JustReadIt.WebApp.Core.App {
     }
 
     public static IMembershipService CreateMembershipService() {
-      return new MembershipService(CreateUserAccountRepository(), CreateCryptoUtils(), CreateMailingService());
+      return
+        new MembershipService(
+          CreateUserAccountRepository(),
+          CreateEmailVerificationTokenRepository(),
+          CreateCryptoUtils(),
+          CreateMailingService());
     }
 
     private static ICryptoUtils CreateCryptoUtils() {

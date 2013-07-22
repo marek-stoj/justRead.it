@@ -12,6 +12,8 @@
 
     int? FindUserAccountIdByEmailAddress(string emailAddress);
 
+    void VerifyEmailAddress(int userAccountId);
+
   }
 
 }

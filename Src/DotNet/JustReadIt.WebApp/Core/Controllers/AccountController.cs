@@ -17,33 +17,22 @@ namespace JustReadIt.WebApp.Core.Controllers {
     private readonly IAuthenticationService _authenticationService;
     private readonly IMembershipService _membershipService;
     private readonly IEmailVerificationTokenRepository _emailVerificationTokenRepository;
-    // TODO IMM HI: remove?
-    private readonly IUserAccountRepository _userAccountRepository;
-    // TODO IMM HI: remove?
-    private readonly IMailingService _mailingService;
 
-    public AccountController(IAuthenticationService authenticationService, IMembershipService membershipService, IEmailVerificationTokenRepository emailVerificationTokenRepository, IUserAccountRepository userAccountRepository, IMailingService mailingService) {
+    public AccountController(IAuthenticationService authenticationService, IMembershipService membershipService, IEmailVerificationTokenRepository emailVerificationTokenRepository) {
       Guard.ArgNotNull(authenticationService, "authenticationService");
       Guard.ArgNotNull(membershipService, "membershipService");
       Guard.ArgNotNull(emailVerificationTokenRepository, "emailVerificationTokenRepository");
-      Guard.ArgNotNull(userAccountRepository, "userAccountRepository");
-      Guard.ArgNotNull(mailingService, "mailingService");
 
       _authenticationService = authenticationService;
       _membershipService = membershipService;
       _emailVerificationTokenRepository = emailVerificationTokenRepository;
-      _userAccountRepository = userAccountRepository;
-      _mailingService = mailingService;
     }
 
     public AccountController()
       : this(
         IoC.CreateAuthenticationService(),
         IoC.CreateMembershipService(),
-        IoC.CreateEmailVerificationTokenRepository(),
-        IoC.CreateUserAccountRepository(),
-        IoC.CreateMailingService()
-        ) {
+        IoC.CreateEmailVerificationTokenRepository()) {
     }
 
     [HttpGet]
@@ -126,6 +115,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
       }
     }
 
+    // TODO IMM HI: change view to inform abount verification e-mail sent
     [HttpGet]
     public ActionResult SignUpSuccess(string emailAddress) {
       if (string.IsNullOrEmpty(emailAddress)) {
@@ -161,8 +151,8 @@ namespace JustReadIt.WebApp.Core.Controllers {
       int? userAccountId;
 
       if (_emailVerificationTokenRepository.IsTokenValid(token.Value, out userAccountId)
-          && userAccountId.HasValue) {
-        _emailVerificationTokenRepository.MarkTokenAsUsed(token.Value);
+       && userAccountId.HasValue) {
+        _membershipService.VerifyEmailAddress(userAccountId.Value, token.Value);
 
         return View("EmailVerificationTokenValid");
       }

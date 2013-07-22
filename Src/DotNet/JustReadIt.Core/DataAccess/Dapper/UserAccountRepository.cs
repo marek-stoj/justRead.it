@@ -60,16 +60,16 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int userAccountId =
           db.Query<int>(
             " insert into UserAccount" +
-            " (DateCreated, EmailAddress, PasswordHash, IsEmailVerified)" +
+            " (DateCreated, EmailAddress, PasswordHash, IsEmailAddressVerified)" +
             " values" +
-            " (@DateCreated, @EmailAddress, @PasswordHash, @IsEmailVerified);" +
+            " (@DateCreated, @EmailAddress, @PasswordHash, @IsEmailAddressVerified);" +
             " " +
             " select cast(scope_identity() as int);",
             new {
               DateCreated = now,
               EmailAddress = userAccount.EmailAddress,
               PasswordHash = userAccount.PasswordHash,
-              IsEmailVerified = false,
+              IsEmailAddressVerified = false,
             })
             .Single();
 
@@ -108,6 +108,19 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             .SingleOrDefault();
 
         return userAccountId;
+      }
+    }
+
+    public void VerifyEmailAddress(int userAccountId) {
+      using (var db = CreateOpenedConnection()) {
+        db.Execute(
+          " update UserAccount" +
+          " set IsEmailAddressVerified = @IsEmailAddressVerified" +
+          " where Id = @UserAccountId",
+          new {
+            IsEmailAddressVerified = true,
+            UserAccountId = userAccountId,
+          });
       }
     }
 

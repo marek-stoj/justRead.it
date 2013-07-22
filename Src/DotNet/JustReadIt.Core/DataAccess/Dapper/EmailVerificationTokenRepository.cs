@@ -66,9 +66,11 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       using (var db = CreateOpenedConnection()) {
         db.Execute(
           " update EmailVerificationToken" +
-          " set IsUsed = @IsUsed",
+          " set IsUsed = @IsUsed" +
+          " where Token = @Token",
           new {
             IsUsed = true,
+            Token = token,
           });
       }
     }
