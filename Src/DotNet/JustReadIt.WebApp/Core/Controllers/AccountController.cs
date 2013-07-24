@@ -115,7 +115,6 @@ namespace JustReadIt.WebApp.Core.Controllers {
       }
     }
 
-    // TODO IMM HI: change view to inform abount verification e-mail sent
     [HttpGet]
     public ActionResult SignUpSuccess(string emailAddress) {
       if (string.IsNullOrEmpty(emailAddress)) {
