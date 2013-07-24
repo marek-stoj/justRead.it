@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Web.Mvc;
 
-namespace JustReadIt.WebApp.Core.Mvc {
+namespace JustReadIt.WebApp.Core.MvcEx {
 
   public static class HtmlHelperExtensions {
 

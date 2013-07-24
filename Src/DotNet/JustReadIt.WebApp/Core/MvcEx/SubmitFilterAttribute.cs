@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web.Mvc;
 
-namespace JustReadIt.WebApp.Core.Mvc
+namespace JustReadIt.WebApp.Core.MvcEx
 {
   public sealed class SubmitFilterAttribute : ActionNameSelectorAttribute
   {

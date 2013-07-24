@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
 
-namespace JustReadIt.WebApp.Core.Mvc
+namespace JustReadIt.WebApp.Core.MvcEx
 {
   public class MvcModelValidator
   {

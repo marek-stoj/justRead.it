@@ -1,5 +1,5 @@
 ﻿using System.Web.Mvc;
-using JustReadIt.WebApp.Core.Mvc;
+using JustReadIt.WebApp.Core.MvcEx;
 using JustReadIt.WebApp.Core.Resources;
 
 namespace JustReadIt.WebApp.Core.Controllers {

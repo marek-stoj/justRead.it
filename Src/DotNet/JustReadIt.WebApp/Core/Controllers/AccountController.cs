@@ -6,7 +6,7 @@ using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Core.App;
 using JustReadIt.WebApp.Core.Common;
 using JustReadIt.WebApp.Core.Models.Account;
-using JustReadIt.WebApp.Core.Mvc;
+using JustReadIt.WebApp.Core.MvcEx;
 using JustReadIt.WebApp.Core.Resources;
 using IAuthenticationService = JustReadIt.WebApp.Core.Services.IAuthenticationService;
 

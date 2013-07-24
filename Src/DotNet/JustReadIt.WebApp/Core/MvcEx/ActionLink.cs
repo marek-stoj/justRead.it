@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JustReadIt.WebApp.Core.Mvc
+namespace JustReadIt.WebApp.Core.MvcEx
 {
   public class ActionLink
   {
