@@ -126,6 +126,10 @@ namespace JustReadIt.WebApp.Core.App {
       return _mailer;
     }
 
+    public static ICacheService CreateCacheService() {
+      return new AspNetCacheService();
+    }
+
   }
 
 }

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Security.Principal;
 using System.Text;
 using System.Web;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 using JustReadIt.Core.Common;
+using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
 
 namespace JustReadIt.WebApp.Core.WebApiEx {
 
@@ -79,20 +79,24 @@ namespace JustReadIt.WebApp.Core.WebApiEx {
 
       string username = credentials[0];
       string password = credentials[1];
+      int userAccountId;
 
-      if (!AreCredentialsValid(username, password)) {
+      if (!AreCredentialsValid(username, password, out userAccountId)) {
         return false;
       }
 
-      SetCurrentContextUser(username);
+      SetCurrentContextUser(userAccountId, username);
 
       return true;
     }
 
-    protected abstract bool AreCredentialsValid(string username, string password);
+    protected abstract bool AreCredentialsValid(string username, string password, out int userAccountId);
 
-    protected virtual void SetCurrentContextUser(string username) {
-      HttpContext.Current.User = new GenericPrincipal(new GenericIdentity(username), null);
+    protected virtual void SetCurrentContextUser(int userAccountId, string username) {
+      var identity = new JustReadItIdentity(username);
+      var principal = new JustReadItPrincipal(userAccountId, identity);
+
+      HttpContext.Current.User = principal;
     }
 
   }

@@ -6,7 +6,7 @@ namespace JustReadIt.Core.Services {
 
     CreateUserResult CreateUser(string emailAddress, string password);
 
-    bool ValidateUser(string emailAddress, string password);
+    bool ValidateUser(string emailAddress, string password, out int userAccountId);
 
     int? FindUserAccountId(string emailAddress);
 

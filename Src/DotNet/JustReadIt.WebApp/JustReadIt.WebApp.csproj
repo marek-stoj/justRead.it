@@ -134,8 +134,14 @@
     <Compile Include="Areas\FeedbinApi\Core\Controllers\SubscriptionsController.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Controllers\FeedbinApiController.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\JsonModel\Subscription.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Security\IJustReadItIdentity.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Security\IJustReadItPrincipal.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Security\JustReadItIdentity.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Security\JustReadItPrincipal.cs" />
     <Compile Include="Areas\FeedbinApi\FeedbinApiAreaRegistration.cs" />
     <Compile Include="Core\MvcEx\ActionLink.cs" />
+    <Compile Include="Core\Services\AspNetCacheService.cs" />
+    <Compile Include="Core\Services\ICacheService.cs" />
     <Compile Include="Core\WebApiEx\BasicAuthorizeAttribute.cs" />
     <Compile Include="Core\MvcEx\HtmlHelperExtensions.cs" />
     <Compile Include="Core\MvcEx\MvcModelValidator.cs" />

@@ -56,7 +56,7 @@ namespace JustReadIt.Core.Services {
       }
     }
 
-    public bool ValidateUser(string emailAddress, string password) {
+    public bool ValidateUser(string emailAddress, string password, out int userAccountId) {
       Guard.ArgNotNullNorEmpty(emailAddress, "emailAddress");
       Guard.ArgNotNullNorEmpty(password, "password");
 
@@ -64,8 +64,12 @@ namespace JustReadIt.Core.Services {
         _userAccountRepository.FindUserAccountByEmailAddress(emailAddress);
 
       if (userAccount == null || !userAccount.IsEmailAddressVerified) {
+        userAccountId = -1;
+
         return false;
       }
+
+      userAccountId = userAccount.Id;
 
       string passwordHash = _cryptoUtils.ComputePasswordHash(password);
 

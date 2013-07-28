@@ -22,11 +22,11 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       : this(IoC.CreateMembershipService()) {
     }
 
-    protected override bool AreCredentialsValid(string username, string password) {
+    protected override bool AreCredentialsValid(string username, string password, out int userAccountId) {
       Guard.ArgNotNullNorEmpty(username, "username");
       Guard.ArgNotNullNorEmpty(password, "password");
 
-      return _membershipService.ValidateUser(username, password);
+      return _membershipService.ValidateUser(username, password, out userAccountId);
     }
 
   }

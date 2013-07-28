@@ -53,12 +53,16 @@ namespace JustReadIt.WebApp.Core.Controllers {
         return View("SignIn", signInViewModel);
       }
 
+      int userAccountId;
+
       bool signInFailed =
         !_membershipService.ValidateUser(
           signInViewModel.EmailAddress,
-          signInViewModel.Password);
+          signInViewModel.Password,
+          out userAccountId);
 
       if (!signInFailed) {
+        // TODO IMM HI: pass user account id?
         _authenticationService.SignIn(signInViewModel.EmailAddress, true);
 
         return RedirectFromSignInPage();

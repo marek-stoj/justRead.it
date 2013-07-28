@@ -1,14 +1,22 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Security;
+using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
+using JustReadIt.WebApp.Core.App;
 using Newtonsoft.Json;
 
 namespace JustReadIt.WebApp {
 
   public class MvcApplication : HttpApplication {
+
+    public MvcApplication() {
+      AuthenticateRequest += MvcApplication_AuthenticateRequest;
+    }
 
     protected void Application_Start() {
       AreaRegistration.RegisterAllAreas();
@@ -18,6 +26,41 @@ namespace JustReadIt.WebApp {
       RouteConfig.RegisterRoutes(RouteTable.Routes);
 
       ConfigureJsonFormatter();
+    }
+
+    private static void MvcApplication_AuthenticateRequest(object sender, EventArgs eventArgs) {
+      if (HttpContext.Current.User == null
+       || HttpContext.Current.User.Identity == null
+       || !HttpContext.Current.User.Identity.IsAuthenticated) {
+        return;
+      }
+
+      var formsIdentity = HttpContext.Current.User.Identity as FormsIdentity;
+
+      if (formsIdentity == null) {
+        return;
+      }
+
+      var cacheService = IoC.CreateCacheService();
+      string username = formsIdentity.Name;
+      IJustReadItPrincipal justReadItPrincipal = cacheService.GetPrincipal(username);
+
+      if (justReadItPrincipal == null) {
+        var userAccountRepository = IoC.CreateUserAccountRepository();
+        int? userAccountId = userAccountRepository.FindUserAccountIdByEmailAddress(username);
+
+        if (!userAccountId.HasValue) {
+          return;
+        }
+
+        var justReadItIdentity = new JustReadItIdentity(username);
+
+        justReadItPrincipal = new JustReadItPrincipal(userAccountId.Value, justReadItIdentity);
+
+        cacheService.CachePrincipal(justReadItPrincipal);
+      }
+
+      HttpContext.Current.User = justReadItPrincipal;
     }
 
     private static void ConfigureJsonFormatter() {
