@@ -12,10 +12,11 @@ namespace JustReadIt.WebApp.Core.Controllers {
     public ActionResult ImportOpml() {
       IOpmlImporter opmlImporter = IoC.CreateOpmlImporter();
 
-      string opmlXml = Io.File.ReadAllText("C:\\feeds_old_reader.opml");
+      //string opmlXml = Io.File.ReadAllText("C:\\feeds_old_reader_full.opml");
+      string opmlXml = Io.File.ReadAllText("C:\\feeds_old_reader_trimmed.opml");
       //string opmlXml = Io.File.ReadAllText("C:\\feeds_feedbin.opml");
       //string opmlXml = Io.File.ReadAllText("C:\\feeds_feedly.opml");
-      opmlImporter.Import(opmlXml, 1);
+      opmlImporter.Import(opmlXml, 11);
 
       return Content("OK");
     }

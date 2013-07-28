@@ -138,6 +138,8 @@
     <Compile Include="Areas\FeedbinApi\Core\Security\IJustReadItPrincipal.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Security\JustReadItIdentity.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Security\JustReadItPrincipal.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Services\DomainToJsonModelMapper.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Services\IDomainToJsonModelMapper.cs" />
     <Compile Include="Areas\FeedbinApi\FeedbinApiAreaRegistration.cs" />
     <Compile Include="Core\MvcEx\ActionLink.cs" />
     <Compile Include="Core\Services\AspNetCacheService.cs" />

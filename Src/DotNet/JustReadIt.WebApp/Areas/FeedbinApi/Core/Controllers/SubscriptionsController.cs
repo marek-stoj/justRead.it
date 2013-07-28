@@ -1,32 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
-using JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.JsonModel;
+using JustReadIt.Core.Common;
+using JustReadIt.Core.Domain;
+using JustReadIt.Core.Domain.Repositories;
+using JustReadIt.WebApp.Areas.FeedbinApi.Core.Services;
+using JustReadIt.WebApp.Core.App;
+using JsonModel = JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.JsonModel;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
   public class SubscriptionsController : FeedbinApiController {
 
+    private readonly ISubscriptionRepository _subscriptionRepository;
+    private readonly IDomainToJsonModelMapper _domainToJsonModelMapper;
+
+    public SubscriptionsController(ISubscriptionRepository subscriptionRepository, IDomainToJsonModelMapper domainToJsonModelMapper) {
+      Guard.ArgNotNull(subscriptionRepository, "subscriptionRepository");
+      Guard.ArgNotNull(domainToJsonModelMapper, "domainToJsonModelMapper");
+
+      _subscriptionRepository = subscriptionRepository;
+      _domainToJsonModelMapper = domainToJsonModelMapper;
+    }
+
+    public SubscriptionsController()
+      : this(IoC.CreateSubscriptionRepository(), IoC.CreateDomainToJsonModelMapper()) {
+    }
+
     [HttpGet]
-    public IEnumerable<Subscription> GetAll(string since = null) {
+    public IEnumerable<JsonModel.Subscription> GetAll(string since = null) {
+      int userAccountId = CurrentUserAccountId;
+
       DateTime? sinceDate =
         !string.IsNullOrEmpty(since)
           ? ParseFeedbinDateTime(since)
           : null;
 
-      var subscriptions =
-        new List<Subscription> {
-          new Subscription {
-            Id = 525,
-            CreatedAt = sinceDate.HasValue ? sinceDate.Value : DateTime.UtcNow, // TODO IMM HI: 
-            FeedId = 47,
-            Title = "Daring Fireball",
-            FeedUrl = "http://daringfireball.net/index.xml",
-            SiteUrl = "http://daringfireball.net/",
-          },
-        };
+      IEnumerable<Subscription> subscriptions =
+        _subscriptionRepository.GetAll(userAccountId, sinceDate);
 
-      return subscriptions;
+      List<JsonModel.Subscription> subscriptionsModel =
+        subscriptions.Select(_domainToJsonModelMapper.CreateSubscription)
+          .ToList();
+
+      return subscriptionsModel;
     }
 
   }

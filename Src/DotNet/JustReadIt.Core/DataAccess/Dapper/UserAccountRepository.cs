@@ -17,7 +17,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int existsInt =
           db.Query<int>(
             " select" +
-            "   case when exists(select id from UserAccount where Id = 1)" +
+            "   case when exists(select id from UserAccount where Id = @Id)" +
             "     then 1" +
             "     else 0" +
             "   end",

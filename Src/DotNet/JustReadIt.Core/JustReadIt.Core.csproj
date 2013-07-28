@@ -49,6 +49,7 @@
     <Compile Include="Common\Guard.cs" />
     <Compile Include="Common\StringExtensions.cs" />
     <Compile Include="DataAccess\Dapper\EmailVerificationTokenRepository.cs" />
+    <Compile Include="DataAccess\Dapper\SubscriptionRepository.cs" />
     <Compile Include="DataAccess\Dapper\UserFeedGroupFeedRepository.cs" />
     <Compile Include="DataAccess\Dapper\Exceptions\IdentityInsertFailedException.cs" />
     <Compile Include="DataAccess\Dapper\UserFeedGroupRepository.cs" />
@@ -59,10 +60,12 @@
     <Compile Include="Domain\EmailVerificationToken.cs" />
     <Compile Include="Domain\Feed.cs" />
     <Compile Include="Domain\Repositories\IEmailVerificationTokenRepository.cs" />
+    <Compile Include="Domain\Repositories\ISubscriptionRepository.cs" />
     <Compile Include="Domain\Repositories\IUserFeedGroupFeedRepository.cs" />
     <Compile Include="Domain\Repositories\IFeedRepository.cs" />
     <Compile Include="Domain\Repositories\IUserAccountRepository.cs" />
     <Compile Include="Domain\Repositories\IUserFeedGroupRepository.cs" />
+    <Compile Include="Domain\Subscription.cs" />
     <Compile Include="Domain\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\MailingResources.Designer.cs">

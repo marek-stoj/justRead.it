@@ -39,18 +39,21 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         throw new ArgumentException("Non-transient entity can't be added. Id must be 0.", "userFeedGroupFeed");
       }
 
+      userFeedGroupFeed.DateCreated = DateTime.UtcNow;
+
       using (var db = CreateOpenedConnection()) {
         int userFeedGroupFeedId =
           db.Query<int>(
             " insert into UserFeedGroupFeed" +
-            " (UserFeedGroupId, FeedId)" +
+            " (UserFeedGroupId, FeedId, DateCreated)" +
             " values" +
-            " (@UserFeedGroupId, @FeedId);" +
+            " (@UserFeedGroupId, @FeedId, @DateCreated);" +
             " " +
             " select cast(scope_identity() as int);",
             new {
               UserFeedGroupId = userFeedGroupFeed.UserFeedGroupId,
               FeedId = userFeedGroupFeed.FeedId,
+              DateCreated = userFeedGroupFeed.DateCreated,
             })
             .Single();
 
