@@ -7,7 +7,7 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     IEnumerable<Subscription> GetAll(int userAccountId, DateTime? dateCreatedSince);
 
-    Subscription FindById(int userAccountId, int subscriptionId);
+    Subscription FindById(int userAccountId, int id);
 
   }
 
