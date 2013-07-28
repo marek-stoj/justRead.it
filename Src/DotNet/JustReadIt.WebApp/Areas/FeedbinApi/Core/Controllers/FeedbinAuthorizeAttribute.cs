@@ -19,7 +19,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     }
 
     public FeedbinAuthorizeAttribute()
-      : this(IoC.CreateMembershipService()) {
+      : this(IoC.GetMembershipService()) {
     }
 
     protected override bool AreCredentialsValid(string username, string password, out int userAccountId) {

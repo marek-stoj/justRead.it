@@ -43,6 +43,13 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
+    public Subscription FindById(int userAccountId, int subscriptionId) {
+      using (var db = CreateOpenedConnection()) {
+        // TODO IMM HI: 
+        throw new NotImplementedException();
+      }
+    }
+
   }
 
 }

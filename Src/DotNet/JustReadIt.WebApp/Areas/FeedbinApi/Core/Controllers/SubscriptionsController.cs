@@ -25,7 +25,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     }
 
     public SubscriptionsController()
-      : this(IoC.CreateSubscriptionRepository(), IoC.CreateDomainToJsonModelMapper()) {
+      : this(IoC.GetSubscriptionRepository(), IoC.GetDomainToJsonModelMapper()) {
     }
 
     [HttpGet]
@@ -45,6 +45,23 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
           .ToList();
 
       return subscriptionsModel;
+    }
+
+    [HttpGet]
+    public JsonModel.Subscription Get(int id) {
+      int userAccountId = CurrentUserAccountId;
+
+      Subscription subscription =
+        _subscriptionRepository.FindById(userAccountId, id);
+
+      if (subscription == null) {
+        throw HttpNotFound();
+      }
+
+      JsonModel.Subscription subscriptionModel =
+        _domainToJsonModelMapper.CreateSubscription(subscription);
+
+      return subscriptionModel;
     }
 
   }

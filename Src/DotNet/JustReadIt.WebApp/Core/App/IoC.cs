@@ -37,50 +37,50 @@ namespace JustReadIt.WebApp.Core.App {
           .ConnectionString;
     }
 
-    public static IUserAccountRepository CreateUserAccountRepository() {
+    public static IUserAccountRepository GetUserAccountRepository() {
       return new UserAccountRepository(_ConnectionString_JustReadIt);
     }
 
-    public static IFeedRepository CreateFeedRepository() {
+    public static IFeedRepository GetFeedRepository() {
       return new FeedRepository(_ConnectionString_JustReadIt);
     }
 
-    private static IUserFeedGroupRepository CreateUserFeedGroupRepository() {
+    private static IUserFeedGroupRepository GetUserFeedGroupRepository() {
       return new UserFeedGroupRepository(_ConnectionString_JustReadIt);
     }
 
-    private static IUserFeedGroupFeedRepository CreateUserFeedGroupFeedRepository() {
+    private static IUserFeedGroupFeedRepository GetUserFeedGroupFeedRepository() {
       return new UserFeedGroupFeedRepository(_ConnectionString_JustReadIt);
     }
 
-    public static IOpmlParser CreateOpmlParser() {
+    public static IOpmlParser GetOpmlParser() {
       return new OpmlParser();
     }
 
-    public static IOpmlImporter CreateOpmlImporter() {
+    public static IOpmlImporter GetOpmlImporter() {
       return
         new OpmlImporter(
-          CreateOpmlParser(),
-          CreateUserAccountRepository(),
-          CreateFeedRepository(),
-          CreateUserFeedGroupRepository(),
-          CreateUserFeedGroupFeedRepository());
+          GetOpmlParser(),
+          GetUserAccountRepository(),
+          GetFeedRepository(),
+          GetUserFeedGroupRepository(),
+          GetUserFeedGroupFeedRepository());
     }
 
-    public static IAuthenticationService CreateAuthenticationService() {
+    public static IAuthenticationService GetAuthenticationService() {
       return new FormsAuthenticationService();
     }
 
-    public static IMembershipService CreateMembershipService() {
+    public static IMembershipService GetMembershipService() {
       return
         new MembershipService(
-          CreateUserAccountRepository(),
-          CreateEmailVerificationTokenRepository(),
-          CreateCryptoUtils(),
-          CreateMailingService());
+          GetUserAccountRepository(),
+          GetEmailVerificationTokenRepository(),
+          GetCryptoUtils(),
+          GetMailingService());
     }
 
-    private static ICryptoUtils CreateCryptoUtils() {
+    private static ICryptoUtils GetCryptoUtils() {
       string ivBase64Encoded =
         AppSettingsUtils.ReadAppSettingString(_AppSettingKey_RijndaelBase64CryptoUtils_InitializationVector);
 
@@ -93,21 +93,21 @@ namespace JustReadIt.WebApp.Core.App {
       return new RijndaelBase64CryptoUtils(iv, key);
     }
 
-    public static IEmailVerificationTokenRepository CreateEmailVerificationTokenRepository() {
+    public static IEmailVerificationTokenRepository GetEmailVerificationTokenRepository() {
       return new EmailVerificationTokenRepository(_ConnectionString_JustReadIt);
     }
 
-    public static IMailingService CreateMailingService() {
+    public static IMailingService GetMailingService() {
       string from = AppSettingsUtils.ReadAppSettingString(_AppSettingKey_MailingService_From);
 
       return
         new MailingService(
-          CreateMailer(),
-          CreateEmailVerificationTokenRepository(),
+          GetMailer(),
+          GetEmailVerificationTokenRepository(),
           from);
     }
 
-    private static IMailer CreateMailer() {
+    private static IMailer GetMailer() {
       if (_mailer != null) {
         return _mailer;
       }
@@ -118,7 +118,7 @@ namespace JustReadIt.WebApp.Core.App {
       string smtpUserName = AppSettingsUtils.ReadAppSettingString(_AppSettingKey_SmtpMailer_SmtpUsername);
       string smtpPasswordEncrypted = AppSettingsUtils.ReadAppSettingString(_AppSettingKey_SmtpMailer_SmtpPassword);
 
-      ICryptoUtils cryptoUtils = CreateCryptoUtils();
+      ICryptoUtils cryptoUtils = GetCryptoUtils();
 
       string smtpPassword = cryptoUtils.Decrypt(smtpPasswordEncrypted);
 
@@ -127,15 +127,15 @@ namespace JustReadIt.WebApp.Core.App {
       return _mailer;
     }
 
-    public static ICacheService CreateCacheService() {
+    public static ICacheService GetCacheService() {
       return new AspNetCacheService();
     }
 
-    public static ISubscriptionRepository CreateSubscriptionRepository() {
+    public static ISubscriptionRepository GetSubscriptionRepository() {
       return new SubscriptionRepository(_ConnectionString_JustReadIt);
     }
 
-    public static IDomainToJsonModelMapper CreateDomainToJsonModelMapper() {
+    public static IDomainToJsonModelMapper GetDomainToJsonModelMapper() {
       return new DomainToJsonModelMapper();
     }
 

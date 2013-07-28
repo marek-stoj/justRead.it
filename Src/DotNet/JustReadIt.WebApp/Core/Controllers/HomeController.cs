@@ -19,7 +19,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
     }
 
     public HomeController()
-      : this(IoC.CreateFeedRepository()) {
+      : this(IoC.GetFeedRepository()) {
     }
 
     [HttpGet]

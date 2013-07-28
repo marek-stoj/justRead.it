@@ -41,12 +41,12 @@ namespace JustReadIt.WebApp {
         return;
       }
 
-      var cacheService = IoC.CreateCacheService();
+      var cacheService = IoC.GetCacheService();
       string username = formsIdentity.Name;
       IJustReadItPrincipal justReadItPrincipal = cacheService.GetPrincipal(username);
 
       if (justReadItPrincipal == null) {
-        var userAccountRepository = IoC.CreateUserAccountRepository();
+        var userAccountRepository = IoC.GetUserAccountRepository();
         int? userAccountId = userAccountRepository.FindUserAccountIdByEmailAddress(username);
 
         if (!userAccountId.HasValue) {

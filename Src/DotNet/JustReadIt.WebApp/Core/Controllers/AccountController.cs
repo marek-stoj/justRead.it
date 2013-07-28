@@ -30,9 +30,9 @@ namespace JustReadIt.WebApp.Core.Controllers {
 
     public AccountController()
       : this(
-        IoC.CreateAuthenticationService(),
-        IoC.CreateMembershipService(),
-        IoC.CreateEmailVerificationTokenRepository()) {
+        IoC.GetAuthenticationService(),
+        IoC.GetMembershipService(),
+        IoC.GetEmailVerificationTokenRepository()) {
     }
 
     [HttpGet]
