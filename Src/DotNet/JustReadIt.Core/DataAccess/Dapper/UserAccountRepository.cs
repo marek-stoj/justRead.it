@@ -17,7 +17,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int existsInt =
           db.Query<int>(
             " select" +
-            "   case when exists(select id from UserAccount where Id = @Id)" +
+            "   case when exists(select Id from UserAccount where Id = @Id)" +
             "     then 1" +
             "     else 0" +
             "   end",
@@ -50,6 +50,8 @@ namespace JustReadIt.Core.DataAccess.Dapper {
     }
 
     public void Add(UserAccount userAccount) {
+      Guard.ArgNotNull(userAccount, "userAccount");
+
       if (userAccount.Id != 0) {
         throw new ArgumentException("Non-transient entity can't be added. Id must be 0.", "userAccount");
       }

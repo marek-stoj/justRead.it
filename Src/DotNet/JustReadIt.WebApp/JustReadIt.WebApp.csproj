@@ -65,6 +65,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -131,6 +132,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\FeedbinApi\Core\Controllers\FeedbinAuthorizeAttribute.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Models\Subscriptions\CreateInputModel.cs" />
+    <Compile Include="Areas\FeedbinApi\Routes.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Controllers\SubscriptionsController.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Controllers\FeedbinApiController.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\JsonModel\Subscription.cs" />

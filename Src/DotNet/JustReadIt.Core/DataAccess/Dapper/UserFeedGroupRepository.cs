@@ -59,15 +59,18 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
 
       using (var db = CreateOpenedConnection()) {
+        userFeedGroup.DateCreated = DateTime.UtcNow;
+
         int userFeedGroupId =
           db.Query<int>(
             " insert into UserFeedGroup" +
-            " (UserAccountId, SpecialType, Title)" +
+            " (UserAccountId, DateCreated, SpecialType, Title)" +
             " values" +
-            " (@UserAccountId, @SpecialType, @Title)" +
+            " (@UserAccountId, @DateCreated, @SpecialType, @Title)" +
             " " +
             " select cast(scope_identity() as int);",
             new {
+              DateCreated = userFeedGroup.DateCreated,
               UserAccountId = userFeedGroup.UserAccountId,
               SpecialType = userFeedGroup.SpecialType.HasValue ? userFeedGroup.SpecialType.Value.ToString() : null,
               Title = userFeedGroup.Title,

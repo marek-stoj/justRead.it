@@ -6,6 +6,7 @@ using ImmRafSoft.Security;
 using JustReadIt.Core.DataAccess.Dapper;
 using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Services;
+using JustReadIt.Core.Services.Feeds;
 using JustReadIt.Core.Services.Opml;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Services;
 using JustReadIt.WebApp.Core.Services;
@@ -75,6 +76,7 @@ namespace JustReadIt.WebApp.Core.App {
       return
         new MembershipService(
           GetUserAccountRepository(),
+          GetUserFeedGroupRepository(),
           GetEmailVerificationTokenRepository(),
           GetCryptoUtils(),
           GetMailingService());
@@ -137,6 +139,10 @@ namespace JustReadIt.WebApp.Core.App {
 
     public static IDomainToJsonModelMapper GetDomainToJsonModelMapper() {
       return new DomainToJsonModelMapper();
+    }
+
+    public static IFeedParser GetFeedParser() {
+      return new FeedParser();
     }
 
   }

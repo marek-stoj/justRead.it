@@ -33,15 +33,18 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
 
       using (var db = CreateOpenedConnection()) {
+        feed.DateCreated = DateTime.UtcNow;
+
         int feedId =
           db.Query<int>(
             " insert into Feed" +
-            " (Title, FeedUrl, SiteUrl)" +
+            " (DateCreated, Title, FeedUrl, SiteUrl)" +
             " values" +
-            " (@Title, @FeedUrl, @SiteUrl);" +
+            " (@DateCreated, @Title, @FeedUrl, @SiteUrl);" +
             " " +
             " select cast(scope_identity() as int);",
             new {
+              DateCreated = feed.DateCreated,
               Title = feed.Title,
               FeedUrl = feed.FeedUrl,
               SiteUrl = feed.SiteUrl,

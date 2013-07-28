@@ -30,6 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Argotic.Common">
+      <HintPath>..\..\..\Lib\Argotic\Argotic.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Core">
+      <HintPath>..\..\..\Lib\Argotic\Argotic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Argotic.Extensions">
+      <HintPath>..\..\..\Lib\Argotic\Argotic.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="ImmRafSoft.Net">
       <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Net.dll</HintPath>
     </Reference>
@@ -38,6 +47,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,6 +59,7 @@
     <Compile Include="Common\Guard.cs" />
     <Compile Include="Common\StringExtensions.cs" />
     <Compile Include="DataAccess\Dapper\EmailVerificationTokenRepository.cs" />
+    <Compile Include="DataAccess\Dapper\Exceptions\InternalException.cs" />
     <Compile Include="DataAccess\Dapper\SubscriptionRepository.cs" />
     <Compile Include="DataAccess\Dapper\UserFeedGroupFeedRepository.cs" />
     <Compile Include="DataAccess\Dapper\Exceptions\IdentityInsertFailedException.cs" />
@@ -68,6 +79,11 @@
     <Compile Include="Domain\Subscription.cs" />
     <Compile Include="Domain\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CommonResources.Designer.cs">
+      <DependentUpon>CommonResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Resources\MailingResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -75,6 +91,10 @@
     </Compile>
     <Compile Include="Services\CreateUserResult.cs" />
     <Compile Include="Services\Exceptions\InternalException.cs" />
+    <Compile Include="Services\Feeds\FeedMetadata.cs" />
+    <Compile Include="Services\Feeds\FeedParser.cs" />
+    <Compile Include="Services\Feeds\FeedParserException.cs" />
+    <Compile Include="Services\Feeds\IFeedParser.cs" />
     <Compile Include="Services\IMailingService.cs" />
     <Compile Include="Services\IMembershipService.cs" />
     <Compile Include="Services\IOpmlImporter.cs" />
@@ -93,6 +113,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Resources\CommonResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\MailingResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MailingResources.Designer.cs</LastGenOutput>

@@ -13,15 +13,20 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
 
     public override void RegisterArea(AreaRegistrationContext context) {
       context.Routes.MapHttpRoute(
-        name: "FeedbinApi_Subscriptions_GetAll",
+        name: Routes.Subscriptions_GetAll,
         routeTemplate: _UrlPrefix + "subscriptions.json",
         defaults: new { controller = "Subscriptions", action = "GetAll", });
 
       context.Routes.MapHttpRoute(
-        name: "FeedbinApi_Subscriptions_Get",
+        name: Routes.Subscriptions_Get,
         routeTemplate: _UrlPrefix + "subscriptions/{id}.json",
         defaults: new { controller = "Subscriptions", action = "Get" },
         constraints: new { id = @"\d+", });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Subscriptions_Create,
+        routeTemplate: _UrlPrefix + "subscriptions/create",
+        defaults: new { controller = "Subscriptions", action = "Create" });
     }
 
   }

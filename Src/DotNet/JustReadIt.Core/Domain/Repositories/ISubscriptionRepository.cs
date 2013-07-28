@@ -9,6 +9,10 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     Subscription FindById(int userAccountId, int id);
 
+    int? FindIdByFeedUrl(int userAccountId, string feedUrl);
+
+    void Add(Subscription subscription);
+
   }
 
 }

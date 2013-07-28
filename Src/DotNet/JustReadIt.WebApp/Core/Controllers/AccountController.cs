@@ -62,7 +62,6 @@ namespace JustReadIt.WebApp.Core.Controllers {
           out userAccountId);
 
       if (!signInFailed) {
-        // TODO IMM HI: pass user account id?
         _authenticationService.SignIn(signInViewModel.EmailAddress, true);
 
         return RedirectFromSignInPage();

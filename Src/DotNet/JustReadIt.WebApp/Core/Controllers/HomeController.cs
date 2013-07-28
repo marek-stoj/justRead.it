@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using JustReadIt.Core.Common;
-using JustReadIt.Core.Domain;
 using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.WebApp.Core.App;
-using System.Linq;
 
 namespace JustReadIt.WebApp.Core.Controllers {
 
@@ -24,13 +21,6 @@ namespace JustReadIt.WebApp.Core.Controllers {
 
     [HttpGet]
     public ActionResult Index() {
-      int userAccountId = CurrentUserAccountId;
-      string username = CurrentUsername;
-
-      // TODO IMM HI: remove
-      List<Feed> feedsList =
-        _feedRepository.GetAll().ToList();
-
       return View();
     }
 

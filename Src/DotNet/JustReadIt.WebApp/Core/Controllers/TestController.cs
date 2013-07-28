@@ -16,7 +16,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
       string opmlXml = Io.File.ReadAllText("C:\\feeds_old_reader_trimmed.opml");
       //string opmlXml = Io.File.ReadAllText("C:\\feeds_feedbin.opml");
       //string opmlXml = Io.File.ReadAllText("C:\\feeds_feedly.opml");
-      opmlImporter.Import(opmlXml, 11);
+      opmlImporter.Import(opmlXml, 14);
 
       return Content("OK");
     }

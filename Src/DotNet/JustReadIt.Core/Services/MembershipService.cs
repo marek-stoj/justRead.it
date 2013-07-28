@@ -5,23 +5,27 @@ using ImmRafSoft.Security;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain;
 using JustReadIt.Core.Domain.Repositories;
+using JustReadIt.Core.Resources;
 
 namespace JustReadIt.Core.Services {
 
   public class MembershipService : IMembershipService {
 
     private readonly IUserAccountRepository _userAccountRepository;
+    private readonly IUserFeedGroupRepository _userFeedGroupRepository;
     private readonly IEmailVerificationTokenRepository _emailVerificationTokenRepository;
     private readonly ICryptoUtils _cryptoUtils;
     private readonly IMailingService _mailingService;
 
-    public MembershipService(IUserAccountRepository userAccountRepository, IEmailVerificationTokenRepository emailVerificationTokenRepository, ICryptoUtils cryptoUtils, IMailingService mailingService) {
+    public MembershipService(IUserAccountRepository userAccountRepository, IUserFeedGroupRepository userFeedGroupRepository, IEmailVerificationTokenRepository emailVerificationTokenRepository, ICryptoUtils cryptoUtils, IMailingService mailingService) {
       Guard.ArgNotNull(userAccountRepository, "userAccountRepository");
+      Guard.ArgNotNull(userFeedGroupRepository, "userFeedGroupRepository");
       Guard.ArgNotNull(emailVerificationTokenRepository, "_emailVerificationTokenRepository");
       Guard.ArgNotNull(cryptoUtils, "cryptoUtils");
       Guard.ArgNotNull(mailingService, "mailingService");
 
       _userAccountRepository = userAccountRepository;
+      _userFeedGroupRepository = userFeedGroupRepository;
       _emailVerificationTokenRepository = emailVerificationTokenRepository;
       _cryptoUtils = cryptoUtils;
       _mailingService = mailingService;
@@ -31,7 +35,7 @@ namespace JustReadIt.Core.Services {
       Guard.ArgNotNullNorEmpty(emailAddress, "emailAddress");
       Guard.ArgNotNullNorEmpty(password, "password");
 
-      using (var ts = TransactionUtils.CreateTransactionScope()) {
+      using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
         if (_userAccountRepository.UserWithEmailAddressExists(emailAddress)) {
           return CreateUserResult.Failed_EmailAddressExists;
         }
@@ -45,6 +49,17 @@ namespace JustReadIt.Core.Services {
         _userAccountRepository.Add(userAccount);
 
         Debug.Assert(userAccount.Id > 0);
+
+        var uncategorizedFeedGroup =
+          new UserFeedGroup {
+            UserAccountId = userAccount.Id,
+            SpecialType = SpecialUserFeedGroupType.Uncategorized,
+            Title = CommonResources.UncategorizedFeedGroupTitle,
+          };
+
+        _userFeedGroupRepository.Add(uncategorizedFeedGroup);
+
+        Debug.Assert(uncategorizedFeedGroup.Id > 0);
 
         _mailingService.SendVerificationEmail(
           userAccount.Id,
