@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C09320
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JustReadIt.Database", "JustReadIt.Database\JustReadIt.Database.sqlproj", "{43CF8214-91C3-4C6D-902B-953BD527CABB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustReadIt.Core.Tests", "JustReadIt.Core.Tests\JustReadIt.Core.Tests.csproj", "{4BCF4AC6-A7D6-4EE7-9503-F5AD112731C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{43CF8214-91C3-4C6D-902B-953BD527CABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43CF8214-91C3-4C6D-902B-953BD527CABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43CF8214-91C3-4C6D-902B-953BD527CABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCF4AC6-A7D6-4EE7-9503-F5AD112731C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCF4AC6-A7D6-4EE7-9503-F5AD112731C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCF4AC6-A7D6-4EE7-9503-F5AD112731C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCF4AC6-A7D6-4EE7-9503-F5AD112731C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

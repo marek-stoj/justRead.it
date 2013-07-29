@@ -10,10 +10,10 @@ using JustReadIt.Core.Domain;
 using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Resources;
 using JustReadIt.Core.Services;
-using JustReadIt.Core.Services.Feeds;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.Subscriptions;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Services;
 using JustReadIt.WebApp.Core.App;
+using Feeds = JustReadIt.Core.Services.Feeds;
 using JsonModel = JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.JsonModel;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
@@ -22,9 +22,9 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
     private readonly ISubscriptionRepository _subscriptionRepository;
     private readonly IDomainToJsonModelMapper _domainToJsonModelMapper;
-    private readonly IFeedParser _feedParser;
+    private readonly Feeds.IFeedParser _feedParser;
 
-    public SubscriptionsController(ISubscriptionRepository subscriptionRepository, IDomainToJsonModelMapper domainToJsonModelMapper, IFeedParser feedParser) {
+    public SubscriptionsController(ISubscriptionRepository subscriptionRepository, IDomainToJsonModelMapper domainToJsonModelMapper, Feeds.IFeedParser feedParser) {
       Guard.ArgNotNull(subscriptionRepository, "subscriptionRepository");
       Guard.ArgNotNull(domainToJsonModelMapper, "domainToJsonModelMapper");
       Guard.ArgNotNull(feedParser, "feedParser");
@@ -129,9 +129,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
           string feedContent = await feedResponseMessage.Content.ReadAsStringAsync();
 
-          _feedParser.Parse(feedContent);
-
-          FeedMetadata feedMetadata = _feedParser.GetMetadata();
+          Feeds.Feed feed = _feedParser.Parse(feedContent);
 
           var subscription =
             new Subscription {
@@ -139,8 +137,8 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
               Feed =
                 new Feed {
                   FeedUrl = feedUrl,
-                  SiteUrl = feedMetadata.SiteUrl ?? feedUrl,
-                  Title = feedMetadata.FeedTitle ?? CommonResources.UntitledFeedTitle,
+                  SiteUrl = feed.SiteUrl ?? feedUrl,
+                  Title = feed.Title ?? CommonResources.UntitledFeedTitle,
                 },
             };
 

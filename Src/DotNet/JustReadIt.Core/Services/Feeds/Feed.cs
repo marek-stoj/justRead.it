@@ -1,16 +1,15 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
 using JustReadIt.Core.Common;
 
-namespace JustReadIt.Core.Domain {
+namespace JustReadIt.Core.Services.Feeds {
 
   public class Feed {
 
-    private DateTime _dateCreated;
     private string _title;
     private string _feedUrl;
     private string _siteUrl;
-
-    public int Id { get; set; }
+    private IEnumerable<FeedItem> _items;
 
     public string Title {
       get { return _title; }
@@ -27,9 +26,9 @@ namespace JustReadIt.Core.Domain {
       set { _siteUrl = value.TrimmedOrNull(); }
     }
 
-    public DateTime DateCreated {
-      get { return _dateCreated; }
-      set { _dateCreated = DateTime.SpecifyKind(value, DateTimeKind.Utc); }
+    public IEnumerable<FeedItem> Items {
+      get { return _items ?? Enumerable.Empty<FeedItem>(); }
+      set { _items = value; }
     }
 
   }

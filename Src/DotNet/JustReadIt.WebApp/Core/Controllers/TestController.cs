@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using JustReadIt.Core.Services;
+using JustReadIt.Core.Services.Feeds;
 using JustReadIt.WebApp.Core.App;
 using Io = System.IO;
 
@@ -19,6 +20,15 @@ namespace JustReadIt.WebApp.Core.Controllers {
       opmlImporter.Import(opmlXml, 14);
 
       return Content("OK");
+    }
+
+    [HttpGet]
+    public ActionResult ParseFeed() {
+      Feed feed = new FeedParser().Parse(Io.File.ReadAllText("C:\\feed_atom.xml"));
+
+      return Content(
+        string.Format("{0}\r\n{1}\r\n{2}", feed.Title, feed.FeedUrl, feed.SiteUrl),
+        "text/plain");
     }
 
   }

@@ -1,10 +1,12 @@
 using System;
+using JustReadIt.Core.Common;
 
 namespace JustReadIt.Core.Domain {
 
   public class UserFeedGroup {
 
     private DateTime _dateCreated;
+    private string _title;
 
     public int Id { get; set; }
 
@@ -17,7 +19,10 @@ namespace JustReadIt.Core.Domain {
 
     public SpecialUserFeedGroupType? SpecialType { get; set; }
 
-    public string Title { get; set; }
+    public string Title {
+      get { return _title; }
+      set { _title = value.TrimmedOrNull(); }
+    }
 
   }
 

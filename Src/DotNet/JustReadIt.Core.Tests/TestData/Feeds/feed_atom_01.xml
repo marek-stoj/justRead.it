@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/atom10full.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:blogger="http://schemas.google.com/blogger/2008" xmlns:georss="http://www.georss.org/georss" xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" gd:etag="W/&quot;DkYGRH89eip7ImA9WhFXFkQ.&quot;">
+  <id>tag:blogger.com,1999:blog-2250394496987063687</id>
+  <updated>2013-07-24T15:28:45.162-04:00</updated>
+  <category term="chrome os" />
+  <category term="webrtc" />
+  <category term="googlenew" />
+  <category term="accessibility" />
+  <category term="extensions" />
+  <category term="chrome notebook" />
+  <category term="demolab" />
+  <category term="holidays" />
+  <category term="3d" />
+  <category term="college basketball" />
+  <category term="apps" />
+  <category term="mac" />
+  <category term="chrome for a cause" />
+  <category term="web apps" />
+  <category term="cr-48" />
+  <category term="chromebook" />
+  <category term="google cloud print" />
+  <category term="demo lab" />
+  <category term="instant" />
+  <category term="chrome web store" />
+  <category term="webgl" />
+  <category term="lab tech" />
+  <category term="chrome" />
+  <title>Google Chrome Blog</title>
+  <subtitle type="html" />
+  <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="http://chrome.blogspot.com/feeds/posts/default" />
+  <link rel="alternate" type="text/html" href="http://chrome.blogspot.com/" />
+  <link rel="next" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default?start-index=26&amp;max-results=25&amp;redirect=false&amp;v=2" />
+  <author>
+    <name>Emily Wood</name>
+    <email>noreply@blogger.com</email>
+    <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+  </author>
+  <generator version="7.00" uri="http://www.blogger.com">Blogger</generator>
+  <openSearch:totalResults>222</openSearch:totalResults>
+  <openSearch:startIndex>1</openSearch:startIndex>
+  <openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+  <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/blogspot/Egta" />
+  <feedburner:info uri="blogspot/egta" />
+  <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+  <entry gd:etag="W/&quot;DkYGRH88eSp7ImA9WhFXFkQ.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-319564235329440802</id>
+    <published>2013-07-24T13:14:00.000-04:00</published>
+    <updated>2013-07-24T15:28:45.171-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-07-24T15:28:45.171-04:00</app:edited>
+    <title>From TVs to tablets: Everything you love, across all your screens</title>
+    <content type="html">
+      When I was growing up, my family had a single screen we huddled around every day: the television set in the living room. Nowadays, we “huddle” around multiple screens—laptops, smartphones and tablets—using them almost interchangeably as we navigate through our day. In a world of ubiquitous computing, life would be a lot simpler if we didn’t have to learn new behaviors and interfaces each time we switched screens—if we could have one consistent, intuitive experience no matter where we are or what we’re doing. Today, with the launch of &lt;a href="http://www.google.com/chromecast"&gt;Chromecast&lt;/a&gt; and the &lt;a href="http://www.google.com/nexus/7/index.html"&gt;new Nexus 7 tablet&lt;/a&gt;, it’s even more effortless to enjoy content you care about—whether it’s video, music, movies, games—wherever you are, across your devices.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Introducing Chromecast&lt;/b&gt;&lt;br /&gt;
+      To help make it easy to bring your favorite online entertainment to the biggest screen in your house—the TV—we’re introducing Chromecast. Chromecast is a small and affordable ($35) device that you simply plug in to your high-definition (HD) TV and it allows you to use your phone, tablet or laptop to "cast" online content to your TV screen. It works with Netflix, YouTube, Google Play Movies &amp;amp; TV, and Google Play Music, with more apps like Pandora coming soon. With Chromecast, we wanted to create an easy solution that works for everyone, for every TV in the house.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://4.bp.blogspot.com/-5dvaoY0mDAI/Ue_9CW_mSsI/AAAAAAAAMzw/logZ9hcFDak/s1600/chromecast.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="320" src="http://4.bp.blogspot.com/-5dvaoY0mDAI/Ue_9CW_mSsI/AAAAAAAAMzw/logZ9hcFDak/s320/chromecast.png" width="302" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Remote-free&lt;/b&gt;&lt;br /&gt;
+      Once your Chromecast is set up, you can use your phone, tablet or laptop to browse and cast content to your TV, play and pause, control the volume, and more. But unlike other streaming solutions, you can still multitask—send emails or surf the web—while enjoying what’s on the TV screen. It works across platforms—Android tablets and smartphones, iPhones, iPads, Chrome for Mac and Windows (more to come), so your personal device is also now your remote control.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Cast the web to your TV&lt;/b&gt;&lt;br /&gt;
+      In addition to apps like Netflix, you can use Chromecast to bring a broad range of content available on the web to your big screen, thanks to a new feature in the Chrome browser that allows you to project any browser tab to your TV. From sharing your family photos to enjoying a video clip from your favorite news site, it’s as simple as pressing a button. This feature is launching in beta, but we’re excited for people to try it out and give us their feedback.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;iframe allowfullscreen="" frameborder="0" height="315" src="//www.youtube.com/embed/cKG5HDyTW8o" width="560"&gt;&lt;/iframe&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Google Cast SDK preview for developers&lt;/b&gt;&lt;br /&gt;
+      To ensure a great Chromecast experience over time, we've built Google Cast, a technology that enables developers to build consistent, intuitive multi-screen experiences across mobile devices and TVs. Today, we’re launching a preview version of Google Cast with more information for developers on our &lt;a href="http://googledevelopers.blogspot.com/2013/07/cast-content-from-your-apps-to-tv-with.html"&gt;Google Developers blog&lt;/a&gt;. A handful of early developers are already working on enabling Google Cast technology in their apps, so more supported apps are coming soon. And while the Chromecast device is the first instantiation of Google Cast, we expect the technology to be embedded in a range of hardware from our partners in the future.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://3.bp.blogspot.com/-jWb_cxSf-OE/Ue_8zQqCMII/AAAAAAAAMzo/Jc_8vEwnWxE/s1600/SocialNexus7-24Web.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="311" src="http://3.bp.blogspot.com/-jWb_cxSf-OE/Ue_8zQqCMII/AAAAAAAAMzo/Jc_8vEwnWxE/s400/SocialNexus7-24Web.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;br /&gt;
+      &lt;b&gt;The new Nexus 7—the sharpest 7” tablet screen ever&lt;/b&gt;&lt;br /&gt;
+      Together with ASUS, we took what you loved about the &lt;a href="http://googleblog.blogspot.com/2012/06/android-io-playground-is-open.html"&gt;original Nexus 7&lt;/a&gt; and made it even better. The first thing you’ll notice is the sharpness of the screen: the 323 pixels packed into every inch of the screen makes it the world's highest-resolution 7-inch tablet. It’s lighter than ever, with more than nine hours of HD video playback and 10 hours of web browsing or reading. Nexus 7 now features stereo speakers and virtual surround sound from Fraunhofer (the inventors of the MP3 format), giving you rich and immersive audio.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Android 4.3—a sweeter Jelly Bean&lt;/b&gt;&lt;br /&gt;
+      Nexus 7 is the first device to ship with &lt;a href="http://www.android.com/about/jelly-bean/"&gt;Android 4.3&lt;/a&gt;, the newest version of Android. Tablets are perfect for sharing with others, so in Android 4.3, we're introducing restricted profiles, which let you limit access to apps and content. For example, restricted profiles enable parental controls, so certain family members are prevented from accessing mature content. Likewise, retail stores can use tablets to show off product information, and shops can use tablets as point of sale systems. Android 4.3 also now supports &lt;a href="http://www.bluetooth.com/Pages/Bluetooth-Smart-Devices.aspx"&gt;Bluetooth Smart&lt;/a&gt; technology, opening the door to mobile apps that connect to new devices like fitness sensors. Android 4.3 is rolling out to Nexus devices starting today.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Ready to Play&lt;/b&gt;&lt;br /&gt;
+      The new &lt;a href="https://play.google.com/store/apps/details?id=com.google.android.play.games"&gt;Google Play Games&lt;/a&gt; app brings your friends together with the games you love, where you can invite a friend and start challenging gamers around the world, compete for top achievements, and race to the top of the leaderboard. You can also enjoy the world’s largest collection of eBooks, listen to millions of music tracks and immerse yourself in thousands of movies, TV shows, magazines and apps on Google Play. Plus, Nexus 7 comes loaded with your favorite Google apps, like Chrome, Maps, YouTube, Gmail and Google Now. &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;iframe allowfullscreen="" frameborder="0" height="315" src="//www.youtube.com/embed/5LysTmwDan8" width="560"&gt;&lt;/iframe&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;How to get Chromecast and the new Nexus 7&lt;/b&gt;&lt;br /&gt;
+      Starting today, the Chromecast device is available for $35 on Google Play, Amazon.com and BestBuy.com. It will be available in Best Buy stores across the U.S. starting July 28. For a limited time, you also get three months of Netflix included. More info available in &lt;a href="https://play.google.com/store/devices/details?id=chromecast"&gt;Google Play&lt;/a&gt;. &lt;br /&gt;
+      &lt;br /&gt;
+      Nexus 7 starts at $229, and is available in the U.S. beginning July 30 (with more countries coming soon!). Buy Nexus 7 online on Google Play, or check it out at Best Buy, Gamestop, Walmart, Staples, Office Max, Office Depot, Amazon, Home Shopping Network, Radio Shack, J&amp;amp;R and B&amp;amp;H Photo. Nexus 7 (LTE) is coming soon with support for T-Mobile and Verizon in the coming weeks. Learn more on our &lt;a href="http://www.google.com/nexus/"&gt;Nexus site&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;span class="post-author"&gt;Posted by Sundar Pichai, SVP, Android, Chrome &amp;amp; Apps&lt;/span&gt;&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/INMF1bGtBJ4" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/319564235329440802?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/319564235329440802?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/INMF1bGtBJ4/from-tvs-to-tablets-everything-you-love.html" title="From TVs to tablets: Everything you love, across all your screens" />
+    <author>
+      <name>Emily Wood</name>
+      <uri>https://plus.google.com/112374322230920073195</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://4.bp.blogspot.com/-5dvaoY0mDAI/Ue_9CW_mSsI/AAAAAAAAMzw/logZ9hcFDak/s72-c/chromecast.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/07/from-tvs-to-tablets-everything-you-love.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DEANRn86eCp7ImA9WhFXFUw.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-3272903253087629220</id>
+    <published>2013-07-22T14:13:00.000-04:00</published>
+    <updated>2013-07-22T14:13:17.110-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-07-22T14:13:17.110-04:00</app:edited>
+    <title>Simpler printing from more places</title>
+    <content type="html">
+      &lt;i&gt;(Cross-posted on the &lt;a href="http://googleenterprise.blogspot.com/2013/07/simpler-printing-from-more-places.html" target="_blank"&gt;Google Enterprise Blog&lt;/a&gt;)&lt;/i&gt;  &lt;br /&gt;
+      &lt;br /&gt;
+      Have you ever needed to print a boarding pass, whitepaper, or speech, and didn't have your computer at hand? &lt;a href="http://www.google.com/cloudprint/learn/" target="_blank"&gt;Google Cloud Print&lt;/a&gt; helps you print from anywhere to anywhere using any device, and we’ve recently made several improvements on that front.&lt;br /&gt;
+      &lt;br /&gt;
+      First, if you have an Android smartphone or tablet, we've released the &lt;a href="https://play.google.com/store/apps/details?id=com.google.android.apps.cloudprint" target="_blank"&gt;Cloud Print app&lt;/a&gt; in Google Play to make it easier to print documents and files on the go.&lt;br /&gt;
+      &lt;br /&gt;
+      Second, if you work out of different offices or other public spaces like a school, you can now easily share a printer with anyone nearby, by simply publishing a link.&lt;br&gt;&lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-LGPS6UXCUPc/Ue11T3_1JtI/AAAAAAAAA4I/uWYnkR9UFbI/s1600/Public+Printing.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/-LGPS6UXCUPc/Ue11T3_1JtI/AAAAAAAAA4I/uWYnkR9UFbI/s400/Public+Printing.png" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      In addition, we’re releasing two new tools today to make it even easier to print anywhere, anytime. The first, &lt;a href="https://tools.google.com/dlpage/cloudprintdriver" target="_blank"&gt;Google Cloud Printer&lt;/a&gt;, makes it possible to print to any of your cloud printers from Windows applications such as Adobe Reader.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-zRsFjFFvtdE/Ue11oKJrEpI/AAAAAAAAA4Q/MBAyElLkPmQ/s1600/Google+Cloud+Printer+(driver).png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://4.bp.blogspot.com/-zRsFjFFvtdE/Ue11oKJrEpI/AAAAAAAAA4Q/MBAyElLkPmQ/s400/Google+Cloud+Printer+(driver).png" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      The second, &lt;a href="https://tools.google.com/dlpage/cloudprintservice"&gt;Google Cloud Print Service&lt;/a&gt;, runs as a Windows service so administrators can easily connect existing printers to Google Cloud Print in their businesses and schools.&lt;br /&gt;
+      &lt;br /&gt;
+      We’ll continue evolving Google Cloud Print to make printing simple and easy from as many devices as possible. For now, the future looks good on paper.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Andrew Warren, Product Manager and Printing Prophet, Google &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/yIRAsJiEVW0" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3272903253087629220?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3272903253087629220?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/yIRAsJiEVW0/simpler-printing-from-more-places.html" title="Simpler printing from more places" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://4.bp.blogspot.com/-LGPS6UXCUPc/Ue11T3_1JtI/AAAAAAAAA4I/uWYnkR9UFbI/s72-c/Public+Printing.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/07/simpler-printing-from-more-places.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DkcCSXc9eCp7ImA9WhFXEEU.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-3591671661349436022</id>
+    <published>2013-07-17T13:57:00.000-04:00</published>
+    <updated>2013-07-17T14:01:08.960-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-07-17T14:01:08.960-04:00</app:edited>
+    <title>Better integration between Chrome and Google apps</title>
+    <content type="html">
+      Today’s release of Chrome for iPad and iPhone makes it easier to integrate your favorite Google apps with Chrome. After you &lt;a href="https://support.google.com/chrome/answer/2392075?hl=en"&gt;sign in to Chrome&lt;/a&gt;, you can sign in to other Google apps with a single click. In addition, if you prefer to follow directions in the Google Maps app instead of in the browser, you can easily set a preference to open these links in the Maps app instead. Try the same for YouTube, Google+, and Google Drive (with more apps coming soon).&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/-rPUnxjKvtnA/UebRnU3T72I/AAAAAAAAA34/BIyJK-sXiG0/s1600/open-in-maps.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://1.bp.blogspot.com/-rPUnxjKvtnA/UebRnU3T72I/AAAAAAAAA34/BIyJK-sXiG0/s400/open-in-maps.png" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      Over the coming days, we are also rolling out an experimental &lt;a href="https://developers.google.com/chrome/mobile/docs/data-compression"&gt;data compression service&lt;/a&gt; to help you save bandwidth, load pages faster, and browse more securely on your iPhone and iPad. Finally, this update brings fullscreen browsing to your iPad and the ability to access your browsing history from the menu.&lt;br /&gt;
+      &lt;br /&gt;
+      Try out the latest version of &lt;a href="https://itunes.apple.com/us/app/chrome/id535886823?mt=8"&gt;Chrome for iPhone and iPad&lt;/a&gt; today.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Peter Lee, Software Engineer and Ideating Integrationist&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/dnxeYlXnUik" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3591671661349436022?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3591671661349436022?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/dnxeYlXnUik/better-integration-between-chrome-and.html" title="Better integration between Chrome and Google apps" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://1.bp.blogspot.com/-rPUnxjKvtnA/UebRnU3T72I/AAAAAAAAA34/BIyJK-sXiG0/s72-c/open-in-maps.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/07/better-integration-between-chrome-and.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DU4BSHg6fCp7ImA9WhFQGUQ.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-3554332251194312081</id>
+    <published>2013-07-16T14:00:00.000-04:00</published>
+    <updated>2013-07-16T14:05:59.614-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-07-16T14:05:59.614-04:00</app:edited>
+    <title>Smarter omnibox suggestions tailored to you</title>
+    <content type="html">
+      For folks using &lt;a href="https://www.google.com/intl/en/chrome/browser/beta.html"&gt;Chrome Beta&lt;/a&gt; on Windows, Mac, or Linux, starting today you’ll notice improvements to &lt;a href="https://support.google.com/chrome/answer/95440?hl=en"&gt;omnibox&lt;/a&gt; suggestions based on the &lt;i&gt;recency&lt;/i&gt; of websites visited, so you’ll get more contextually relevant suggestions at the right time.&lt;br /&gt;
+      &lt;br /&gt;
+      In addition, if you use Chrome Beta on your Android phone or tablet, we’re releasing a new update later today to improve the way you navigate and interact with the web. You may notice pages loading faster, and the latest implementation of &lt;a href="http://www.webrtc.org/"&gt;WebRTC&lt;/a&gt; technology allows you to chat face-to-face through your browser without installing any plugins. &lt;a href="https://apprtc.appspot.com/"&gt;Try it out&lt;/a&gt; by starting a conversation with a friend.&lt;br /&gt;
+      &lt;br /&gt;
+      We look forward to hearing your feedback on today’s Beta updates.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Mark Pearson, Software Engineer and Suggestion Savant&lt;br /&gt;
+      &lt;div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/b9ISUu9imUY" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3554332251194312081?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3554332251194312081?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/b9ISUu9imUY/smarter-omnibox-suggestions-tailored-to.html" title="Smarter omnibox suggestions tailored to you" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/07/smarter-omnibox-suggestions-tailored-to.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;Ak4ARH09fCp7ImA9WhFQFEU.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-6280369450467008498</id>
+    <published>2013-07-10T16:42:00.000-04:00</published>
+    <updated>2013-07-10T16:42:25.364-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-07-10T16:42:25.364-04:00</app:edited>
+    <title>More multilingual mobile web</title>
+    <content type="html">
+      Today’s Chrome for Android stable update continues to &lt;a href="http://chrome.blogspot.com/2013/05/browse-web-across-languages-on-go.html"&gt;break down the language barrier&lt;/a&gt; as you browse the mobile web. In addition to the built-in translation bar, we’ve added improved layout support for right-to-left languages including Arabic, Farsi and Hebrew. This update also brings &lt;a href="http://chrome.blogspot.com/2013/05/browse-web-across-languages-on-go.html"&gt;fullscreen browsing&lt;/a&gt; to your tablet. &lt;br /&gt;
+      &lt;br /&gt;
+      Furthermore, we’re rolling out an &lt;a href="https://developers.google.com/chrome/mobile/docs/data-compression"&gt;experimental data compression service&lt;/a&gt; over the coming days which helps you save bandwidth, load pages faster, and browse more securely on your phone and tablet. Too good to be true, you say? Au contraire. By optimizing the pages you visit, this feature can help you save on data usage and bring you a faster, more dynamic web.&lt;br /&gt;
+      &lt;br /&gt;
+      We look forward to your feedback on the latest version of &lt;a href="https://play.google.com/store/apps/details?id=com.android.chrome"&gt;Chrome for Android&lt;/a&gt; as it rolls out in the coming days.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Dan Alcantara, Software Engineer and Professional Polyglot&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/jhTGyGE8_Ks" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/6280369450467008498?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/6280369450467008498?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/jhTGyGE8_Ks/more-multilingual-mobile-web.html" title="More multilingual mobile web" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/07/more-multilingual-mobile-web.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DEcDQ30_eCp7ImA9WhFQE0Q.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-400172129949960338</id>
+    <published>2013-07-09T12:00:00.000-04:00</published>
+    <updated>2013-07-09T14:54:32.340-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-07-09T14:54:32.340-04:00</app:edited>
+    <title>Richer notifications now available to all Chrome users</title>
+    <content type="html">
+      Starting today Chrome users on Windows will see their browser updated to include &lt;a href="http://chrome.blogspot.com/2013/05/richer-notifications-coming-to-chrome.html"&gt;richer notifications&lt;/a&gt; (Mac is coming soon). We’re excited to see what developers create and the convenience it brings to your day-to-day lives.&lt;br /&gt;
+      &lt;br /&gt;
+      &amp;nbsp;If you haven’t tried Chrome yet, &lt;a href="http://www.google.com/chrome"&gt;there’s no better time than now&lt;/a&gt;!&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Justin DeWitt, Software Engineer and Master of Messages and Meetings&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/Qqh73LzdTJ8" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/400172129949960338?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/400172129949960338?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/Qqh73LzdTJ8/richer-notifications-now-available-to.html" title="Richer notifications now available to all Chrome users" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/07/richer-notifications-now-available-to.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CEMNRXc6fyp7ImA9WhFSFU4.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-4237904108872096925</id>
+    <published>2013-06-17T15:09:00.003-04:00</published>
+    <updated>2013-06-18T01:14:54.917-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-06-18T01:14:54.917-04:00</app:edited>
+    <title>Chromebooks: coming to more stores near you</title>
+    <content type="html">
+      &lt;i style="background-color: white; color: #666666; font-family: 'Open Sans'; font-size: 13px; line-height: 20px;"&gt;&lt;span style="font-size: xx-small;"&gt;[Cross-posted from the&amp;nbsp;&lt;a href="http://googleblog.blogspot.com/2013/06/chromebooks-coming-to-more-stores-near.html" style="color: black; font-weight: bold; text-decoration: none;"&gt;Official Google Blog&lt;/a&gt;]&lt;/span&gt;&lt;/i&gt;&lt;br /&gt;
+      &lt;i style="background-color: white; color: #666666; font-family: 'Open Sans'; font-size: 13px; line-height: 20px;"&gt;&lt;span style="font-size: xx-small;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/i&gt;
+      In Northern California where I live, summer is here, which means family vacations, kids’ camps, BBQs and hopefully some relaxation. But it also means back-to-school shopping is just around the corner. So in case you’re on the hunt for a laptop in addition to pens, paper, and stylish new outfits, your search just got a whole lot easier. Chromebooks—a fast, simple, secure laptop that won't break the bank—will now be carried in over 3 times more stores than before, or more than 6,600 stores around the world.  &lt;br /&gt;
+      &lt;br /&gt;
+      In addition to Best Buy and Amazon.com, we’re excited to welcome several new retailers to the family. Starting today, Walmart will be making the newest &lt;a href="http://www.google.com/intl/en/chrome/devices/acer-c7-chromebook.html"&gt;Acer Chromebook&lt;/a&gt;, which has a 16GB Solid State Drive (SSD), available in approximately 2,800 stores across the U.S., for just $199. Look for Chromebooks coming to the laptop sections of a Walmart near you this summer.&lt;br /&gt;
+      &lt;br /&gt;
+      And beginning this weekend, Staples will bring a mix of Chromebooks from Acer, HP and Samsung to every store in the U.S.—more than 1,500 in total. You can also purchase via Staples &lt;a href="http://www.staples.com/Google-Chromebooks/cat_CL167985"&gt;online&lt;/a&gt;, while businesses can purchase through the Staples Advantage B2B program. In the coming months select Office Depot, OfficeMax, and regional chains Fry’s and TigerDirect locations will begin selling Chromebooks. &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://4.bp.blogspot.com/-YzaUYS7ZNrM/Ub9Q1rKHgPI/AAAAAAAAA1c/bNlx0SgIqVI/s1600/Walmart-logo.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="92" src="http://4.bp.blogspot.com/-YzaUYS7ZNrM/Ub9Q1rKHgPI/AAAAAAAAA1c/bNlx0SgIqVI/s320/Walmart-logo.jpeg" width="320" /&gt;&lt;/a&gt;&lt;a href="http://1.bp.blogspot.com/-53NdlVEcH2g/Ub9TuJ3ryJI/AAAAAAAAA1o/1tr3iKHYjfc/s1600/Staples-logo.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="127" src="http://1.bp.blogspot.com/-53NdlVEcH2g/Ub9TuJ3ryJI/AAAAAAAAA1o/1tr3iKHYjfc/s200/Staples-logo.png" width="200" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      In the 10 other markets worldwide where Chromebooks are sold, availability in national retailers continues to expand. In addition to Dixons in the UK, now 116 Tesco stores are selling Chromebooks, as well as all Media Markt and Saturn stores in the Netherlands, FNAC stores in France and Elgiganten stores in Sweden. In Australia, all JB Hi-Fi and Harvey Norman stores will be carrying Chromebooks for their customers as well. With our partners, we’re working hard to bring Chromebooks to even more countries later this year.&lt;br /&gt;
+      &lt;br /&gt;
+      Chromebooks make great computers for everyone in the family—and now you shouldn’t have to look very far to find one. Happy summer!&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;span class="post-author"&gt;Posted by David Shapiro, Director of Chromebook Marketing, long-time reader, first-time poster&lt;/span&gt;&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/4mlU8rp4iZQ" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/4237904108872096925?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/4237904108872096925?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/4mlU8rp4iZQ/chromebooks-coming-to-more-stores-near.html" title="Chromebooks: coming to more stores near you" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://4.bp.blogspot.com/-YzaUYS7ZNrM/Ub9Q1rKHgPI/AAAAAAAAA1c/bNlx0SgIqVI/s72-c/Walmart-logo.jpeg" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/06/chromebooks-coming-to-more-stores-near.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DEMHRHw6eyp7ImA9WhFSEEg.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-561822308998640258</id>
+    <published>2013-06-12T13:00:00.000-04:00</published>
+    <updated>2013-06-12T13:00:35.213-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-06-12T13:00:35.213-04:00</app:edited>
+    <title>Play Cube Slam face-to-face against your friends</title>
+    <content type="html">
+      &lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;
+      My friends and I used to play video games all the time, squashed together on the couch, engaged in structured intellectual discourse about exactly how badly we were going to destroy each other. Now that we live spread out around the world, it’s a bit harder to dance in each other’s faces and yell “booyah!” every time we win a game. Enter: &lt;a href="https://www.cubeslam.com/"&gt;&lt;span id="goog_970186263"&gt;&lt;/span&gt;Cube Slam&lt;span id="goog_970186264"&gt;&lt;/span&gt;&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://4.bp.blogspot.com/-MUiTCS0TzYE/UbUTAcaVdtI/AAAAAAAABEE/lsXa4T4lsSc/s1600/cube_slam_friend.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="250" src="http://4.bp.blogspot.com/-MUiTCS0TzYE/UbUTAcaVdtI/AAAAAAAABEE/lsXa4T4lsSc/s400/cube_slam_friend.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;br /&gt;
+      &lt;a href="https://www.cubeslam.com/"&gt;Cube Slam&lt;/a&gt; is a video game that you can play face-to-face against your friends. It’s a &lt;a href="http://www.chromeexperiments.com/"&gt;Chrome Experiment&lt;/a&gt; built using &lt;a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/"&gt;WebRTC&lt;/a&gt;, an open web technology that lets you video chat right in the browser without installing any plug-ins. That means you can quickly and easily play Cube Slam with your friends, no matter where they are in the world, just by sharing a link.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/8AdDbRz0SrU" width="560"&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+      &lt;br /&gt;
+      To win Cube Slam, hit the cube against your friend’s screen three times until the screen explodes. Shields, obstacles, and gravity fields change with every new level, and you can unlock power-ups including fireballs, lasers, multi-balls, mirrored controls, bulletproof shields, fog, ghost balls, time bombs, resized paddles, extra lives, and death balls––though you might want to avoid the death balls. If none of your friends are online, you can always play against Bob the Bear and see what level you can reach. If you install the &lt;a href="https://chrome.google.com/webstore/detail/cube-slam/pkcoeeddamedegogbcmdbadnoifmfipn"&gt;Cube Slam app&lt;/a&gt;, you can even play Bob when you’re offline.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://1.bp.blogspot.com/-FqazPgvbt5w/UbVvfJUWRwI/AAAAAAAABEc/0H244NWeLeU/s1600/1qEO2sLsRzCwYMYQxE8XKYaeodHha77HwDWWi.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="250" src="http://1.bp.blogspot.com/-FqazPgvbt5w/UbVvfJUWRwI/AAAAAAAABEc/0H244NWeLeU/s400/1qEO2sLsRzCwYMYQxE8XKYaeodHha77HwDWWi.png" width="400" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;br /&gt;
+      Cube Slam’s graphics are rendered in &lt;a href="http://www.chromeexperiments.com/webgl/"&gt;WebGL&lt;/a&gt; and &lt;a href="http://www.html5rocks.com/en/tutorials/3d/css/"&gt;CSS 3D&lt;/a&gt;, and its custom soundtrack is delivered dynamically through &lt;a href="http://www.html5rocks.com/en/tutorials/webaudio/intro/"&gt;Web Audio&lt;/a&gt;. WebRTC, which enables the two-person game, is available on desktop Chrome and Chrome OS, and will be available on mobile later this year. In the meantime, you can play Cube Slam against Bob the Bear on your phone or tablet. To learn more about what’s going on under the hood, see our &lt;a href="https://www.cubeslam.com/tech"&gt;technology page&lt;/a&gt; and &lt;a href="http://blog.chromium.org/2013/06/play-cube-slam-real-time-webrtc-video.html"&gt;Chromium blog post&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      Play a friend. Play a bear. &lt;a href="https://www.cubeslam.com/"&gt;Have fun&lt;/a&gt;!&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Clem Wright, Google Creative Lab, Ursine Diversion Division&lt;br /&gt;
+      &lt;div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/iH34Gm2gBfM" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/561822308998640258?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/561822308998640258?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/iH34Gm2gBfM/play-cube-slam-face-to-face-against.html" title="Play Cube Slam face-to-face against your friends" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15389307188499694369</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://4.bp.blogspot.com/-MUiTCS0TzYE/UbUTAcaVdtI/AAAAAAAABEE/lsXa4T4lsSc/s72-c/cube_slam_friend.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/06/play-cube-slam-face-to-face-against.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CEIHQX4zcCp7ImA9WhBaF0s.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-1723537599812967419</id>
+    <published>2013-05-28T13:35:00.001-04:00</published>
+    <updated>2013-05-28T13:35:30.088-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-05-28T13:35:30.088-04:00</app:edited>
+    <title>Roll across platforms and race across screens with two new Chrome Experiments</title>
+    <content type="html">
+      We spend huge chunks of our lives on our phones and tablets. And since life shouldn't be all work and no play, we've created two new &lt;a href="http://www.chromeexperiments.com/"&gt;Chrome Experiments&lt;/a&gt;—&lt;a href="http://chrome.com/campaigns/rollit"&gt;Roll It&lt;/a&gt; and &lt;a href="http://www.chrome.com/racer"&gt;Racer&lt;/a&gt;—that let you play with other people using phones, tablets, and computers running Chrome.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;a href="http://chrome.com/campaigns/rollit"&gt;Roll It&lt;/a&gt; brings a classic boardwalk game to your browser using your phone and a desktop or laptop computer. Chrome on the phone lets you aim and roll the ball with a flick of your wrist, while Chrome on the computer renders the 3D graphics of the Roll It alley.&lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;&lt;br /&gt;
+      &lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/_4RFIcuuHBE" width="560"&gt;&lt;/iframe&gt;&lt;br /&gt;
+      &lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;br /&gt;
+      &lt;/div&gt;With &lt;a href="http://www.chrome.com/racer"&gt;Racer&lt;/a&gt;, you can build slot-car-style race tracks which align across up to five mobile screens. Touch your screen, and your car speeds across all the phones and tablets, not just your own. This shows a hint of what’s possible when web experiences are designed for a multi-player (and multi-device) world.&lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;&lt;br /&gt;
+      &lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/KOCM9_qGccY" width="560"&gt;&lt;/iframe&gt;&lt;br /&gt;
+      &lt;/div&gt;&lt;div style="text-align: center;"&gt;&lt;br /&gt;
+      &lt;/div&gt;Both experiments use the latest in web technologies and keep themselves synchronized using &lt;a href="http://www.html5rocks.com/en/tutorials/websockets/basics/"&gt;WebSockets&lt;/a&gt;, which allows data to be sent between multiple devices and servers at any time. Developers interested in learning more should stay tuned to the &lt;a href="http://blog.chromium.org/"&gt;Chromium blog&lt;/a&gt; for documentation on how we made both games.&lt;br /&gt;
+      &lt;br /&gt;
+      Have fun, and experiment on!&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Iain Tait, Creative Director and Speed Demon&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/7AK1Nc376UA" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1723537599812967419?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1723537599812967419?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/7AK1Nc376UA/roll-across-platforms-and-race-across.html" title="Roll across platforms and race across screens with two new Chrome Experiments" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://img.youtube.com/vi/_4RFIcuuHBE/default.jpg" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/05/roll-across-platforms-and-race-across.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CUcDQno-eCp7ImA9WhBaE0k.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-2567974032147232186</id>
+    <published>2013-05-23T17:04:00.002-04:00</published>
+    <updated>2013-05-23T17:04:33.450-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-05-23T17:04:33.450-04:00</app:edited>
+    <title>Browse the web across languages, on the go</title>
+    <content type="html">
+      Today’s &lt;a href="https://play.google.com/store/apps/details?id=com.chrome.beta"&gt;Chrome Beta for Android&lt;/a&gt; release brings the built-in translation bar you’ve seen on desktop Chrome to help you read more of the web while you’re on the go, regardless of the language of the web page. When you come across a page written in a language that isn't in the same language as your phone or tablet, look for the translation bar. To translate the page, touch the “Translate” button. &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div align="center"&gt;&lt;a href="http://1.bp.blogspot.com/-dZuEYvz-9Rw/UZ5k3xAaC5I/AAAAAAAAA0s/pSgzqUkC1q4/s1600/Chrome-for-Android-Beta---Google-Translate.png" imageanchor="1"&gt;&lt;img border="0" src="http://1.bp.blogspot.com/-dZuEYvz-9Rw/UZ5k3xAaC5I/AAAAAAAAA0s/pSgzqUkC1q4/s320/Chrome-for-Android-Beta---Google-Translate.png" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      Following &lt;a href="http://chrome.blogspot.com/2013/05/searching-on-go-made-even-simpler.html"&gt;fullscreen support on phones&lt;/a&gt;, we are now adding fullscreen on tablets as well. As you scroll, the top toolbar disappears so you can immerse yourself in the web page content. Finally, on phones, a “+” in the toolbar now makes creating tabs even easier.&lt;br /&gt;
+      &lt;br /&gt;
+      For those of you trying out our &lt;a href="http://blog.chromium.org/2013/03/data-compression-in-chrome-beta-for.html"&gt;experimental data compression feature&lt;/a&gt;, you can see a graph (under “Settings &amp;gt; Bandwidth Management”) that shows your estimated bandwidth savings.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div align="center"&gt;&lt;a href="http://2.bp.blogspot.com/-4Y74T7FYqAM/UZ5lZPI_HaI/AAAAAAAAA00/su0Ry1LSf5w/s1600/Chrome-for-Android-Beta---Data-Savings-Chart.png" imageanchor="1" &gt;&lt;img border="0" src="http://2.bp.blogspot.com/-4Y74T7FYqAM/UZ5lZPI_HaI/AAAAAAAAA00/su0Ry1LSf5w/s320/Chrome-for-Android-Beta---Data-Savings-Chart.png" /&gt;&lt;/a&gt;&lt;br /&gt;
+      &lt;/div&gt;&lt;br /&gt;
+      The latest version of Chrome Beta for Android is available on &lt;a href="https://play.google.com/store/apps/details?id=com.chrome.beta"&gt;Google Play&lt;/a&gt;. We look forward to your early &lt;a href="https://code.google.com/p/chromium/issues/entry?template=Android%20Issue"&gt;feedback&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Miguel Garcia, Software Engineer &amp;amp; Multilingual Maestro &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/uImAduAEYBQ" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/2567974032147232186?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/2567974032147232186?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/uImAduAEYBQ/browse-web-across-languages-on-go.html" title="Browse the web across languages, on the go" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://1.bp.blogspot.com/-dZuEYvz-9Rw/UZ5k3xAaC5I/AAAAAAAAA0s/pSgzqUkC1q4/s72-c/Chrome-for-Android-Beta---Google-Translate.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/05/browse-web-across-languages-on-go.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;D0QDSXg9eSp7ImA9WhFQE0U.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-9162987231393204427</id>
+    <published>2013-05-23T13:00:00.000-04:00</published>
+    <updated>2013-07-09T11:56:18.661-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-07-09T11:56:18.661-04:00</app:edited>
+    <title>Richer notifications coming to Chrome</title>
+    <content type="html">
+      &lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;
+      When you’re surfing the web, you can get so immersed that you might not realize you’re late for a meeting or that someone messaged you in another chat window. A couple years ago, we created a way for notifications to &lt;a href="http://gmailblog.blogspot.com/2011/01/desktop-notifications-for-emails-and.html"&gt;appear outside the browser window&lt;/a&gt;. Starting in today’s &lt;a href="https://www.google.com/intl/en/chrome/browser/beta.html"&gt;Beta channel&lt;/a&gt; release, we’re enabling Chrome &lt;a href="http://developer.chrome.com/apps/about_apps.html"&gt;apps&lt;/a&gt; and &lt;a href="http://developer.chrome.com/extensions/index.html"&gt;extensions&lt;/a&gt; to show richer notifications with a revamped user interface (as well as under the hood -- developers can learn more on the &lt;a href="http://blog.chromium.org/2013/05/rich-notifications-in-chrome.html"&gt;Chromium blog&lt;/a&gt;).&lt;br /&gt;
+      &lt;br /&gt;
+      We’ve designed these notifications to be beautiful, useful and engaging. They can display formatted text and images, and can include actions directly inside the pop-up (so you can respond to that email right away).&lt;br /&gt;
+      &lt;div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://3.bp.blogspot.com/-ejfCaRzOX_U/UdwyY8OTKQI/AAAAAAAAA3A/1h5EP1rX5iU/s1600/basic-notification.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="185" src="http://3.bp.blogspot.com/-ejfCaRzOX_U/UdwyY8OTKQI/AAAAAAAAA3A/1h5EP1rX5iU/s320/basic-notification.png" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div&gt;
+      Missed a bunch of notifications while you were taking a coffee break? No problem -- you can open up the notification center to see them all in one place.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;table border="0" style="width: 100%;"&gt;&lt;tbody&gt;
+      &lt;tr&gt;&lt;td&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://4.bp.blogspot.com/-9KYAPnJ_UuY/Udwyc4lt6rI/AAAAAAAAA3I/wFONxFbi2OU/s1600/center_win.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="400" src="http://4.bp.blogspot.com/-9KYAPnJ_UuY/Udwyc4lt6rI/AAAAAAAAA3I/wFONxFbi2OU/s400/center_win.png" width="216" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;i&gt;Notification Center on Windows &amp;nbsp;&lt;/i&gt;&lt;/div&gt;
+      &lt;/td&gt;&lt;td&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://1.bp.blogspot.com/-JcaoW6JxtWg/Udwyhg44_MI/AAAAAAAAA3Q/7eH1neynNHs/s1600/center_chromeos.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="400" src="http://1.bp.blogspot.com/-JcaoW6JxtWg/Udwyhg44_MI/AAAAAAAAA3Q/7eH1neynNHs/s400/center_chromeos.png" width="220" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;i&gt;&lt;br /&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;i&gt;Notification Center on ChromeOS&lt;/i&gt;&lt;/div&gt;
+      &lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;br /&gt;
+      You can also disable notifications from any source whenever you wish, for those times when you want some peace and quiet.&lt;br /&gt;
+      &lt;div&gt;
+      &lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;span id="docs-internal-guid-7c915421-d25b-9b5a-5454-1d7ab506e5b2"&gt;&lt;img height="436px;" src="https://lh5.googleusercontent.com/nFJUTf8Euue5wnkorRXrcX5tIWr618LdCkLYzghWxE6slEkO5l5CMU-mGP6LuLRTeKehyfwTLb2qtZyuMy69z75uWo54DhE16o3uH9lbJq-O9O2syf3rdRRT" width="292px;" /&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div&gt;
+      &lt;div&gt;
+      Download &lt;a href="https://www.google.com/intl/en/chrome/browser/beta.html"&gt;Chrome Beta&lt;/a&gt; today to get a preview of these features on Windows (Mac support coming soon!).&lt;/div&gt;
+      &lt;div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div&gt;
+      Posted by Somas Thyagaraja, Product Manager and Nifty Notifier&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/YY-g_7xHp94" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/9162987231393204427?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/9162987231393204427?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/YY-g_7xHp94/richer-notifications-coming-to-chrome.html" title="Richer notifications coming to Chrome" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15389307188499694369</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://3.bp.blogspot.com/-ejfCaRzOX_U/UdwyY8OTKQI/AAAAAAAAA3A/1h5EP1rX5iU/s72-c/basic-notification.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/05/richer-notifications-coming-to-chrome.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;D0AFQ3c-eip7ImA9WhBaEkk.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-399245436807586590</id>
+    <published>2013-05-22T13:56:00.000-04:00</published>
+    <updated>2013-05-22T14:01:52.952-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-05-22T14:01:52.952-04:00</app:edited>
+    <title>Searching on the go, made even simpler</title>
+    <content type="html">
+      &lt;b&gt;Chrome for Android, improved search and fullscreen browsing&lt;/b&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      Today’s Chrome for Android stable update, now available on &lt;a href="https://play.google.com/store/apps/details?id=com.android.chrome"&gt;Google Play&lt;/a&gt;, makes searching on the go even simpler. You can now see your search queries in the &lt;a href="https://support.google.com/chrome/answer/95440?hl=en"&gt;omnibox&lt;/a&gt; instead of the long search URL, so you can easily refine them and view more results.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/-cGKjqbLou1E/UZ0EWQx1RuI/AAAAAAAAAyc/hLWaNbRTIIs/s1600/Chrome+for+Android+-+Simpler+Search.png" imageanchor="1" &gt;&lt;img border="0" src="http://1.bp.blogspot.com/-cGKjqbLou1E/UZ0EWQx1RuI/AAAAAAAAAyc/hLWaNbRTIIs/s320/Chrome+for+Android+-+Simpler+Search.png"/&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      To make browsing the mobile web even easier, web pages also display in fullscreen on phones. As you scroll, the top toolbar disappears so you can immerse yourself in the web page content. When you scroll up, the toolbar returns so you can get on to the next thing.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Chrome for iPhone and iPad, with voice search (coming soon)&lt;/b&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      Over the coming days, we’re rolling out an update for iPhone and iPad as well. You can now speak your searches into the omnibox. Touch the microphone, say your search query aloud and see your results (in some cases spoken back to you), all without typing a single letter. Try these queries with the update (coming soon to the &lt;a href="https://itunes.apple.com/us/app/chrome/id535886823?mt=8"&gt;App Store&lt;/a&gt;):&lt;br /&gt;
+      &lt;ul&gt;&lt;li&gt;“How many miles from San Antonio to Dallas?”&lt;/li&gt;
+      &lt;li&gt;“What’s the weather in Rome?” &lt;/li&gt;
+      &lt;li&gt;“Who stars in &lt;i&gt;The Internship&lt;/i&gt;?”&lt;/li&gt;
+      &lt;/ul&gt;&lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;&lt;a href="http://1.bp.blogspot.com/-5uw_azH2bwY/UZ0EwTN8dDI/AAAAAAAAAyk/zUSPwWBP-Xw/s1600/Chrome+for+iOS+-+Voice-Search.png" imageanchor="1" &gt;&lt;img align="middle" border="0" src="http://1.bp.blogspot.com/-5uw_azH2bwY/UZ0EwTN8dDI/AAAAAAAAAyk/zUSPwWBP-Xw/s320/Chrome+for+iOS+-+Voice-Search.png" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      This update also enables faster reloading of web pages by using the cache more efficiently when the network is slow, which is especially useful when you’re on the go. Finally, other iOS apps can now give you the option to open links in Chrome and then return to the app with just one tap.&lt;br /&gt;
+      &lt;br /&gt;
+      We look forward to your feedback on the latest versions of Chrome for Android and iOS.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Yusuf Ozuysal and Milan Broum, Minimalist &amp; Vocal Software Engineers&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/skC0uMfS6ec" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/399245436807586590?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/399245436807586590?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/skC0uMfS6ec/searching-on-go-made-even-simpler.html" title="Searching on the go, made even simpler" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://1.bp.blogspot.com/-cGKjqbLou1E/UZ0EWQx1RuI/AAAAAAAAAyc/hLWaNbRTIIs/s72-c/Chrome+for+Android+-+Simpler+Search.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/05/searching-on-go-made-even-simpler.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CU8DQHs8eyp7ImA9WhBaEUg.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-3225669708793009943</id>
+    <published>2013-05-21T12:31:00.000-04:00</published>
+    <updated>2013-05-21T12:31:11.573-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-05-21T12:31:11.573-04:00</app:edited>
+    <title>Every second counts</title>
+    <content type="html">
+      &lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;
+      Last month’s Chrome Beta &lt;a href="http://chrome.blogspot.com/2013/04/faster-and-faster.html"&gt;release&lt;/a&gt; contained optimizations so that &lt;a href="http://blog.chromium.org/2013/04/chrome-27-beta-speedier-web-and-new.html"&gt;web pages load 5% faster&lt;/a&gt; on average. We’ve included those optimizations in today’s &lt;a href="http://www.google.com/chrome"&gt;Chrome Stable&lt;/a&gt; release so all users will enjoy a faster browsing experience.&lt;br /&gt;
+      &lt;br /&gt;
+      A 5% improvement may not seem like much by itself, but our estimates show that when you add up those saved seconds across all Chrome users, it totals to more than 510 years of people’s time saved every week.&lt;br /&gt;
+      &lt;br /&gt;
+      Want to make that number even bigger? &lt;a href="http://www.google.com/chrome"&gt;Download Chrome&lt;/a&gt; today.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by James Simonsen, Software Engineer and Saver of Split Seconds&lt;/div&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/UIh_jVj_6Yk" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3225669708793009943?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3225669708793009943?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/UIh_jVj_6Yk/every-second-counts.html" title="Every second counts" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15389307188499694369</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/05/every-second-counts.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DkcMRnc6eip7ImA9WhBbFkk.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-5987350461086518586</id>
+    <published>2013-05-15T14:53:00.000-04:00</published>
+    <updated>2013-05-15T14:54:47.912-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-05-15T14:54:47.912-04:00</app:edited>
+    <title>Live from Google I/O: Mo’ screens, mo’ goodness</title>
+    <content type="html">
+      &lt;i&gt;&lt;span style="font-size: x-small;"&gt;[Cross-posted from the &lt;a href="http://googleblog.blogspot.com/2013/05/live-from-google-io-mo-screens-mo.html"&gt;Official Google Blog&lt;/a&gt;]&lt;/span&gt;&lt;/i&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      This morning, we kicked off the 6th annual &lt;a href="http://developers.google.com/io"&gt;Google I/O&lt;/a&gt; developer conference with over 6,000 developers at Moscone Center in San Francisco, 460 &lt;a href="https://developers.google.com/events/io/io-extended"&gt;I/O Extended sites&lt;/a&gt; in 90 countries, and millions of you around the world who tuned in via our &lt;a href="http://developers.google.com/io"&gt;livestream&lt;/a&gt;. Over the next three days, we’ll be hosting technical sessions, hands-on code labs, and demonstrations of Google's products and partners' technology.&lt;br /&gt;
+      &lt;br /&gt;
+      We believe computing is going through one of the most exciting moments in its history: people are increasingly adopting phones, tablets and newer type of devices. And this spread of technology has the potential to make a positive impact in the lives of people around the world—whether it's simply helping you in your daily commute, or connecting you to information that was previously inaccessible.&lt;br /&gt;
+      &lt;br /&gt;
+      This is why we focus so much on our two open platforms: Android and Chrome. They enable developers to innovate and reach as many people as possible with their apps and services across multiple devices. Android started as a simple idea to advance open standards on mobile; today it is the world’s leading mobile platform and growing rapidly. Similarly, Chrome launched less than five years ago from an open source project; today it’s the world’s most popular browser. &lt;br /&gt;
+      &lt;br /&gt;
+      In line with that vision, we made several announcements today designed to give developers even more tools to build great apps on Android and Chrome. We also shared new innovations from across Google meant to help make life just a little easier for you, including improvements in search, communications, photos, and maps. &lt;br /&gt;
+      &lt;br /&gt;
+      Here’s a quick look at some of the announcements we made at I/O:&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;b&gt;&lt;a href="http://officialandroid.blogspot.com/2013/05/androidio-just-press-play.html"&gt;Android &amp;amp; Google Play&lt;/a&gt;:&lt;/b&gt; In addition to new developer tools, we unveiled Google Play All Access, a monthly music subscription service with access to millions of songs that joins our music store and locker; and the Google Play game services with real-time multiplayer and leaderboards. Also, coming next month to Google Play is a special Samsung Galaxy S4, which brings together cutting edge hardware from Samsung with Google’s latest software and services—including the user experience that ships with our popular Nexus devices.&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;&lt;a href="https://plus.google.com/+chrome/posts"&gt;Chrome&lt;/a&gt;:&lt;/b&gt; With over 750 million active users on Chrome, we’re now focused on bringing to mobile the speed, simplicity and security improvements that we’ve seen on the desktop. To that end, today we previewed next-generation video codec &lt;a href="http://blog.webmproject.org/2013/05/vp9-codec-nears-completion.html"&gt;VP9&lt;/a&gt; for faster video-streaming performance; the &lt;a href="http://www.chromium.org/developers/using-requestautocomplete"&gt;requestAutocomplete API&lt;/a&gt; for faster payments; and Chrome Experiments such as "&lt;a href="http://www.thehobbit.com/middle-earth"&gt;A Journey Through Middle Earth&lt;/a&gt;" and &lt;a href="http://g.co/racer"&gt;Racer&lt;/a&gt; to demonstrate the ability to create immersive mobile experiences not possible in years past.&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;&lt;a href="http://googleplusproject.blogspot.com/2013/05/new-google-stream-hangouts-and-photos.html"&gt;Google+&lt;/a&gt;: &lt;/b&gt;We unveiled the newly designed Google+, which helps you easily explore content as well dramatically improve your online photo experience to give you crisp, beautiful photos—without the work! We also upgraded Google+ Hangouts—our popular group video application—to help bring all of your real-life conversations online, across any device or platform, and with groups of up to 10 friends.&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;&lt;a href="http://insidesearch.blogspot.com/2013/05/a-multi-screen-and-conversational.html"&gt;Search&lt;/a&gt;:&lt;/b&gt; Search has evolved considerably in recent years: it can now have a real conversation with you, and even make your day a bit smoother by predicting information you might need. Today we added the ability to set reminders by voice and we previewed “spoken answers” on laptops and desktops in Chrome—meaning you can ask Google a question and it will speak the answer back to you.&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;&lt;a href="http://google-latlong.blogspot.com/2013/05/meet-new-google-maps-map-for-every.html"&gt;Maps&lt;/a&gt;:&lt;/b&gt; Today we previewed the next generation of Google Maps, which gets rid of any clutter in order to put your individual experience and exploration front and center. Each time you click or search, our technology draws you a tailored map that highlights the information you need. From design to directions, the new Google Maps is smarter and more useful.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      Technology can have a profound, positive impact on the daily lives of billions of people. But we can’t do this alone—developers play a crucial role. I/O is our chance to come together and thank you for everything you do.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;span class="byline-author"&gt;Posted by Sundar Pichai, SVP, Android, Chrome &amp;amp; Apps&lt;/span&gt;&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/8QrD0xrkryE" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/5987350461086518586?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/5987350461086518586?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/8QrD0xrkryE/live-from-google-io-mo-screens-mo.html" title="Live from Google I/O: Mo’ screens, mo’ goodness" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/05/live-from-google-io-mo-screens-mo.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DkMHQHY7fip7ImA9WhBUFUw.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-7039070562410023932</id>
+    <published>2013-05-02T13:00:00.000-04:00</published>
+    <updated>2013-05-02T13:07:11.806-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-05-02T13:07:11.806-04:00</app:edited>
+    <title>Access Google Keep with the new Chrome app</title>
+    <content type="html">
+      &lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;
+      &lt;span style="font-size: x-small;"&gt;&lt;i&gt;[Cross-posted from the &lt;a href="http://googledrive.blogspot.com/2013/05/access-google-keep-with-new-chrome-app.html" style="font-weight: bold;"&gt;Google Drive Blog&lt;/a&gt;]&lt;/i&gt;&lt;/span&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      Last month, Google Keep &lt;a href="http://googledrive.blogspot.com/2013/03/google-keepsave-whats-on-your-mind.html" target="_blank"&gt;launched&lt;/a&gt; to help you quickly jot down ideas and keep track of things while on the go with your &lt;a href="https://play.google.com/store/apps/details?id=com.google.android.keep&amp;amp;hl=en" target="_blank"&gt;Android&lt;/a&gt; device or &lt;a href="http://drive.google.com/keep" target="_blank"&gt;on the web&lt;/a&gt;. Today, with the launch of a new &lt;a href="https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki" target="_blank"&gt;Chrome app&lt;/a&gt;, Google Keep is even easier to access on your computer using Chrome.&lt;br /&gt;
+      &lt;br /&gt;
+      The Google Keep Chrome app launches in its own window, so you can create notes, cross out your to-do lists, and attach photos to tasks while you work on other things. And if you don’t have an internet connection, don’t fret: the Chrome app works offline because we all know that ideas (big and small) can be sparked at any time.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://1.bp.blogspot.com/-zeEDKy65DEA/UYExn-F8bNI/AAAAAAAABMI/kA6tG8xbsEQ/s1600/Keep+screenshot+1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="400" src="http://1.bp.blogspot.com/-zeEDKy65DEA/UYExn-F8bNI/AAAAAAAABMI/kA6tG8xbsEQ/s400/Keep+screenshot+1.png" width="313" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      You can visit the &lt;a href="https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki" target="_blank"&gt;Chrome Web Store&lt;/a&gt; to add the app today (use the link, you won’t find it in search)! &lt;br /&gt;
+      &lt;br /&gt;
+      Happy note taking!&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Eddy Mead, Software Engineer and Talented Task Tracker&lt;/div&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/SYqhgtd4Iuo" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/7039070562410023932?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/7039070562410023932?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/SYqhgtd4Iuo/access-google-keep-with-new-chrome-app.html" title="Access Google Keep with the new Chrome app" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15389307188499694369</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://1.bp.blogspot.com/-zeEDKy65DEA/UYExn-F8bNI/AAAAAAAABMI/kA6tG8xbsEQ/s72-c/Keep+screenshot+1.png" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/05/access-google-keep-with-new-chrome-app.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CE8ERHw-cSp7ImA9WhBVGUw.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-8800870397901982266</id>
+    <published>2013-04-25T14:00:00.000-04:00</published>
+    <updated>2013-04-25T14:00:05.259-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-04-25T14:00:05.259-04:00</app:edited>
+    <title>A speedy, more secure way to view Microsoft Office files directly in Chrome</title>
+    <content type="html">
+      &lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;
+      If you use a &lt;a href="http://www.google.com/intl/en/chrome/devices/"&gt;Chromebook&lt;/a&gt;, you’ve already been enjoying the ability to open Microsoft Word, Excel, and PowerPoint files directly in your browser. Starting today, we’re excited to bring this same functionality to Chrome on Windows and Mac.&lt;br /&gt;
+      &lt;br /&gt;
+      If you’re running &lt;a href="https://www.google.com/intl/en/chrome/browser/beta.html"&gt;Chrome Beta&lt;/a&gt; on Windows or Mac and install the &lt;a href="https://chrome.google.com/webstore/detail/chrome-office-viewer-beta/gbkeegbaiigmenfmjfclcdgdpimamgkj?hl=en"&gt;Chrome Office Viewer (Beta)&lt;/a&gt; extension, you’ll be able to click a link to an Office file and open it directly in Chrome.&lt;br /&gt;
+      &lt;br /&gt;
+      In addition to saving you time, the Chrome Office Viewer also protects you from &lt;a href="http://www.20thingsilearned.com/en-US/malware"&gt;malware&lt;/a&gt; delivered via Office files. Just like with web pages and PDFs, we’ve added a specialized &lt;a href="https://www.google.com/intl/en/chrome/browser/features.html#security"&gt;sandbox&lt;/a&gt; to impede attackers who use compromised Office files to try to steal private information or monitor your activities.&lt;br /&gt;
+      &lt;br /&gt;
+      To give it a try on Windows or Mac:&lt;br /&gt;
+      &lt;ul style="text-align: left;"&gt;
+      &lt;li&gt;Get &lt;a href="https://www.google.com/intl/en/chrome/browser/beta.html"&gt;Chrome Beta&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Install the &lt;a href="https://chrome.google.com/webstore/detail/chrome-office-viewer-beta/gbkeegbaiigmenfmjfclcdgdpimamgkj?hl=en"&gt;Chrome Office Viewer (Beta)&lt;/a&gt; extension&lt;/li&gt;
+      &lt;li&gt;Start clicking your favorite &lt;a href="http://chrome-office-viewer.appspot.com/doc/TPSreport.doc"&gt;Word docs&lt;/a&gt;, &lt;a href="http://chrome-office-viewer.appspot.com/sheet/LemonadeStand.xlsx"&gt;Excel spreadsheets&lt;/a&gt;, and &lt;a href="http://chrome-office-viewer.appspot.com/pres/OrganicChemistry.pptx"&gt;PowerPoint slides&lt;/a&gt; on the web&lt;/li&gt;
+      &lt;/ul&gt;
+      Since this extension is still in beta, we’d love to get your feedback. When you find issues, please click the “Report an issue” button while viewing the file to report a bug.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Jelte Liebrand, Software Engineer and Document Dynamo&lt;br /&gt;
+      &lt;div&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/BKEPxRovcTQ" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/8800870397901982266?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/8800870397901982266?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/BKEPxRovcTQ/a-speedy-more-secure-way-to-view.html" title="A speedy, more secure way to view Microsoft Office files directly in Chrome" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15389307188499694369</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/04/a-speedy-more-secure-way-to-view.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DUIER308eip7ImA9WhBVEU4.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-2227832611244679619</id>
+    <published>2013-04-16T12:48:00.001-04:00</published>
+    <updated>2013-04-16T14:38:26.372-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-04-16T14:38:26.372-04:00</app:edited>
+    <title>More improvements for Chrome at the office</title>
+    <content type="html">
+      You probably use a browser throughout the day to access useful information, stay connected with people, and run &lt;a href="http://www.20thingsilearned.com/en-US/web-apps"&gt;web apps&lt;/a&gt; -- at work, at home and on the go. However, browser choice at the office may be determined by your company’s IT team. Today we’re making it easier for companies everywhere to choose &lt;a href="https://www.google.com/chrome/work/?utm_source=0413chromeblog&amp;amp;utm_medium=blog"&gt;Chrome for Business&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      First of all, your IT administrator can now configure Chrome to automatically launch an alternate browser when you’re running a web app built for older browsers. If you want to use Chrome at work but rely on some older apps, you can now switch seamlessly between two browsers.  &lt;br /&gt;
+      &lt;br /&gt;
+      Secondly, if your company runs &lt;a href="http://www.google.com/a/"&gt;Google Apps for Business&lt;/a&gt; or &lt;a href="http://www.google.com/enterprise/apps/education/"&gt;Education&lt;/a&gt;, your administrator can easily set up default apps, browser themes, bookmarks, and more than 100 other settings to sync across all employees’ computers. On your personal laptop at home but need to find that company-wide &lt;a href="http://en.wikipedia.org/wiki/TPS_report"&gt;TPS report cover sheet&lt;/a&gt;? No problem -- just sign in to Chrome with your work account.&lt;br /&gt;
+      &lt;br /&gt;
+      If you want to enjoy the &lt;a href="https://www.google.com/chrome/business/browser/user/?utm_source=0413chromeblog&amp;amp;utm_medium=blog"&gt;security, speed, and productivity&lt;/a&gt; of Chrome at the office, invite your IT team to learn more about these improvements on the &lt;a href="http://googleenterprise.blogspot.com/2013/04/new-chrome-features-bring-modern-web-to.html"&gt;Google Enterprise blog&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Cyrus Mistry, Product Manager and Business Buff&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/styq7OdQpTo" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/2227832611244679619?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/2227832611244679619?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/styq7OdQpTo/more-improvements-for-chrome-at-office.html" title="More improvements for Chrome at the office" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/04/more-improvements-for-chrome-at-office.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CkEARnY5fyp7ImA9WhBWFk8.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-3900648240517575608</id>
+    <published>2013-04-10T15:04:00.000-04:00</published>
+    <updated>2013-04-10T15:04:07.827-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-04-10T15:04:07.827-04:00</app:edited>
+    <title>More immersive mobile web</title>
+    <content type="html">
+      &lt;b&gt;More content, less chrome - on mobile too&lt;/b&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      Today’s update to Chrome Beta for Android and Chrome for iPhone and iPad brings you more web and less chrome. We’ve heard your feedback, and now web pages can display in fullscreen on phones, which is especially handy on smaller screens. As you scroll down a web page and immerse yourself in the content, the top toolbar disappears. When you scroll up, the toolbar returns so you can get on to the next thing.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Chrome for iPhone and iPad, hassle-free printing&lt;/b&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      Ever wished you could print that boarding pass or offer from your phone? You can now print from Chrome to printers enabled with Google Cloud Print or AirPrint, as well as save a page to Google Cloud Print.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;b&gt;Chrome Beta for Android, simpler and more efficient browsing&lt;/b&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      As another step towards simpler browsing, you can now see your search terms in the &lt;a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;amp;answer=95440"&gt;omnibox&lt;/a&gt;, instead of the long search URL and the in-page Google search box. This frees up room to view more search results and makes it easier to change your search terms.&lt;br /&gt;
+      &lt;br /&gt;
+      You can also now see your data savings from the &lt;a href="http://blog.chromium.org/2013/03/data-compression-in-chrome-beta-for.html"&gt;experimental data compression feature&lt;/a&gt; we introduced in our last Beta update. From this release onwards, go to “Bandwidth Management” in Settings and enable “Reduce Data Usage,” and you’re all set.&lt;br /&gt;
+      &lt;br /&gt;
+      We’re also continuing to add plenty of under-the-hood stability, security improvements and bug fixes to Chrome for both Android and iOS. We look forward to your feedback on the latest versions of Chrome, now available in the &lt;a href="https://itunes.apple.com/us/app/chrome/id535886823?mt=8"&gt;App Store&lt;/a&gt; and on &lt;a href="https://play.google.com/store/apps/details?id=com.chrome.beta"&gt;Google Play&lt;/a&gt; (use the link, you won't find it in search)! &lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Ted Choc and Eric Noyau, Particularly Panoramic Programmers&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/4Gl_5YvhOzk" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3900648240517575608?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/3900648240517575608?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/4Gl_5YvhOzk/more-immersive-mobile-web.html" title="More immersive mobile web" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/04/more-immersive-mobile-web.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;Ck4MRXg6fSp7ImA9WhBWFkw.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-1215191950647360718</id>
+    <published>2013-04-10T12:15:00.000-04:00</published>
+    <updated>2013-04-10T12:23:04.615-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-04-10T12:23:04.615-04:00</app:edited>
+    <title>For Malaysia: Bringing Google Apps and Chromebooks to the classroom</title>
+    <content type="html">
+      &lt;i&gt;&lt;span style="font-size: x-small;"&gt;[cross-posted from the &lt;a href="http://googleblog.blogspot.com/2013/04/for-malaysia-bringing-google-apps-and.html"&gt;Official Google Blog&lt;/a&gt;]&lt;/span&gt;&lt;/i&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      As a parent of three kids, I have the same aspirations as many other parents and educators—to provide them with the best opportunities to learn and discover their passions. For many students, the web has become an incredible resource for the classroom, offering tools to work collaboratively, share and research. School systems of all sizes—from a single primary school to an entire country such as the &lt;a href="http://googleenterprise.blogspot.com/2012/09/islands-in-cloud-philippines-department.html"&gt;Philippines&lt;/a&gt;—have “Gone Google” in their schools and embraced the web to transform education.&lt;br /&gt;
+      &lt;br /&gt;
+      Today the country of Malaysia is going a step further by adopting &lt;a href="http://www.google.com/enterprise/apps/education/"&gt;Google Apps&lt;/a&gt; for 10 million students, teachers and parents. As part of this initiative they are also deploying Chromebooks to primary and secondary schools nationwide. These efforts to integrate the web are a central part of a &lt;a href="http://www.moe.gov.my/userfiles/file/PPP/Preliminary-Blueprint-Eng.pdf"&gt;national plan&lt;/a&gt; (PDF) to reform its educational system.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div class="separator" style="clear: both; text-align: center;"&gt;
+      &lt;a href="http://3.bp.blogspot.com/-uZIdxWByHlo/UWWI-lPQR5I/AAAAAAAAAxE/UpCPQcBvKtY/s1600/bestari.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="180" src="http://3.bp.blogspot.com/-uZIdxWByHlo/UWWI-lPQR5I/AAAAAAAAAxE/UpCPQcBvKtY/s320/bestari.jpg" width="320" /&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;i&gt;&lt;span style="font-size: x-small;"&gt;Primary students collaborate on a project together in SK Sri Petaling school in Malaysia&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;br /&gt;
+      To deploy technology across a nationwide school system, computers need to be simple, manageable and secure. Chromebooks are ideal for learning and sharing in the classroom—there’s nothing complicated to learn, they boot up in seconds and have virus protection built in. They also offer &lt;a href="http://googleenterprise.blogspot.com/2012/05/next-step-in-chrome-os-journey-for.html"&gt;easy setup and deployment&lt;/a&gt;, which means they’re ready to go the moment a student opens the lid and logs in. And with reduced overhead costs, Chromebooks are a cost-efficient option* to deploy technology at scale.&lt;br /&gt;
+      &lt;br /&gt;
+      To date, more than 3,000 schools worldwide, from Edina, Minnesota to Point England, New Zealand, have deployed Chromebooks to &lt;a href="http://www.google.com/intl/en/chrome/education/devices/casestudies.html#casestudy-councilbluffs"&gt;improve attendance and graduation rates&lt;/a&gt;, &lt;a href="http://www.google.com/intl/en/chrome/education/devices/casestudies.html#casestudy-fonddulac"&gt;make learning more fun&lt;/a&gt; and &lt;a href="http://www.google.com/intl/en/chrome/education/devices/casestudies.html#casestudy-hartford"&gt;enable students to take more ownership for their learning&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      The web gives our children and students new opportunities to access the world’s information and work collaboratively. We look forward to working with &lt;a href="http://www.google.com/intl/en/chrome/education/devices/large-deployments.html"&gt;national and regional&lt;/a&gt; leaders to make the most of the web with Google Apps and Chromebooks and help them provide the best opportunities to every student.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;span class="post-author"&gt;Posted by Felix Lin, Director of Product Management&lt;/span&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;i&gt;&lt;span style="font-size: x-small;"&gt;*In research sponsored by Google, research firm IDC found that Chromebooks yield three-year cost of ownership savings of $1,135 per device compared to traditional PCs or tablets, require 69% fewer hours to deploy and 92% fewer hours to manage. &lt;a href="http://www.google.com/intl/en/chrome/assets/education/pdf/IDC-WP-Quantifying.the.Economic.Value.of.Chromebooks.for.K-12.Education-042013.pdf"&gt;Learn more&lt;/a&gt;.&lt;/span&gt;&lt;/i&gt;&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/yJ1hNE2VlrM" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1215191950647360718?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1215191950647360718?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/yJ1hNE2VlrM/for-malaysia-bringing-google-apps-and.html" title="For Malaysia: Bringing Google Apps and Chromebooks to the classroom" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://3.bp.blogspot.com/-uZIdxWByHlo/UWWI-lPQR5I/AAAAAAAAAxE/UpCPQcBvKtY/s72-c/bestari.jpg" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/04/for-malaysia-bringing-google-apps-and.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;DEAHR3g5eCp7ImA9WhBWEEQ.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-9032587064171981770</id>
+    <published>2013-04-04T13:32:00.001-04:00</published>
+    <updated>2013-04-04T13:32:16.620-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-04-04T13:32:16.620-04:00</app:edited>
+    <title>Faster and faster</title>
+    <content type="html">
+      In today’s &lt;a href="https://www.google.com/intl/en/chrome/browser/beta.html"&gt;Chrome Beta&lt;/a&gt; release, web pages now load &lt;a href="http://blog.chromium.org/2013/04/chrome-27-beta-speedier-web-and-new.html"&gt;5% faster&lt;/a&gt;. Huzzah!&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by James Simonsen, Software Engineer and Pithy Poster&lt;br /&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/oo_Q86D-gdo" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/9032587064171981770?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/9032587064171981770?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/oo_Q86D-gdo/faster-and-faster.html" title="Faster and faster" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/04/faster-and-faster.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;Ak8NQXY9fip7ImA9WhBWEEw.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-1379983655477186485</id>
+    <published>2013-04-03T15:54:00.000-04:00</published>
+    <updated>2013-04-03T15:54:50.866-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-04-03T15:54:50.866-04:00</app:edited>
+    <title>Fill out forms faster, from anywhere</title>
+    <content type="html">
+      For those of you who can never seem to remember that one password, or dread typing your full mailing address into those small form fields on your phone and tablet, today’s Chrome for Android stable update is for you. You can now &lt;a href="http://chrome.blogspot.com/2013/03/type-less-when-youre-on-go.html"&gt;access&lt;/a&gt; your saved passwords and autofill entries on your phone and tablet when you’ve signed in to Chrome, just like you have been able to do on your desktop and laptop computers.&lt;br /&gt;
+      &lt;br /&gt;
+      To try it out, make sure you’re &lt;a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=185277"&gt;signed in&lt;/a&gt; to Chrome on both your desktop and mobile device, and let sync take care of the rest.  In case you don’t see this right away after upgrading, give it a few days as we complete rolling out the feature to all of you on the &lt;a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95414"&gt;latest version&lt;/a&gt; of Chrome. &lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Chris Hopman, Eidetic Engineer&lt;br /&gt;
+      &lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/iUOvk_RYkig" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1379983655477186485?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1379983655477186485?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/iUOvk_RYkig/fill-out-forms-faster-from-anywhere.html" title="Fill out forms faster, from anywhere" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/04/fill-out-forms-faster-from-anywhere.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CEIHSXw5fip7ImA9WhBXE04.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-8979937892038516605</id>
+    <published>2013-03-26T13:01:00.000-04:00</published>
+    <updated>2013-03-26T17:15:38.226-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-03-26T17:15:38.226-04:00</app:edited>
+    <title>Oodles of improvements to Chrome’s spell checking</title>
+    <content type="html">
+      Another stable release of &lt;a href="http://www.google.com/chrome"&gt;Chrome&lt;/a&gt; arrives today, bringing you &lt;a href="http://chrome.blogspot.com/2013/02/bettar-spell-chek-in-chrome.html"&gt;improved spell checking&lt;/a&gt; in the browser. We’ve refreshed the dictionaries for all languages, and users who speak Korean, Tamil, or Albanian will appreciate that we’ve added support for those languages, too. In addition, users who add custom words to the dictionary can now &lt;a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;amp;answer=185277"&gt;sync their settings&lt;/a&gt; to bring those changes to all the devices where they use Chrome.&lt;br /&gt;
+      &lt;br /&gt;
+      The “&lt;a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;amp;answer=95604"&gt;Ask Google for suggestions&lt;/a&gt;” spell checking feature, powered by the same technologies used by Google search, now supports grammar checking, proper nouns, homonyms, and context-sensitive spell checking in English. This means that you can now enjoy corrections like the following:&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;&lt;a href="http://4.bp.blogspot.com/-rMrIW-u4keY/UVIOtKZk2hI/AAAAAAAAAwk/YhoYal6XSw8/s1600/Picture+1.jpg" imageanchor="1"&gt;&lt;img border="0" height="125" src="http://4.bp.blogspot.com/-rMrIW-u4keY/UVIOtKZk2hI/AAAAAAAAAwk/YhoYal6XSw8/s640/Picture+1.jpg" width="580" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-NgsPRAgiDBg/UVIOxPf9UhI/AAAAAAAAAws/5-a-zW-c6Gc/s1600/Picture+2.png" imageanchor="1"&gt;&lt;img border="0" height="117" src="http://3.bp.blogspot.com/-NgsPRAgiDBg/UVIOxPf9UhI/AAAAAAAAAws/5-a-zW-c6Gc/s640/Picture+2.png" width="580" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;
+      Users on Windows, Linux and Chrome OS will receive these enhancements in the coming weeks (we’re still working on Mac support).&lt;br /&gt;
+      &lt;br /&gt;
+      If you haven’t used Chrome yet, &lt;a href="http://www.google.com/chrome"&gt;give it a try&lt;/a&gt; today.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Rachel Petterson, Software Engineer and Miss Spelling&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/FUy_STutGvk" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/8979937892038516605?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/8979937892038516605?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/FUy_STutGvk/oodles-of-improvements-to-chromes-spell.html" title="Oodles of improvements to Chrome’s spell checking" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://4.bp.blogspot.com/-rMrIW-u4keY/UVIOtKZk2hI/AAAAAAAAAwk/YhoYal6XSw8/s72-c/Picture+1.jpg" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/03/oodles-of-improvements-to-chromes-spell.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;AkADQXw9eip7ImA9WhBQGUs.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-1902543772215780681</id>
+    <published>2013-03-22T12:12:00.001-04:00</published>
+    <updated>2013-03-22T12:12:50.262-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-03-22T12:12:50.262-04:00</app:edited>
+    <title>Painting the streets with the web in Indonesia</title>
+    <content type="html">
+      People around the world are using the web as a platform to both showcase and create amazing local culture. In the last six months, Chrome has played host to some of Indonesia’s finest up-and-coming artistic talent with the &lt;a href="https://www.openspaces.co.id/"&gt;Chrome Open Spaces&lt;/a&gt; project.&lt;br /&gt;
+      &lt;br /&gt;
+      From old masters like &lt;a href="https://www.google.com/search?q=Basuki_Abdullah&amp;amp;hl=en&amp;amp;tbm=isch&amp;amp;tbo=u&amp;amp;source=univ&amp;amp;sa=X&amp;amp;ei=SapJUc7OINCZiAfYz4G4CQ&amp;amp;ved=0CEIQsAQ&amp;amp;biw=1284&amp;amp;bih=768"&gt;Basuki&lt;/a&gt; to contemporary street artists like &lt;a href="http://thedarbotz.com/"&gt;Darbotz&lt;/a&gt;, Indonesia has a long and rich history of art. The rapidly growing population and economy has led to densified urban spaces, &lt;a href="https://www.google.com/search?q=wayang+paintings&amp;amp;hl=en&amp;amp;rlz=1C5CHFA_enSG504SG504&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ei=FbxGUavHOciHrAfmkYCYAg&amp;amp;ved=0CAoQ_AUoAQ&amp;amp;biw=1177&amp;amp;bih=579#hl=en&amp;amp;rlz=1C5CHFA_enSG504SG504&amp;amp;tbm=isch&amp;amp;sa=1&amp;amp;q=indonesian+traffic&amp;amp;oq=indonesian+traffic&amp;amp;gs_l=img.3..0i24l2.185893.188133.4.188345.18.12.0.6.6.0.125.1117.9j3.12.0...0.0...1c.1.6.img.zOfsbI0cuvA&amp;amp;bav=on.2,or.r_cp.r_qf.&amp;amp;bvm=bv.43828540,d.bmk&amp;amp;fp=3317e2cd893d0b36&amp;amp;biw=1177&amp;amp;bih=609"&gt;crazy traffic&lt;/a&gt; and the rise of &lt;a href="https://www.google.com/search?q=basuki+abdullah&amp;amp;hl=en&amp;amp;client=safari&amp;amp;rls=en&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ei=zSNJUaW5I8nJrAfXpoCwAg&amp;amp;ved=0CAcQ_AUoAQ&amp;amp;biw=1440&amp;amp;bih=722#hl=en&amp;amp;client=safari&amp;amp;rls=en&amp;amp;tbm=isch&amp;amp;sa=1&amp;amp;q=Indonesian+street+art&amp;amp;oq=Indonesian+street+art&amp;amp;gs_l=img.3..0i24l3.57099.61419.0.61650.26.20.2.4.4.2.461.2282.13j4j1j1j1.20.0...0.0...1c.1.7.img.1hD97Z4jmhM&amp;amp;bav=on.2,or.r_cp.r_qf.&amp;amp;bvm=bv.44011176,d.bmk&amp;amp;fp=e6982345d21d3f93&amp;amp;biw=1440&amp;amp;bih=722"&gt;Indonesian street art&lt;/a&gt;. The Chrome Open Spaces project used the web to bring all these elements together.&lt;br /&gt;
+      &lt;br /&gt;
+      Designed to showcase the creativity possible with modern web technologies, Chrome Open Spaces called on aspiring artists from across the archipelago to submit drawings via a &lt;a href="https://www.openspaces.co.id/creations/new"&gt;custom-designed app&lt;/a&gt;. The app enabled people to create ‘street art’ online using digital spray paints, brushes and stencils. Over &lt;a href="https://www.openspaces.co.id/gallery"&gt;12,000 drawings were submitted&lt;/a&gt; and 11,000 votes were cast. From these virtual paintings, nine winners were chosen to have their creations showcased on buildings and walls across Jakarta and Bandung. &lt;br /&gt;
+      &lt;br /&gt;
+      You can check out how their digital creations came to life on the streets and meet the local artists here: &lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/r9htKp0D-1s" width="560"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      We built Chrome &lt;a href="http://googleblog.blogspot.tw/2008/09/fresh-take-on-browser.html"&gt;to help drive innovation on the web&lt;/a&gt;. Projects like &lt;a href="https://www.openspaces.co.id/"&gt;Chrome Open Spaces&lt;/a&gt; highlight how technologies that Chrome pioneered, such as HTML5, can be used to showcase local culture and innovation, and also take you to amazing places — both online and offline.&lt;br /&gt;
+      &lt;br /&gt;
+      Posted by Krishna Zulkarnain, Country Marketing Manager Indonesia&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/IL7J6KzlDG8" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1902543772215780681?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/1902543772215780681?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/IL7J6KzlDG8/painting-streets-with-web-in-indonesia.html" title="Painting the streets with the web in Indonesia" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://img.youtube.com/vi/r9htKp0D-1s/default.jpg" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/03/painting-streets-with-web-in-indonesia.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;CEMBRXw-eip7ImA9WhBQF0w.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-8996489907661043348</id>
+    <published>2013-03-19T13:00:00.000-04:00</published>
+    <updated>2013-03-19T13:00:54.252-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-03-19T13:00:54.252-04:00</app:edited>
+    <title>Make a silent movie by talking to Chrome</title>
+    <content type="html">
+      &lt;a href="http://chrome.blogspot.com/2013/02/bringing-voice-recognition-to-web.html"&gt;Last month&lt;/a&gt;, the &lt;a href="http://updates.html5rocks.com/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API"&gt;Web Speech API&lt;/a&gt; brought voice recognition to &lt;a href="https://www.google.com/intl/en/chrome/browser/index.html"&gt;Chrome&lt;/a&gt; users in more than 30 languages. We thought it would be fun to demonstrate this new technology by using an old one: silent film. &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;a href="https://www.peanutgalleryfilms.com/"&gt;The Peanut Gallery&lt;/a&gt; lets you add &lt;a href="http://en.wikipedia.org/wiki/Intertitle"&gt;intertitles&lt;/a&gt; to old black-and-white movie clips just by talking out loud while you watch them. Create a film and share it with friends, so they can bring out their inner screenwriters too. &lt;br /&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;
+      &lt;iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/hd8HzLCIstE" width="560"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style="text-align: left;"&gt;
+      &lt;br /&gt;&lt;/div&gt;
+      &lt;div style="text-align: left;"&gt;
+      We hope that developers will find many uses for the Web Speech API, both fun and practical—including new ways to navigate, search, enter text, and interact with the web. We can’t wait to see how people use it. &lt;/div&gt;
+      &lt;br /&gt;
+      &lt;span class="post-author"&gt;Posted by Aaron Koblin, Creative Lab&lt;/span&gt;&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/I8MFZgTIpjc" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/8996489907661043348?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/8996489907661043348?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/I8MFZgTIpjc/make-silent-movie-by-talking-to-chrome.html" title="Make a silent movie by talking to Chrome" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/05118170181302314891</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://img.youtube.com/vi/hd8HzLCIstE/default.jpg" height="72" width="72" />
+    <feedburner:origLink>http://chrome.blogspot.com/2013/03/make-silent-movie-by-talking-to-chrome.html</feedburner:origLink>
+  </entry>
+  <entry gd:etag="W/&quot;Ak4BRnwzcCp7ImA9WhFREko.&quot;">
+    <id>tag:blogger.com,1999:blog-2250394496987063687.post-2011470841371847079</id>
+    <published>2013-03-19T00:59:00.000-04:00</published>
+    <updated>2013-06-26T16:35:57.288-04:00</updated>
+    <app:edited xmlns:app="http://www.w3.org/2007/app">2013-06-26T16:35:57.288-04:00</app:edited>
+    <title>Bringing Chromebooks to new frontiers (literally)</title>
+    <content type="html">
+      &lt;i&gt;For our international readers, additional details can be found for &lt;a href="http://google-au.blogspot.com/2013/03/a-new-computer-built-for-web.html"&gt;Australia&lt;/a&gt;, &lt;a href="http://googlecanada.blogspot.com/2013/03/chromebooks-for-canada.html"&gt;Canada&lt;/a&gt;, &lt;a href="http://googlefrance.blogspot.com/2013/03/le-nouveau-chromebook-samsung-arrive-en.html"&gt;France&lt;/a&gt;, &lt;a href="http://google-produkte.blogspot.com/2013/03/chromebooks-fur-deutschland.html"&gt;Germany&lt;/a&gt;, &lt;a href="http://www.google.com/intl/en_ie/chrome/devices/"&gt;Ireland&lt;/a&gt; and the &lt;a href="http://googleproducts-nl.blogspot.com/2013/03/chromebooks-van-samsung-verkrijgbaar-in.html"&gt;Netherlands&lt;/a&gt;.&lt;/i&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      Over the past few months, Chromebooks have become a part of everyday life for many people - a computer for the kitchen, for on the go, or for sharing with the family (or not). In the U.S., the Samsung Chromebook has been at the top of &lt;a href="http://www.amazon.com/Best-Sellers-Computers-Accessories-Laptop/zgbs/pc/565108"&gt;Amazon’s best-selling laptop&lt;/a&gt; list for 149 days since launch and in the U.K., Dixons says Chromebooks make up &lt;a href="http://www.dixonsretail.com/dixons/en/mediacentre/mediapressreleases?id=568"&gt;more than 10 percent of laptop sales&lt;/a&gt; in Currys and PC World stores.&lt;br /&gt;
+      &lt;br /&gt;
+      Many of you around the world have told us you're eager to get your hands on a Chromebook, so we've been working with our partners to make this possible. Today we're happy to say we're one step closer to making Chromebooks truly “for everyone” -- or rather, &lt;i&gt;pour tout le monde, für alle&lt;/i&gt;, and &lt;i&gt;voor iedereen&lt;/i&gt;. &lt;br /&gt;
+      &lt;br /&gt;
+      Starting Tuesday, the &lt;a href="http://www.google.com/intl/en/chrome/devices/acer-c7-chromebook.html"&gt;Acer&lt;/a&gt;, &lt;a href="http://www.google.com/intl/en/chrome/devices/hp-pavilion-chromebook.html"&gt;HP&lt;/a&gt; and &lt;a href="http://www.google.com/intl/en/chrome/devices/samsung-chromebook.html"&gt;Samsung&lt;/a&gt; Chromebooks will begin rolling out in Australia, Canada, France, Germany, Ireland and the Netherlands. To help improve computing for organizations, we’re rolling out Chromebooks to &lt;a href="http://www.google.com/intl/en/chrome/business/devices/"&gt;businesses&lt;/a&gt; and &lt;a href="http://www.google.com/intl/en/chrome/education/devices/"&gt;schools&lt;/a&gt; in these same countries as well. Learn more on our &lt;a href="http://googleenterprise.blogspot.com/2013/03/chromebooks-now-available-to-schools.html"&gt;Enterprise blog&lt;/a&gt;.&lt;br /&gt;
+      &lt;br /&gt;
+      In the U.S., Chromebooks will also be expanding to more than 1,000 Best Buy stores nationwide -- &lt;a href="http://chrome.blogspot.com/2012/10/the-new-chromebook-for-everyone.html"&gt;doubling the number of stores&lt;/a&gt; Chromebooks are presently sold in -- over the next couple of weeks. &lt;br /&gt;
+      &lt;br /&gt;
+      It’s been rewarding to work with our partners to make Chromebooks available to more people around the world, and we’re looking forward to bringing Chromebooks to even more countries in the months to come.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;span class="post-author"&gt;Posted by Caesar Sengupta, Product Management Director and International Man of Mystery&lt;/span&gt;&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;strong&gt;&lt;i&gt;Update 4/3:&lt;/i&gt;&lt;/strong&gt; The Samsung and Acer Chromebooks will be available in Sweden starting today. See the &lt;a href="http://googlesepress.blogspot.se/2013/04/chromebook-till-sverige-datorn-skapad.html"&gt;Swedish blog&lt;/a&gt; for more details.&lt;br /&gt;
+      &lt;br /&gt;
+      &lt;span style="font-family: inherit;"&gt;&lt;i style="background-color: white;"&gt;&lt;b&gt;Update 5/27&lt;/b&gt;&lt;/i&gt;&lt;span style="background-color: white;"&gt;&lt;b&gt;:&lt;/b&gt; Chromebooks are now available in&lt;/span&gt;&lt;span style="background-color: white;"&gt;&amp;nbsp;&lt;/span&gt;&lt;a href="http://google.com.sg/chromebook" style="background-color: white;" target="_blank"&gt;Singapore&lt;/a&gt;&lt;span style="background-color: white;"&gt;&amp;nbsp;&lt;/span&gt;&lt;span style="background-color: white;"&gt;and&lt;/span&gt;&lt;span style="background-color: white;"&gt;&amp;nbsp;&lt;/span&gt;&lt;a href="http://google.com.my/chromebook" style="background-color: white;" target="_blank"&gt;Malaysia&lt;/a&gt;&lt;span style="background-color: white;"&gt;&amp;nbsp;&lt;/span&gt;&lt;span style="background-color: white;"&gt;from local retailers.&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;
+      &lt;span style="font-family: inherit;"&gt;&lt;span style="background-color: white;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;i style="background-color: white;"&gt;&lt;b&gt;Update 6/26&lt;/b&gt;&lt;/i&gt;&lt;span style="background-color: white;"&gt;&lt;b&gt;:&lt;/b&gt;&amp;nbsp;The Samsung and Acer Chromebooks are now available in&lt;/span&gt;&lt;span style="background-color: white;"&gt;&amp;nbsp;&lt;a href="http://google.fi/chromebook"&gt;Finland&lt;/a&gt;&lt;/span&gt;&lt;span style="background-color: white;"&gt;.&lt;/span&gt;&lt;img src="http://feeds.feedburner.com/~r/blogspot/Egta/~4/V8JNOM-mF_o" height="1" width="1"/&gt;
+    </content>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/2011470841371847079?v=2" />
+    <link rel="self" type="application/atom+xml" href="http://www.blogger.com/feeds/2250394496987063687/posts/default/2011470841371847079?v=2" />
+    <link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/blogspot/Egta/~3/V8JNOM-mF_o/bringing-chromebooks-to-new-frontiers.html" title="Bringing Chromebooks to new frontiers (literally)" />
+    <author>
+      <name>Google Chrome Blog</name>
+      <uri>http://www.blogger.com/profile/15781870002790872375</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="16" height="16" src="http://img2.blogblog.com/img/b16-rounded.gif" />
+    </author>
+    <feedburner:origLink>http://chrome.blogspot.com/2013/03/bringing-chromebooks-to-new-frontiers.html</feedburner:origLink>
+  </entry>
+</feed>

@@ -19,3 +19,5 @@ Src/DotNet/JustReadIt.Database/obj
 /Src/DotNet/JustReadIt.WebApp/Web-IMMDESKTOP.config
 Src/DotNet/JustReadIt.WebApp/AssumeWebConfigNoUnchanged.cmd
 Src/DotNet/JustReadIt.WebApp/AssumeWebConfigUnchanged.cmd
+Src/DotNet/JustReadIt.Core.Tests/bin
+Src/DotNet/JustReadIt.Core.Tests/obj

@@ -41,6 +41,23 @@ namespace JustReadIt.Core.Common {
       return replaced;
     }
 
+    public static bool EqualsOrdinalIgnoreCase(this string s, string other) {
+      Guard.ArgNotNull(s, "s");
+
+      return s.Equals(other, StringComparison.OrdinalIgnoreCase);
+    }
+
+    public static bool IsNullOrEmpty(this string s) {
+      return string.IsNullOrEmpty(s);
+    }
+
+    public static bool ContainsOrdinalIgnoreCase(this string s, string value) {
+      Guard.ArgNotNull(s, "s");
+      Guard.ArgNotNullNorEmpty(value, "value");
+
+      return s.IndexOf(value, StringComparison.OrdinalIgnoreCase) > -1;
+    }
+
   }
 
 }
