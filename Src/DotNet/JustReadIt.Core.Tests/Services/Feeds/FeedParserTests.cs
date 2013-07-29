@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using JustReadIt.Core.Services.Feeds;
@@ -34,8 +36,8 @@ namespace JustReadIt.Core.Tests.Services.Feeds {
     }
 
     [Test]
-    [TestCaseSource("TestCaseSource_ParseFeed_correctly_extracts_feed_items")]
-    public void ParseFeed_correctly_extracts_feed_items(string feedFileName, int expectedItemsCount) {
+    [TestCaseSource("TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection")]
+    public void ParseFeed_correctly_extracts_feed_items_collection(string feedFileName, int expectedItemsCount) {
       // arrange
       string feedContent = ReadTestFeed(feedFileName);
 
@@ -44,6 +46,25 @@ namespace JustReadIt.Core.Tests.Services.Feeds {
 
       // assert
       Assert.AreEqual(expectedItemsCount, feed.Items.Count());
+    }
+
+    [Test]
+    [TestCaseSource("TestCaseSource_ParseFeed_correctly_extracts_feed_items")]
+    public void ParseFeed_correctly_extracts_feed_items(string feedFileName, string expectedFeedTitle, string expectedFeedUrl, DateTime expectedPublicationDate) {
+      // arrange
+      string feedContent = ReadTestFeed(feedFileName);
+
+      // act
+      Feed feed = _feedParser.Parse(feedContent);
+
+      // assert
+      FeedItem feedItem = feed.Items.FirstOrDefault();
+
+      Assert.IsNotNull(feedItem);
+
+      Assert.AreEqual(expectedFeedUrl, feedItem.Url);
+      Assert.AreEqual(expectedFeedTitle, feedItem.Title);
+      Assert.AreEqual((DateTime?)expectedPublicationDate, feedItem.DatePublished);
     }
 
     private static string ReadTestFeed(string feedFileName) {
@@ -201,46 +222,118 @@ namespace JustReadIt.Core.Tests.Services.Feeds {
           "http://www.huffingtonpost.com/raw_feed_index.rdf");
     }
 
-    private static IEnumerable<TestCaseData> TestCaseSource_ParseFeed_correctly_extracts_feed_items() {
+    private static IEnumerable<TestCaseData> TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection() {
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_01.xml", 25);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_02.xml", 10);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_03.xml", 20);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_04.xml", 25);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_05.xml", 115);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_06.xml", 25);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_07.xml", 25);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_08.xml", 10);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_09.xml", 8);
 
       yield return
-        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(
           "feed_10.xml", 25);
+    }
+
+    private static IEnumerable<TestCaseData> TestCaseSource_ParseFeed_correctly_extracts_feed_items() {
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_01.xml",
+          "From TVs to tablets: Everything you love, across all your screens",
+          "http://feedproxy.google.com/~r/blogspot/Egta/~3/INMF1bGtBJ4/from-tvs-to-tablets-everything-you-love.html",
+          "2013-07-24T13:14:00.000-04:00");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_02.xml",
+          "The Rule of Three",
+          "http://www.codinghorror.com/blog/2013/07/rule-of-three.html",
+          "Thu, 18 Jul 2013 23:19:22 -0700");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_03.xml",
+          "Textbook Praises Islam, Denigrates Christianity",
+          "http://townhall.com/columnists/toddstarnes/2013/07/29/textbook-praises-islam-denigrates-christianity-n1651503",
+          "2013-07-29T09:24:00-04:00");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_04.xml",
+          "Disabling a car’s brakes and speed by hacking its computers: A new how-to",
+          "http://feeds.arstechnica.com/~r/arstechnica/index/~3/RJXQXJbvmjE/story01.htm",
+          "Mon, 29 Jul 2013 14:43:11 GMT");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_05.xml",
+          "$53m in jewels taken in Cannes heist",
+          "http://edition.cnn.com/2013/07/28/world/europe/cannes-jewel-theft/index.html?eref=edition",
+          "Sun, 28 Jul 2013 19:01:51 -0400");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_06.xml",
+          "LCD Soundsystem’s ‘All My Friends’ Music Video Remade Using LEGO",
+          "http://laughingsquid.com/lcd-soundsystems-all-my-friends-recreated-using-lego/",
+          "Mon, 29 Jul 2013 14:43:51 +0000");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_07.xml",
+          "Pew poll: Major swing against government surveillance among tea partiers",
+          "http://hotair.com/archives/2013/07/29/pew-poll-major-swing-against-government-surveillance-among-tea-partiers/",
+          "Mon, 29 Jul 2013 15:21:39 +0000");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_08.xml",
+          "Why it’s not easy to break into the Brazilian tech market – a chat with Boo-box’s Marco Gomes",
+          "http://feedproxy.google.com/~r/TheNextWeb/~3/JDqDUrRCAVE/",
+          "Mon, 29 Jul 2013 15:03:35 +0000");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_09.xml",
+          "Khalil Mack 2014 NFL Draft preseason scouting report",
+          "http://www.sbnation.com/nfl-mock-draft/2013/7/29/4567834/khalil-mack-2014-nfl-draft-preseason-scouting-report",
+          "2013-07-29T15:26:07Z");
+
+      yield return
+        CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(
+          "feed_10.xml",
+          "Meet The \"Mental Asylum\" - The Department Of Homeland Security's New 'Pentagon'",
+          "http://feedproxy.google.com/~r/zerohedge/feed/~3/jxg-49PFOD0/story01.htm",
+          "Mon, 29 Jul 2013 14:56:08 GMT");
     }
 
     // ReSharper restore UnusedMethodReturnValue.Local
@@ -254,11 +347,21 @@ namespace JustReadIt.Core.Tests.Services.Feeds {
           expectedSiteUrl).SetName(feedFileName);
     }
 
-    private static TestCaseData CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(string feedFileName, int expectedItemsCount) {
+    private static TestCaseData CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items_collection(string feedFileName, int expectedItemsCount) {
       return
         new TestCaseData(
           feedFileName,
           expectedItemsCount).SetName(feedFileName);
+    }
+
+    private static TestCaseData CreateTestCaseDataFor_TestCaseSource_ParseFeed_correctly_extracts_feed_items(string feedFileName, string expectedFeedTitle, string expectedFeedUrl, string expectedPublicationDateString) {
+      return
+        new TestCaseData(
+          feedFileName,
+          expectedFeedTitle,
+          expectedFeedUrl,
+          DateTime.Parse(expectedPublicationDateString, CultureInfo.InvariantCulture.DateTimeFormat).ToUniversalTime())
+          .SetName(feedFileName);
     }
 
   }

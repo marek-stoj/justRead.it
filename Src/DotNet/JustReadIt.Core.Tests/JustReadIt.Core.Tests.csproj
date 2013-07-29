@@ -58,9 +58,11 @@
     </Content>
     <Content Include="TestData\Feeds\feed_02.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="TestData\Feeds\feed_03.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="TestData\Feeds\feed_04.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -78,9 +80,11 @@
     </Content>
     <Content Include="TestData\Feeds\feed_08.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="TestData\Feeds\feed_09.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="TestData\Feeds\feed_10.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
