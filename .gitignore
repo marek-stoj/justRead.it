@@ -21,3 +21,5 @@ Src/DotNet/JustReadIt.WebApp/AssumeWebConfigNoUnchanged.cmd
 Src/DotNet/JustReadIt.WebApp/AssumeWebConfigUnchanged.cmd
 Src/DotNet/JustReadIt.Core.Tests/bin
 Src/DotNet/JustReadIt.Core.Tests/obj
+Src/DotNet/JustReadIt.FeedsFetcher.ConsoleApp/bin
+Src/DotNet/JustReadIt.FeedsFetcher.ConsoleApp/obj

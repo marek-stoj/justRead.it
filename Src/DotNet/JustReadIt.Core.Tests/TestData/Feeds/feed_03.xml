@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Townhall's Recent Columns</title>
+  <id>uuid:e267b676-b3b1-4c35-bbc0-38b289b1aa63;id=841</id>
+  <rights type="text">Copyright © Townhall.com. All Rights Reserved. Terms under which this service is provided to you </rights>
+  <updated>2013-07-29T11:34:36-04:00</updated>
+  <logo>http://media.townhall.com/TownHall/icons/TH-feed-icon-128x128.gif</logo>
+  <author>
+    <name>Townhall.com</name>
+    <uri>http://townhall.com/columnists</uri>
+  </author>
+  <link rel="alternate" type="alternate" href="http://townhall.com/columnists" />
+  <entry xml:base="http://townhall.com/columnists/toddstarnes/2013/07/29/textbook-praises-islam-denigrates-christianity-n1651503">
+    <id>d78d2995-cf7c-4a3c-8df9-edf1af960ac4</id>
+    <title type="text">Textbook Praises Islam, Denigrates Christianity</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T09:24:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Todd Starnes</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/toddstarnes/2013/07/29/textbook-praises-islam-denigrates-christianity-n1651503" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/kenblackwell/2013/07/29/quin-a-full-portfolio-conservative-n1651504">
+    <id>22ba10db-2202-4360-af5a-7e5e726cb0e8</id>
+    <title type="text"> Quin: A Full Portfolio Conservative</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T09:15:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Ken Blackwell</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/kenblackwell/2013/07/29/quin-a-full-portfolio-conservative-n1651504" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/richgalen/2013/07/29/the-middle-class-n1651516">
+    <id>65955733-e781-4070-9eae-b1b78118b015</id>
+    <title type="text">The Middle Class</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T09:10:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Rich Galen</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/richgalen/2013/07/29/the-middle-class-n1651516" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/mikeadams/2013/07/29/first-thing-we-do-lets-kill-all-the-lawyers-n1650191">
+    <id>e2a1a015-2190-4932-8f59-5fe208678650</id>
+    <title type="text">First Thing We Do, Let's Kill All the Lawyers</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Mike Adams</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/mikeadams/2013/07/29/first-thing-we-do-lets-kill-all-the-lawyers-n1650191" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/mattbarber/2013/07/29/separation-nonsense-from-lying-secularists-n1651071">
+    <id>24a779e5-dc90-462a-b387-64ab67dd33fc</id>
+    <title type="text">‘Separation’ Nonsense From Lying Secularists</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Matt Barber</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/mattbarber/2013/07/29/separation-nonsense-from-lying-secularists-n1651071" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/rachelalexander/2013/07/29/americas-fascination-with-weiner-spitzer-n1651073">
+    <id>faa1bfda-7071-43d5-a5e9-aacf21b62f90</id>
+    <title type="text">America's Fascination With Weiner, Spitzer</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Rachel Alexander</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/rachelalexander/2013/07/29/americas-fascination-with-weiner-spitzer-n1651073" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/politicalcalculations/2013/07/29/total-compensation-us-government-employees-vs-the-private-sector-n1651097">
+    <id>0cf12bbf-ead1-4824-8265-5519ce558ccd</id>
+    <title type="text">Total Compensation: U.S. Government Employees vs the Private Sector</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Political  Calculations</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/politicalcalculations/2013/07/29/total-compensation-us-government-employees-vs-the-private-sector-n1651097" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/mikeshedlock/2013/07/29/euro-sucks-italian-blood-n1651098">
+    <id>75110365-43d5-4466-9688-3feeedc6b5a1</id>
+    <title type="text"> Euro Sucks Italian Blood </title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Mike Shedlock</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/mikeshedlock/2013/07/29/euro-sucks-italian-blood-n1651098" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/johnransom/2013/07/29/what-the-war-on-whatever-is-really-about-n1651115">
+    <id>5abd696b-5501-41c3-8c9c-eee3f6b4fad7</id>
+    <title type="text">What the "War" on Whatever is Really About</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>John Ransom</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/johnransom/2013/07/29/what-the-war-on-whatever-is-really-about-n1651115" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/michaeltanner/2013/07/29/government-not-globalization-destroyed-detroit-n1651139">
+    <id>5985a26c-fbeb-41f3-b67c-bdfb4ae13806</id>
+    <title type="text">Government, Not Globalization, Destroyed Detroit</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Michael Tanner</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/michaeltanner/2013/07/29/government-not-globalization-destroyed-detroit-n1651139" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/taddehaven/2013/07/29/feds-and-the-states-tagteaming-on-corporate-welfare-n1651145">
+    <id>2e3ab087-ce85-42cb-9cde-1b5b3d3146c6</id>
+    <title type="text">Feds and the States Tag-Teaming on Corporate Welfare</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Tad DeHaven</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/taddehaven/2013/07/29/feds-and-the-states-tagteaming-on-corporate-welfare-n1651145" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/michaelfcannon/2013/07/29/washington-post-democrats-are-abandoning-obamacare-n1651147">
+    <id>7a015ea1-af08-41ab-81db-d02514a3a921</id>
+    <title type="text">Washington Post: Democrats Are Abandoning Obamacare</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Michael F. Cannon</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/michaelfcannon/2013/07/29/washington-post-democrats-are-abandoning-obamacare-n1651147" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/chrisedwards/2013/07/29/detroits-high-property-taxes-n1651149">
+    <id>73d664a1-814c-4afa-bbb1-851a7e403964</id>
+    <title type="text">Detroit’s High Property Taxes</title>
+    <summary type="html">Property taxes are a major relocation driver, not just for homeowners, but also for businesses.</summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Chris Edwards</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/chrisedwards/2013/07/29/detroits-high-property-taxes-n1651149" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/danieljmitchell/2013/07/29/the-irs-exempt-from-obamacare-while-making-the-rest-of-us-comply-n1651167">
+    <id>d75e1b3e-fe16-4bc9-a849-8be8a8d70c0a</id>
+    <title type="text">The IRS: Exempt from Obamacare While Making the Rest of Us Comply</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Daniel J. Mitchell</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/danieljmitchell/2013/07/29/the-irs-exempt-from-obamacare-while-making-the-rest-of-us-comply-n1651167" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/danholler/2013/07/29/on-obamacare-a-time-for-choosing-n1651216">
+    <id>8179d6b8-eadd-47bc-961b-abcc3ca41b8f</id>
+    <title type="text">On Obamacare, A Time for Choosing</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Dan Holler</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/danholler/2013/07/29/on-obamacare-a-time-for-choosing-n1651216" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/shawnmitchell/2013/07/29/a-few-questions-for-abcnbccbspbscnnnprapnytlat-n1651278">
+    <id>dc0b31f8-2923-4d1b-956e-deceb959b133</id>
+    <title type="text">A Few Questions for ABC-NBC-CBS-PBS-CNN-NPR-AP-NYT-LAT</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Shawn Mitchell</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/shawnmitchell/2013/07/29/a-few-questions-for-abcnbccbspbscnnnprapnytlat-n1651278" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/kyleolson/2013/07/29/teachers-union-acorn-and-bill-ayers-beg-un-to-stop-chicago-school-closings-n1649893">
+    <id>8f1443ca-cc87-4bd3-bd46-8a46205337de</id>
+    <title type="text">Teachers Union, ACORN and Bill Ayers Beg U.N. to Stop Chicago School Closings</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Kyle Olson</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/kyleolson/2013/07/29/teachers-union-acorn-and-bill-ayers-beg-un-to-stop-chicago-school-closings-n1649893" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/katiekieffer/2013/07/29/barack-wusses-out-convicts-apple-and-steve-jobs-n1649999">
+    <id>889b2dad-c112-4f53-aad6-ac6389bea13f</id>
+    <title type="text">Barack Wusses Out, Convicts Apple and Steve Jobs</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Katie Kieffer</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/katiekieffer/2013/07/29/barack-wusses-out-convicts-apple-and-steve-jobs-n1649999" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/starparker/2013/07/29/we-need-to-restore-the-spirit-of-capitalism-n1650386">
+    <id>676e84c0-5de6-4553-aae5-c5ef82df7a10</id>
+    <title type="text">We Need to Restore the Spirit of Capitalism</title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Star Parker</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/starparker/2013/07/29/we-need-to-restore-the-spirit-of-capitalism-n1650386" />
+    <content type="html"></content>
+  </entry>
+  <entry xml:base="http://townhall.com/columnists/terrypaulson/2013/07/29/life-used-to-be-a-great-trainer-n1649195">
+    <id>bd28236b-de13-46cd-878d-0c6168f817a0</id>
+    <title type="text">Life Used to be a Great Trainer </title>
+    <summary type="html"></summary>
+    <published>2013-07-29T00:01:00-04:00</published>
+    <updated>2013-07-29T15:34:36Z</updated>
+    <author>
+      <name>Terry Paulson</name>
+    </author>
+    <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://townhall.com/columnists/terrypaulson/2013/07/29/life-used-to-be-a-great-trainer-n1649195" />
+    <content type="html"></content>
+  </entry>
+</feed>

@@ -36,6 +36,9 @@
     <Reference Include="ImmRafSoft.Security">
       <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Security.dll</HintPath>
     </Reference>
+    <Reference Include="ImmRafSoft.Xml">
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Xml.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
@@ -83,9 +86,12 @@
     <Compile Include="Services\CreateUserResult.cs" />
     <Compile Include="Services\Exceptions\InternalException.cs" />
     <Compile Include="Services\Feeds\Feed.cs" />
+    <Compile Include="Services\Feeds\FeedFetcher.cs" />
     <Compile Include="Services\Feeds\FeedItem.cs" />
     <Compile Include="Services\Feeds\FeedParser.cs" />
     <Compile Include="Services\Feeds\FeedParserException.cs" />
+    <Compile Include="Services\Feeds\FetchFeedResult.cs" />
+    <Compile Include="Services\Feeds\IFeedFetcher.cs" />
     <Compile Include="Services\Feeds\IFeedParser.cs" />
     <Compile Include="Services\IMailingService.cs" />
     <Compile Include="Services\IMembershipService.cs" />

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImmRafSoft.Xml</name>
+    </assembly>
+    <members>
+        <member name="T:ImmRafSoft.Xml.XmlSanitizingStream">
+            <summary>
+            A StreamReader that excludes XML-illegal characters while reading.
+            </summary>
+            <remarks>
+            Taken from: http://seattlesoftware.wordpress.com/2008/09/11/hexadecimal-value-0-is-an-invalid-character/
+            </remarks>
+        </member>
+        <member name="F:ImmRafSoft.Xml.XmlSanitizingStream.EOF">
+            <summary>
+            The charactet that denotes the end of a file has been reached.
+            </summary>
+        </member>
+        <member name="M:ImmRafSoft.Xml.XmlSanitizingStream.#ctor(System.IO.Stream)">
+            <summary>Create an instance of XmlSanitizingStream.</summary>
+            <param name="streamToSanitize">
+            The stream to sanitize of illegal XML characters.
+            </param>
+        </member>
+        <member name="M:ImmRafSoft.Xml.XmlSanitizingStream.IsLegalXmlChar(System.String,System.Int32)">
+            <summary>
+            Get whether an integer represents a legal XML 1.0 or 1.1 character. See
+            the specification at w3.org for these characters.
+            </summary>
+            <param name="xmlVersion">
+            The version number as a string. Use "1.0" for XML 1.0 character
+            validation, and use "1.1" for XML 1.1 character validation.
+            </param>
+            <param name="character"></param>
+        </member>
+        <member name="M:ImmRafSoft.Xml.XmlSanitizingStream.IsLegalXmlChar(System.Int32)">
+            <summary>
+            Get whether an integer represents a legal XML 1.0 character. See the  
+            specification at w3.org for these characters.
+            </summary>
+        </member>
+        <member name="M:ImmRafSoft.Xml.XmlUtils.SanitizeXmlString(System.String)">
+            <summary>
+            Remove illegal XML characters from a string.
+            </summary>
+            <remarks>
+            Taken from: http://seattlesoftware.wordpress.com/2008/09/11/hexadecimal-value-0-is-an-invalid-character/
+            </remarks>
+        </member>
+        <member name="M:ImmRafSoft.Xml.XmlUtils.IsLegalXmlChar(System.Int32)">
+            <summary>
+            Whether a given character is allowed by XML 1.0.
+            </summary>
+            <remarks>
+            Taken from: http://seattlesoftware.wordpress.com/2008/09/11/hexadecimal-value-0-is-an-invalid-character/
+            </remarks>
+        </member>
+    </members>
+</doc>

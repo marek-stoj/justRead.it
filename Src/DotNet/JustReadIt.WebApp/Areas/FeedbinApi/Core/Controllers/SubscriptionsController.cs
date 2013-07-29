@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 using System.Transactions;
 using System.Web.Http;
 using JustReadIt.Core.Common;
@@ -22,20 +20,23 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
     private readonly ISubscriptionRepository _subscriptionRepository;
     private readonly IDomainToJsonModelMapper _domainToJsonModelMapper;
+    private readonly Feeds.IFeedFetcher _feedFetcher;
     private readonly Feeds.IFeedParser _feedParser;
 
-    public SubscriptionsController(ISubscriptionRepository subscriptionRepository, IDomainToJsonModelMapper domainToJsonModelMapper, Feeds.IFeedParser feedParser) {
+    public SubscriptionsController(ISubscriptionRepository subscriptionRepository, IDomainToJsonModelMapper domainToJsonModelMapper, Feeds.IFeedFetcher feedFetcher, Feeds.IFeedParser feedParser) {
       Guard.ArgNotNull(subscriptionRepository, "subscriptionRepository");
       Guard.ArgNotNull(domainToJsonModelMapper, "domainToJsonModelMapper");
+      Guard.ArgNotNull(feedFetcher, "feedFetcher");
       Guard.ArgNotNull(feedParser, "feedParser");
 
       _subscriptionRepository = subscriptionRepository;
       _domainToJsonModelMapper = domainToJsonModelMapper;
+      _feedFetcher = feedFetcher;
       _feedParser = feedParser;
     }
 
     public SubscriptionsController()
-      : this(IoC.GetSubscriptionRepository(), IoC.GetDomainToJsonModelMapper(), IoC.GetFeedParser()) {
+      : this(IoC.GetSubscriptionRepository(), IoC.GetDomainToJsonModelMapper(), IoC.GetFeedFetcher(), IoC.GetFeedParser()) {
     }
 
     [HttpGet]
@@ -80,94 +81,68 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     }
 
     [HttpPost]
-    public async Task<HttpResponseMessage> Create(CreateInputModel input) {
+    public void Create(CreateInputModel input) {
       string feedUrl = input.feed_url;
 
       if (string.IsNullOrEmpty(feedUrl)) {
         throw HttpBadRequest();
       }
 
-      HttpClient httpClient = null;
-      HttpResponseMessage feedResponseMessage = null;
+      Feeds.FetchFeedResult fetchFeedResult = _feedFetcher.FetchFeed(feedUrl);
 
-      try {
-        httpClient = new HttpClient();
-        feedResponseMessage = await httpClient.GetAsync(feedUrl);
+      if (fetchFeedResult.ContentType.IsNullOrEmpty()) {
+        throw HttpNotFound();
+      }
 
-        IEnumerable<string> contentTypes;
+      if (!IsRssContentType(fetchFeedResult.ContentType)) {
+        // TODO IMM HI: parse the web page searching for feeds?
+        throw HttpUnsupportedMediaType();
+      }
 
-        if (!feedResponseMessage.Content.Headers.TryGetValues("Content-Type", out contentTypes)) {
-          throw HttpNotFound();
-        }
+      int userAccountId = CurrentUserAccountId;
 
-        string contentType = contentTypes.FirstOrDefault();
+      using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
+        string apiFeedUrl;
 
-        if (string.IsNullOrEmpty(contentType)) {
-          throw HttpNotFound();
-        }
+        int? subscriptionId =
+          _subscriptionRepository.FindIdByFeedUrl(userAccountId, feedUrl);
 
-        if (!IsRssContentType(contentType)) {
-          // TODO IMM HI: parse the web page searching for feeds?
-          throw HttpUnsupportedMediaType();
-        }
-
-        int userAccountId = CurrentUserAccountId;
-
-        using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
-          string apiFeedUrl;
-
-          int? subscriptionId =
-            _subscriptionRepository.FindIdByFeedUrl(userAccountId, feedUrl);
-
-          if (subscriptionId.HasValue) {
-            apiFeedUrl = Routes.CreateApiUrlForGetSubscription(Url, subscriptionId.Value);
-
-            ts.Complete();
-
-            throw HttpFound(new Dictionary<string, string> { { "Location", apiFeedUrl }, });
-          }
-
-          string feedContent = await feedResponseMessage.Content.ReadAsStringAsync();
-
-          Feeds.Feed feed = _feedParser.Parse(feedContent);
-
-          var subscription =
-            new Subscription {
-              UserAccountId = userAccountId,
-              Feed =
-                new Feed {
-                  FeedUrl = feedUrl,
-                  SiteUrl = feed.SiteUrl ?? feedUrl,
-                  Title = feed.Title ?? CommonResources.UntitledFeedTitle,
-                },
-            };
-
-          _subscriptionRepository.Add(subscription);
-
-          apiFeedUrl = Routes.CreateApiUrlForGetSubscription(Url, subscription.Id);
+        if (subscriptionId.HasValue) {
+          apiFeedUrl = Routes.CreateApiUrlForGetSubscription(Url, subscriptionId.Value);
 
           ts.Complete();
 
-          throw HttpCreated(new Dictionary<string, string> { { "Location", apiFeedUrl }, });
+          throw HttpFound(new Dictionary<string, string> { { "Location", apiFeedUrl }, });
         }
-      }
-      finally {
-        try {
-          if (feedResponseMessage != null) {
-            feedResponseMessage.Dispose();
-          }
-        }
-        finally {
-          if (httpClient != null) {
-            httpClient.Dispose();
-          }
-        }
+
+        string feedContent = fetchFeedResult.FeedContent;
+
+        Feeds.Feed feed = _feedParser.Parse(feedContent);
+
+        var subscription =
+          new Subscription {
+            UserAccountId = userAccountId,
+            Feed =
+              new Feed {
+                FeedUrl = feedUrl,
+                SiteUrl = feed.SiteUrl ?? feedUrl,
+                Title = feed.Title ?? CommonResources.UntitledFeedTitle,
+              },
+          };
+
+        _subscriptionRepository.Add(subscription);
+
+        apiFeedUrl = Routes.CreateApiUrlForGetSubscription(Url, subscription.Id);
+
+        ts.Complete();
+
+        throw HttpCreated(new Dictionary<string, string> { { "Location", apiFeedUrl }, });
       }
     }
 
     private static bool IsRssContentType(string contentType) {
       return contentType.IndexOf("xml", StringComparison.OrdinalIgnoreCase) > -1
-             || contentType.IndexOf("rss", StringComparison.OrdinalIgnoreCase) > -1;
+          || contentType.IndexOf("rss", StringComparison.OrdinalIgnoreCase) > -1;
     }
 
   }

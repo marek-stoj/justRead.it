@@ -41,7 +41,7 @@ namespace JustReadIt.Core.Common {
       return replaced;
     }
 
-    public static bool EqualsOrdinalIgnoreCase(this string s, string other) {
+    public static bool EqualsOrdinalIgnoreCase(this string s, string other = null) {
       Guard.ArgNotNull(s, "s");
 
       return s.Equals(other, StringComparison.OrdinalIgnoreCase);

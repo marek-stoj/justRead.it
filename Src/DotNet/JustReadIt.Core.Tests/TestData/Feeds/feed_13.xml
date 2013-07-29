@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>TechCrunch</title>
+	
+	<link>http://techcrunch.com</link>
+	<description>TechCrunch is a group-edited blog that profiles the companies, products and events defining and transforming the new web.</description>
+	<lastBuildDate>Mon, 29 Jul 2013 15:29:51 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+<cloud domain="techcrunch.com" port="80" path="/?rsscloud=notify" registerProcedure="" protocol="http-post" />
+<image><link>http://www.techcrunch.com</link><url>http://www.techcrunch.com/wp-content/themes/techcrunchmu/images/techcrunch_logo.png</url><title>TechCrunch</title></image>
+	<atom:link rel="search" type="application/opensearchdescription+xml" href="http://techcrunch.com/osd.xml" title="TechCrunch" />
+	
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/Techcrunch" /><feedburner:info uri="techcrunch" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://techcrunch.com/?pushpress=hub" /><feedburner:feedFlare href="http://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.feedburner.com%2FTechcrunch" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2FTechcrunch" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare href="http://feeds.my.aol.com/add.jsp?url=http%3A%2F%2Ffeeds.feedburner.com%2FTechcrunch" src="http://o.aolcdn.com/favorites.my.aol.com/webmaster/ffclient/webroot/locale/en-US/images/myAOLButtonSmall.gif">Subscribe with My AOL</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://feeds.feedburner.com/Techcrunch" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.feedburner.com%2FTechcrunch" src="http://www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.feedburner.com%2FTechcrunch" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2FTechcrunch" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site.</feedburner:browserFriendly><item>
+		<title>Escape Game Shown Off For Google Glass, But Games On Your Face Seem To Have Limited Appeal</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/WLY3yxMNWso/</link>
+		<comments>http://techcrunch.com/2013/07/29/escape-game-shown-off-for-google-glass-but-games-on-your-face-seem-to-have-limited-appeal/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 15:13:27 +0000</pubDate>
+		<dc:creator>Darrell Etherington</dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Gaming]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[google glass]]></category>
+		<category><![CDATA[games]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852861</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-10-26-am.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Screen Shot 2013-07-29 at 11.10.26 AM" style="float: left; margin: 0 10px 7px 0;" />A new game for Google Glass claiming to be "the first Google Glass game" (it's not, Battleship clone got demoed earlier this month) offers a look at what kind of things might be possible for developers building these kinds of experiences on Google's unique wearable platform. In a word, it looks simple, and is reminiscent of the old, very basic games that would come pre-installed on your black and white Nokia feature phone like Snake.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-10-26-am.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Screen Shot 2013-07-29 at 11.10.26 AM" style="float: left; margin: 0 10px 7px 0;" /><span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='640' height='360' src='http://www.youtube.com/embed/TjEdlk6St_Y?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' frameborder='0'></iframe></span>
+<p>A new game for Google Glass claiming to be &#8220;the first Google Glass game&#8221; (it&#8217;s not, <a target="_blank" href="http://www.escapistmagazine.com/news/view/125763-Battleship-Clone-Demonstrates-Gaming-On-Google-Glass">Battleship clone got demoed earlier this month</a>) offers a look at what kind of things might be possible for developers building these kinds of experiences on Google&#8217;s unique wearable platform. In a word, it looks simple, and is reminiscent of the old, very basic games that would come pre-installed on your black and white Nokia feature phone like Snake.</p>
+<p>The game looks diverting enough, but it also looks painfully dated and questions abound about its real-world playability. Others have suggested a voice-operated mechanism for controlling in-game action on Glass, but any kind of consistent and repeated use of voice is not going to work in any situation where there are other human beings around. Not to mention that people play casual games on commutes precisely because they help them look away from fellow travellers. These games seem primed to result in at least a few uncomfortably long, unconscious locked gazes.</p>
+<p>Google Glass gaming might be appealing if it was an AR-layered experience like a mix between <a title="Oculus VR Raises $16M To Build Their Crazy Virtual Reality Gaming Goggles" href="http://techcrunch.com/2013/06/17/oculus-vr-raises-16m-to-build-their-crazy-virtual-reality-gaming-goggles/">Oculus Rift</a> and Google&#8217;s own Egress game, but as a way to basically play checkers in the corner of your field of view while you&#8217;re doing your best to also be a real functioning human I have my doubts. Everyone I&#8217;ve talked to about mobile gaming on the development side seems to have found people still like to plunk down at home or at work for dedicated gaming sessions; I doubt very much they&#8217;re going to want to do that while staring off into space at less-than-impressive visuals.</p>
+<p>Now gaming as a use case for Google Glass is hardly fully explored at this stage, but what I&#8217;ve seen isn&#8217;t something that offers a lot of promise. There are a lot of question marks around Glass, but its viability as a gaming platform (a key factor in determining mobile success) might be the biggest of all right now.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852861/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=WLY3yxMNWso:BpzHl1a6NbE:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=WLY3yxMNWso:BpzHl1a6NbE:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=WLY3yxMNWso:BpzHl1a6NbE:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=WLY3yxMNWso:BpzHl1a6NbE:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=WLY3yxMNWso:BpzHl1a6NbE:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=WLY3yxMNWso:BpzHl1a6NbE:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=WLY3yxMNWso:BpzHl1a6NbE:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=WLY3yxMNWso:BpzHl1a6NbE:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/WLY3yxMNWso" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/escape-game-shown-off-for-google-glass-but-games-on-your-face-seem-to-have-limited-appeal/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-10-26-am.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-10-26-am.png?w=150" medium="image">
+			<media:title type="html">Screen Shot 2013-07-29 at 11.10.26 AM</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">etherin</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/escape-game-shown-off-for-google-glass-but-games-on-your-face-seem-to-have-limited-appeal/</feedburner:origLink></item>
+		<item>
+		<title>Mobile Shopping App Wish Expands Into Re-Commerce With Debut Of “Wish Closet”</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/y_mlC0rmiro/</link>
+		<comments>http://techcrunch.com/2013/07/29/mobile-shopping-app-wish-expands-into-re-commerce-with-debut-of-wish-closet/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 15:11:38 +0000</pubDate>
+		<dc:creator>Sarah Perez</dc:creator>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[eCommerce]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852854</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/mzl-sbnwksts-320x480-75-1.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="mzl.sbnwksts.320x480-75 (1)" style="float: left; margin: 0 10px 7px 0;" />Will algorithms or crowdsourced recommendations lead the way when it comes to the mobile shopping done via aggregators like Fancy, Wanelo, Polyvore or Fresh? A startup called <a target="_blank" href="http://wish.com/">Wish</a> is betting on the former, likening itself to "an AdWords for shopping." Today, the company is expanding its automated matching technology, which pairs people to product, into a new area: a mobile marketplace called "Wish Closet," This feature will now allow the company's nearly 15 million users to buy and sell items found in each other's closets.
+]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/mzl-sbnwksts-320x480-75-1.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="mzl.sbnwksts.320x480-75 (1)" style="float: left; margin: 0 10px 7px 0;" /><p>Will algorithms or crowdsourced recommendations lead the way when it comes to the mobile shopping done via aggregators like Fancy, Wanelo, Polyvore or Fresh? A startup called <a target="_blank" href="http://wish.com/">Wish</a> is betting on the former, likening itself to &#8220;an AdWords for shopping.&#8221; Today, the company is expanding its automated matching technology, which pairs people to product, into a new area: a mobile marketplace called &#8220;Wish Closet,&#8221; This feature will now allow the company&#8217;s nearly 15 million users to buy and sell items found in each other&#8217;s closets.</p>
+<p>Launched by former Google, Yahoo and Facebook employees, Wish&#8217;s technical co-founding team believes that the best way to connect consumers to items they would want to purchase, is through an algorithm combined, of course, with an engaging mobile experience.</p>
+<p>&#8220;At Google, we worked on matching billions of different queries with web pages,&#8221; explains CEO Peter Szulczewski, who spent seven years at Google where he worked on AdWords, AdSense and Search. &#8220;And we think the best way to match millions of consumers to the best products is actually through technology.&#8221;</p>
+<p><a href="http://techcrunch.com/2013/07/29/mobile-shopping-app-wish-expands-into-re-commerce-with-debut-of-wish-closet/img_0125/" rel="attachment wp-att-852865"></a>Unlike other services like Wanelo or Polyvore where &#8220;trending&#8221; and popular products are ranked to help drive e-commerce sales, Wish is more focused more on finding just what an individual user likes.</p>
+<p>The company originally began as <a href="http://techcrunch.com/2013/05/31/with-over-12m-users-wish-com-hopes-its-adwords-for-shopping-will-stick/">a wish list website,</a> allowing users to add items they like to various lists &#8211; not much different from creating Pinterest boards, for instance, but instead focused only on shopping. As new items are added, Wish gets smarter about a user&#8217;s preferences. It then helps merchants target those shoppers who are interested in items similar to what they have to sell.</p>
+<p>For example, says Szulczewski, if a merchant has 100 blue, lace dresses to sell, Wish can point them to users who also have blue, lace dresses saved on their wishlist. The merchants can reach those consumers with promotions when they&#8217;re browsing their feed, or even with push notifications.</p>
+<p>Currently, Wish works with around 500 Amazon and eBay merchants, who reach the company&#8217;s some half a million daily active users.</p>
+<h2>Introducing Wish Closet</h2>
+<p>Now, the company is bringing its product matching technology to the users themselves with the debut of Wish Closet. Similar to Poshmark or Threadflip, Wish Closet lets users sell pre-owned items to other app users.</p>
+<p></p>
+<p>But unlike competitors which rely more heavily on user-initiated searches, &#8220;sale&#8221; parties, and other means of active discovery, Wish will attempt to connect buyers and sellers also through its algorithm.</p>
+<p>After the sale is made, Wish will verify the buyer&#8217;s details, handling the payment processing, and providing the shipping labels which can be printed out and placed on the box before being dropped off at the Post Office. The company will take a 20 percent commission on these sales, it says.</p>
+<p>The expansion comes at a time when Wish is reporting recent growth, now with week-over-week engagement up 15 percent, and users adding 5 to 10 million products to their wishlists every day, as well as sharing 200,000 products and lists with family and friends. The consumers spend around 30 minutes per day browsing the app, and saving 19 items on average to their lists.</p>
+<p>While these metrics are promising, the company doesn&#8217;t disclose how many transactions it has processed (&#8220;hundreds of thousands&#8221; is the ballpark figure) or what the dollar amount of those transactions are. It also can&#8217;t say how <em>much</em> better its technology works than those competitors relying on the popularity sort alone.</p>
+<p><a href="http://techcrunch.com/2013/07/29/mobile-shopping-app-wish-expands-into-re-commerce-with-debut-of-wish-closet/img_0118/" rel="attachment wp-att-852868"></a>&#8220;Typically when a new merchant comes on, we ask them to select three to five items, they will sell hundreds of items in the first 48 hours,&#8221; Szulczewski says. However, he admits that the company does try to help the merchants get a lot of transactions in the first few days, since the company is still trying to prove to the retailers that Wish is a meaningful distribution channel for them.</p>
+<p>However, if the company now plans to apply that same focus to getting users&#8217; closet items to sell, too, then it could establish itself as a worthy competitor to others like Poshmakrk or Threadflip, especially since it will now marry the secondhand marketplace concept with buying new all under one roof. It also aims for a slightly different demographic (women 15-25), while Wanelo skews a little younger and Poshmark a little older, or so Szulczewski believes.</p>
+<p>The new Wish Closet feature, which had been tested already with some 10,000 sellers, is now available in the company&#8217;s mobile applications <a target="_blank" href="https://itunes.apple.com/us/app/wish-shopping-made-fun/id530621395?mt=8">here on iOS</a> or <a target="_blank" href="https://play.google.com/store/apps/details?id=com.contextlogic.wish">here on Android</a>.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852854/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=y_mlC0rmiro:j6bKwUThMII:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=y_mlC0rmiro:j6bKwUThMII:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=y_mlC0rmiro:j6bKwUThMII:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=y_mlC0rmiro:j6bKwUThMII:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=y_mlC0rmiro:j6bKwUThMII:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=y_mlC0rmiro:j6bKwUThMII:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=y_mlC0rmiro:j6bKwUThMII:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=y_mlC0rmiro:j6bKwUThMII:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/y_mlC0rmiro" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/mobile-shopping-app-wish-expands-into-re-commerce-with-debut-of-wish-closet/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/mzl-sbnwksts-320x480-75-1.jpg?w=84" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/mzl-sbnwksts-320x480-75-1.jpg?w=84" medium="image">
+			<media:title type="html">mzl.sbnwksts.320x480-75 (1)</media:title>
+		</media:content>
+
+		<media:content url="http://2.gravatar.com/avatar/5225bb627e112543aa03bf3b2958be3f?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">sarahintampa</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/img_0125.png?w=426" medium="image">
+			<media:title type="html">IMG_0125</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/img_0117.png?w=426" medium="image">
+			<media:title type="html">IMG_0117</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/img_0118.png?w=426" medium="image">
+			<media:title type="html">IMG_0118</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/mobile-shopping-app-wish-expands-into-re-commerce-with-debut-of-wish-closet/</feedburner:origLink></item>
+		<item>
+		<title>Plastic Casing For Apple's Low-Cost iPhone Gets Confirmed In A Supplier Responsibility Investigation</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/t1TrmAzChIU/</link>
+		<comments>http://techcrunch.com/2013/07/29/plastic-casing-for-apples-low-cost-iphone-gets-confirmed-in-a-supplier-responsibility-investigation/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 14:25:33 +0000</pubDate>
+		<dc:creator>Darrell Etherington</dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[low-cost iphone]]></category>
+		<category><![CDATA[plastic]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852850</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/plastic-iphone.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="plastic-iphone" style="float: left; margin: 0 10px 7px 0;" />Apple's plans to release a low-cost iPhone got a solid confirmation from a new report by China Labor Watch this morning. The unlikely source of new product info was an undercover investigation into Pegatron, to shed light on working conditions at the Apple supplier (which also acts as a partner to other consumer electronics makers).]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/plastic-iphone.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="plastic-iphone" style="float: left; margin: 0 10px 7px 0;" /><p>Apple&#8217;s plans to release a low-cost iPhone got a solid confirmation from a new report by China Labor Watch this morning. The unlikely source of new product info was an undercover investigation into Pegatron, to shed light on working conditions at the Apple supplier (which also acts as a partner to other consumer electronics makers).</p>
+<p>A description plucked from a <a target="_blank" href="http://www.chinalaborwatch.org/pdf/apple_s_unkept_promises.pdf">diary entry by an undercover investigator</a> posing as a worker reveals the salient details around the low-cost iPhone and its plastic back, as <a target="_blank" href="http://blogs.computerworld.com/smartphones/22562/apples-plastic-iphone-mini-confirmed-shocking-pegatron-labor-report">first reported by Computerworld</a>. Here&#8217;s the relevant segment in full:</p>
+<blockquote><p>Today’s work is to paste protective film on the iPhone’s plastic back cover to prevent it from being scratched on assembly lines. This iPhone model with a plastic cover will soon be released on the market by Apple [...] The new cell phone has not yet been put into mass production, so quantity is not as important.</p></blockquote>
+<p>The key details here are first that the leaks we&#8217;ve seen showing <a title="Low-Cost iPhone’s Plastic Case Shows Up In Alleged Video And Photo Leak" href="http://techcrunch.com/2013/07/06/low-cost-iphones-plastic-case-shows-up-in-alleged-video-and-photo-leak/">a plastic casing for an iPhone are likely true</a>, and that the &#8220;coming soon&#8221; release window is also accurate, though there&#8217;s no telling whether this is gearing up for a fall launch. The phone is also notably not yet in the mass production phase, though there&#8217;s still time for that to take place between the time the information was recorded in the report and a late fall release date, as appears to be most likely for Apple&#8217;s upcoming iPhone refresh.</p>
+<p>The report isn&#8217;t meant to tease iPhone production details, of course; it&#8217;s actually supposed to depict working conditions at the factory, and suggests that Apple isn&#8217;t keeping up with the promises it makes in its Supplier Responsibility materials on its site and in its regular reports on the subject. The report says that Chinese workers are doing 6-day weeks, with 11 hour shifts and making only around $1.50 an hour for a total of $268 per month, which is far under the local monthly average of $764 and not enough to qualify as a living wage for Shanghai, China Labor Watch says.</p>
+<p>China Labor Watch and other groups consistently try to draw attention to working conditions in the country, often using Apple as a particularly high-profile example. Ironically, this report may be its biggest attention-draw yet, since it features solid information about an unreleased product many investors and consumers are watching in the west with bated breath.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852850/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=t1TrmAzChIU:P1XENcAt9ck:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=t1TrmAzChIU:P1XENcAt9ck:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=t1TrmAzChIU:P1XENcAt9ck:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=t1TrmAzChIU:P1XENcAt9ck:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=t1TrmAzChIU:P1XENcAt9ck:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=t1TrmAzChIU:P1XENcAt9ck:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=t1TrmAzChIU:P1XENcAt9ck:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=t1TrmAzChIU:P1XENcAt9ck:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/t1TrmAzChIU" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/plastic-casing-for-apples-low-cost-iphone-gets-confirmed-in-a-supplier-responsibility-investigation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/plastic-iphone.jpg?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/plastic-iphone.jpg?w=150" medium="image">
+			<media:title type="html">plastic-iphone</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">etherin</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/plastic-casing-for-apples-low-cost-iphone-gets-confirmed-in-a-supplier-responsibility-investigation/</feedburner:origLink></item>
+		<item>
+		<title>Jifiti Raises $2.5 Million For Gifting App Which Combines Thoughtful Shopping With The Convenience Of A Gift Card</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/96FGeAIlS6Y/</link>
+		<comments>http://techcrunch.com/2013/07/29/jifiti-raises-2-5-million-for-gifting-app-which-combines-thoughtful-shopping-with-the-convenience-of-a-gift-card/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 14:08:05 +0000</pubDate>
+		<dc:creator>Sarah Perez</dc:creator>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[eCommerce]]></category>
+		<category><![CDATA[Fundings & Exits]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[jifiti]]></category>
+		<category><![CDATA[gift card]]></category>
+		<category><![CDATA[shopping]]></category>
+		<category><![CDATA[e-commerce]]></category>
+		<category><![CDATA[m-commerce]]></category>
+		<category><![CDATA[malls]]></category>
+		<category><![CDATA[brick-and-mortar]]></category>
+		<category><![CDATA[mobile app]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852830</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/jifitilogo-withslogan.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="JifitiLogo-WithSlogan" style="float: left; margin: 0 10px 7px 0;" /><a target="_blank" href="http://www.jifiti.com/">Jifiti</a>, a startup trying to reintroduce thoughtful gifting in the age of the ubiquitous gift card, has raised $2.5 million in seed funding, the company is announcing today, along with the official debut of its mobile app's new interface, designed for improved ease of use.
+
+The investment comes from Simon Property Group, a real estate company that operates over 300 malls in the U.S. and Asia, plus Schottenstein Stores Corp., owners of American Eagle and DSW, and the Jesselson Group.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/jifitilogo-withslogan.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="JifitiLogo-WithSlogan" style="float: left; margin: 0 10px 7px 0;" /><p><a target="_blank" href="http://www.jifiti.com/">Jifiti</a>, a startup trying to reintroduce thoughtful gifting in the age of the ubiquitous gift card, has raised $2.5 million in seed funding, the company is announcing today, along with the official debut of its mobile app&#8217;s new interface, designed for improved ease of use.</p>
+<p>The investment comes from Simon Property Group, a real estate company that operates over 300 malls in the U.S. and Asia, plus Schottenstein Stores Corp., owners of American Eagle and DSW, and the Jesselson Group.</p>
+<p><a href="http://techcrunch.com/2013/07/29/jifiti-raises-2-5-million-for-gifting-app-which-combines-thoughtful-shopping-with-the-convenience-of-a-gift-card/pulse-3-3/" rel="attachment wp-att-852844"></a>Jifiti&#8217;s app arrives at a time when buying a gift usually means loading up a web browser and clicking around a bit. And when you&#8217;re not sure of someone&#8217;s style preferences or size, those who need to buy presents for friends and family often turn to the gift card instead. But gift cards are viewed somewhat like stuffing cash into an envelope &#8211; useful, sure, but not much time or care went into the gift selection process.</p>
+<p>With Jifiti, the idea is to re-introduce the possibility of actually browsing through a brick-and-mortar retailer&#8217;s racks to locate a gift, while also eliminating the hassles of gift wrapping, shipping, or getting something the recipient doesn&#8217;t want or need.</p>
+<p>To use the service, you locate an item you want to buy, then scan its barcode in-store to &#8220;purchase&#8221; it with the Jifiti mobile app. The item is sent to the gift recipient through an in-app notification or email. And to redeem their gift, the &#8220;giftee&#8221; simply visits the retailer&#8217;s shop to pick-up the item you selected in his or her own preferred size or color, or can use the virtual gift card to pick out something else entirely. This process also works online, via the retailer&#8217;s e-commerce site. In either case, it&#8217;s just a matter of showing or entering in the provided gift card number.</p>
+<p>The concept is similar in spirit to what <a href="http://techcrunch.com/2013/05/22/giftcards-com-agrees-to-buy-giftly-to-grow-a-mobile-platform/">recently-acquired Giftly</a> had allowed for, except that it had worked with banks and credit card issuers to allow gift cards to be used by recipients at up to three different places &#8211; you would tap a button and Giftly <a href="http://techcrunch.com/2011/11/11/giftly-now-lets-you-give-the-gift-of-discovery-and-some-money-too/">credited your credit card with the amount of the gift</a>. Jifiti instead works with retailers&#8217; own gift card systems.</p>
+<p>Though in the end, the Jifiti gift essentially functions like a gift card, it&#8217;s also meant to evoke the feeling that someone really shopped for you and thoughtfully chose your present.</p>
+<p>For obvious reasons, Jifiti makes sense to mall owners, brick-and-mortar retailers, or even those with both physical and online stores.</p>
+<p>The startup recently completed a test of its product&#8217;s prototype in three Simon-owned malls in the Boston area.</p>
+<p><a href="http://techcrunch.com/2013/07/29/jifiti-raises-2-5-million-for-gifting-app-which-combines-thoughtful-shopping-with-the-convenience-of-a-gift-card/note-12/" rel="attachment wp-att-852847"></a>&#8220;We brought it to them because we really wanted to catch people when they&#8217;re in that shopping mode &#8211; they&#8217;re walking through the stores and they want to buy people gifts,&#8221; explains Jifiti co-founder Shaul Weisband. &#8220;Simon malls, which saw this as a way to connect the in-store to the online, realized the potential and actually invested in the company,&#8221; he says.</p>
+<p>The investment will see Jifiti featured in over 100 more Simon malls by this holiday season, meaning it will be promoted through signage in the malls, video screens and through co-promotions with the mall&#8217;s retailers.</p>
+<p>Jifiti currently works with retailers like Gap, Nike, Barnes &amp; Noble, Sephora, Gamestop, Hot Topic, Brookstone, Columbia Sportwear, Banana Republic, Old Navy, Athleta, and more. In total, the app works with around 25 retailers today, with another 7 nearly ready to go live.</p>
+<p>Weisband declined to provide the number of consumers using the application, because, so far, the company hadn&#8217;t been focused on getting out to market, but had rather been more interested in proving the concept. However, he would ballpark the adoption at &#8220;tens of thousands,&#8221; and spoke off record of other projects in the works which would help Jifiti gain even greater visibility and adoption online and on mobile.</p>
+<p>Prior to the new investment, the Columbus, Ohio-based company had only a small amount of pre-seed funding from friends and family, so the focus when raising this round was on bringing in strategic partners. &#8220;We know hard it is when it comes to user acquisition and getting to the shoppers,&#8221; says Weisband, who says he&#8217;s thrilled by Simon Property Group investment. &#8220;They&#8217;re forward thinkers&#8230;they&#8217;re always looking ahead to what the mall of the future is going to be like, and how they can integrate technology for their users,&#8221; he remarks.</p>
+<p>In addition, the CMO of Simon Property Group Mikael Thygesen has now joined Jifiti&#8217;s board, as a result of the new funding.  The plan now is to focus on the rollout to the 100 or so new malls, as well as on other new product initiatives which would help to transform physical items into digital purchases.</p>
+<p>The updated version of the Jifiti mobile application is <a target="_blank" href="http://www.jifiti.com/pages/download.html">available here for both iPhone and Android.</a></p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852830/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=96FGeAIlS6Y:yMZSn5iZuKE:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=96FGeAIlS6Y:yMZSn5iZuKE:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=96FGeAIlS6Y:yMZSn5iZuKE:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=96FGeAIlS6Y:yMZSn5iZuKE:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=96FGeAIlS6Y:yMZSn5iZuKE:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=96FGeAIlS6Y:yMZSn5iZuKE:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=96FGeAIlS6Y:yMZSn5iZuKE:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=96FGeAIlS6Y:yMZSn5iZuKE:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/96FGeAIlS6Y" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/jifiti-raises-2-5-million-for-gifting-app-which-combines-thoughtful-shopping-with-the-convenience-of-a-gift-card/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/jifitilogo-withslogan.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/jifitilogo-withslogan.png?w=150" medium="image">
+			<media:title type="html">JifitiLogo-WithSlogan</media:title>
+		</media:content>
+
+		<media:content url="http://2.gravatar.com/avatar/5225bb627e112543aa03bf3b2958be3f?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">sarahintampa</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/pulse-3.jpg?w=360" medium="image">
+			<media:title type="html">pulse 3</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/note.png?w=360" medium="image">
+			<media:title type="html">note</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/jifiti-raises-2-5-million-for-gifting-app-which-combines-thoughtful-shopping-with-the-convenience-of-a-gift-card/</feedburner:origLink></item>
+		<item>
+		<title>BMW Officially Unveils The i3, An Electric Hot Hatch With A $41k Starting Price</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/avnIAnc1rT0/</link>
+		<comments>http://techcrunch.com/2013/07/29/bmw-officially-unveils-the-i3-an-electric-hot-hatch-with-a-41k-starting-price/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 13:50:03 +0000</pubDate>
+		<dc:creator>Matt Burns</dc:creator>
+				<category><![CDATA[TC]]></category>
+		<category><![CDATA[bmw]]></category>
+		<category><![CDATA[Tesla]]></category>
+		<category><![CDATA[i3]]></category>
+		<category><![CDATA[bmw i3]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852820</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/2014-bmw-i3-debut-079.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="2014-bmw-i3-debut-079" style="float: left; margin: 0 10px 7px 0;" />Watch out, Tesla. BMW has officially entered the EV market. With the BMW i3, <a target="_blank" href="http://www.autoblog.com/2013/07/29/2014-bmw-i3-official-worldwide-launch/">officially announced today</a>, the Bavarian auto maker has a vehicle and, with that, a platform, that could shake up the electric vehicle market. Meet the BMW i3, the ultimate electric driving machine.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/2014-bmw-i3-debut-079.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="2014-bmw-i3-debut-079" style="float: left; margin: 0 10px 7px 0;" /><p></p>
+<p>Watch out, Tesla. BMW has officially entered the EV market. With the BMW i3, <a target="_blank" href="http://www.autoblog.com/2013/07/29/2014-bmw-i3-official-worldwide-launch/">officially announced today</a>, the Bavarian auto maker has a vehicle and, with that, a platform, that could shake up the electric vehicle market. Meet the BMW i3, the ultimate electric driving machine.</p>
+<p>The BMW i3 is the company&#8217;s first production electric vehicle under the &#8220;i&#8221; sub-brand. Priced at $41,350 in the US (£25,680 in the UK) and headed to the US market in the second quarter of 2014, the i3 isn&#8217;t a car for the masses. Even though it&#8217;s one of the least expensive EVs available, the sticker is still out of the reach of many. Worse yet, its EV range is less than that of competitors including the Nissan Leaf. But it&#8217;s a BMW. And it looks fantastic. </p>
+<p>BMW no doubts expects the i3 to be a low volume production car. It is, in a sense, for early adopters. The 22-kilowatt, 450-pound lithium-ion powertrain is good for just 80-100 miles and provides 170 horsepower and 184 found-feet of torque. That&#8217;s good for a pokey 7.0 second 0-60 time. For those buyers with a bit of range anxiety, the i3 can be equipped with a a 34-hp, 650cc two-cylinder generator, turning the car into a Chevy Volt-like extended range electric vehicle.</p>
+<p>But for BMW, the i3 isn&#8217;t about building and selling the best electric vehicle right now &#8212; rather, it&#8217;s about building a platform for the future. This is standard operating procedure in the automotive world.</p>
+<p>Tesla started with the Roadster, a vehicle that borrowed a good chunk of its framework from Lotus. From there, once many of the bugs were worked out of the novel electric powertrain, Tesla released the Model S sedan, a car that cost about three-quarters what the Roadster did. Chevy is doing the same thing with the Volt. </p>
+<p>The Chevy Volt didn&#8217;t have to be a breakthrough hit to be a success. The Volt is built on the Voltec platform that&#8217;s also going to be used the Cadillac ELR coupe and other upcoming GM extended range electric vehicles.</p>
+<p></p>
+<p>The BMW i3 is a sort of test bed. The production car features a stable of technology and creature comforts not found in the rest of the auto maker&#8217;s line-up. BMW calls the architecture LifeDrive, consisting of the Life Module and Drive Module. The Life Module is void of pillars and is the first mass-produced monocoque made of carbon fiber reinforced plastic. The material is 30 percent lighter than aluminum and is tougher than steel, contributing to the i3&#8242;s relatively light weight of 2,700 pounds. Expect to see this sort of material and design in upcoming BMWs.</p>
+<p>The Drive Module consists of the drivetrain, battery pack and everything that propels the i3. </p>
+<p>The <a href="http://techcrunch.com/2011/11/09/meet-bmws-new-all-electric-i3-suv-and-hybrid-electric-i8-sports-car/">i3 and its big brother the i8</a>, have never been a secret. BMW has long paraded concepts and near-production examples around, sort of proclaiming to the world that BMW will, at least eventually, participate in electric vehicles. </p>
+<p>The EV market is still in its infancy and is still experiences shakeups <a href="http://techcrunch.com/2013/05/26/better-place-bankruptcy-liquidating-greentech/">as early upstarts shut down</a>. Tesla seemingly owns a large chunk of the public&#8217;s mindshare, <a target="_blank" href="http://green.autoblog.com/2013/07/15/all-of-a-sudden-nissan-doesnt-have-enough-leafs-to-go-around/">Nissan can&#8217;t build enough Leafs to meet demand</a>, and GM is rolling forward with new vehicles built on top of the Volt&#8217;s platform. Better yet, <a href="http://techcrunch.com/2013/04/04/detroit-electric-unveils-the-sp01-a-135000-electric-sports-car-with-a-historic-past/">startups are popping up</a>, eager to join the EV race. But with the BMW i3, the rest of the market should take notice &#8212; there&#8217;s suddenly a new player on the field that knows a thing or two about building compelling cars.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852820/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=avnIAnc1rT0:nbFT8jdZC0g:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=avnIAnc1rT0:nbFT8jdZC0g:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=avnIAnc1rT0:nbFT8jdZC0g:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=avnIAnc1rT0:nbFT8jdZC0g:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=avnIAnc1rT0:nbFT8jdZC0g:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=avnIAnc1rT0:nbFT8jdZC0g:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=avnIAnc1rT0:nbFT8jdZC0g:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=avnIAnc1rT0:nbFT8jdZC0g:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/avnIAnc1rT0" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/bmw-officially-unveils-the-i3-an-electric-hot-hatch-with-a-41k-starting-price/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/2014-bmw-i3-debut-079.jpg?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/2014-bmw-i3-debut-079.jpg?w=150" medium="image">
+			<media:title type="html">2014-bmw-i3-debut-079</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/c921fdee122025b0436360dc6bb7322d?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">mjburnsy</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/2014-bmw-i3-debut-079.jpg?w=640" medium="image">
+			<media:title type="html">2014-bmw-i3-debut-079</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/2014-bmw-i3-debut-049.jpg?w=640" medium="image">
+			<media:title type="html">2014-bmw-i3-debut-049</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/bmw-officially-unveils-the-i3-an-electric-hot-hatch-with-a-41k-starting-price/</feedburner:origLink></item>
+		<item>
+		<title>I'll Be Talking With Eric Migicovsky, Creator Of The Pebble Watch, At TechCrunch Disrupt SF</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/4Su4yLmk9Fk/</link>
+		<comments>http://techcrunch.com/2013/07/29/ill-be-talking-with-eric-migicovsky-creator-of-the-pebble-watch-at-techcrunch-disrupt-sf/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 13:09:00 +0000</pubDate>
+		<dc:creator>John Biggs</dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Disrupt]]></category>
+		<category><![CDATA[Pebble]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852809</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/266369v2-max-250x250.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="266369v2-max-250x250" style="float: left; margin: 0 10px 7px 0;" />Eric Migicovsky is an unlikely hardware mogul. His first product, the Pebble Smart Watch, came to him after experimenting with watch designs and then caught fire, going from <a href="http://techcrunch.com/2013/01/10/an-interview-with-eric-migicovsky-a-product-designer-who-had-to-ramp-up-from-0-to-10-million-in-funding-in-a-month/">$0 to $10 million</a> in funding on Kickstarter. His watch captured imaginations and inspired a new craze for usable, powerful smart wearables.
+]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/266369v2-max-250x250.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="266369v2-max-250x250" style="float: left; margin: 0 10px 7px 0;" /><p>Eric Migicovsky is an unlikely hardware mogul. His first product, the Pebble Smart Watch, came to him after experimenting with watch designs and then caught fire, going from <a href="http://techcrunch.com/2013/01/10/an-interview-with-eric-migicovsky-a-product-designer-who-had-to-ramp-up-from-0-to-10-million-in-funding-in-a-month/">$0 to $10 million</a> in funding on Kickstarter. His watch captured imaginations and inspired a new craze for usable, powerful smart wearables.</p>
+<p>He also has excellent taste in hats.</p>
+<p>We&#8217;ll be talking about what&#8217;s next for Pebble, how his retail expansion is going, and what it takes to make a hardware startup in an a software-heavy environment. I&#8217;ve made it a personal mission to bring cool hardware guys like up on stage every Disrupt and I&#8217;m pleased that we got the coolest of the cool.</p>
+<p>Disrupt SF takes over The San Francisco Design Concourse from September 7 to 11. Tickets are currently on sale <a href="http://techcrunch.com/events/disrupt-sf-2013/event-info/">here</a>. If you are interested in becoming a sponsor, opportunities can be found <a href="http://techcrunch.com/events/disrupt-sf-2013/sponsor-info/">here</a>.</p>
+<hr />
+<p><a target="_blank" href="http://www.crunchbase.com/person/eric-migicovsky-2">Eric Migicovsky</a><br />
+<a target="_blank" href="http://www.crunchbase.com/company/pebble">Pebble</a>, CEO</p>
+<p>Eric Migicovsky is the founder of Pebble Technology, the company behind the Pebble smartwatch. He helped create the largest Kickstarter project to date.</p>
+<p>You can <a target="_blank" href="http://twitter.com/ericmigi">follow him on Twitter at @ericmigi</a>. He lives in Vancouver and when to the University of Waterloo.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852809/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=4Su4yLmk9Fk:-LGXXBSyzfQ:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=4Su4yLmk9Fk:-LGXXBSyzfQ:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=4Su4yLmk9Fk:-LGXXBSyzfQ:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=4Su4yLmk9Fk:-LGXXBSyzfQ:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=4Su4yLmk9Fk:-LGXXBSyzfQ:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=4Su4yLmk9Fk:-LGXXBSyzfQ:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=4Su4yLmk9Fk:-LGXXBSyzfQ:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=4Su4yLmk9Fk:-LGXXBSyzfQ:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/4Su4yLmk9Fk" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/ill-be-talking-with-eric-migicovsky-creator-of-the-pebble-watch-at-techcrunch-disrupt-sf/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/266369v2-max-250x250.jpg?w=112" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/266369v2-max-250x250.jpg?w=112" medium="image">
+			<media:title type="html">266369v2-max-250x250</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/c0a943f484a32e62ed3bc81dd0dd25da?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">john</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/304197_961571517037_1827696887_n.jpg" medium="image">
+			<media:title type="html">98741v3-max-250x250</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/ill-be-talking-with-eric-migicovsky-creator-of-the-pebble-watch-at-techcrunch-disrupt-sf/</feedburner:origLink></item>
+		<item>
+		<title>In Space, Everyone Can Hear You Use The Toilet Thanks To SoundCloud, And Astronaut Chris Hadfield Is Glad</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/YFLQZ8Tlq9k/</link>
+		<comments>http://techcrunch.com/2013/07/29/in-space-everyone-can-hear-you-use-the-toilet-thanks-to-soundcloud-and-astronaut-chris-hadfield-is-glad/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 12:53:58 +0000</pubDate>
+		<dc:creator>Darrell Etherington</dc:creator>
+				<category><![CDATA[TC]]></category>
+		<category><![CDATA[soundcloud]]></category>
+		<category><![CDATA[space]]></category>
+		<category><![CDATA[chris hadfield]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852816</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/chris-hadfield.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="chris-hadfield" style="float: left; margin: 0 10px 7px 0;" />Chris Hadfield, former Commander of the International Space Station, is among the most impressive living examples of my fellow Canadians, and also a huge fan of using social media and digital tools to document and share his experience in space with the help of his son Evan Hadfield. The astronaut used SoundCloud a lot while in space, partially to document his extra-atmospheric folk music guitar playing, but also just to give a sense of what it sounds like to live on a floating contained habitat.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/chris-hadfield.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="chris-hadfield" style="float: left; margin: 0 10px 7px 0;" /><div class='embed-vimeo' style='text-align:center;'><iframe src='http://player.vimeo.com/video/71244557' width='640' height='360' frameborder='0'></iframe></div>
+<p>Chris Hadfield, former Commander of the International Space Station, is among the most impressive living examples of my fellow Canadians, and also a huge fan of using social media and digital tools to document and share his experience in space with the help of his son Evan Hadfield. The astronaut <a target="_blank" href="http://blog.soundcloud.com/2013/07/29/soundcloud-creator-profile-colonel-chris-hadfield/">used SoundCloud a lot while in space</a>, partially to document his extra-atmospheric folk music guitar playing, but also just to give a sense of what it sounds like to live on a floating contained habitat.</p>
+<p>In the short video above Hadfield recounts the audio history of his trip, and does a good job verbally explaining how much noise changes based on the different environments you end up in both up on the space station itself, and once you return. He talks about all of this against the typically idyllic background of what looks to my trained eye like Canadian cottage country, where he&#8217;s likely enjoying some much-needed downtime.</p>
+<p>Hadfield&#8217;s giving SoundCloud some great promotion here, but the truth is that the use of the tool in this case (while unique) actually exemplifies how the startup can provide an additional dimension to a story that in the past has been mostly about the visual medium. Inevitably space coverage is going to steer towards the visual spectrum, but Hadfield&#8217;s usage of SoundCloud shows how a story can engage on different levels using today&#8217;s digital toolkit.</p>
+<p>Hadfield is a social media superstar, and his example is bound to set a precedent for anyone looking to maximize their online impact. Of course, no one wants to know what it sounds like in the ambient environment of the at-home blogger (I&#8217;ll give you a hint: there&#8217;s lots of fan noise), but for other situations where there&#8217;s value in publicizing a job, role or situation that&#8217;s out of the ordinary, it makes a lot of sense.</p>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F72595157"></iframe>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852816/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=YFLQZ8Tlq9k:5wFfkuxP0Hg:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=YFLQZ8Tlq9k:5wFfkuxP0Hg:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=YFLQZ8Tlq9k:5wFfkuxP0Hg:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=YFLQZ8Tlq9k:5wFfkuxP0Hg:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=YFLQZ8Tlq9k:5wFfkuxP0Hg:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=YFLQZ8Tlq9k:5wFfkuxP0Hg:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=YFLQZ8Tlq9k:5wFfkuxP0Hg:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=YFLQZ8Tlq9k:5wFfkuxP0Hg:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/YFLQZ8Tlq9k" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/in-space-everyone-can-hear-you-use-the-toilet-thanks-to-soundcloud-and-astronaut-chris-hadfield-is-glad/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/chris-hadfield.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/chris-hadfield.png?w=150" medium="image">
+			<media:title type="html">chris-hadfield</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">etherin</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/in-space-everyone-can-hear-you-use-the-toilet-thanks-to-soundcloud-and-astronaut-chris-hadfield-is-glad/</feedburner:origLink></item>
+		<item>
+		<title>Kraams, A New Sales App For iPad, Appeals To Small-Scale Businesses</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/Lam86mqk49Y/</link>
+		<comments>http://techcrunch.com/2013/07/29/kraams-a-new-sales-app-for-ipad-appeals-to-small-scale-businesses/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 12:31:14 +0000</pubDate>
+		<dc:creator>Eliza Brooke</dc:creator>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[kraams]]></category>
+		<category><![CDATA[poland]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=846740</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/picture_1.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="picture_1" style="float: left; margin: 0 10px 7px 0;" />A new iPad app called <a target="_blank" href="http://kraams.com/">Kraams</a> is hoping to become the sales platform of choice for small businesses reliant on face-to-face pitches with clients. The point of the app, which launches today, is to enable users to easily tweak their story lines for any given presentation and, more importantly, to change tack in the middle of that same meeting. 
+]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/picture_1.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="picture_1" style="float: left; margin: 0 10px 7px 0;" /><p>A new iPad app called <a target="_blank" href="http://kraams.com/">Kraams</a> is hoping to become the sales platform of choice for small businesses reliant on face-to-face pitches with clients. The point of the app, which launches today, is to enable users to easily tweak their story lines for any given presentation and, more importantly, to change tack in the middle of that same meeting. </p>
+<p>Founded in Poland two years ago by a group of advertising vets, Kraams is based on the idea that there is no better way to achieve credibility with a client than to deliver a customized pitch. The app places product images on cards, which the salesperson can shuffle, group, and swipe away in reaction to the client&#8217;s responses. It&#8217;s more agile than slideshow programs, especially relevant when appealing to only a few people&#8217;s opinions.</p>
+<p>In addition to programs like PowerPoint and Keynote, Kraams is directly competing against customizable sales apps like <a target="_blank" href="http://www.crunchbase.com/company/showpad">Showpad</a> and <a target="_blank" href="http://www.crunchbase.com/company/storydesk">StoryDesk</a>. The differentiating point, co-founder Adam Smilowski told me, is the emphasis on targeting SOHO and SME businesses, since many other apps are oriented toward serving large companies and supporting the whole sales process.</p>
+<p>The company, which is currently bootstrapped, follows a freemium model. The free, basic app is meant for small-scale use and has restrictions on the number of Kraams — also the name of the cards — a person can create. Upgrades are available for single users without limitations, teams with a shared product library, and enterprises. Although Smilowski said the app is meant for small business owners, there&#8217;s no reason to exclude large businesses in case it takes off, right?</p>
+<p>Down the line, Smilowski said he hopes to turn Kraams into a shopable platform for consumers that could replace the need to browse multiple sites online. By subscribing to different brands, users would receive a live stream of new products, editable by the companies at any time.</p>
+<p>&#8220;We treat this app as a starting point into a total change in online purchasing experience,&#8221; he said.</p>
+<p>Big words. Kraams has enough competition with its sales app, without getting into the pursuit of ecommerce domination. For now, first things first: getting traction when the app goes live today.</p>
+<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='560' height='315' src='http://www.youtube.com/embed/Hg5A6mjeoNM?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' frameborder='0'></iframe></span>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/846740/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Lam86mqk49Y:LxbvLW7BIAE:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Lam86mqk49Y:LxbvLW7BIAE:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Lam86mqk49Y:LxbvLW7BIAE:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Lam86mqk49Y:LxbvLW7BIAE:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=Lam86mqk49Y:LxbvLW7BIAE:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Lam86mqk49Y:LxbvLW7BIAE:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=Lam86mqk49Y:LxbvLW7BIAE:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Lam86mqk49Y:LxbvLW7BIAE:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/Lam86mqk49Y" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/kraams-a-new-sales-app-for-ipad-appeals-to-small-scale-businesses/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/picture_1.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/picture_1.png?w=150" medium="image">
+			<media:title type="html">picture_1</media:title>
+		</media:content>
+
+		<media:content url="http://2.gravatar.com/avatar/b4b585040cb59fd07c5d7488ae8e2c6a?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">elizabrooke</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/kraams-a-new-sales-app-for-ipad-appeals-to-small-scale-businesses/</feedburner:origLink></item>
+		<item>
+		<title>Move Over Google Glass - GlassUp Is A Less Creepy And Much Cheaper Pair Of AR Specs</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/hdHkMJ60prE/</link>
+		<comments>http://techcrunch.com/2013/07/29/glassup/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 12:13:00 +0000</pubDate>
+		<dc:creator>Natasha Lomas</dc:creator>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Europe]]></category>
+		<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[glassup]]></category>
+		<category><![CDATA[google glass]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[augmented reality]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852776</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/glassup.jpeg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="glassup" style="float: left; margin: 0 10px 7px 0;" />Right now Google Glass sits at the apogee of geeky, wearable technology.  Last month, interviewing a Glass-wearing Robert Scoble, Newsnight&#8217;s Jeremy Paxman memorably debunked it in his opening question as &#8220;that thing on your head. &#8221; Getting non-techie people to view Glass as anything other than ludicrously geeky is going to be an uphill fight for Google. Arguably, though, even more of a blocker to Glass adoption is people viewing the technology as the epitome of creepy, thanks to its built in camera. Sure a digital eye sited at eye-level lets you share a nice view of that mountain you can see from your hotel window. But in more everyday scenarios it also lets you video your fellow humans as they go about their business and that privacy intrusion is inevitably going to cause some friction. Throw in the whole NSA Prism surveillance fallout and stuff like this is inevitable. Add to that, even though Google has banned (even more creepy) facial recognition apps on Glass&#8217;s Mirror API  it&#8217;s possible to envisage a workaround that leverages Google&#8217;s Hangouts feature &#8212; which shares real-time field of vision &#8212; to get around the bar. Marco Vanossi, co-founder of GeoPapyrus, pointed this workaround out to TechCrunch &#8212; and demonstrates how it can be made to work in this video, creating a Hangout with a robot assistant called Dexter that then analyses what the Glass wearer can see. &#8220;You can share your camera view through a Google Hangout and the content in it (people, objects, places, barcodes, qrcodes) can be analyzed and identified,&#8221; he tells TechCrunch. &#8220;As a result, information can be overlaid on top of it and shown back on your screen. This means that the Hangout app, built and distributed by Google on every Glass device could be used to violate its own privacy rules.&#8221; All of which suggests there may be room for an eyeless Glass-style product which preserves privacy be being receive only &#8212; and therefore can&#8217;t be accused of spying. Enter GlassUp. GlassUp is a prototype pair of augmented reality specs that does not include a camera. It&#8217;s currently seeking funds to start manufacturing on Indiegogo. The glasses are designed to allow the wearer to receive text-based messages and updates overlaid over the central portion of their field of vision &#8212; so while they intrude on the wearer&#8217;s vision, they can&#8217;t be accused of intruding on the privacy of the people around them. GlassUp&#8217;s creators envisage a typical use-case being]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/glassup.jpeg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="glassup" style="float: left; margin: 0 10px 7px 0;" /><p>Right now Google Glass sits at the apogee of geeky, wearable technology.  Last month, interviewing a Glass-wearing Robert Scoble, <a target="_blank" href="http://www.bbc.co.uk/news/technology-22770908">Newsnight&#8217;s Jeremy Paxman</a> memorably debunked it in his opening question as &#8220;that thing on your head. &#8221; Getting non-techie people to view Glass as anything other than ludicrously geeky is going to be an uphill fight for Google.</p>
+<p>Arguably, though, even more of a blocker to Glass adoption is people viewing the technology as the epitome of creepy, thanks to its built in camera. Sure a digital eye sited at eye-level lets you share a nice view of that mountain you can see from your hotel window. But in more everyday scenarios it also lets you video your fellow humans as they go about their business and that privacy intrusion is inevitably going to cause some friction. Throw in the whole NSA Prism surveillance fallout and <a target="_blank" href="http://stopthecyborgs.org/google-glass-ban-signs/">stuff like this</a> is inevitable.</p>
+<p>Add to that, even though Google has banned (even more creepy) facial recognition apps on Glass&#8217;s Mirror API  it&#8217;s possible to envisage a workaround that leverages Google&#8217;s Hangouts feature &#8212; which shares real-time field of vision &#8212; to get around the bar. Marco Vanossi, co-founder of GeoPapyrus, pointed this workaround out to TechCrunch &#8212; and demonstrates how it can be made to work in <a target="_blank" href="http://www.youtube.com/watch?v=8VNi-DxSbEM">this video</a>, creating a Hangout with a robot assistant called Dexter that then analyses what the Glass wearer can see.</p>
+<p>&#8220;You can share your camera view through a Google Hangout and the content in it (people, objects, places, barcodes, qrcodes) can be analyzed and identified,&#8221; he tells TechCrunch. &#8220;As a result, information can be overlaid on top of it and shown back on your screen. This means that the Hangout app, built and distributed by Google on every Glass device could be used to violate its own privacy rules.&#8221;</p>
+<p>All of which suggests there may be room for an eyeless Glass-style product which preserves privacy be being receive only &#8212; and therefore can&#8217;t be accused of spying. Enter GlassUp. GlassUp is a prototype pair of augmented reality specs that does not include a camera. It&#8217;s currently <a target="_blank" href="http://www.indiegogo.com/projects/glassup-augmented-reality-glasses-that-display-messages-from-your-smartphone">seeking funds to start manufacturing on Indiegogo</a>. The glasses are designed to allow the wearer to receive text-based messages and updates overlaid over the central portion of their field of vision &#8212; so while they intrude on the wearer&#8217;s vision, they can&#8217;t be accused of intruding on the privacy of the people around them.</p>
+<p>GlassUp&#8217;s creators envisage a typical use-case being a pedestrian or a motorbike rider wanting to navigate handsfree and without having to stop every few yards to consult a map/smartphone. Or a tourist wanting to get info about the historical landmarks they are seeing pushed to their eye-line as they explore a new city. Other imagined use-cases include for cooks or warehouse workers needing info as they work.<a href="http://techcrunch.com/2013/07/29/glassup/screen-shot-2013-07-29-at-13-25-22/" rel="attachment wp-att-852810"></a></p>
+<p>The device is basically a second screen output for a smartphone, connecting via Bluetooth, that&#8217;s worn as a heads-up display. It has a monochrome projector to display text updates, helping to extend the battery life of the device. The creators say they intend to release some apps themselves, but also plan to release an API for Android, iOS and Windows Phone to allow developers to extend its functionality.</p>
+<p>Having intentionally stripped back the hardware of GlassUp to remove privacy concerns its creators have also shrunk the cost. The price-tag for the device starts at $299 &#8212; considerably cheaper than the Google Glass Explorer&#8217;s hefty price-tag of $1,500.</p>
+<p>GlassUp&#8217;s creators are hoping to raise $150,000 on Indiegogo and have so far managed to reach just over half their goal, with 11 days left on the campaign. However a update on their crowdfunding page notes that they will deliver products even if they fail to achieve their funding goal &#8212; thanks to unnamed investor backers. GlassUp is due to go on sale from February next year.</p>
+<span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='640' height='360' src='http://www.youtube.com/embed/os6bqbTo4Qs?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' frameborder='0'></iframe></span>
+<p><em>TechCrunch&#8217;s Steve O&#8217;hear contributed to this story</em></p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852776/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=hdHkMJ60prE:-P3uvsjRkVs:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=hdHkMJ60prE:-P3uvsjRkVs:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=hdHkMJ60prE:-P3uvsjRkVs:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=hdHkMJ60prE:-P3uvsjRkVs:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=hdHkMJ60prE:-P3uvsjRkVs:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=hdHkMJ60prE:-P3uvsjRkVs:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=hdHkMJ60prE:-P3uvsjRkVs:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=hdHkMJ60prE:-P3uvsjRkVs:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/hdHkMJ60prE" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/glassup/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/glassup.jpeg?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/glassup.jpeg?w=150" medium="image">
+			<media:title type="html">glassup</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/68a02f90ad0a6349a7b852ddce6f93e4?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">nelomas</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-13-25-22.png?w=300" medium="image">
+			<media:title type="html">GlassUp</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/glassup/</feedburner:origLink></item>
+		<item>
+		<title>Supertoy Teddy Is The Teddy Ruxpin We All Dreamed Of – A Stuffed Bear With Conversation Skills</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/1QJuWfAFnV4/</link>
+		<comments>http://techcrunch.com/2013/07/29/supertoy-teddy-is-the-teddy-ruxpin-we-all-dreamed-of-a-stuffed-bear-with-conversation-skills/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 11:51:13 +0000</pubDate>
+		<dc:creator>Darrell Etherington</dc:creator>
+				<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[robots]]></category>
+		<category><![CDATA[toys]]></category>
+		<category><![CDATA[teddy bear]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852779</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/conlanfluegge.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="ConlanFluegge" style="float: left; margin: 0 10px 7px 0;" />A new Kickstarter project seems like the wish-fulfillment of a child of the late 80s or early 90s: the Supertoy Teddy is a stuffed bear you can talk to, just like Teddy Ruxpin, but this one intelligently talks back, rather than just operating via an embedded cassette deck with a fixed number and order of recorded statements. Supertoy Teddy is a robot, with AI-like conversational powers, built by a robotics company in Wales.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/conlanfluegge.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="ConlanFluegge" style="float: left; margin: 0 10px 7px 0;" /><span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='640' height='390' src='http://www.youtube.com/embed/egt8cGlQlP4?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' frameborder='0'></iframe></span>
+<p>A new Kickstarter project seems like the wish-fulfillment of a child of the late 80s or early 90s: the <a target="_blank" href="http://www.kickstarter.com/projects/2117525416/supertoy-worlds-first-natural-talking-teddy-bear">Supertoy Teddy</a> is a stuffed bear you can talk to, just like Teddy Ruxpin, but this one intelligently talks back, rather than just operating via an embedded cassette deck with a fixed number and order of recorded statements. Supertoy Teddy is a robot, with AI-like conversational powers, built by a robotics company in Wales.</p>
+<p>The Supertoy&#8217;s pedigree is a good one, as Supertoy Robotics&#8217; co-creators Ashley Conlan and Karsten Flügge previously made Jeannie Rabbot, a Siri-like virtual assistant powered in part by Nuance tech that&#8217;s available for iPhone, Mac, Android and more. The Teddy inherits Jeannie&#8217;s bubbly personality, offering human emotion approximations and totally autonomous speech generation.</p>
+<p>Supertoy Teddy uses a smartphone and remote server to do the heavy lifting of processing requests and formulating answers, using a free Android or iOS app to do so. The stuffed bear itself has a zipped compartment to hold the phone and connect it to its internal processing bits. The company says they&#8217;ve already built three prototypes, with the last being production-ready, which is why they&#8217;re targeting a December rollout for the first backer shipments if the campaign is successful.</p>
+<p><a href="http://techcrunch.com/2013/07/29/supertoy-teddy-is-the-teddy-ruxpin-we-all-dreamed-of-a-stuffed-bear-with-conversation-skills/daa6c0ca38d8097dcfa1eb8533478925_large/" rel="attachment wp-att-852791"></a>Teddy has a mouth that moves, and later on will get more robotic movement in his limbs and other areas, too. The toy can also learn a person&#8217;s preferences and change its attitude accordingly, meaning an adult with one could end up with a Ted-like companion, while a kid would get the sweetest bear around. The Teddy can also be a practical help, offering up weather, setting alarms, reading bed time stories, playing music, doing phone calls, sending texts or emails and more.</p>
+<p>Out of the box Supertoy Teddy can manage 30 different languages, with planned support in the future for different voices specially tailored to each. The tone of its voice already adapts to different emotions, to make it more lifelike. Backers can get one starting at £42 (around $62 U.S.).</p>
+<p><a href="http://techcrunch.com/2013/07/29/supertoy-teddy-is-the-teddy-ruxpin-we-all-dreamed-of-a-stuffed-bear-with-conversation-skills/conlanfluegge/" rel="attachment wp-att-852814"></a></p>
+<p>Teddy Ruxpin was the toy we all imagined would actually come alive and talk to us, but Supertoy Teddy looks to be the real fulfillment of that childhood dream. Plus, since it&#8217;s designed for kids of all ages, anyone who still remembers Ruxpin fondly can get one, too, and use the Supertoy to help do their taxes or whatever else comes to mind.</p>
+<iframe width="640" height="480" src="http://www.kickstarter.com/projects/2117525416/supertoy-worlds-first-natural-talking-teddy-bear/widget/video.html" frameborder="0"> </iframe>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852779/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=1QJuWfAFnV4:bEZAN9FXv8k:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=1QJuWfAFnV4:bEZAN9FXv8k:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=1QJuWfAFnV4:bEZAN9FXv8k:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=1QJuWfAFnV4:bEZAN9FXv8k:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=1QJuWfAFnV4:bEZAN9FXv8k:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=1QJuWfAFnV4:bEZAN9FXv8k:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=1QJuWfAFnV4:bEZAN9FXv8k:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=1QJuWfAFnV4:bEZAN9FXv8k:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/1QJuWfAFnV4" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/supertoy-teddy-is-the-teddy-ruxpin-we-all-dreamed-of-a-stuffed-bear-with-conversation-skills/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/conlanfluegge.jpg?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/conlanfluegge.jpg?w=150" medium="image">
+			<media:title type="html">ConlanFluegge</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/188039e12983eb749171a75cfd01378d?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">etherin</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/daa6c0ca38d8097dcfa1eb8533478925_large.jpg" medium="image">
+			<media:title type="html">daa6c0ca38d8097dcfa1eb8533478925_large</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/conlanfluegge.jpg" medium="image">
+			<media:title type="html">ConlanFluegge</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/supertoy-teddy-is-the-teddy-ruxpin-we-all-dreamed-of-a-stuffed-bear-with-conversation-skills/</feedburner:origLink></item>
+		<item>
+		<title>Yahoo And Google Are Both Spending Big Money On Acquisition Sprees And What That Says About Their Futures</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/RbusKUQ1USY/</link>
+		<comments>http://techcrunch.com/2013/07/29/yahoo-and-google-are-both-spending-big-money-on-acquisition-sprees-and-what-that-says-about-their-futures/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 07:05:25 +0000</pubDate>
+		<dc:creator>Rip Empson</dc:creator>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Fundings & Exits]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[waze]]></category>
+		<category><![CDATA[M&A]]></category>
+		<category><![CDATA[acquisition]]></category>
+		<category><![CDATA[mapping]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852494</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/google-yahoo.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="google-yahoo" style="float: left; margin: 0 10px 7px 0;" />These days it seems as if a startup so much as glances in Marissa Mayer's direction, it can expect a bid within 24 hours. There's been a lot of buzz about Yahoo's new role as an acquisition hound of late, and Mayer's attempts to turn the beleaguered giant into a mobile-first company and energize its ranks with young, acqui-hired talent. ]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/google-yahoo.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="google-yahoo" style="float: left; margin: 0 10px 7px 0;" /><p>These days it seems as if a startup so much as glances in Marissa Mayer&#8217;s direction, it can expect a bid within 24 hours. There&#8217;s been a lot of buzz about Yahoo&#8217;s new role as an acquisition hound of late, and Mayer&#8217;s attempts to turn the beleaguered giant into a mobile-first company and energize its ranks with young, acqui-hired talent. </p>
+<p>But Yahoo isn&#8217;t alone in its pursuit of &#8220;serial acquirer&#8221; status. <a href="http://techcrunch.com/2013/06/11/its-official-google-buys-waze-giving-a-social-data-boost-to-its-location-and-mapping-business/">Highlighted by its blockbuster acquisition of Waze last month</a>, Google has quietly snapped up a cadre of companies as well &#8212; and has spent a pretty penny doing it. <a target="_blank" href="http://www.sec.gov/Archives/edgar/data/1288776/000128877613000055/goog10-qq22013.htm">In its &#8220;10-Q&#8221; filing with the SEC on Thursday</a>, Google revealed that it spent $1.3 billion on acquisitions during the first half of 2013, with $966 million of that total going to Waze. </p>
+<p>While reports had varied on the final purchase price, according to the filing, the acquisition of Waze was &#8220;for a total cash consideration of $966 million,&#8221; with &#8220;$847 million attributed to goodwill and $188 million attributed to intangible assets,&#8221; minus the $69 million in other net liabilities assumed from Waze&#8217;s books. Though the final number is subject to change, it&#8217;s now abundantly clear just how hungry Google was to beef up its social mapping data and prevent it from falling into the hands of its competitors. </p>
+<p>On top of its new social mapping prize, Google has made another 15 acquisitions so far this year, shelling out $344 million in additional assets to buy companies like Wavii, Makani Power, Channel Intelligence and DNNresearch. Channel Intelligence represented the largest deal of the batch, with Google <a href="http://techcrunch.com/2013/02/06/google-acquires-channel-intelligence-to-boost-product-recommendations-and-e-commer-with-users/">paying $125 million to continue</a> its charge on the eCommerce front as well. </p>
+<p>With Wavii going for an estimated $30 million and 13 companies still accounted for, we can deduce that Google, like Yahoo, has also been making its fair share of small-ticket acqui-hires over the year. In fact, Google acquired 53 companies in 2012, chief of which was Motorola Mobility at a price tag of $12.5 billion. The rest of its acquisitions cost $1.1 billion. </p>
+<p>Notably, Google was in the midst of carrying out this M&amp;A strategy when Marissa Mayer left the company to become CEO of Yahoo, and it&#8217;s clearly one that she&#8217;s now using to shore up Yahoo&#8217;s weaknesses. Yahoo spent most of 2012 wrapped up in internal struggles and attempted board takeovers. Compared to Google&#8217;s 53 acquisitions in 2012, Yahoo only made two &#8212; both of which took place only after Mayer had taken over. </p>
+<p>Since Mayer took the reins last summer, Yahoo has accelerated its acquisition strategy exponentially, making a whopping 18 acquisitions. And, while that&#8217;s mind-boggling enough as it is, Yahoo is likely far from calling it quits. <a href="http://techcrunch.com/2013/07/23/yahoo-alibaba-and-why-mayer-can-keep-buying-whatever-she-wants/">As my colleague Alex Wilhelm recently pointed out</a>, Mayer actually has plenty of runway. Thanks to its stake in Alibaba, Yahoo has an ace up its sleeve that&#8217;s potentially worth tens of billion of dollars and which can continue to fuel its aggressive M&amp;A strategy.</p>
+<p>For many reasons, this is critical if Mayer is to have any shot at turning the ship around. If Yahoo really wants to strengthen its position in mobile and revamp <a href="http://techcrunch.com/2013/05/20/yahoos-unwatchable-live-stream-proves-its-next-acquisition-should-be-a-proper-video-platform/">its aging video and media technology</a>, the company has to continue going after outside talent. </p>
+<h4>Similar Approach To M&amp;A, Different Stories</h4>
+<p>While Yahoo and Google are both making headlines for the slew of acquisitions they&#8217;ve been made over the past year &#8212; and them money they&#8217;re spending to do it &#8212; this shared approach says very different things about what each company perceives as its greatest need (read: deficiency). Yahoo&#8217;s biggest problem, at least in the short term, is PR. </p>
+<p>In other words, when Mayer took the helm, Yahoo has been spinning in circles for years. They were directionless and basically seen as a has-been company that had lost its relevance in the modern tech industry. By acqui-hiring young talent, Mayer is showing that she&#8217;s eager to return Yahoo to its former standing and regain its luster &#8212; in part, by make it attractive to younger entrepreneurs but also by updating its product to make Yahoo a destination for younger people in general. </p>
+<p>Its billion-dollar acquisition of Tumblr is a prime example: Tumblr&#8217;s core user base consists of young people, teenagers and middleschoolers. So not only was Tumblr an opportunity to make Yahoo seem like a cool company for young people and generate more traffic, but it also allows Yahoo to play to its strength, leveraging its ad network to monetize Tumblr&#8217;s massive content silo. </p>
+<p>Mayer&#8217;s approach to M&amp;A is also proving that the company is eager to fix its lagging mail, search and news tools, which have been gathering dust and have been eclipsed by the likes of Google and Microsoft. </p>
+<p>Some of these problems will be easy for Yahoo to address and fix in the short term, but they could also create more issues for the company over the long-term. Yahoo is attempting to make a litany of significant, structural changes all at once, making it tough to achieve any kind of real cohesion across its products. It may do wonders for the stock, but it could easily end up being an ad hoc, duct-tape-style solution that leaves the real, infrastructural dangers roiling beneath the surface.</p>
+<p>In contrast, it&#8217;s taken years for Google to achieve any sort of cohesion across its own disparate products and projects. But its recently embarked on a new, &#8220;One Google Era,&#8221; in which the company has begun to prioritize collaboration and unification across its properties, which, in turn, gives more meaning to both its M&amp;A and product strategies. </p>
+<p>Google&#8217;s acquisition of Waze, for example, allows it to add a social layer to its existing mapping and navigation products, strengthening an already formidable arsenal of mobile properties, rather than, in Yahoo&#8217;s case, allowing it to start from Square One.</p>
+<p>Google is now focused on becoming a big data empire and adding pieces that will help it power its massive cloud services infrastructure and products that are decidedly focused on realtime. This applies across its diverse properties, whether that&#8217;s allow people to collaborate and communicate in realtime through Hangouts, Docs or Gmail, search in realtime or navigate in realtime through Google Maps and Waze. </p>
+<p>Going forward, Google will begin looking more to acquire and build products that will prepare it for increasingly direct competition with companies like Amazon. One place that Google has been struggling of late is in its eCommerce and shopping, where its ambitions haven&#8217;t been met with the usual rewards or dominance its come to expect from its ventures into search, mobile and advertising. </p>
+<p>For example, while Google&#8217;s dominance in search remains, when it comes to discovery and engagement around products, Amazon has been leaving it in the dust. If Larry Page&#8217;s mission is for Google to use its realtime infrastructure to create utilities that are critical to their everyday lives &#8212; whether in communication or otherwise &#8212; falling behind in product marketplaces is a big problem.</p>
+<p>That&#8217;s likely why Google is working to boost its marketplace ambitions with products like the rumored &#8220;Helpouts,&#8221; which could help find a real home for its mobile payment products, like Wallet, and communication product like Hangouts to power realtime commerce. Amazon and eBay have been busy tearing down the walls that stand in the way of buying and selling on the Web. Now Google wants to join the fun, and tools like Helpouts point towards a future in which Google may begin acquiring the kind of talent that can help it to build a real marketplace on top of search and other core products.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852494/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=RbusKUQ1USY:DRFbsS41OG4:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=RbusKUQ1USY:DRFbsS41OG4:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=RbusKUQ1USY:DRFbsS41OG4:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=RbusKUQ1USY:DRFbsS41OG4:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=RbusKUQ1USY:DRFbsS41OG4:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=RbusKUQ1USY:DRFbsS41OG4:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=RbusKUQ1USY:DRFbsS41OG4:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=RbusKUQ1USY:DRFbsS41OG4:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/RbusKUQ1USY" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/29/yahoo-and-google-are-both-spending-big-money-on-acquisition-sprees-and-what-that-says-about-their-futures/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/google-yahoo.jpg?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/google-yahoo.jpg?w=150" medium="image">
+			<media:title type="html">google-yahoo</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/a94f6b72a8ee7342e862c1c9d6c5b826?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">rempson8</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/29/yahoo-and-google-are-both-spending-big-money-on-acquisition-sprees-and-what-that-says-about-their-futures/</feedburner:origLink></item>
+		<item>
+		<title>Crowdfunding Site Medifund Wants To Help Students Become Doctors</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/KpLOMqUjO-Q/</link>
+		<comments>http://techcrunch.com/2013/07/28/852762/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 05:51:46 +0000</pubDate>
+		<dc:creator>Catherine Shu</dc:creator>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Medifund]]></category>
+		<category><![CDATA[Crowdfunding]]></category>
+		<category><![CDATA[medical]]></category>
+		<category><![CDATA[Philipp]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852762</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/medifund.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="medifund" style="float: left; margin: 0 10px 7px 0;" /><a target="_blank" href="http://www.medifund.co/">Medifund</a> is a crowdfunding Web site that wants to increase the number of doctors in countries with a critical shortage by helping students afford medical tuition. So far, the site, which is based in the Philippines and launched last month at <a target="_blank" href="http://cebu.startupweekend.org/2013/06/09/swc3-final-presentation-order/">Startup Weekend Cebu</a>, has successfully completed the <a target="_blank" href="http://www.medifund.co/campaign/kristine">campaign of second-year medical student Kristine Bless</a>, who raised PHP 25,000 (about $577 USD).]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/medifund.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="medifund" style="float: left; margin: 0 10px 7px 0;" /><p><a target="_blank" href="http://www.medifund.co/">Medifund</a> is a crowdfunding Web site that wants to increase the number of doctors in countries with a critical shortage by helping students afford medical tuition. So far, the site, which is based in the Philippines and launched last month at <a target="_blank" href="http://cebu.startupweekend.org/2013/06/09/swc3-final-presentation-order/">Startup Weekend Cebu</a>, has successfully completed the <a target="_blank" href="http://www.medifund.co/campaign/kristine">campaign of second-year medical student Kristine Bless</a>, who raised PHP 25,000 (about $577 USD).</p>
+<p>Founder Jossy Onwude, who is currently a student at Southwestern University&#8217;s Mham College of Medicine in Cebu City, says he was inspired to create Medifund by Bless, who had trouble paying for her studies after her relatives ran into financial difficulty. The site is currently in public beta and has about 30 students waiting to sign up for fundraising campaigns when it goes live.</p>
+<p>Onwude hopes Medifund will help increase the number of doctors in countries like <a target="_blank" href="http://www.congress.gov.ph/press/details.php?pressid=6674">the Philippines</a>, Indonesia and his native Nigeria. He also wants the site to enable more women to pursue medical training.</p>
+<p>&#8220;There is a huge shortage of doctors in Asia and Africa,&#8221; says Onwude. &#8220;In the Philippines, for example, one doctor might have to work in several hospitals.&#8221;</p>
+<p>Of course, every successful crowdfunding site needs to have quality-control measures in place. To make sure students signing up for donations on Medifund are serious about their goals, the site uses a gaming system that encourages students to add more details about their background, education and achievements. For example, badges are earned when they upload videos, transcripts, financial statements and school recommendations.</p>
+<p>Over the next three months before its public launch, the Medifund team will further develop its platform, work with payment companies to ensure that donors in different countries can use the site and seek funding. Onwude is currently in talks with medical schools, NGOs and scholarship programs that are interested in partnering with Medifund.</p>
+<p>Onwude says Medifund will take 5 percent of every fully funded project in order to keep the site running. As Medifund grows, Onwude says it will also launch a peer-to-peer education loan program and a reward system that allows donors to accumulate points for services like medical consultations.</p>
+<p>The startup&#8217;s founding team represents a multitude of nationalities and come from tech, design and medical backgrounds. Before entering medical school, Onwude, an alumnus of <a target="_blank" href="http://hack2hatch.com/#/main">Hack2Hatch</a> entrepreneurship camp, gained startup experience as founder of <a target="_blank" href="http://www.unli.fm/">UnliFM</a> and Pinoyborn. Other members of Medifund&#8217;s team include Nanaho Nishiyama, previously a marketer at <a target="_blank" href="http://nexseed.net/">Nexseed</a> and project manager at <a target="_blank" href="http://www.btrax.com/">btrax</a>, Michael Millan and Francis Alturas, designers at <a target="_blank" href="http://sym.ph/">sym.ph</a>, Dan Pantinople, designer and founder of <a target="_blank" href="http://www.dee-oh.com/">Dee-oh!</a> and Kent Astudillo, as well as sym.ph developers Fe Mojado and Richmond Wang.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852762/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=KpLOMqUjO-Q:GKXTU1g6LUA:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=KpLOMqUjO-Q:GKXTU1g6LUA:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=KpLOMqUjO-Q:GKXTU1g6LUA:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=KpLOMqUjO-Q:GKXTU1g6LUA:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=KpLOMqUjO-Q:GKXTU1g6LUA:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=KpLOMqUjO-Q:GKXTU1g6LUA:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/KpLOMqUjO-Q" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/852762/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/medifund.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/medifund.png?w=150" medium="image">
+			<media:title type="html">medifund</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/4b15381361f439f6782de896e29143f1?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">catherineshu</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/852762/</feedburner:origLink></item>
+		<item>
+		<title>Surf Air, The Air Travel Startup That's Bridging The Tech Hubs Of L.A. And S.F.</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/D5WNJmK8jYI/</link>
+		<comments>http://techcrunch.com/2013/07/28/surf-air-interview-wade-eyerly/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 05:00:58 +0000</pubDate>
+		<dc:creator>Colleen Taylor</dc:creator>
+				<category><![CDATA[TC]]></category>
+		<category><![CDATA[Video]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852714</guid>
+		<description><![CDATA[<img width="100" height="62" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-7-03-24-pm.png?w=100&amp;h=62&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="surf air" style="float: left; margin: 0 10px 7px 0;" />There are a lot of factors that come into play when working to build a successful tech startup, and historically, a big one has been location -- hence the continued focus on <a target="_blank" href="http://en.wikipedia.org/wiki/Silicon_Valley">Silicon Valley</a> as a major industry hub. 
+
+Now, location will probably always be important when it comes to building a tech business, but a startup out of Los Angeles called <a target="_blank" href="http://www.surfair.com">Surf Air</a> has made it much easier for people on the California coast to travel between the state's tech hubs in San Francisco, L.A., and most recently Santa Barbara, through a uniquely tech-savvy service that bridges the big gap between super expensive private air travel and hassle-filled commercial air travel. ]]></description>
+				<content:encoded><![CDATA[<img width="100" height="62" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-7-03-24-pm.png?w=100&amp;h=62&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="surf air" style="float: left; margin: 0 10px 7px 0;" /><p><script type="text/javascript" src="http://pshared.5min.com/Scripts/PlayerSeed.js?sid=577&#038;width=640&#038;height=450&#038;colorPallet=%230A9600&#038;hasCompanion=false&#038;relatedMode=2&#038;videoControlDisplayColor=%23000000&#038;playList=517866561&#038;shuffle=0&#038;videoGroupID=133503&#038;autoStart=false&#038;playerActions=16407"></script><br />
+There are a lot of factors that come into play when working to build a successful tech startup, and historically, a big one has been location &#8212; hence the continued focus on <a target="_blank" href="http://en.wikipedia.org/wiki/Silicon_Valley">Silicon Valley</a> as a major industry hub. </p>
+<p>Now, location will probably always be important when it comes to building a tech business, but a startup out of Los Angeles called <a target="_blank" href="http://www.surfair.com">Surf Air</a> has made it much easier for people on the California coast to travel between the state&#8217;s tech hubs in San Francisco, L.A., and most recently Santa Barbara, through a uniquely tech-savvy service that bridges the big gap between super expensive private air travel and hassle-filled commercial air travel. </p>
+<p>The company has taken on a <a href="http://techcrunch.com/2012/06/06/members-only-airline-surf-air-raises-series-a-from-anthem-nea-others-including-jared-leto/">healthy $7 million in venture capital funding</a> and is eyeing some big expansion efforts going forward, so while visiting L.A. earlier this month we at TechCrunch TV made it a point to talk to Surf Air CEO <a target="_blank" href="http://www.crunchbase.com/person/wade-eyerly">Wade Eyerly</a> at MuckerLab, the Santa Monica accelerator where Surf Air got its start. Watch the video embedded above to hear more about Surf Air&#8217;s business model, its growth thus far, and plans for the future.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852714/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=D5WNJmK8jYI:xZuDIOWX0uY:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=D5WNJmK8jYI:xZuDIOWX0uY:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=D5WNJmK8jYI:xZuDIOWX0uY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=D5WNJmK8jYI:xZuDIOWX0uY:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=D5WNJmK8jYI:xZuDIOWX0uY:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=D5WNJmK8jYI:xZuDIOWX0uY:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=D5WNJmK8jYI:xZuDIOWX0uY:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=D5WNJmK8jYI:xZuDIOWX0uY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/D5WNJmK8jYI" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/surf-air-interview-wade-eyerly/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-7-03-24-pm.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-7-03-24-pm.png?w=150" medium="image">
+			<media:title type="html">surf air</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/4978d78871dc3ed1a4264d051e6c9193?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">colleentechcrunch</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/surf-air-interview-wade-eyerly/</feedburner:origLink></item>
+		<item>
+		<title>Michael Dell Vows To Stay At Dell Regardless Of The Outcome Of His Offer To Take The Firm Private</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/XgUALeTb4CE/</link>
+		<comments>http://techcrunch.com/2013/07/28/michael-dell-vows-to-stay-at-dell-regardless-of-the-outcome-of-his-offer-to-take-the-firm-private/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 04:51:54 +0000</pubDate>
+		<dc:creator>Alex Wilhelm</dc:creator>
+				<category><![CDATA[Finance]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[dell]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852728</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/2013-07-28_20h06_51.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="2013-07-28_20h06_51" style="float: left; margin: 0 10px 7px 0;" />After promising to sell his shares at a discount and increasing the price of his offer, Michael Dell, founder of Dell, has today vowed to stay at the firm regardless of the <a href="http://techcrunch.com/2013/02/05/dell-goes-private-in-leveraged-buyout-deal-by-michael-dell-and-partners-worth-24-4-billion/">success of his bid</a> to take the company private.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/2013-07-28_20h06_51.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="2013-07-28_20h06_51" style="float: left; margin: 0 10px 7px 0;" /><p>After promising to sell his shares at a discount and increasing the price of his offer, Michael Dell, founder of Dell, has today vowed to stay at the firm regardless of the <a href="http://techcrunch.com/2013/02/05/dell-goes-private-in-leveraged-buyout-deal-by-michael-dell-and-partners-worth-24-4-billion/">success of his bid</a> to take the company private.</p>
+<p>This is not a surprise, given that Dell owns a large equity stake in the company. For him to step back if his plan to take the struggling computing giant failed would almost be odd; given how much of Michael&#8217;s personal fortune is tied up in the company, to fully step back would be the functional consignment of his wealth to others.</p>
+<p>Who would be comfortable with that?</p>
+<p>In an <a target="_blank" href="http://online.wsj.com/article/SB10001424127887324354704578633991112022534.html">interview with the Wall Street Journal</a>, Dell stated that he, in the language of the paper, &#8220;wouldn&#8217;t sell assets or commit to any leveraged recapitalization as some shareholders have advocated.&#8221; This means that Michael would not take part in the plan advocated by activist investor Carl Icahn, that would see a tender offer put forth for most of the shares in Dell corporation at a price slightly higher than what its founder has offered.</p>
+<p>Michael Dell wants to take the company private, to give it space to reform, and rebuild its product line and business service offerings. The only current competing offer, via Mr. Icahn, would not grant the Dell company that flexibility, though, it would greatly boost the per-share revenue of the equity that Icahn would control after newly acquired debt was used to fund the repurchase of other shares.</p>
+<p>Michael Dell and his partner Sliver Lake recently boosted their per-share offer for Dell shares to $13.75 from their former offer of $13.65. That small margin was the target of criticism when it became known. As I <a href="http://techcrunch.com/2013/07/24/michael-dell-ups-his-offer-to-take-dell-private-by-a-comically-low-0-10-per-share/">reported at the time</a>:</p>
+<blockquote><p>How can Michael Dell and his partner think that they can get away with such a pathetic sweetening of their former offer? Because what Icahn has in mind for Dell is complex and not in the best interest of the corporation. The firm needs time as a private entity so that it can rebuild its OEM business and focus on expanding its business services arm. It cannot do that with sufficient flexibility if it is chained to quarterly earnings reports.</p></blockquote>
+<p>Given what Michael Dell has said to the Journal, either Dell shareholders accept his offer at the August 2 meeting, or perhaps Icahn won&#8217;t have access to enough shares to execute his plan. This essentially limits the options of shareholders to two: Accept what the founder has in mind, or sit adrift.</p>
+<p>Ironically, the company continues to <a target="_blank" href="https://www.google.com/finance?q=dell&amp;ei=_tr1UZC-L-GTiQKodg">trade at a discount</a> to both offerings, signaling that the market lacks confidence in either plan to reach conclusion. Time is short, and this chapter is all but closed for the famed OEM.</p>
+<p><em>Top Image Credit: <a id="yui_3_7_3_3_1375067166705_945" target="_blank" href="http://www.flickr.com/photos/dellphotos/">Dell Inc.</a></em></p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852728/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=XgUALeTb4CE:8VZHlEw_ZfY:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=XgUALeTb4CE:8VZHlEw_ZfY:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=XgUALeTb4CE:8VZHlEw_ZfY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=XgUALeTb4CE:8VZHlEw_ZfY:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=XgUALeTb4CE:8VZHlEw_ZfY:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=XgUALeTb4CE:8VZHlEw_ZfY:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=XgUALeTb4CE:8VZHlEw_ZfY:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=XgUALeTb4CE:8VZHlEw_ZfY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/XgUALeTb4CE" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/michael-dell-vows-to-stay-at-dell-regardless-of-the-outcome-of-his-offer-to-take-the-firm-private/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/2013-07-28_20h06_51.jpg?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/2013-07-28_20h06_51.jpg?w=150" medium="image">
+			<media:title type="html">2013-07-28_20h06_51</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/a3a71bf0d3d22efa0db4b77936a066b8?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">alexjameswilhelm</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/michael-dell-vows-to-stay-at-dell-regardless-of-the-outcome-of-his-offer-to-take-the-firm-private/</feedburner:origLink></item>
+		<item>
+		<title>Bob Mansfield To Leave Senior VP Of Tech Role At Apple, But Will Remain To Work On Special Projects</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/QM39EHvkd20/</link>
+		<comments>http://techcrunch.com/2013/07/28/bobmansfield-movingon/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 03:34:22 +0000</pubDate>
+		<dc:creator>Catherine Shu</dc:creator>
+				<category><![CDATA[TC]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[bob mansfield]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852736</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-29-58-am-e1375068780771.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Bob Mansfield Apple" style="float: left; margin: 0 10px 7px 0;" />Bob Mansfield is leaving his role as Senior VP of Technologies at Apple, but will remain at the company to work on special projects reporting to Tim Cook. ]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-29-58-am-e1375068780771.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Bob Mansfield Apple" style="float: left; margin: 0 10px 7px 0;" /><p>Bob Mansfield is leaving his role as Senior VP of Technologies at Apple, but will remain at the company to work on special projects reporting to Tim Cook.</p>
+<p>Rumors first started flying about Mansfield&#8217;s movements when his biography <a target="_blank" href="http://www.macrumors.com/2013/07/28/apple-senior-vice-president-bob-mansfield-removed-from-leadership-webpage/">disappeared from Apple&#8217;s executive roster</a> on its Web site. The company has not yet issued an official statement, but <a target="_blank" href="https://twitter.com/PoornimaGupta/statuses/361676821571448833">confirmed to Reuters</a> that Mansfield is moving on. We&#8217;ve emailed Apple for more information.</p>
+<blockquote class="twitter-tweet">
+<p style="text-align:left;">Apple says Bob Mansfield is no longer on Apple&#8217;s exec team but will remain at Apple working on special projects reporting to Cook. <a target="_blank" href="https://twitter.com/search?q=%24AAPL&amp;src=ctag">$AAPL</a></p>
+<p style="text-align:left;">— Poornima Gupta (@PoornimaGupta) <a target="_blank" href="https://twitter.com/PoornimaGupta/statuses/361676821571448833">July 29, 2013</a></p>
+</blockquote>
+<p>&nbsp;</p>
+<p>Apple <a href="http://techcrunch.com/2012/06/28/bob-mansfield-apple-exec-who-has-led-hardware-engineering-for-mac-and-ios-devices-to-retire-this-summer/">announced in June 2012 </a>that Mansfield, who joined Apple in 1998, was planning to retire from his position as senior VP of hardware engineering. Mansfield changed his mind two months later, however, and stayed on at the company as its senior VP of technologies. At the time, it was <a target="_blank" href="http://arstechnica.com/apple/2012/11/apples-bob-mansfields-un-retirement-partially-due-to-forstall-exit/">reported</a> that Mansfield had decided to stay after iOS software lead Scott Forstall left.</p>
+<p>If Mansfield had followed through on his original decision to leave the company, it would have marked a major departure for Apple. Mansfield led the hardware engineering of some of Apple&#8217;s most profitable devices, including the iPhone, iPad, iPod and Mac.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852736/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=QM39EHvkd20:H3e2GuDPHWU:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=QM39EHvkd20:H3e2GuDPHWU:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=QM39EHvkd20:H3e2GuDPHWU:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=QM39EHvkd20:H3e2GuDPHWU:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=QM39EHvkd20:H3e2GuDPHWU:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=QM39EHvkd20:H3e2GuDPHWU:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=QM39EHvkd20:H3e2GuDPHWU:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=QM39EHvkd20:H3e2GuDPHWU:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/QM39EHvkd20" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/bobmansfield-movingon/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-29-58-am-e1375068780771.png?w=144" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-11-29-58-am-e1375068780771.png?w=144" medium="image">
+			<media:title type="html">Bob Mansfield Apple</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/4b15381361f439f6782de896e29143f1?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">catherineshu</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/bobmansfield-movingon/</feedburner:origLink></item>
+		<item>
+		<title>What Games Are: Self-Publishing On Console Will Not Create The Next SuperCell. But Microconsoles Might.</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/Vz1xqZmOADY/</link>
+		<comments>http://techcrunch.com/2013/07/28/what-games-are-self-publishing-on-console-will-not-create-the-next-supercell-but-microconsoles-might/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 03:00:57 +0000</pubDate>
+		<dc:creator>Tadhg Kelly</dc:creator>
+				<category><![CDATA[Column]]></category>
+		<category><![CDATA[Gaming]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[What Games Are]]></category>
+		<category><![CDATA[microconsole]]></category>
+		<category><![CDATA[playstation 4]]></category>
+		<category><![CDATA[xbox one]]></category>
+		<category><![CDATA[wii u]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852669</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-2-43-08-pm.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Screen Shot 2013-07-28 at 2.43.08 PM" style="float: left; margin: 0 10px 7px 0;" />It's interesting to watch Microsoft pivot to liberalize their platform and allow self-publishing for indies, but that doesn't mean Xbox will suddenly be the home of the next SuperCell. There's still too much legacy in how console makers think to let that happen. Microconsoles, on the other hand, may well offer that possibility.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-2-43-08-pm.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Screen Shot 2013-07-28 at 2.43.08 PM" style="float: left; margin: 0 10px 7px 0;" /><p><strong>Editor’s note: </strong><em>Tadhg Kelly is a veteran game designer, creator of leading game design blog <a target="_blank" href="http://www.whatgamesare.com/">What Games Are</a> and creative director of Jawfish Games. You can follow him on Twitter <a target="_blank" href="https://twitter.com/tiedtiger">here</a>.</em></p>
+<p>To the joy of many, Microsoft announced <a target="_blank" href="http://gamasutra.com/view/news/196948/What_we_know_and_dont_know_about_Xbox_One_selfpublishing.php">another Xbox One pivot</a>: Rather than try to maintain a fortress of solitude, the console will support indie publishing. You&#8217;ll be able to use your console as a dev kit (traditionally dev kit licenses could be very expensive) to make and publish your games. Microsoft even promises to remove some of the category barriers that segregated indie games to a backwater page in the Xbox dashboard.</p>
+<p>These moves can be read in two ways. The first is largely as a reaction to Sony. <a target="_blank" href="http://www.gamasutra.com/view/news/187080/">Sony has been flirting</a> with the indie developer community for a while, quietly building up relationships and facilitating the publishing of a number of games such as <em>Journey</em> and <em>Thomas Was Alone</em>. As part of PS4 the company has significant plans to allow small developers to self-publish on the system, although still under a dev kit model. It promises to send free kits to developers that need them.</p>
+<p>The second read is to consider these moves in light of wider trends. Outside of giant thousand-man studios and tiny indies, most mid-sized gaming companies are nowhere within 100 kilometers of consoles these days. There&#8217;s just no place for them in a sector that values its 20m+ unit hits, and they can&#8217;t afford to compete at that level. All of those people have shifted to mobile, tablet or social instead, where they are finding success.</p>
+<p>The move to attract indies sits semi-uncomfortably. The console industry is used to acting like a car showroom, developing specific pieces of beautiful game content and then engaging in a large sales push toward success. Fans of consoles (including many developers) are also used to this model, and tend to think of this activity as &#8220;real games,&#8221; as well as the most economically significant activity in the industry. Much as Hollywood still thinks that box office means something, console game executives tend to be more impressed by stories involving unit sales rather than residuals.</p>
+<p>That showroom mentality is what led Microsoft down the path of making Xbox One into <a target="_blank" href="http://www.xbox.com/en-US/xboxone/meet-xbox-one">a mega-hub</a>, which nobody understood, or Sony make a very similar thrust with PlayStation 3. The pivots away from those big plays may at first glance seem like attempts to atone or to broaden out their relationships with game makers, but I tend to think otherwise. What they&#8217;re actually about is developing a few show-bikes to go alongside the show-cars.</p>
+<h3>Indies vs Independents</h3>
+<p>There are several meanings of the term &#8220;indie.&#8221; For some it simply means financially independent, able to make games and revenue and be self-sustaining. For others the term is political, expressive of points of view and meaning. This second version is far more popular in the games press because it has more of an emotional component. Indies stand for something and become heroes fighting an unspecified &#8220;man.&#8221;</p>
+<p>It may surprise you, but in the console-ist view the political kind of indie game is more desirable because it ticks the art-game box. Art games are rarely expected to make their money back, and certainly not to become big franchises. Yet there&#8217;s a lot of value in having them. If you can have a few notables <a target="_blank" href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;cad=rja&amp;ved=0CD4QtwIwAQ&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DzhVAGfUAPtA&amp;ei=cYn1Ub2KG6mxiwL4jIBA&amp;usg=AFQjCNEctLZ1FwWOCIym6jFgYb1OwP5IMQ&amp;sig2=hHfS_SN8MTh1F9U8IwPraw&amp;bvm=bv.49784469,d.cGE">like Jonathan Blow</a> talking up your platform, a few Phil Fishes and a few &#8220;thatgamecompanys&#8221; making signature games, then this is a great story. It aligns you with the kind of story seen in <a target="_blank" href="http://buy.indiegamethemovie.com/"><em>Indie Game: The Movie</em></a> and at GDC. Most important is that it gets the press on side, which is hugely important in the mutually assured destruction of console platforms.  Appearing to be indie is worth acres of PR.</p>
+<p>At the same time, supporting a few such indies allows platforms to retain their essential power. While PC gaming has always reserved much more power to the developer and treated hardware makers as little more than component makers, console gaming has always worked the other way. The console is the main brand and the <a target="_blank" href="http://www.whatgamesare.com/platform-story.html">platform story</a>. The games all appear on the console with the holder&#8217;s say-so. The publishing model places the console brand front and center, and the games are in support, and the market tribally responds along those lines.</p>
+<p>Taken in that vein, the modern console industry&#8217;s understanding of allowing indies to enter into its playpen is pointed but they are not embracing an ecosystem any time soon. From the standpoint of where they&#8217;ve been, modest steps to change their model may seem like great leaps for Sony, Microsoft and Nintendo. Like TV executives who are still tentative about streaming, there&#8217;s a sense of not going too fast for fear of losing everything.</p>
+<p>This is why Microsoft&#8217;s newfound message of developer liberation is still pretty garbled. The exact plans for how Xbox One will go indie-friendly come across as a bit hazy. They smack of a recent decision at the executive level which will need some thoughtful re-engineering time to figure out on the practical level, so don&#8217;t expect it for launch. Also how it reconciles with some other showroom features (like the heavy push on mainstream TV) is anyone&#8217;s guess.</p>
+<p>Not to let Sony off the hook, its plans for indie liberation are similarly convoluted. Sony <a target="_blank" href="http://www.gamasutra.com/view/news/189271/Sony_kills_concept_approval_makes_moves_to_get_indies_onto_PS4.php">still wants some forms of concept approval</a>, which &#8212; even though the company promises a speedy turnaround &#8212; still sounds every bit as ludicrous as Roku wanting concept approval for movies it streams. It should make any developer pause and think seriously about what it implies.</p>
+<p>Yet the bigger issue is that both plans are not enough. They do not represent change real enough that indies in the first sense of the word (financially viable) would find attractive. It&#8217;s also woefully out of step with just how far games have come. Developers are far more empowered today than they have been since the days of microcomputers in the 80s and are not keen to sacrifice that freedom.</p>
+<h3>You Are Free To Do What We Tell You</h3>
+<p>It used to be imperative to placate Sony, Nintendo or Microsoft for any game to have a chance of being published. This was expensive between  concept approvals, extensive technical requirements and laborious quality assurance and certification processes. But what could you do? They were the gatekeepers, it was largely a relationships business, and that was that.</p>
+<p>Even when they moved into digital markets they were choosy, taking an active role in content selection and publishing. Games were released on schedules to give a window for sales to build and platforms were managed like topiary. Not too many games of one genre or another, just a few key ones and a heavy sense of curation. All very bonsai.</p>
+<p>Then Apple and Facebook upended that model with something more organic and irrevocably changed how developers thought of success. Success was no longer to be like Jonathan Blow or Ubisoft. It became being <a target="_blank" href="http://www.forbes.com/sites/karstenstrauss/2013/04/18/the-2-4-million-per-day-company-supercell/">like SuperCell</a>. The console industry has never been able to fully understand the depth of that shift.</p>
+<p>The way that developers approach making games on Facebook, iOS and Android is radically different to how things used to be when console platforms (and PCs) was all there was. They just do it, no dev kits, relationships, publishing schedules or concept approvals required. They may need to pass some curation (particularly from Apple) but those conditions tend to be far narrower in scope than anything the console industry ever imposed. Essentially don&#8217;t crash, no porn, no defamation and you&#8217;re good to go.</p>
+<p>That new model is the one that breeds true independent game development success. The bonsai  paradigm of consoles prevents developers from expanding too much, meaning that a thatgamecompany gets to make cool games but not really grow (if they want to, of course). Whereas the iOS/Android/Facebook model gives birth to Rovios and Zyngas (in happier times perhaps). When platforms get out of the way and let software be software, software becomes wildly successful and the platform itself grows.</p>
+<p>Obviously Rovio is an extreme case, but many other smaller studios have managed to forge their own destinies in a similar fashion. Studios like Spry Fox and NimbleBit make the games they want to make, how they want to make them, with whatever business model they desire, and it&#8217;s no big deal. So they are free to innovate and they do. Same for us at Jawfish.</p>
+<h3>Enter the Micros</h3>
+<p>Console makers do realize that they&#8217;ve painted themselves into a corner, want to change and get some press goodwill. Yet not to the extent that they detonate their existing business. Especially not when many of their fans prefer <a target="_blank" href="http://www.develop-online.net/news/44477/E3-2013-Wave-of-cheers-as-Sony-supports-used-games-on-PS4">to cheer for stasis</a> and buy into predictable franchises over innovation.</p>
+<p>I don&#8217;t envy them, but that gap is why microconsoles are a real threat. OUYA, GamePop, GameStick, Mad Catz and whatever Google might be cooking up are relatively unencumbered by old constraints, and therefore able to empower indies in the first sense. The fact that they&#8217;re mostly using a common operating system helps, but their main advantage is the potential flexibility and the focus that being simple provides.</p>
+<p>The first generation of microconsole hardware is <a target="_blank" href="http://www.ign.com/articles/2013/07/26/ouya-review">less than stellar</a>. Of course it is. The idea is brand new and still finding its way. The OUYA&#8217;s joypad, for example, isn&#8217;t good. The processors for most microconsoles are probably underpowered, and there are lots of early firmware and operating system issues. Look past these early-phase issues, however, and take in the longer view.</p>
+<p>Microconsoles can iterate on hardware quickly, like phone makers, where Sony is stuck with a fixed spec for the next seven years with PS4. Big consoles have to be static because big publishers (like Activision) need the spec to be stable enough to master in order to make the next <em>Call of Duty</em>. A SuperCell, on the other hand, doesn&#8217;t. An iPad doesn&#8217;t. Indeed most every other form of electronics has figured out how to move to an annualized cycle except console makers.</p>
+<p>Beyond hardware issues the next issue is the customer. Who are microconsoles for? Everyone. Everyone who likes to play games cheaply, for fun, with simple controllers and low (or free) prices. As we&#8217;ve seen on phone, tablet and Facebook, that translates to a hell of a lot of people. And before we get too worried about TV being somehow special in this regard, consider that that is a self-cyclical piece of thinking born of consoles being pretty bad as devices. They are only now getting into the idea that maybe they should have power/resume states like every other device you&#8217;ve owned since the turn of the millennium. Part of the reason why they have that special gamer aura is because they are a hassle. There&#8217;s no reason for micros to follow the same path.</p>
+<h3>Power Shifts</h3>
+<p>The future that I see for console gaming is one where hardware incrementally cedes power to software. Pushed by microconsoles offering a vastly cheaper option on the one hand, and developers of incredible games with the right business models on the other, the prospect of all three current console platform holders being reduced to only vertically satisfying their core fans is very real. The prospect of big publishers taking a bath is also very real.</p>
+<p>It will take a couple of iterations to get their hardware and business models right. It may take the entrance of a big player like Google or Samsung to validate it (much as Amazon did for ebooks). There will also be that initial flurry of press coverage that will swamp all channels with talk of PS4 vs X1 (and ill-advisedly lamenting Nintendo) for the next 18 months. That will cover over the real story to an extent, allowing OUYA et al room to breathe and pivot.</p>
+<p>But in the medium term? The new SuperCells will not be coming from these revamped &#8220;indie&#8221; console offerings. They&#8217;ll come from a very different kind of device entirely.</p>
+<p>(<em>If you&#8217;d like to hear more, come see me talk about microconsoles some more at <a target="_blank" href="http://usa.casualconnect.org/content.html">Casual Connect</a> this week in San Francisco</em>.)</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852669/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Vz1xqZmOADY:wxp-ryZEQPY:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Vz1xqZmOADY:wxp-ryZEQPY:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Vz1xqZmOADY:wxp-ryZEQPY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Vz1xqZmOADY:wxp-ryZEQPY:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=Vz1xqZmOADY:wxp-ryZEQPY:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Vz1xqZmOADY:wxp-ryZEQPY:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=Vz1xqZmOADY:wxp-ryZEQPY:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=Vz1xqZmOADY:wxp-ryZEQPY:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/Vz1xqZmOADY" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/what-games-are-self-publishing-on-console-will-not-create-the-next-supercell-but-microconsoles-might/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-2-43-08-pm.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-2-43-08-pm.png?w=150" medium="image">
+			<media:title type="html">Screen Shot 2013-07-28 at 2.43.08 PM</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/06916aaa92c89987b419c3d21fdacfe6?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">tadhgk</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/what-games-are-self-publishing-on-console-will-not-create-the-next-supercell-but-microconsoles-might/</feedburner:origLink></item>
+		<item>
+		<title>Jawbone Hires Its First VP Of Data To Focus On The Intersection Of Wearables, Quantified Self And Personalized Health</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/pPB8rr-Ntx4/</link>
+		<comments>http://techcrunch.com/2013/07/28/jawbone-hires-its-first-vp-of-data-to-focus-on-the-intersection-of-wearables-quantified-self-and-personalized-health/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 01:00:23 +0000</pubDate>
+		<dc:creator>Leena Rao</dc:creator>
+				<category><![CDATA[TC]]></category>
+		<category><![CDATA[Jawbone]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852578</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/monica-roga.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Monica Roga" style="float: left; margin: 0 10px 7px 0;" /><a target="_blank" href="https://jawbone.com/">Jawbone</a> has made a key hire that shows some of the direction the company is headed towards when it comes to the quantified self and wearables development. The developer and manufacturer of the fitness device UP has brought on Monica Rogati, who was formerly a senior data scientist at LinkedIn, to be the company's first VP of data.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/monica-roga.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Monica Roga" style="float: left; margin: 0 10px 7px 0;" /><p><a target="_blank" href="https://jawbone.com/">Jawbone</a> has made a key hire that shows some of the direction the company is headed towards when it comes to the quantified self and wearables development. The developer and manufacturer of the fitness device UP has brought on Monica Rogati, who was formerly a senior data scientist at LinkedIn, to be the company&#8217;s first VP of data.</p>
+<p>Rogati is a huge win for Jawbone when it comes to talent. At LinkedIn, she developed the system that matches jobs to candidates, and created the first machine-learning model for the People You May Know feature, according to a <a target="_blank" href="http://www.forbes.com/sites/danwoods/2011/11/27/linkedins-monica-rogati-on-what-is-a-data-scientist/">Forbes profile.</a> At Jawbone, she is leading the data team and focusing on the intersection of wearable computing, quantified self and personalized health care.</p>
+<p>Jawbone CEO and founder Hosain Rahman explains that Rogati is one of the best data scientists in the space, so it was a no brainer when it came to trying to recruit her to lead data efforts at Jawbone. &#8220;Not only does she have a deep technical background, but she can take data and actually turn this into personalized, meaningful product experiences,&#8221; Rahman said in an interview.</p>
+<p>Earlier this year, Jawbone <a target="_blank" href="http://gigaom.com/2013/02/04/jawbone-buys-visera-massivehealth-to-marry-data-design-with-wearable-computing/">acquired MassiveHealth</a> to add to its data-mining efforts. The company also bought <a href="http://techcrunch.com/2013/04/30/jawbone-will-acquire-bodymedia-for-over-100-million-to-give-it-an-edge-in-wearable-health-tracking/">Body Media</a>, which creates a wearable, health-tracking device. We&#8217;re assuming that Rogati will be working on how to add innovative software enhancements and products around the data uploaded by users of the UP and other devices.</p>
+<p>Her hiring, Rahman explains further, is representative of the supercharging of Jawbone&#8217;s data-mining efforts. In the data-focused approach, Jawbone is tackling how various factors like sleep, weather, nutrition and more affect and are related to each other.</p>
+<p>&#8220;We want our users to be able to give them understanding on top of their data, and then make smarter choices,&#8221; Rahman says. Part of this is being able to give users a more personalized view of their health and data, he adds.</p>
+<p>&#8220;This is just the beginning, and there is so much more to come when it comes to taking data and actually seeing what it means for consumers,&#8221; said Rahman.</p>
+<p>It should be interesting to see what product additions Rogati develops to create a more personalized and insightful view of the data processed by the UP, and even the Body Media band. We&#8217;ve been speculating that Jawbone is beyond developing fitness gadgets and into creating full-fledged health-monitoring devices. Software that is able to process and create valuable insights from this data will be integral to the success of this effort.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852578/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=pPB8rr-Ntx4:wGK2thPLffs:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=pPB8rr-Ntx4:wGK2thPLffs:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=pPB8rr-Ntx4:wGK2thPLffs:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=pPB8rr-Ntx4:wGK2thPLffs:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=pPB8rr-Ntx4:wGK2thPLffs:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=pPB8rr-Ntx4:wGK2thPLffs:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=pPB8rr-Ntx4:wGK2thPLffs:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=pPB8rr-Ntx4:wGK2thPLffs:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/pPB8rr-Ntx4" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/jawbone-hires-its-first-vp-of-data-to-focus-on-the-intersection-of-wearables-quantified-self-and-personalized-health/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/monica-roga.jpg?w=146" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/monica-roga.jpg?w=146" medium="image">
+			<media:title type="html">Monica Roga</media:title>
+		</media:content>
+
+		<media:content url="http://2.gravatar.com/avatar/bbce6c3c48f821c81c019600a5589ae6?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">leena</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/jawbone-hires-its-first-vp-of-data-to-focus-on-the-intersection-of-wearables-quantified-self-and-personalized-health/</feedburner:origLink></item>
+		<item>
+		<title>Bootstrap 3 Goes Mobile-First, Now Reportedly Powers 1% Of The Web</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/GFRrVUo2QXI/</link>
+		<comments>http://techcrunch.com/2013/07/28/bootstrap-3-goes-mobile-first-now-reportedly-powers-1-of-the-web/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 00:00:57 +0000</pubDate>
+		<dc:creator>Frederic Lardinois</dc:creator>
+				<category><![CDATA[TC]]></category>
+		<category><![CDATA[bootstrap]]></category>
+		<category><![CDATA[developers]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852604</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/bootstrap_3_logo.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="bootstrap_3_logo" style="float: left; margin: 0 10px 7px 0;" />The team behind <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>, the immensely popular grid-based, front-end framework for web development, launched the first release candidate of Bootstrap 3 includes over the weekend. Besides a tweaked look and a couple of new features (and also the removal of a few others), the most important change in this update is that Bootstrap, just like its close competitor <a target="_blank" href="http://foundation.zurb.com/">Foundation</a>, is now mobile first and responsive by default. The announcement coincided with new data from source-code search engine <a target="_blank" href="https://meanpath.com/">meanpath</a>, which also this weekend <a target="_blank" href="http://blog.meanpath.com/twitter-bootstrap-now-powering-1-percent-of-the-web/">announced</a> that 1 percent of the 150 million websites in its index now use Bootstrap.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/bootstrap_3_logo.jpg?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="bootstrap_3_logo" style="float: left; margin: 0 10px 7px 0;" /><p>The team behind <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>, the immensely popular grid-based, front-end framework for web development, launched the first release candidate of Bootstrap 3 includes over the weekend. Besides a tweaked look and a couple of new features (and also the removal of a few others), the most important change in this update is that Bootstrap, just like its close competitor <a target="_blank" href="http://foundation.zurb.com/">Foundation</a>, is now mobile first and responsive by default. The announcement coincided with new data from source-code search engine <a target="_blank" href="https://meanpath.com/">meanpath</a>, which also this weekend <a target="_blank" href="http://blog.meanpath.com/twitter-bootstrap-now-powering-1-percent-of-the-web/">announced</a> that 1 percent of the 150 million websites in its index now use Bootstrap.</p>
+<p>Bootstrap, which was developed at Twitter but has since been spun out into its own organization after its developers left the company, has clearly caught on with developers, who can easily set up a good-looking site without having to involve designers or worry about how the site will look on different browsers.</p>
+<p><a target="_blank" href="http://tctechcrunch2011.files.wordpress.com/2013/07/bootstrap_3_example.png"></a>My guess is that the vast majority of those 1 percent of sites are run by startups. The problem with this, of course, is that if you spend enough time looking at startup landing pages (which most of us here at TechCrunch are contractually obliged to do), it often feels like they all look alike after a while because the majority of developers all built the same <a target="_blank" href="http://examples.getbootstrap.com/justified-nav/index.html">generic</a> Bootstrap-powered site.</p>
+<p>That said, version 3 introduces a new flat look for <a target="_blank" href="http://getbootstrap.com/components/#btn-groups-single">a few design elements</a> that makes it stand apart from version 2 sites. In total, the development team made over 72,000 additions and deletions and changed 300 files between the last version of Bootstrap 2 and this first <a target="_blank" href="https://github.com/twbs/bootstrap/pull/6342">release candidate</a>.</p>
+<p>By going mobile first, Bootstrap now asks developers to first think about the mobile site and then think about how it expands to larger screens. Previously, the thought process was the other way round, with developers working from the 12-column desktop grid down to smartphone-sized screens. In the process, the team also changed some naming schemes and added features like retina image mixins and small grid systems for tablets and phones.</p>
+<p>If you&#8217;re currently using Bootstrap 2, switching to Bootstrap 3 should be relatively easy, but given how much of the code has changed means you can&#8217;t just drop in the new files and hope everything will work.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852604/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=GFRrVUo2QXI:0ucNWXhNk7A:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=GFRrVUo2QXI:0ucNWXhNk7A:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=GFRrVUo2QXI:0ucNWXhNk7A:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=GFRrVUo2QXI:0ucNWXhNk7A:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=GFRrVUo2QXI:0ucNWXhNk7A:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=GFRrVUo2QXI:0ucNWXhNk7A:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=GFRrVUo2QXI:0ucNWXhNk7A:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=GFRrVUo2QXI:0ucNWXhNk7A:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/GFRrVUo2QXI" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/bootstrap-3-goes-mobile-first-now-reportedly-powers-1-of-the-web/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/bootstrap_3_logo.jpg?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/bootstrap_3_logo.jpg?w=150" medium="image">
+			<media:title type="html">bootstrap_3_logo</media:title>
+		</media:content>
+
+		<media:content url="http://2.gravatar.com/avatar/55542aa717199728948f628edc1170b1?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">fredericlardinois</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/bootstrap_3_example.png?w=300" medium="image">
+			<media:title type="html">bootstrap_3_example</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/bootstrap-3-goes-mobile-first-now-reportedly-powers-1-of-the-web/</feedburner:origLink></item>
+		<item>
+		<title>Mozilla, The Late-To-The-Mobile-Party Lumbering Dinosaur Of Open, Is Playing Carriers' Pet To Make Firefox OS Fly</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/EA5dM79-HPA/</link>
+		<comments>http://techcrunch.com/2013/07/28/mozillas-faustian-pact/#comments</comments>
+		<pubDate>Sun, 28 Jul 2013 22:00:57 +0000</pubDate>
+		<dc:creator>Natasha Lomas</dc:creator>
+				<category><![CDATA[Europe]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[geeksphone]]></category>
+		<category><![CDATA[Mozilla]]></category>
+		<category><![CDATA[Firefox OS]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852394</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2011/06/mozillalogo.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="mozillalogo" style="float: left; margin: 0 10px 7px 0;" />The first mobile devices running Firefox OS are out in the market. It's too early to say how well Mozilla's fledgling open web HTML5 mobile platform is doing in its bid to steer budget buyers away from Android gateway devices. Which is, make no mistake, exactly the hope of the carriers throwing their weight and influence behind this alternative open platform.]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2011/06/mozillalogo.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="mozillalogo" style="float: left; margin: 0 10px 7px 0;" /><p>The first mobile devices running Firefox OS are out in the market. It&#8217;s too early to say how well Mozilla&#8217;s fledgling open web HTML5 mobile platform is doing in its bid to steer budget buyers away from Android gateway devices. Which is, make no mistake, exactly the hope of the carriers throwing their weight and influence behind this alternative open platform.</p>
+<p>A raft of carriers signed up to support Firefox OS at its launch announcement <a href="http://techcrunch.com/2013/02/24/firefox-os-smartphones-marketplace/">back in February</a>. According to <a target="_blank" href="http://www.mozilla.org/en-US/firefox/os/faq/">Mozilla</a> 17 carriers are currently committed to distributing devices (namely: América Móvil, China Unicom, Deutsche Telekom, Etisalat, Hutchison Three Group, KDDI, KT, MegaFon, Qtel, SingTel, Smart, Sprint, Telecom Italia Group, Telefónica, Telenor, TMN and VimpelCom). So far only a handful of devices have gone on sale, including the ZTE Open and Alcatel One Touch. More are apparently due to be announced this year.</p>
+<p>It is, to reiterate, the very beginning of the Firefox OS project. Telefónica started selling the first consumer handset running FFOS in Spain at the start of this month &#8212; the <a href="http://techcrunch.com/2013/07/01/first-firefox-os-phone/">$90 ZTE Open</a>. It says it won&#8217;t be breaking out sales for individual models but asked about early sales indications, a spokesman said: &#8220;The team is very happy with how it&#8217;s going in Spain.&#8221;</p>
+<p>But it&#8217;s not just carriers putting FFOS phones in the market. Being an open platform there is scope for smaller players to get involved, such as hardware startup Geeksphone, which put out two Firefox developer preview devices (called <a href="http://techcrunch.com/2013/01/22/firefox-os-to-make-hardware-debut-with-keon-and-peak-developer-preview-smartphones/">Keon and Peak</a>) back in April, <a href="http://techcrunch.com/2013/04/23/firefox-os-developer-phones-sold-out-after-first-few-hours-on-sale-but-more-are-on-the-way/">selling out within hours</a>. Geeksphone has now followed those up by announcing its first consumer-focused device, called the <a href="http://techcrunch.com/2013/07/25/peak-plus/">Peak+</a>.</p>
+<p>The Peak+ is $196 (excluding taxes) on pre-order, with a slightly higher price tag planned when it goes on sale in September. &#8220;Firefox developer preview is no longer where we want to be. We are evolving towards a consumer market,&#8221; Geeksphone CEO Javier Agüera tells TechCrunch. &#8220;Geeksphone has always been selling to any customers and users since its foundation four years and a half ago&#8230; [Initially] we went for the developer preview branding because we wanted to target those early adopters, those early users who were building up the ecosystem, and we felt that was a natural thing to do.</p>
+<p>&#8220;Now we&#8217;re evolving to a more consumer-oriented perspective &#8212; back to our origins. We will keep of course a developer-friendly brand, with some unique characteristics, but target everybody.&#8221;</p>
+<p>So far, so good &#8212; for Firefox OS and for the diversity of the mobile ecosystem. Even Android fans can probably get behind the idea that another open mobile platform offering choice is A Good Thing. Some may even concede that challenging Google&#8217;s ability to dominate and control the mobile ecosystem may be ultimately beneficial, too (assuming Firefox OS can build momentum, of course). Diversity can foster innovation, after all.</p>
+<p>But it&#8217;s not all good. Mozilla is not universally liked in the open-source space. Quite the opposite. The organisation has a reputation for &#8220;viciously defending its brand,&#8221; as MeeGo startup Jolla&#8217;s Marc Dillon put it in thinly veiled comments earlier this year at the Mobile World Congress tradeshow &#8212; where Firefox OS was being very publicly endorsed by carrier club, the GSMA. Dillon shared the stage with Mozilla&#8217;s Mitchell Baker and Canonical&#8217;s Mark Shuttleworth in a panel discussion about open platforms, and the underlying tensions between the smaller players and the grand old dinosaur of open <a href="http://techcrunch.com/2013/03/03/jolla-ceo-interview/">were palpable</a>.</p>
+<p>Mozilla has a reputation for being slow, lumbering <em>and</em> having teeth. Much like its dinosaur logo. You could describe it as the Microsoft of the open-source movement. Which doesn&#8217;t sound like the kind of Android-challenging champion the mobile world needs right now. And yet Mozilla&#8217;s corporate attitude and approach have clearly made a lot of (equally conservative) carriers comfortable about working with it &#8212; which is perhaps the only way Android can be challenged at this point, being as it owns <a href="http://techcrunch.com/2013/01/28/android-ios-grabbed-92-of-global-smartphone-shipments-in-q4-2012-android-undisputed-volume-leader-says-analyst/">circa 70 percent of the global smartphone market</a>.</p>
+<p>Here&#8217;s the latest example of Mozilla&#8217;s corporate ethos in action. Last week the organisation contacted publications (including TechCrunch) that had reported on Geeksphone&#8217;s new &#8220;Firefox OS&#8221; Peak+ device to request a &#8220;correction.&#8221; Mozilla&#8217;s email said the Peak+ is not &#8220;Firefox OS certified&#8221; so cannot be described as a Firefox OS phone. Rather it should be described as being &#8220;based on Boot to Gecko&#8221; technology &#8212; the initial moniker of Mozilla&#8217;s Firefox OS project.</p>
+<p>Here&#8217;s the full statement Mozilla requested accompany the Peak+ news:</p>
+<blockquote><p>Today, Geeksphone announced the pre-sale of a new device based on Boot to Gecko technology. We want to clarify that this new phone that was announced is based on Boot to Gecko technology with pre-release software, but is not a certified or supported Firefox OS device.</p></blockquote>
+<p>As I noted in an update to the <a href="http://techcrunch.com/2013/07/25/peak-plus/">TechCrunch story</a>, this is an issue of brand control. Technically speaking, Geeksphone has not yet jumped through the certification hoops to achieve FFOS certification. But it&#8217;s highly likely that that&#8217;s because it&#8217;s not possible for Geeksphone to do that yet. The startup declined to comment about the certification issue when contacted by TechCrunch, noting that they are partners with Mozilla and have been working closely with the organisation to build the Peak+.</p>
+<p>From the outside looking in, it&#8217;s hard not to conclude that, despite this apparent partnership, Geeksphone is being treated as a second-class citizen vs. the carriers backing FFOS. After all, Telefónica&#8217;s first FFOS device (the ZTE Open) does carry the Firefox OS brand. So it is possible to gain certification at this early stage &#8212; at least, if you are involved with one of the carriers backing Mozilla&#8217;s open-platform play.</p>
+<p>It&#8217;s possible that Geeksphone, with its more limited and therefore targeted resources, hasn&#8217;t been able to divert the required effort to gaining certification yet. But Mozilla&#8217;s response, when I asked for clarification about its Firefox certification guidelines, suggests otherwise &#8212; since they revealed they are still finalising their processes. Which in turn suggests the Peak+ branding bottleneck is being caused by the lumbering dinosaur, not the nimble startup. (Case in point: it took Mozilla&#8217;s PR one whole day to obtain these very partial answers to my certification questions.)</p>
+<blockquote>
+<p style="text-align:left;">Q. What do device makers have to do to achieve certification as a Firefox OS device?<br />
+A. Because each device maker is a separate entity, the details of Firefox OS certification vary slightly from one to another. We will be publishing more details about how future partners can become Firefox OS certified soon.</p>
+<p style="text-align:left;">Q. Do Firefox OS certified devices have access to specific apps that non-certified devices don’t? Such as the Firefox Marketplace?<br />
+A. As conversations with interested parties continue, we are finalizing our guidelines for device makers.</p>
+</blockquote>
+<p style="text-align:left;">Tl;dr</p>
+<ul>
+<li>Mozilla (apparently) hasn&#8217;t decided what FFOS certification entails &#8212; therefore it&#8217;s being slow</li>
+<li>But Mozilla is also being inconsistent because carrier supported devices have been able to obtain the Firefox OS brand stamp</li>
+<li>Ergo, Mozilla is playing favourites &#8212; specifically favouring its carrier supporters</li>
+</ul>
+<p>Really, those conclusions should not surprise, given Mozilla&#8217;s late-to-the-mobile-market position and reputation for cumbersome development. It&#8217;s trying to turn those weaknesses into strengths by cosying up to the only folk likely to laud them. No wonder so many carriers are so keen to work with this open-source alternative. Mozilla&#8217;s branding strictures and usage enforcement are corporate <em>modus operandi</em> that will reassure the conservative telcos they are treading familiar ground with Firefox OS; that this open ecosystem is nonetheless policed to order, not encouraged towards anything-goes chaos.</p>
+<p>Mozilla is demonstrating its willingness to back carriers&#8217; desire to control and to own in order to differentiate itself from Android&#8217;s free-for-all which has ended up undermining telcos&#8217; control of users and accelerating the decline of their traditional revenue streams. Fast-tracking carrier-backed devices to the front of the FFOS branding certification queue is just symptomatic of that underlying pro-telco strategy.</p>
+<p>Mozilla has made something of a Faustian pact to try to establish an alternative open mobile ecosystem. And with Android so rampantly dominant, that may have been a necessary trade-off to give FFOS a fleeting chance. But it still leaves something of a bitter taste to anyone who roots for David over Goliath.</p>
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852394/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=EA5dM79-HPA:EuTSI394_48:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=EA5dM79-HPA:EuTSI394_48:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=EA5dM79-HPA:EuTSI394_48:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=EA5dM79-HPA:EuTSI394_48:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=EA5dM79-HPA:EuTSI394_48:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=EA5dM79-HPA:EuTSI394_48:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=EA5dM79-HPA:EuTSI394_48:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=EA5dM79-HPA:EuTSI394_48:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/EA5dM79-HPA" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/mozillas-faustian-pact/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2011/06/mozillalogo.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2011/06/mozillalogo.png?w=150" medium="image">
+			<media:title type="html">mozillalogo</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/68a02f90ad0a6349a7b852ddce6f93e4?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">nelomas</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/mozillas-faustian-pact/</feedburner:origLink></item>
+		<item>
+		<title>Architizer Relaunches To Connect Architects With Other Architects, And Brands, And Clients Too!</title>
+		<link>http://feedproxy.google.com/~r/Techcrunch/~3/cU2nUKV6tUI/</link>
+		<comments>http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/#comments</comments>
+		<pubDate>Sun, 28 Jul 2013 21:29:04 +0000</pubDate>
+		<dc:creator>Jordan Crook</dc:creator>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[architizer]]></category>
+		<category><![CDATA[marc kushner]]></category>
+		<category><![CDATA[Nick Denton]]></category>
+
+		<guid isPermaLink="false">http://techcrunch.com/?p=852624</guid>
+		<description><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-3-26-43-pm.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Screen Shot 2013-07-28 at 3.26.43 PM" style="float: left; margin: 0 10px 7px 0;" />For 100 years or more, architects have relied on a massive catalog sitting on their desk to find the right products to use in their architectural project &#8212; this brand of glass, or that brand of toilet. That catalog had a monopoly on the market for a century, but with the birth of the internet, that catalog never made the transition over to digital. 
+
+But a site that launched back in 2009 as a platform for architects to publish their work, Architizer, is relaunching tomorrow to finally fill that void. ]]></description>
+				<content:encoded><![CDATA[<img width="100" height="70" src="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-3-26-43-pm.png?w=100&amp;h=70&amp;crop=1" class="attachment-tc-carousel-river-thumb wp-post-image" alt="Screen Shot 2013-07-28 at 3.26.43 PM" style="float: left; margin: 0 10px 7px 0;" /><p>For 100 years or more, architects have relied on the massive catalog sitting on their desk to find the right products to use in their projects — this brand of glass, or that brand of toilet. That catalog had a monopoly on the market for a century, but with the birth of the internet, that catalog never made the transition over to digital.</p>
+<p>But a site that launched back in 2009 as a platform for architects to publish their work, <a target="_blank" href="http://www.architizer.com">Architizer</a>, is relaunching tomorrow to finally fill the void it left.</p>
+<p>Architizer is a two-sided platform that lets architects upload their work in order to get more potential clients as well as professional feedback from their peers. Meanwhile, brands can pay a subscription to connect their own product pages to Architizer projects in which their products were used.</p>
+<h3>How it works:</h3>
+<p>It looks a little like this:</p>
+<p>Architects upload their work in any format they like, from a PDF to a picture of a napkin covered in scribbles. Architizer&#8217;s curatorial team then deciphers that project, beautifies it, and publishes the project on the firm&#8217;s own Architizer firm page.</p>
+<p>Within the project, other architects can comment and view all the materials used in the building, from the fixtures to the window systems and more.</p>
+<p>Then, brands who had products used in that building can connect with that project. So let&#8217;s say the building used Kohler toilets, for example. Within the project page, Kohler would be listed as the plumbing provider, and that would automatically be hyperlinked to the Kohler product page on Architizer.</p>
+<p>Architizer is free to use for architects and firms, while brands pay a subscription fee of anywhere between $95/month and $595/month for Architizer to hyperlink every mention of that brand on the site.</p>
+<h3>Competition:</h3>
+<p>Architizer launched back in 2009 as a self-publishing platform for architects who wanted a digital portfolio. Though the two sites were inherently different (one is an editorial curated blog and the other is a self-publishing platform), <a target="_blank" href="http://www.archdaily.com/">ArchDaily</a> stuck out as the greatest competitor to Architizer at the time.</p>
+<p>See, ArchDaily receives tips from architects who send in their work, and then features those projects in an editorial blog-style web site. Though Architizer&#8217;s content was all self-published by architects, Architizer had an editorial team that packaged and featured the top projects for browsing on the site.</p>
+<p>At the time, most of the company&#8217;s revenue came from traditional advertising and running branded competitions amongst architects. This new form of native advertising, however, wherein brands pay to connect with users, will end up being the main source of revenue moving forward. </p>
+<p>As it stands now, native advertising is huge with regards to any curated or editorialized content, especially when it involves user generated publishing. Everyone from blogs like BuzzFeed and Gawker to social networks like Facebook and Twitter are pushing branded content into a special place on the site, where it&#8217;s sure to receive eye balls. </p>
+<p>Meanwhile, recommendation engines like WeeSpring are working hard to offer solid feedback on very niche verticals, like pre-delivery baby shopping. </p>
+<p>However, combining user-generated content with a subscription-based paid service for brands to automatically promote themselves (within that user-generated content) is a relatively new business model. </p>
+<h3>The Re-Launch:</h3>
+<p>Architizer grew from 200 projects published in 2009 to 55,000 projects published now, but founder Marc Kushner believed there was still a piece of the puzzle missing with regards to materials used in projects, and making information on those materials easily accessible to architects.</p>
+<p>&#8220;Right now, architects know more about the sandwich they&#8217;re having for lunch then they do about the products they&#8217;re using in their projects,&#8221; said Kushner. &#8220;Right now they&#8217;re learning about these products from reviews on Amazon because there is no online destination to get credible information. We&#8217;re looking to change that.&#8221;</p>
+<p>The site has been redesigned entirely from the ground up to make uploads faster as well as connect users to other architects and brands. As it stands now, the site sees 1.5 million monthly visitors with over 14,000 firms on the platform according to Kushner. The relaunch will include participation from 18 partnering brands including Sherwin Williams, Kohler, and Dupont.</p>
+
+<a href='http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/screen-shot-2013-07-28-at-3-26-43-pm/' title='Screen Shot 2013-07-28 at 3.26.43 PM'></a>
+<a href='http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/screen-shot-2013-07-28-at-4-23-12-pm/' title='Screen Shot 2013-07-28 at 4.23.12 PM'></a>
+<a href='http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/screen-shot-2013-07-28-at-4-23-33-pm/' title='Screen Shot 2013-07-28 at 4.23.33 PM'></a>
+<a href='http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/screen-shot-2013-07-28-at-4-24-31-pm/' title='Screen Shot 2013-07-28 at 4.24.31 PM'></a>
+<a href='http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/screen-shot-2013-07-28-at-4-24-55-pm/' title='Screen Shot 2013-07-28 at 4.24.55 PM'></a>
+
+<br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/tctechcrunch2011.wordpress.com/852624/"></a> <div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/Techcrunch?a=cU2nUKV6tUI:P4iZuUSaPI4:2mJPEYqXBVI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=2mJPEYqXBVI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=cU2nUKV6tUI:P4iZuUSaPI4:7Q72WNTAKBA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=7Q72WNTAKBA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=cU2nUKV6tUI:P4iZuUSaPI4:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=cU2nUKV6tUI:P4iZuUSaPI4:-BTjWOF_DHI"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=cU2nUKV6tUI:P4iZuUSaPI4:-BTjWOF_DHI" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=cU2nUKV6tUI:P4iZuUSaPI4:D7DqB2pKExk"><img src="http://feeds.feedburner.com/~ff/Techcrunch?i=cU2nUKV6tUI:P4iZuUSaPI4:D7DqB2pKExk" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/Techcrunch?a=cU2nUKV6tUI:P4iZuUSaPI4:qj6IDK7rITs"><img src="http://feeds.feedburner.com/~ff/Techcrunch?d=qj6IDK7rITs" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/Techcrunch/~4/cU2nUKV6tUI" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-3-26-43-pm.png?w=150" />
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-3-26-43-pm.png?w=150" medium="image">
+			<media:title type="html">Screen Shot 2013-07-28 at 3.26.43 PM</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/123a4c264172746af556b0c74c72b308?s=96&amp;d=identicon&amp;r=G" medium="image">
+			<media:title type="html">biggsismyboss</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-4-23-12-pm.png?w=150" medium="image">
+			<media:title type="html">Screen Shot 2013-07-28 at 4.23.12 PM</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-4-23-33-pm.png?w=150" medium="image">
+			<media:title type="html">Screen Shot 2013-07-28 at 4.23.33 PM</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-4-24-31-pm.png?w=150" medium="image">
+			<media:title type="html">Screen Shot 2013-07-28 at 4.24.31 PM</media:title>
+		</media:content>
+
+		<media:content url="http://tctechcrunch2011.files.wordpress.com/2013/07/screen-shot-2013-07-28-at-4-24-55-pm.png?w=150" medium="image">
+			<media:title type="html">Screen Shot 2013-07-28 at 4.24.55 PM</media:title>
+		</media:content>
+	<feedburner:origLink>http://techcrunch.com/2013/07/28/architizer-relaunches-to-connect-architects-with-other-architects-and-brands-and-clients-too/</feedburner:origLink></item>
+	</channel>
+</rss>

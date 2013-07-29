@@ -31,6 +31,7 @@ namespace JustReadIt.WebApp.Core.App {
     private const string _AppSettingKey_MailingService_From = "MailingService_From";
 
     private static IMailer _mailer;
+    private static IWebClientFactory _webClientFactory;
 
     static IoC() {
       _ConnectionString_JustReadIt =
@@ -139,6 +140,14 @@ namespace JustReadIt.WebApp.Core.App {
 
     public static IDomainToJsonModelMapper GetDomainToJsonModelMapper() {
       return new DomainToJsonModelMapper();
+    }
+
+    public static IWebClientFactory GetWebClientFactory() {
+      return _webClientFactory ?? (_webClientFactory = new SmartWebClientFactory());
+    }
+
+    public static IFeedFetcher GetFeedFetcher() {
+      return new FeedFetcher(GetWebClientFactory());
     }
 
     public static IFeedParser GetFeedParser() {

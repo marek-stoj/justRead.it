@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.ServiceModel.Syndication;
+using System.Text;
 using System.Xml;
+using ImmRafSoft.Xml;
 using JustReadIt.Core.Common;
 
 namespace JustReadIt.Core.Services.Feeds {
@@ -15,9 +18,10 @@ namespace JustReadIt.Core.Services.Feeds {
 
       SyndicationFeed syndicationFeed;
 
-      using (StringReader stringReader = new StringReader(feedContent))
-      using (XmlReader xmlReader = XmlReader.Create(stringReader)) {
-        syndicationFeed = SyndicationFeed.Load(xmlReader);
+      using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(feedContent)))
+      using (var xss = new XmlSanitizingStream(ms))
+      using (XmlReader xr = XmlReader.Create(xss)) {
+        syndicationFeed = SyndicationFeed.Load(xr);
       }
 
       if (syndicationFeed == null) {
@@ -29,10 +33,7 @@ namespace JustReadIt.Core.Services.Feeds {
           ? syndicationFeed.Title.Text
           : null;
 
-      SyndicationLink feedLink =
-        syndicationFeed.Links.FirstOrDefault(
-          link => !link.RelationshipType.IsNullOrEmpty() && "self".EqualsOrdinalIgnoreCase(link.RelationshipType));
-
+      SyndicationLink feedLink = FindFeedLink(syndicationFeed);
       string feedUrl = FindAbsoluteUrl(feedLink);
 
       SyndicationLink siteLink = FindHtmlLink(syndicationFeed.Links);
@@ -51,11 +52,57 @@ namespace JustReadIt.Core.Services.Feeds {
         };
     }
 
-    private static SyndicationLink FindHtmlLink(IEnumerable<SyndicationLink> links) {
-      return
+    private static SyndicationLink FindFeedLink(SyndicationFeed syndicationFeed) {
+      Collection<SyndicationLink> links = syndicationFeed.Links;
+      SyndicationLink feedLink;
+
+      feedLink =
         links.FirstOrDefault(
-          link => (!link.MediaType.IsNullOrEmpty() && link.MediaType.ContainsOrdinalIgnoreCase("html")
-                   || (link.MediaType.IsNullOrEmpty() && "alternate".EqualsOrdinalIgnoreCase(link.RelationshipType))));
+          link => !link.RelationshipType.IsNullOrEmpty() && "self".EqualsOrdinalIgnoreCase(link.RelationshipType));
+
+      if (feedLink != null) {
+        return feedLink;
+      }
+
+      feedLink =
+        links.FirstOrDefault(
+          link => !link.MediaType.IsNullOrEmpty() && link.MediaType.ContainsOrdinalIgnoreCase("rss"));
+
+      if (feedLink != null) {
+        return feedLink;
+      }
+
+      feedLink =
+        links.FirstOrDefault(
+          link => !link.MediaType.IsNullOrEmpty() && link.MediaType.ContainsOrdinalIgnoreCase("xml"));
+
+      return feedLink;
+    }
+
+    private static SyndicationLink FindHtmlLink(Collection<SyndicationLink> links) {
+      SyndicationLink siteLink;
+
+      siteLink =
+        links.FirstOrDefault(
+          link => !link.MediaType.IsNullOrEmpty() && link.MediaType.ContainsOrdinalIgnoreCase("html"));
+
+      if (siteLink != null) {
+        return siteLink;
+      }
+
+      siteLink =
+        links.FirstOrDefault(
+          link => link.MediaType.IsNullOrEmpty() && "alternate".EqualsOrdinalIgnoreCase(link.RelationshipType));
+
+      if (siteLink != null) {
+        return siteLink;
+      }
+
+      siteLink =
+        links.FirstOrDefault(
+          link => "alternate".EqualsOrdinalIgnoreCase(link.MediaType) && "alternate".EqualsOrdinalIgnoreCase(link.RelationshipType));
+
+      return siteLink;
     }
 
     private static string FindAbsoluteUrl(SyndicationLink syndicationLink = null) {

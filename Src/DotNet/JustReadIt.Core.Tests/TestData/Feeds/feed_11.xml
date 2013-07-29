@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>GigaOM</title>
+	<atom:link href="http://gigaom.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://gigaom.com</link>
+	<description></description>
+	<lastBuildDate>Mon, 29 Jul 2013 15:24:11 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+<cloud domain='gigaom.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<image>
+		<url>http://0.gravatar.com/blavatar/0db8f6557d022075dbbf010c54d46d93?s=96&#038;d=http%3A%2F%2Fs2.wp.com%2Fi%2Fbuttonw-com.png</url>
+		<title>GigaOM</title>
+		<link>http://gigaom.com</link>
+	</image>
+	<atom:link rel="search" type="application/opensearchdescription+xml" href="http://gigaom.com/osd.xml" title="GigaOM" />
+	<atom:link rel='hub' href='http://gigaom.com/?pushpress=hub'/>
+		<item>
+		<title>GridGain gets $10M for in-memory computing</title>
+		<link>http://gigaom.com/2013/07/29/gridgain-gets-10m-for-in-memory-computing/</link>
+		<comments>http://gigaom.com/2013/07/29/gridgain-gets-10m-for-in-memory-computing/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 15:13:47 +0000</pubDate>
+		<dc:creator>Derrick Harris</dc:creator>
+				<category><![CDATA[big data]]></category>
+		<category><![CDATA[GridGain Systems]]></category>
+		<category><![CDATA[Hadoop]]></category>
+		<category><![CDATA[high-performance computing]]></category>
+		<category><![CDATA[in-memory]]></category>
+		<category><![CDATA[in-memory databae]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<category><![CDATA[stream processing]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=672826</guid>
+		<description><![CDATA[GridGain Systems has raised a $10 million series B investment round for its suite of in-memory computing technology. In-memory databases are popular because of their low latency, but GridGain actually offers a whole line of other use-specific products, including for high-performance computing and Hadoop. Almaz Capital [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672826&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.gridgain.com/">GridGain Systems</a> has raised a $10 million series B investment round for its suite of in-memory computing technology. In-memory databases are popular because of their low latency, but GridGain actually offers a whole line of other use-specific products, including for high-performance computing and Hadoop. Almaz Capital led the round, with participation from existing investor RTP Ventures.</p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672826&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=475960"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=475960" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672826+gridgain-gets-10m-for-in-memory-computing&utm_content=dharrisstructure">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/report/cloud-and-data-first-quarter-2013-analysis-and-outlook/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672826+gridgain-gets-10m-for-in-memory-computing&utm_content=dharrisstructure">Cloud and data first-quarter 2013: analysis and outlook</a></li><li><a href="http://pro.gigaom.com/report/sql-on-hadoop-roadmap-2013/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672826+gridgain-gets-10m-for-in-memory-computing&utm_content=dharrisstructure">Sector RoadMap: SQL-on-Hadoop platforms in 2013</a></li><li><a href="http://pro.gigaom.com/2012/07/cloud-and-data-second-quarter-2012-analysis-and-outlook-2/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672826+gridgain-gets-10m-for-in-memory-computing&utm_content=dharrisstructure">Takeaways from the second quarter in cloud and data</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/gridgain-gets-10m-for-in-memory-computing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://0.gravatar.com/avatar/9e48ffa0913f65c577727457dd63023f?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">dharrisstructure</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Apple workers file lawsuit for lost wages due to bag searches</title>
+		<link>http://gigaom.com/2013/07/29/apple-workers-file-lawsuit-for-lost-wages-due-to-bag-searches/</link>
+		<comments>http://gigaom.com/2013/07/29/apple-workers-file-lawsuit-for-lost-wages-due-to-bag-searches/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 15:07:44 +0000</pubDate>
+		<dc:creator>Jeff John Roberts</dc:creator>
+				<category><![CDATA[Amanda Frlekin]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[class action]]></category>
+		<category><![CDATA[Dean Pelle]]></category>
+		<category><![CDATA[Fair Labor Standards Act]]></category>
+		<category><![CDATA[labor law]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=672813</guid>
+		<description><![CDATA[Former Apple employees say the company requires workers to stand around without pay for up to 30 minutes a day while waiting for managers to search their bags for stolen merchandise.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672813&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Former employees at Apple stores in New York and Los Angeles have filed a class action suit, claiming the iPhone maker required them to stand in line for up to 30 minutes every shift and wait for a manager to search their bags.</p>
+<p>According to a complaint filed in San Francisco federal court, the searches result in Apple workers being deprived of around $1,500 a year in unpaid wages:</p>
+<blockquote id="quote-employees-are-requir"><p>Employees .. are required to wait in line and be searched for .. merchandise taken without permission and/or other contraband. [...] A large number of Specialists and Managers leave for lunch at the same time and/or end their shift at the same time. This creates lengthy lines and backups .</p></blockquote>
+<p>The lawsuit was filed by Amanda Frlekin who worked at Apple&#8217;s Century City store in Los Angeles and Dean Pelle who was employed at its Soho location in New York. Both worked as &#8220;Specialists&#8221; until this spring, and are now seeking to sue on behalf of thousands of Apple workers across the country.</p>
+<p>The former employees claim that Apple&#8217;s &#8220;personal package and bag search&#8221; policy results in staff being forced to stand around for 5 to 15 minutes every time they clock out for a meal break or leave work at the end of their shift.</p>
+<p>The lawsuit, which seeks an unspecified amount of damages, claims Apple is violating the Fair Labor Standards Act and state laws in New York and California.</p>
+<p>Apple, which is facing a <a href="http://gigaom.com/2013/07/29/another-major-apple-supplier-in-china-accused-of-labor-violations/">new controversy</a> over labor standards in China, did not immediately respond to a request for comment. Here&#8217;s a copy of the complaint:</p>
+<p style="margin:12px auto 6px;font-family:Helvetica, Arial, Sans-serif;font-style:normal;font-variant:normal;font-weight:normal;font-size:14px;line-height:normal;font-size-adjust:none;font-stretch:normal;display:block;"><a style="text-decoration:underline;" title="View Apple Employee Class Action on Scribd" href="http://www.scribd.com/doc/156747491/Apple-Employee-Class-Action">Apple Employee Class Action</a></p>
+<iframe id="doc_76089" src="http://www.scribd.com/embeds/156747491/content?start_page=1&amp;view_mode=scroll&amp;show_recommendations=true" height="600" width="100%" frameborder="0" scrolling="no" data-auto-height="false" data-aspect-ratio="undefined"></iframe>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672813&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=880066"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=880066" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672813+apple-workers-file-lawsuit-for-lost-wages-due-to-bag-searches&utm_content=jeffjohnroberts">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/2010/03/forecast-web-tablet-app-sales/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672813+apple-workers-file-lawsuit-for-lost-wages-due-to-bag-searches&utm_content=jeffjohnroberts">Forecast: Tablet App Sales To Hit $8B by 2015</a></li><li><a href="http://pro.gigaom.com/report/connected-consumer-first-quarter-2013-analysis-and-outlook/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672813+apple-workers-file-lawsuit-for-lost-wages-due-to-bag-searches&utm_content=jeffjohnroberts">Connected consumer first-quarter 2013: Analysis and outlook</a></li><li><a href="http://pro.gigaom.com/report/flash-analysis-smart-watches/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672813+apple-workers-file-lawsuit-for-lost-wages-due-to-bag-searches&utm_content=jeffjohnroberts">Flash analysis: smart watches</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/apple-workers-file-lawsuit-for-lost-wages-due-to-bag-searches/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://gigaompaidcontent.files.wordpress.com/2013/06/apple-legal-justice.jpg?w=150" />
+		<media:content url="http://gigaompaidcontent.files.wordpress.com/2013/06/apple-legal-justice.jpg?w=150" medium="image">
+			<media:title type="html">apple-legal-justice</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/05dfcf765f1554b08954bb9e1ee63363?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">jeffjohnroberts</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Why your next laptop could use Gorilla Glass just like your smartphone does</title>
+		<link>http://gigaom.com/2013/07/29/why-your-next-laptop-could-use-gorilla-glass-just-like-your-smartphone-does/</link>
+		<comments>http://gigaom.com/2013/07/29/why-your-next-laptop-could-use-gorilla-glass-just-like-your-smartphone-does/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 14:17:30 +0000</pubDate>
+		<dc:creator>Kevin C. Tofel</dc:creator>
+				<category><![CDATA[Corning]]></category>
+		<category><![CDATA[Gorilla Glass]]></category>
+		<category><![CDATA[Laptops]]></category>
+		<category><![CDATA[touchscreens]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=672796</guid>
+		<description><![CDATA[Corning made a big splash in mobile devices with its strong, scratch-resistant Gorilla Glass for smartphones and tablets. Now, the company is positioning itself to repeat its success on touchscreen laptops with its new Gorilla Glass NBT panels.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672796&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>That amazingly strong Gorilla Glass on your smartphone now comes in a bigger size. On Monday, <a href="http://www.corninggorillaglass.com/news-events/Corning-Brings-Gorilla%C2%AE-Glass-NBT%E2%84%A2-to-Touch-Enabled-Notebooks">Corning introduced Gorilla Glass NBT</a>, a stronger, scratch-resistant glass specifically made for touchscreen laptops. In a rather amusing video, Corning demonstrates the strength of Gorilla Glass NBT.</p>
+<object id="flashObj" width="480" height="270" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=2567812933001&amp;playerID=625505125001&amp;playerKey=AQ~~,AAAAkVHRxYE~,tk4-uogNPTL8DvW4rWbX-hN95sv6ZKg3&amp;domain=embed&amp;dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;isUI=1" bgcolor="#FFFFFF" flashVars="videoId=2567812933001&amp;playerID=625505125001&amp;playerKey=AQ~~,AAAAkVHRxYE~,tk4-uogNPTL8DvW4rWbX-hN95sv6ZKg3&amp;domain=embed&amp;dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="480" height="270" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object>
+<p>What else does the new touchscreen glass offer? Corning says it&#8217;s a better all-around choice over traditional soda-lime glass due to these features:</p>
+<ul>
+<li>8x-10x higher scratch resistance</li>
+<li>Greater resistance to unsightly abrasions caused by cleaning, wiping or careless handling</li>
+<li>Reduced incidence of damage when inadvertently closing  the display on top of an object</li>
+<li>Better ability to withstand the shock of accidental bumps</li>
+</ul>
+<p>Corning is pitching the new glass as cost-effective, suggesting it would only account for one to two percent of a laptop&#8217;s price tag.</p>
+<p>Margins on those devices are pretty slim already but I suspect laptop makers will still adopt the new glass. The Gorilla Glass product is becoming well-known and desirable on smartphones and tablets; it could be differentiating factor when choosing two similar notebooks in the future. Dell is already on board, saying it will introduce new laptops this fall with Gorilla Glass NBT.</p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672796&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=452394"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=452394" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672796+why-your-next-laptop-could-use-gorilla-glass-just-like-your-smartphone-does&utm_content=kevintofel">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/2011/10/siri-say-hello-to-the-coming-invisible-interface/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672796+why-your-next-laptop-could-use-gorilla-glass-just-like-your-smartphone-does&utm_content=kevintofel">Siri: Say hello to the coming &#8220;invisible interface&#8221;</a></li><li><a href="http://pro.gigaom.com/report/survey-how-apps-can-solve-photo-management/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672796+why-your-next-laptop-could-use-gorilla-glass-just-like-your-smartphone-does&utm_content=kevintofel">Survey: How apps can solve photo management</a></li><li><a href="http://pro.gigaom.com/report/sector-roadmap-social-customer-service-in-2013/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672796+why-your-next-laptop-could-use-gorilla-glass-just-like-your-smartphone-does&utm_content=kevintofel">Sector RoadMap: Social customer service in 2013</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/why-your-next-laptop-could-use-gorilla-glass-just-like-your-smartphone-does/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://gigaom2.files.wordpress.com/2013/07/corning-gorilla-glass-nbt-e1375106142731.jpg?w=150" />
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/corning-gorilla-glass-nbt-e1375106142731.jpg?w=150" medium="image">
+			<media:title type="html">Corning Gorilla Glass NBT</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/6cbb45abac59965c2626e40155358d1b?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">Kevin C. Tofel</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>White Hats to demonstrate how they can take control of your connected car</title>
+		<link>http://gigaom.com/2013/07/29/white-hats-to-demonstrate-how-they-can-take-control-of-your-connected-car/</link>
+		<comments>http://gigaom.com/2013/07/29/white-hats-to-demonstrate-how-they-can-take-control-of-your-connected-car/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 14:10:52 +0000</pubDate>
+		<dc:creator>Barb Darrow</dc:creator>
+				<category><![CDATA[Charlie Miller]]></category>
+		<category><![CDATA[Chris Valasek]]></category>
+		<category><![CDATA[connected cars]]></category>
+		<category><![CDATA[Defcon]]></category>
+		<category><![CDATA[ford]]></category>
+		<category><![CDATA[IOActive]]></category>
+		<category><![CDATA[roadmap]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=672768</guid>
+		<description><![CDATA[You're cruising on the highway and someone, somewhere takes remote control of your car.  This nightmare scenario may not be too far off the mark.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672768&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>As <a href="http://gigaom.com/2012/02/28/if-cars-could-talk-to-another-what-could-and-should-they-say/">connected cars get even more connected</a> to their occupants, to other cars, to emergency services and to entertainment sources, a whole new set of worries erupts. Imagine you&#8217;re blowing by the Google bus on the 101 and suddenly someone else &#8212; someone not in the vehicle &#8212; appears to be driving your car. Not a good feeling and it could happen, in theory. That&#8217;s the kind of eventuality that noted security experts/hackers <a href="http://en.wikipedia.org/wiki/Charlie_Miller_(security_researcher)">Charlie Miller</a> and <a href="http://chris.illmatics.com/about.html">Chris Valasek </a>of<a href="http://www.ioactive.com/"> IOActive</a> will discuss Friday at the<a href="https://www.defcon.org/html/defcon-21/dc-21-index.html"> Defcon 21 conference</a> in Las Vegas.</p>
+<p>The two white hats &#8212; hackers who probe for vulnerabilities and turn their results over to the affected vendors &#8212; have trained their sights on the connected car. And they have, according to this <a href="http://www.reuters.com/article/2013/07/28/net-us-hackers-cars-idUSBRE96R06120130728">Reuters report</a>, figured out how to force a Toyota Prius cruising at 80 mph to brake suddenly, jerk its steering wheel and accelerate.  And, they maintain they can disable the brakes of a Ford Escape so that it continues to move even if the driver stands on the brake pedal. Yikes.</p>
+<p>In these two cases, the remote control wasn&#8217;t all that remote, however. They were in the vehicles in question, working with laptops so that&#8217;s some consolation.</p>
+<p>According to IOactive&#8217;s <a href="http://www.ioactive.com/news_events_ioasis_las_vegas_2013_blackhatdefcon_chris_valasek_charlie_miller.html">summary of Friday&#8217;s talk</a>, all of this activity centers on the car&#8217;s Electronic Control Units, originally incorporated to help with fuel efficiency and emissions control. But now ECUs are the car&#8217;s central nervous system, controlling entertainment systems, safety systems and &#8220;enhanced automotive functionality.&#8221;</p>
+<p>At Defcon, the two experts will:</p>
+<blockquote id="quote-first-cover-the-requ"><p>&#8220;&#8230; first cover the requisite tools and software needed to analyze a Controller Area Network (CAN) bus. Secondly, we will demo software to show how data can be read and written to the CAN bus. Then we will show how certain proprietary messages can be replayed by a device hooked up to an ODB-II connection to perform critical car functionality, such as braking and steering. Finally, we&#8217;ll discuss aspects of reading and modifying the firmware of ECUs installed in today&#8217;s modern automobile.&#8221;</p></blockquote>
+<p><a href="http://gigaom.com/2012/01/09/cars-gadgets-on-collision-course-at-ces/">Car makers have to tread a fine line</a> &#8212; they want to provide more, and more easily updated functionality to consumers which means connectivity is key &#8212; while also walling off critical systems. Ford, as GigaOM&#8217;s Kevin Fitchard reported early this year has <a href="http://gigaom.com/2013/01/10/forget-apps-fords-openxc-project-will-produce-open-source-car-hardware/">open sourced some of the hardware design </a>for specialized systems.</p>
+<p>And,  as car executives told attendees of <a href="http://gigaom.com/2012/11/05/if-you-think-your-car-is-smart-and-connected-now-just-wait/">GigaOM&#8217;s Roadmap conference</a>last year, one key criteria of connected cars is to segregate the mission-critical systems&#8211; brakes, steering, power train &#8212; from the not-very-critical infotainment systems. I mean, who really cares if someone hacks your music stream?</p>
+<p>What Miller and Valasek aim to show at Defcon is that such segregation may not be enough.</p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672768&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=611940"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=611940" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672768+white-hats-to-demonstrate-how-they-can-take-control-of-your-connected-car&utm_content=gigabarb">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/2013/01/ces-2013-flash-analysis-disruptions-and-disappointments-from-consumer-techs-biggest-show/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672768+white-hats-to-demonstrate-how-they-can-take-control-of-your-connected-car&utm_content=gigabarb">GigaOM Research highs and lows from CES 2013</a></li><li><a href="http://pro.gigaom.com/2011/06/from-car-to-cloud-the-future-of-the-in-vehicle-app-landscape/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672768+white-hats-to-demonstrate-how-they-can-take-control-of-your-connected-car&utm_content=gigabarb">From car to cloud: the future of the in-vehicle app landscape</a></li><li><a href="http://pro.gigaom.com/2011/04/smart-grid-apps-six-trends-that-will-shape-grid-evolution/?utm_source=cloud&utm_medium=editorial&utm_campaign=auto3&utm_term=672768+white-hats-to-demonstrate-how-they-can-take-control-of-your-connected-car&utm_content=gigabarb">Smart Grid Apps: Six Trends That Will Shape Grid Evolution</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/white-hats-to-demonstrate-how-they-can-take-control-of-your-connected-car/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	
+		<media:thumbnail url="http://gigaom2.files.wordpress.com/2012/11/shutterstock_100002848.jpg?w=150" />
+		<media:content url="http://gigaom2.files.wordpress.com/2012/11/shutterstock_100002848.jpg?w=150" medium="image">
+			<media:title type="html">traffic</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/4af03439988d64f816da72496325cb73?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">gigabarb</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Even Nokia thinks there&#8217;s a Windows Phone app gap of sorts</title>
+		<link>http://gigaom.com/2013/07/29/even-nokia-thinks-theres-a-windows-phone-app-gap-of-sorts/</link>
+		<comments>http://gigaom.com/2013/07/29/even-nokia-thinks-theres-a-windows-phone-app-gap-of-sorts/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 13:26:51 +0000</pubDate>
+		<dc:creator>Kevin C. Tofel</dc:creator>
+				<category><![CDATA[Lumia]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Mobile Apps]]></category>
+		<category><![CDATA[Nokia]]></category>
+		<category><![CDATA[Windows Phone]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=672748</guid>
+		<description><![CDATA[Nokia has consistently released solid Windows Phone hardware, so why has the sales growth been slow? App addicts aren't likely to switch if apps are missing or simply not better on Windows Phone says one Nokia executive.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672748&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Microsoft&#8217;s Windows Phone platform may boast 165,000 mobile apps but Nokia thinks there&#8217;s more work to be done in order to grow sales. Some key quotes from <a href="http://www.ibtimes.co.uk/articles/494885/20130726/nokia-microsoft-needs-evolve-windows-phone-succeed.htm">Nokia Vice President Bryan Biniak in an interview with <em>International Business Times</em> last Friday</a> highlight the &#8220;app gap&#8221; challenge while also setting the bar higher for mobile app experiences. Here are a few key quotes from Biniak:</p>
+<blockquote id="quote-to-give-you-a-reason"><p>&#8220;To give you a reason to switch, I need to make sure the apps that you care about on your device are not only on our phones, but are better. I also need to provide you unique experiences that you can&#8217;t get on your other devices.&#8221;</p>
+</blockquote>
+<p>This is the same point I&#8217;ve made in the past <a href="http://gigaom.com/2013/01/28/after-a-rise-and-fall-blackberry-10-is-rims-last-best-comeback-attempt/">when discussing the challenge facing BlackBerry</a>. And it&#8217;s why that company and Microsoft are currently fighting to be the third smartphone platform that&#8217;s well behind iOS and Android: The incumbents have not only the apps that people want today but they have the developer support for apps people will want tomorrow.</p>
+<blockquote id="quote-people-rely-on-appli2"><p>&#8220;People rely on applications for their day-to-day life and if you don&#8217;t have something which I use in my day-to-day life I&#8217;m not going to switch [operating systems] because I don&#8217;t want to compromise the way I live my life just to switch to a phone.&#8221;</p>
+</blockquote>
+<p>There are plenty of happy Windows Phone customers that have every app they need, but I&#8217;m not one of them &#8212; even though I like the interface and many of the new handsets. However, I fit directly in the example that Biniak provides: There are a few key apps I use daily that simply aren&#8217;t on Windows Phone yet. So why would I, or anyone in the same situation, switch?</p>
+<p>That&#8217;s a challenge that Microsoft continues to face because current smartphone owners are used to having the apps they want and need. Those on feature phones may better fit the Windows Phone target customer since they&#8217;re not yet app addicts. And that could be why Nokia has released a number of relatively low-cost Windows Phone handsets over the past two years: Its best bet to grow hardware sales may be in the low- to mid-range handset markets.</p>
+<p style="text-align:center;"><a href="http://gigaom2.files.wordpress.com/2012/05/nokia-lumia-610-featured.jpeg"><img  alt="nokia-lumia-610-featured" src="http://gigaom2.files.wordpress.com/2012/05/nokia-lumia-610-featured.jpeg?w=708"   class="size-full wp-image-526875 aligncenter" /></a></p>
+<p>Biniak continues to suggest that the challenge for Windows Phone isn&#8217;t hardware, nor the platform itself. It&#8217;s about the apps. Nokia seems to be doing its part when it comes to hardware but Biniak almost sounds frustrated by the software side of things:</p>
+<blockquote id="quote-we-are-releasing-new3"><p>&#8220;We are releasing new devices frequently and for every new device, if there is an app that somebody cares about that&#8217;s not there that&#8217;s a missed opportunity of a sale.&#8221;</p>
+</blockquote>
+<p>He&#8217;s right: If a potential customer finds that a shiny new Lumia can&#8217;t run an app they want, why would the experience turn into a sale? It likely won&#8217;t.</p>
+<p>Much of this situation has to do with timing. Had Microsoft been quicker to migrate away from Windows Mobile sooner, the platform would have arrived prior to iOS and Android becoming the smartphone behemoths they are today. Now that these two account for more than 90 percent of smartphone sales, getting consumers &#8212; and developers, for that matter &#8212; to <a href="http://gigaom.com/2012/12/17/why-many-are-unlikely-to-switch-to-windows-phone-or-blackberry-10/">make a switch is much more difficult</a>.</p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672748&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=55481"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=55481" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672748+even-nokia-thinks-theres-a-windows-phone-app-gap-of-sorts&utm_content=kevintofel">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/2012/04/mobile-q1-the-fight-for-spectrum-goes-to-washington-the-tablet-wars-continue/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672748+even-nokia-thinks-theres-a-windows-phone-app-gap-of-sorts&utm_content=kevintofel">A look back at mobile in Q1</a></li><li><a href="http://pro.gigaom.com/2012/03/the-big-theme-of-mwc-how-to-live-in-a-connected-world/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672748+even-nokia-thinks-theres-a-windows-phone-app-gap-of-sorts&utm_content=kevintofel">The big theme of MWC: How to live in a connected world</a></li><li><a href="http://pro.gigaom.com/report/where-new-opportunity-lies-in-the-mobile-operating-system-space/?utm_source=mobile&utm_medium=editorial&utm_campaign=auto3&utm_term=672748+even-nokia-thinks-theres-a-windows-phone-app-gap-of-sorts&utm_content=kevintofel">Where new opportunity lies in the mobile operating system space</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/even-nokia-thinks-theres-a-windows-phone-app-gap-of-sorts/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	
+		<media:thumbnail url="http://gigaom2.files.wordpress.com/2012/11/windows-phone-screens.jpg?w=150" />
+		<media:content url="http://gigaom2.files.wordpress.com/2012/11/windows-phone-screens.jpg?w=150" medium="image">
+			<media:title type="html">windows phone screens</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/6cbb45abac59965c2626e40155358d1b?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">Kevin C. Tofel</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2012/05/nokia-lumia-610-featured.jpeg" medium="image">
+			<media:title type="html">nokia-lumia-610-featured</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>BMW unveils its ultra-light electric i3 car [photos]</title>
+		<link>http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/</link>
+		<comments>http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 13:11:05 +0000</pubDate>
+		<dc:creator>Katie Fehrenbacher</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=672732</guid>
+		<description><![CDATA[Here's what BMW's electric i3 2014 car looks like. The car company unveiled it today in three cities. What do you think?<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672732&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>BMW unveiled their much-awaited electric i3 2014 at launch events in New York, London and Beijing on Monday morning, saying the car is a response to global trends of urbanization, and the need for decreased carbon emissions, and more sustainable transportation.</p>
+<p>The car is important for BMW because it&#8217;s one of the first electric cars built from the ground up (not a traditional car stuffed with batteries), showing that BMW has put considerable time and money into making the car. Tesla&#8217;s Model S is one of the other electric cars that have been designed to be EVs from the beginning.</p>
+<p>With a range of 80 to 100 miles, the i3 could be a competitor to Nissan&#8217;s LEAF, but it&#8217;s also super light, and BMW used carbon fiber-reinforced plastic for the car&#8217;s body. The i3 2014 also has an optional range extender engine (like GM&#8217;s Volt) and it costs around $40K &#8212; so competitively priced.</p>
+<p>The only bad news is that you can&#8217;t get the car in the U.S. until 2014. It&#8217;s also focused on the &#8220;urban mobility market&#8221; which is still a little new to Americans.</p>
+<p>I watched the event <a href="http://www.nextgreencar.com/news/6290/Watch-the-BMW-i3-launch-live-on-NGC">remotely live</a> and these are a combo of photos from the live video and official photos from BMW:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-22-16-pm/" rel="attachment wp-att-672751"><img  alt="BMW i3 launch live" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-22-16-pm.png?w=708"   class="aligncenter size-full wp-image-672751" /></a></p>
+<p>The unveiling:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-39-45-pm/" rel="attachment wp-att-672752"><img  alt="BMW i3 launch" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-39-45-pm.png?w=708"   class="aligncenter size-full wp-image-672752" /></a></p>
+<p>The car unveiled:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-40-05-pm/" rel="attachment wp-att-672753"><img  alt="BMW i3 launch" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-05-pm.png?w=708"   class="aligncenter size-full wp-image-672753" /></a></p>
+<p>Side angle:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-40-20-pm/" rel="attachment wp-att-672754"><img  alt="BMW i3 launch" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-20-pm.png?w=708"   class="aligncenter size-full wp-image-672754" /></a></p>
+<p>The back angle:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-40-24-pm/" rel="attachment wp-att-672755"><img  alt="BMW i3" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-24-pm.png?w=708"   class="aligncenter size-full wp-image-672755" /></a></p>
+<p>The front:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-40-41-pm/" rel="attachment wp-att-672757"><img  alt="BMW i3" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-41-pm.png?w=708"   class="aligncenter size-full wp-image-672757" /></a></p>
+<p>The other side:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-40-31-pm/" rel="attachment wp-att-672756"><img  alt="BMW i3" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-31-pm.png?w=708"   class="aligncenter size-full wp-image-672756" /></a></p>
+<p>Official shots:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-45-22-pm/" rel="attachment wp-att-672759"><img  alt="Screen Shot 2013-07-29 at 1.45.22 PM" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-45-22-pm.png?w=708"   class="aligncenter size-full wp-image-672759" /></a></p>
+<p>An official shot in a &#8220;mega-city&#8221;:</p>
+<p><a href="http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/screen-shot-2013-07-29-at-1-45-34-pm/" rel="attachment wp-att-672760"><img  alt="Screen Shot 2013-07-29 at 1.45.34 PM" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-45-34-pm.png?w=708"   class="aligncenter size-full wp-image-672760" /></a></p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672732&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=569857"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=569857" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=cleantech&utm_medium=editorial&utm_campaign=auto3&utm_term=672732+bmw-unveils-its-ultra-light-electric-i3-car-photos&utm_content=katiefehren">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/report/flash-analysis-the-fisker-debacle-and-its-implications-on-investing-innovation-and-government-incentives/?utm_source=cleantech&utm_medium=editorial&utm_campaign=auto3&utm_term=672732+bmw-unveils-its-ultra-light-electric-i3-car-photos&utm_content=katiefehren">Flash analysis: the Fisker debacle and its implications on investing, innovation, and government incentives</a></li><li><a href="http://pro.gigaom.com/report/building-energy-management-systems-overview-and-forecast/?utm_source=cleantech&utm_medium=editorial&utm_campaign=auto3&utm_term=672732+bmw-unveils-its-ultra-light-electric-i3-car-photos&utm_content=katiefehren">Building energy management systems: overview and forecast</a></li><li><a href="http://pro.gigaom.com/report/cleantech-fourth-quarter-analysis-and-outlook/?utm_source=cleantech&utm_medium=editorial&utm_campaign=auto3&utm_term=672732+bmw-unveils-its-ultra-light-electric-i3-car-photos&utm_content=katiefehren">Cleantech first-quarter 2013 analysis and outlook</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/bmw-unveils-its-ultra-light-electric-i3-car-photos/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+	
+		<media:thumbnail url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-20-pm.png?w=150" />
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-20-pm.png?w=150" medium="image">
+			<media:title type="html">BMW i3 launch</media:title>
+		</media:content>
+
+		<media:content url="http://0.gravatar.com/avatar/0c61eb5d3c638c5b371fc84afd2831b4?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">katiefehren</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-22-16-pm.png" medium="image">
+			<media:title type="html">BMW i3 launch live</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-39-45-pm.png" medium="image">
+			<media:title type="html">BMW i3 launch</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-05-pm.png" medium="image">
+			<media:title type="html">BMW i3 launch</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-20-pm.png" medium="image">
+			<media:title type="html">BMW i3 launch</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-24-pm.png" medium="image">
+			<media:title type="html">BMW i3</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-41-pm.png" medium="image">
+			<media:title type="html">BMW i3</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-40-31-pm.png" medium="image">
+			<media:title type="html">BMW i3</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-45-22-pm.png" medium="image">
+			<media:title type="html">Screen Shot 2013-07-29 at 1.45.22 PM</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-29-at-1-45-34-pm.png" medium="image">
+			<media:title type="html">Screen Shot 2013-07-29 at 1.45.34 PM</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Addressing PCI compliance in hybrid clouds</title>
+		<link>http://gigaom.com/2013/07/29/addressing-pci-compliance-in-hybrid-clouds/</link>
+		<comments>http://gigaom.com/2013/07/29/addressing-pci-compliance-in-hybrid-clouds/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 12:55:53 +0000</pubDate>
+		<dc:creator>GigaOM</dc:creator>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=671800</guid>
+		<description><![CDATA[This webinar will examine the challenges of remaining compliant in a highly distributed cloud environment by focusing on PCI compliance in hybrid clouds. It will provide a framework businesses can use to build compliance into their cloud infrastructure. Join us on Aug. 6.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=671800&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Cloud computing solves a number of problems, but compliance is not one of them. If anything, cloud computing complicates compliance, with shifting responsibilities for everything from user data to the physical data center. Hybrid clouds further cloud a murky situation by providing additional overlap and confusion.</p>
+<p>Earlier this year, the PCI Security Standards Council released a set of guidelines outlining roles and responsibilities for compliance in public cloud scenarios. Since that time, a number of businesses and service providers have implemented those recommendations and attempted to extend those recommendations into more-complicated hybrid cloud environments.</p>
+<p>In this webinar, our panel of experts will address these topics:</p>
+<ul><li>How is PCI compliance traditionally monitored and audited in an on-prem environment?</li>
+<li>What do the new PCI guidelines mean to CSPs and their customers?</li>
+<li>What additional challenges do public and hybrid clouds present?</li>
+<li>Where do traditional compliance tools and processes fall short in cloud-based environments?</li>
+<li>What is the role of automation and technology in compliance?</li>
+<li>How can enterprises audit their current and potential service providers?</li>
+</ul><p>Speakers include:</p>
+<ul><li><a href="http://pro.gigaom.com/analyst/david-s-linthicum/?utm_source=tech&amp;utm_medium=editorial&amp;utm_campaign=intext&amp;utm_term=671800+addressing-pci-compliance-in-hybrid-clouds&amp;utm_content=kathyosweiler">David S. Linthicum</a>, SVP, <a href="http://www.cloudtp.com/">Cloud Technology Partners</a></li>
+<li><a href="http://pro.gigaom.com/analyst/keren-elazari/?utm_source=tech&amp;utm_medium=editorial&amp;utm_campaign=intext&amp;utm_term=671800+addressing-pci-compliance-in-hybrid-clouds&amp;utm_content=kathyosweiler">Keren Elazari</a>, cybersecurity industry analyst</li>
+<li><a href="http://www.linkedin.com/in/randwacker">Rand Wacker</a>, VP of Products, <a href="http://www.cloudpassage.com/">CloudPassage</a></li>
+<li><a href="http://www.linkedin.com/in/jarretraim">Jarret Raim</a>, cloud security product manager, <a href="http://www.rackspace.com/">Rackspace</a></li>
+</ul><p><strong><a href="http://pro.gigaom.com/webinar/addressing-pci-compliance-in-hybrid-clouds/?utm_source=tech&amp;utm_medium=editorial&amp;utm_campaign=intext&amp;utm_term=671800+addressing-pci-compliance-in-hybrid-clouds&amp;utm_content=kathyosweiler">Register here</a></strong> to join GigaOM Research, Rackspace and CloudPassage for “Addressing PCI compliance in the hybrid cloud,” a free analyst webinar on <strong>Tuesday, Aug. 6, 2013, at 10 a.m. PT.</strong></p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=671800&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=499398"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=499398" /></a></p>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/addressing-pci-compliance-in-hybrid-clouds/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://gigaom2.files.wordpress.com/2013/07/hybrid-cloud-public-cloud.jpg?w=150" />
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/hybrid-cloud-public-cloud.jpg?w=150" medium="image">
+			<media:title type="html">hybrid cloud-public cloud</media:title>
+		</media:content>
+
+		<media:content url="http://1.gravatar.com/avatar/4286d92b867f9a8085800edd1d9c9b7f?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">kathyosweiler</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Another major Apple supplier in China accused of labor violations</title>
+		<link>http://gigaom.com/2013/07/29/another-major-apple-supplier-in-china-accused-of-labor-violations/</link>
+		<comments>http://gigaom.com/2013/07/29/another-major-apple-supplier-in-china-accused-of-labor-violations/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 12:44:40 +0000</pubDate>
+		<dc:creator>Erica Ogg</dc:creator>
+		
+		<guid isPermaLink="false">http://gigaom.com/?p=672731</guid>
+		<description><![CDATA[China Labor Watch is set to release a report on Monday detailing workers&#8217; rights abuses at Apple&#8217;s second-largest supplier. The Wall Street Journal reports the group will accuse Pegatron of using recruiters that are withholding some workers&#8217; pay. Apple says it&#8217;s aware of some of the [&#8230;]<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672731&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>China Labor Watch is set to release a report on Monday detailing workers&#8217; rights abuses at Apple&#8217;s second-largest supplier. <a href="http://online.wsj.com/article/SB10001424127887324170004578633951552047928.html?">The <em>Wall Street Journal</em> reports</a> the group will accuse Pegatron of using recruiters that are withholding some workers&#8217; pay. Apple says it&#8217;s aware of some of the problems and working with Pegatron to fix them.</p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672731&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=506653"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=506653" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672731+another-major-apple-supplier-in-china-accused-of-labor-violations&utm_content=ericaogg">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/2012/02/how-do-developers-ride-the-siri-wave/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672731+another-major-apple-supplier-in-china-accused-of-labor-violations&utm_content=ericaogg">How do developers ride the Siri wave?</a></li><li><a href="http://pro.gigaom.com/2011/11/connectivity-means-making-the-machine-disappear/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672731+another-major-apple-supplier-in-china-accused-of-labor-violations&utm_content=ericaogg">Connectivity means making the machine disappear</a></li><li><a href="http://pro.gigaom.com/2011/10/access-vs-ownership-why-ultraviolet-has-already-lost/?utm_source=apple&utm_medium=editorial&utm_campaign=auto3&utm_term=672731+another-major-apple-supplier-in-china-accused-of-labor-violations&utm_content=ericaogg">Access vs. ownership: Why UltraViolet has already lost</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/another-major-apple-supplier-in-china-accused-of-labor-violations/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://0.gravatar.com/avatar/f8c30e1552769600b61214d57219220b?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">ericaogg</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Amazon quietly slashes book prices to new lows in apparent competition with Overstock.com</title>
+		<link>http://gigaom.com/2013/07/29/amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com/</link>
+		<comments>http://gigaom.com/2013/07/29/amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 12:39:33 +0000</pubDate>
+		<dc:creator>Laura Hazard Owen</dc:creator>
+				<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[book prices]]></category>
+		<category><![CDATA[Books]]></category>
+		<category><![CDATA[Overstock.com]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=672726</guid>
+		<description><![CDATA[In response to an Overstock.com promotional campaign to price all of its books at least 10 percent below Amazon, Amazon is slashing hardcover prices to historic lows.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672726&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>Amazon is facing an unusual opponent in the battle for the lowest book prices online: Overstock.com, which last week <a href="http://www.prnewswire.com/news-releases/overstockcom-to-sell-books-at-least-10-below-amazoncom-216954161.html">announced a promotional campaign</a> to sell its books &#8220;at least 10 percent below Amazon.com&#8217;s prices.&#8221; While that promotion was only supposed to last for a week, Overstock has decided to continue it for longer.</p>
+<p><a href="http://gigaom.com/2013/07/29/amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com/overstock-com/" rel="attachment wp-att-672728"><img  alt="overstock.com" src="http://gigaom2.files.wordpress.com/2013/07/overstock-com.jpg?w=708"   class="aligncenter size-full wp-image-672728" /></a></p>
+<p>In response, Amazon is quietly slashing its own prices on print books. In a special report over the weekend, trade publication Shelf Awareness <a href="http://www.shelf-awareness.com/issue.html?issue=2049#m20901">noted</a> that Amazon has begun &#8220;discounting many best-selling hardcover titles between 50 percent and 65 percent, levels we&#8217;ve never seen in the history of Amazon or in the bricks-and-mortar price wars of the past.&#8221;</p>
+<p>These discounts, Shelf Awareness notes, are &#8220;far higher than the usual 40 percent (to) 50 percent range offered by Amazon, warehouse clubs and other discounters &#8212; including Overstock &#8212; and are more typical for remainders than frontlist hardcovers.&#8221; In some cases, Amazon&#8217;s hardcover prices are even below the prices it&#8217;s charging for Kindle books. Overstock does not sell ebooks.</p>
+<p>Here&#8217;s a chart with some sample prices, current as of Monday morning &#8212; and evidence that Overstock hasn&#8217;t been able to maintain its promise to sell books for 10 percent below Amazon&#8217;s prices, as Amazon is generally matching them:</p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<th>Book</th>
+<th>Author</th>
+<th>Hardcover list price</th>
+<th>Amazon price</th>
+<th>Overstock price</th>
+<th>Kindle price</th>
+</tr>
+<tr>
+<td>Inferno</td>
+<td>Dan Brown</td>
+<td>$29.95</td>
+<td>$11.65</td>
+<td>$11.65</td>
+<td>$12.99</td>
+</tr>
+<tr>
+<td>Sisterland</td>
+<td>Curtis Sittenfeld</td>
+<td>$27</td>
+<td>$12.76</td>
+<td>$12.76</td>
+<td>$12.99</td>
+</tr>
+<tr>
+<td>And the Mountains Echoed</td>
+<td>Khaled Hosseini</td>
+<td>$28.95</td>
+<td>$12.04</td>
+<td>$12.04</td>
+<td>$10.99</td>
+</tr>
+<tr>
+<td>Second Honeymoon</td>
+<td>James Patterson</td>
+<td>$28</td>
+<td>$12.59</td>
+<td>$12.31</td>
+<td>$9.99</td>
+</tr>
+</tbody>
+</table>
+<p>As far as I can tell, Amazon is only offering the particularly deep discounts on books that Overstock also sells. <em>The Cuckoo&#8217;s Calling &#8211; </em>written by J.K. Rowling <a href="http://paidcontent.org/2013/07/15/j-k-rowlings-secret-book-shoots-up-bestseller-lists-months-after-publication-under-a-pseudonym/">under the pseudonym Robert Galbraith</a> &#8212; isn&#8217;t available at Overstock (retailers have been <a href="http://paidcontent.org/2013/07/17/print-copies-of-j-k-rowling-book-are-super-scarce-ebay-sellers-cash-in/">scrambling to get print copies of the book</a>). At Amazon, the hardcover is selling for $15.20, a fairly customary (for Amazon) discount of 42 percent.</p>
+<p>Amazon declined to comment. Overstock spokesman Judd Bagley told me, &#8220;It&#8217;s not yet known how long the promotion will last. It won&#8217;t be forever, that much we know. But it isn&#8217;t limited to just a week, either. We&#8217;re just watching to see how our customers respond and so far they&#8217;re responding very favorably.&#8221;</p>
+<p>Yet Overstock&#8217;s <a href="http://www.overstock.com/Top-100-Books/1986/static.html">Top 100 list</a> doesn&#8217;t reflect a favorable customer response, if there has been one. On that list, I didn&#8217;t see a single new bestseller &#8212; rather, most of the books on the list are old or niche titles like <em>It&#8217;s Called Dyslexia</em> and <em>Word Smart for the GRE</em>. Overstock also isn&#8217;t promoting the deeply discounted titles on its <a href="http://www.overstock.com/search?taxonomy=dep9&amp;TID=BOOKSP:ViewAll">books home page</a>; if you want that discounted copy of Dan Brown&#8217;s <em>Inferno</em>, you have to search for it.</p>
+<p>Overstock is largely known for offering discounts on home goods and furniture, and shoppers simply may not think to go there for books. Amazon&#8217;s shoppers, however, are certainly benefiting from Overstock&#8217;s campaign.</p>
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=672726&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=42319"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=42319" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=672726+amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com&utm_content=laurahowen38">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/report/retails-reinvention-technologys-impact-on-todays-supply-chain/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=672726+amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com&utm_content=laurahowen38">Retail’s reinvention: technology&#8217;s impact on today&#8217;s supply chain</a></li><li><a href="http://pro.gigaom.com/report/frenemy-mine-the-pros-and-cons-of-social-partnerships-for-online-media-companies/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=672726+amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com&utm_content=laurahowen38">Frenemy mine: The pros and cons of social partnerships for online media companies</a></li><li><a href="http://pro.gigaom.com/report/connected-consumer-first-quarter-2013-analysis-and-outlook/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=672726+amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com&utm_content=laurahowen38">Connected consumer first-quarter 2013: Analysis and outlook</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/amazon-quietly-slashes-book-prices-to-new-lows-in-apparent-competition-with-overstock-com/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://gigaom2.files.wordpress.com/2013/04/books-computer.jpg?w=150" />
+		<media:content url="http://gigaom2.files.wordpress.com/2013/04/books-computer.jpg?w=150" medium="image">
+			<media:title type="html">books computer</media:title>
+		</media:content>
+
+		<media:content url="http://2.gravatar.com/avatar/83965de6c2033ee5ab075123394cec0a?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">laurahowen38</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/overstock-com.jpg" medium="image">
+			<media:title type="html">overstock.com</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>The puzzle masters: How 3D printing is enabling the most complex puzzles ever created</title>
+		<link>http://gigaom.com/2013/07/29/the-puzzle-masters-how-3d-printing-is-enabling-the-most-complex-puzzles-ever-created/</link>
+		<comments>http://gigaom.com/2013/07/29/the-puzzle-masters-how-3d-printing-is-enabling-the-most-complex-puzzles-ever-created/#comments</comments>
+		<pubDate>Mon, 29 Jul 2013 12:00:00 +0000</pubDate>
+		<dc:creator>Signe Brewster</dc:creator>
+				<category><![CDATA[3D Printing]]></category>
+		<category><![CDATA[puzzles]]></category>
+
+		<guid isPermaLink="false">http://gigaom.com/?p=670906</guid>
+		<description><![CDATA[Oskar van Deventer and George Miller make puzzles. After George bought a 3D printer in 2003, they started producing puzzles that they could previously only dream of.<img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=670906&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p dir="ltr"><a href="http://oskarvandeventer.nl/index.html">Oskar van Deventer</a> and <a href="http://www.puzzlepalace.com/#tag=1">George Miller</a> make puzzles.</p>
+<p dir="ltr">Not the flat, jigsaw kind, but the complex, 3D variety that most of us associate with the Rubik’s Cube. Both have mathematical minds that allow them to dream up wild interlocking pieces that can take weeks to put together. For Oskar, some of his earlier designs were so complex that they were ahead of the manufacturing capabilities of the time, caging the most exotic shapes in his mind.</p>
+<div id="attachment_671987" class="wp-caption alignright" style="width: 310px"><img  alt="3D printed Tube Maze puzzle by Oskar van Deventer" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-25-at-4-57-56-pm.png?w=300&#038;h=286" width="300" height="286" class="size-medium wp-image-671987" /><p class="wp-caption-text">Oskar&#8217;s &#8220;Tube Maze&#8221; puzzle, which was made with George&#8217;s 3D printer. Photo by George Miller.</p></div>
+<p dir="ltr">In 2003, they visited the Chicago Museum of Science and Industry and discovered something amazing: a 3D printer. They watched, mesmerized, as it printed tiny UFO toys. George bought one immediately when he got home.</p>
+<p dir="ltr">&#8220;This was a super stupid thing to do because I didn&#8217;t know how to make things, how to run the machine, what language it used or anything like that,&#8221; George said. &#8220;I just said, &#8216;This is something that I have to have.&#8217;&#8221;</p>
+<p dir="ltr">Oskar began sending him puzzle designs. The first, called “Tube Maze,” involved slipping a red ring off of a scrambled tube of plastic. Many were unprintable on a machine other than a 3D printer. Oskar’s puzzles were free.</p>
+<h2 id="two-puzzle-masters-are-born">Two puzzle masters are born</h2>
+<p dir="ltr">Oskar has been making puzzles for most of his life. A 1982 article in a Dutch paper describes 16-year-old Oskar as a &#8220;brainiac&#8221; and a &#8220;prodigy.&#8221;</p>
+<p dir="ltr"><a href="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-4-21-09-pm.png"><img  alt="Oskar van Deventer newspaper clipping" src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-4-21-09-pm.png?w=708&#038;h=317" width="708" height="317" class="aligncenter size-large wp-image-672445" /></a></p>
+<p dir="ltr">“In the beginning, I used paper, wood, metal wire and, at a later time, I got access through a friend to a very good plastic material that I could cut and glue to make high quality prototypes,” Oskar said. “I&#8217;ve made a lot of cube puzzles out of staples. You would not recognize staples as a construction material, but I do. The resulting shape, you can make very nice cube puzzles and they are more rugged than when you are just gluing dice together.”</p>
+<div id="attachment_672432" class="wp-caption aligncenter" style="width: 606px"><a href="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-30-42-pm.png"><img  alt="Oskar van Deventer poses with his array of puzzles 3D printed via Shapeways. " src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-30-42-pm.png?w=708"   class="size-full wp-image-672432" /></a><p class="wp-caption-text">Oskar van Deventer poses with his array of puzzles 3D printed via Shapeways.</p></div>
+<p dir="ltr">George entered the puzzle scene later in life. At the age of 52, he retired from a career as a mathematician and decided he wanted to do three things: go back to school for industrial design, become a ski instructor and publish puzzles. He went back to school. Then he took the classes to become a ski instructor, but the first place that hired him said he would have to shave his beard. So that was out, and he started a puzzle workshop in his backyard.</p>
+<div id="attachment_670924" class="wp-caption aligncenter" style="width: 718px"><a href="http://gigaom2.files.wordpress.com/2013/07/img_1414.jpg"><img  alt="George Miller poses in his home in San Francisco with his favorite puzzle. It is very tactile, making it ideal for children with Autism. Photo by Signe Brewster" src="http://gigaom2.files.wordpress.com/2013/07/img_1414.jpg?w=708&#038;h=472" width="708" height="472" class="size-large wp-image-670924" /></a><p class="wp-caption-text">George Miller poses in his home in San Francisco with his favorite puzzle. It is very tactile, making it ideal for children with autism. Photo by Signe Brewster</p></div>
+<p dir="ltr">One year he visited London and began talking with a shop owner about a small snake puzzle. He let George in on a secret: There’s a puzzle fraternity that meets once a year for an event called the International Puzzle Party. It&#8217;s invite-only and held in a secret location to keep people who steal puzzle designs away.</p>
+<p dir="ltr">George joined a few years later. Suddenly, he had hundreds of people to relate to over what had been a personal obsession. It was hard not to notice Oskar, a celebrity in the puzzle community. George admired from a distance for several years. Eventually, they became friends.</p>
+<h2 id="3d-printing-evolves">3D printing evolves</h2>
+<p dir="ltr">Oskar&#8217;s ideas came in rapidly. George slowly figured out the secrets of his Stratasys Dimension printer and began producing the unique multicolored puzzles. Stratasys machines are professional grade, so in 2003 George was printing objects of a higher quality than consumer printers can make today.</p>
+<p dir="ltr">&#8220;I went nuts over it because you could put different colors in and they&#8217;re vivid colors and the plastic that it makes is strong. You can&#8217;t crush it in your hand,&#8221; George said. &#8220;You could manufacture usable things without any post processing. You pull it out of the machine and bam! You can use it right away. That just couldn&#8217;t be beat.&#8221;</p>
+<div id="attachment_672436" class="wp-caption alignright" style="width: 310px"><a href="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-56-13-pm.png"><img  alt="The &quot;Jumble Pebble&quot; puzzle, sold by Oskar van Deventer on Shapeways." src="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-56-13-pm.png?w=300&#038;h=296" width="300" height="296" class="size-medium wp-image-672436" /></a><p class="wp-caption-text">The &#8220;Jumble Pebble&#8221; puzzle, sold by Oskar van Deventer on Shapeways.</p></div>
+<p dir="ltr">George limited sales of each puzzle to 100 units and printed each one as he received orders. They required expensive materials and sometimes more than 10 hours to print, and as a result could cost several hundred dollars.</p>
+<p dir="ltr">Today, there are more cheaper and more practical options. Oskar <a href="http://www.shapeways.com/designer/Oskar_van_Deventer">sells his puzzles on Shapeways</a>, an enormous online marketplace for 3D printed objects. There are knot, cube, ring, pyramid and tree-shaped puzzles all available for purchase. You can also buy his 17x17x17 &#8220;Over the Top&#8221; Rubik&#8217;s Cube, which <a href="http://www.guinnessworldrecords.com/world-records/11000/largest-order-rubiks-magic-cube">set a world record</a> in 2011. It has 1,539 parts and took more than 100 hours to design.</p>
+<p dir="ltr"><span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='420' height='315' src='http://www.youtube.com/embed/ihWyzvOM9pk?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' frameborder='0'></iframe></span></p>
+<p>&#8220;With Shapeways, I can 3D print puzzles for a price that would be still twice or three times the price of a mass produced puzzle, but the difference is very small and the difference will be shrinking,&#8221; Oskar said. &#8220;I hope there will be a 3D printer for home use that has the same quality, but it&#8217;s not there yet.&#8221;</p>
+<p>A few of his designs are <a href="https://www.layerbylayer.com/designers/OskarPuzzle">available on Layer by Layer</a> now too, but you need a home printer to make them.</p>
+<p dir="ltr">George and Oskar also develop puzzles for mass production. Like the rest of the world, 3D printing has totally changed how they make prototypes. It used to be that puzzle makers relied on drawings or laborious wood carvings. Now they can use a 3D printer, whether they want an object to take to a manufacturer or to just be able to hold their creation in their hands.</p>
+<div id="attachment_670911" class="wp-caption aligncenter" style="width: 718px"><a href="http://gigaom2.files.wordpress.com/2013/07/img_1367.jpg"><img  alt="George Miller has brought many of his puzzle creations to market. In his San Francisco home, he displays many of the original prototypes and the finished, packaged version. Photo by Signe Brewster" src="http://gigaom2.files.wordpress.com/2013/07/img_1367.jpg?w=708&#038;h=471" width="708" height="471" class="size-large wp-image-670911" /></a><p class="wp-caption-text">George Miller has brought lots of puzzles to market. In his San Francisco home, he displays many of the original prototypes and the finished, packaged version. Photo by Signe Brewster</p></div>
+<p>During a visit to his home in San Francisco, George showed me how he prints a puzzle he designed. He has since upgraded from his original Stratasys Dimension to a newer model. Unlike most consumer printers, George&#8217;s professional printer builds with two materials: ABS plastic and a support material that holds up the overhanging parts of puzzle pieces. The nozzle darts between pieces to lay down layers of molten plastic.</p>
+<div id="attachment_670910" class="wp-caption aligncenter" style="width: 718px"><a href="http://gigaom2.files.wordpress.com/2013/07/img_1362.jpg"><img  alt="George Miller's Stratasys Dimension 3D printer prints pieces for a cube puzzle. Photo by Signe Brewster" src="http://gigaom2.files.wordpress.com/2013/07/img_1362.jpg?w=708&#038;h=471" width="708" height="471" class="size-large wp-image-670910" /></a><p class="wp-caption-text">George Miller&#8217;s Stratasys Dimension 3D printer prints pieces for a cube puzzle. Photo by Signe Brewster</p></div>
+<p>George had started the print job early in the morning. It was ready by late afternoon. The print platform lowered and George pulled it out to reveal eight orange Tetris-like puzzle pieces that fit together to form a cube. It joined seven pre-printed, multicolored clones laid out on a table.</p>
+<div id="attachment_670914" class="wp-caption aligncenter" style="width: 718px"><a href="http://gigaom2.files.wordpress.com/2013/07/img_1383.jpg"><img  alt="George Miller scrapes support structures off of a puzzle he recently pulled from his 3D printer. Photo by Signe Brewster" src="http://gigaom2.files.wordpress.com/2013/07/img_1383.jpg?w=708&#038;h=472" width="708" height="472" class="size-large wp-image-670914" /></a><p class="wp-caption-text">George Miller scrapes support structures off of a puzzle he recently pulled from his 3D printer. Photo by Signe Brewster</p></div>
+<p>George scraped off the support material and began a laborious process few people think about: If you make the puzzle, you have to put it together before you can show it off.</p>
+<div id="attachment_670919" class="wp-caption aligncenter" style="width: 718px"><a href="http://gigaom2.files.wordpress.com/2013/07/img_1399.jpg"><img  alt="George Miller puts together a cube puzzle he 3D printed. Photo by Signe Brewster" src="http://gigaom2.files.wordpress.com/2013/07/img_1399.jpg?w=708&#038;h=472" width="708" height="472" class="size-large wp-image-670919" /></a><p class="wp-caption-text">George Miller puts together a cube puzzle he 3D printed. Photo by Signe Brewster</p></div>
+<p>&#8220;They used to have operators for telephones, and now everyone is their own operator. The same thing is going to happen with 3D printing, but it&#8217;s going to take a lot longer because that&#8217;s another step up in intellectual endeavor,&#8221; George said. &#8220;Someday I think this will be natural. I don&#8217;t think everyone will do this. I think it&#8217;s like music. Not everyone plays the piano. But they can take lessons if they want to.&#8221;</p>
+
+			<script>
+				var go_gallery_data = [{"title":"George Miller portrait","caption":"George Miller poses in his home in San Francisco with a 3D printed prototype puzzle and the commercial version. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1410.jpg?w=99"}, {"title":"George Miller","caption":"George Miller poses in his home in San Francisco with the \"Superplexus\" puzzle designed by Michael McGinnis. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1417.jpg?w=150"}, {"title":"George Miller doing a puzzle","caption":"George Miller puts together a cube puzzle he 3D printed. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1395.jpg?w=100"}, {"title":"3D printed puzzle by George Miller","caption":"Pieces of a cube puzzle created and 3D printed by George Miller. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1397.jpg?w=150"}, {"title":"3D printed puzzle by George Miller","caption":"Pieces of a cube puzzle created and 3D printed by George Miller. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1385.jpg?w=150"}, {"title":"George Miller doing a puzzle","caption":"George Miller puts together his favorite puzzle. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1405.jpg?w=150"}, {"title":"3D printed puzzle","caption":"A 3D printed puzzle designed and printed by George Miller. It is available commercially. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1373.jpg?w=150"}, {"title":"3D printed puzzle","caption":"A 3D printed puzzle designed and printed by George Miller. It is available commercially. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_1369.jpg?w=150"}, {"title":"George Miller and his haul from the International Puzzle Party","caption":"Every year, George Miller attends the International Puzzle Party. Several hundred people trade puzzles, meaning Miller brings home a huge amount of puzzles each year. He estimates he owns 3000 puzzles. Photo by Signe Brewster","thumbnail":"http:\/\/gigaom2.files.wordpress.com\/2013\/07\/img_14061.jpg?w=150"}];
+			</script>
+		&nbsp;
+			<div class="gallery">
+				<header class="gallery-head">
+					Images from the slideshow
+				</header>
+				<ol class="image-list">
+				<li class="first">
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1410.jpg?w=682&h=350" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1410.jpg?w=682&h=350" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1410.jpg?w=682&h=350" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">1 / 9</span>
+						<div class="title">George Miller portrait</div>
+						<div class="caption">George Miller poses in his home in San Francisco with a 3D printed prototype puzzle and the commercial version. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1417.jpg?w=748" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1417.jpg?w=748" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1417.jpg?w=748" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">2 / 9</span>
+						<div class="title">George Miller</div>
+						<div class="caption">George Miller poses in his home in San Francisco with the "Superplexus" puzzle designed by Michael McGinnis. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1395.jpg?w=682&h=350" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1395.jpg?w=682&h=350" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1395.jpg?w=682&h=350" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">3 / 9</span>
+						<div class="title">George Miller doing a puzzle</div>
+						<div class="caption">George Miller puts together a cube puzzle he 3D printed. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1397.jpg?w=748" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1397.jpg?w=748" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1397.jpg?w=748" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">4 / 9</span>
+						<div class="title">3D printed puzzle by George Miller</div>
+						<div class="caption">Pieces of a cube puzzle created and 3D printed by George Miller. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1385.jpg?w=748" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1385.jpg?w=748" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1385.jpg?w=748" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">5 / 9</span>
+						<div class="title">3D printed puzzle by George Miller</div>
+						<div class="caption">Pieces of a cube puzzle created and 3D printed by George Miller. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1405.jpg?w=748" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1405.jpg?w=748" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1405.jpg?w=748" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">6 / 9</span>
+						<div class="title">George Miller doing a puzzle</div>
+						<div class="caption">George Miller puts together his favorite puzzle. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1373.jpg?w=748" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1373.jpg?w=748" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1373.jpg?w=748" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">7 / 9</span>
+						<div class="title">3D printed puzzle</div>
+						<div class="caption">A 3D printed puzzle designed and printed by George Miller. It is available commercially. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_1369.jpg?w=748" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_1369.jpg?w=748" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_1369.jpg?w=748" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">8 / 9</span>
+						<div class="title">3D printed puzzle</div>
+						<div class="caption">A 3D printed puzzle designed and printed by George Miller. It is available commercially. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			
+				<li>
+					<div class="marker">
+						<img  src="http://gigaom2.files.wordpress.com/2013/07/img_14061.jpg?w=748" alt=""/>
+					</div>
+					<a href="http://gigaom2.files.wordpress.com/2013/07/img_14061.jpg?w=748" class="image-anchor"><img  src="http://gigaom2.files.wordpress.com/2013/07/img_14061.jpg?w=748" title="" /></a>
+					
+					<div class="image-info">
+						<span class="count">9 / 9</span>
+						<div class="title">George Miller and his haul from the International Puzzle Party</div>
+						<div class="caption">Every year, George Miller attends the International Puzzle Party. Several hundred people trade puzzles, meaning Miller brings home a huge amount of puzzles each year. He estimates he owns 3000 puzzles. Photo by Signe Brewster</div>
+					</div>
+				
+				</li>
+			</ol>
+				<div class="gallery-nav-outer">
+					<i class="gallery-next goicon medium icon-arrow-right" title="Next Image"></i>
+					<i class="gallery-prev goicon medium icon-arrow-left" title="Previous Image"></i>
+					<div class="gallery-nav-inner">
+						<div class="gallery-nav"></div>
+					</div>
+				</div>
+			</div>
+		
+<br />  <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gigaom.com&#038;blog=14960843&#038;post=670906&#038;subd=gigaom2&#038;ref=&#038;feed=1" width="1" height="1" /><p><a href="http://pubads.g.doubleclick.net/gampad/jump?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=851845"><img src="http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/GigaOM_RSS_300x250&#038;sz=300x250&#038;c=851845" /></a></p><p><strong>Related research and analysis from GigaOM Pro:</strong><br />Subscriber content. <a href="http://pro.gigaom.com/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=670906+the-puzzle-masters-how-3d-printing-is-enabling-the-most-complex-puzzles-ever-created&utm_content=signejb">Sign up for a free trial</a>.</p><ul><li><a href="http://pro.gigaom.com/report/retails-reinvention-technologys-impact-on-todays-supply-chain/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=670906+the-puzzle-masters-how-3d-printing-is-enabling-the-most-complex-puzzles-ever-created&utm_content=signejb">Retail’s reinvention: technology&#8217;s impact on today&#8217;s supply chain</a></li><li><a href="http://pro.gigaom.com/2013/01/ces-2013-flash-analysis-disruptions-and-disappointments-from-consumer-techs-biggest-show/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=670906+the-puzzle-masters-how-3d-printing-is-enabling-the-most-complex-puzzles-ever-created&utm_content=signejb">GigaOM Research highs and lows from CES 2013</a></li><li><a href="http://pro.gigaom.com/2012/08/how-emerging-technologies-are-influencing-collaboration/?utm_source=tech&utm_medium=editorial&utm_campaign=auto3&utm_term=670906+the-puzzle-masters-how-3d-printing-is-enabling-the-most-complex-puzzles-ever-created&utm_content=signejb">How emerging technologies will influence collaboration</a></li></ul>]]></content:encoded>
+			<wfw:commentRss>http://gigaom.com/2013/07/29/the-puzzle-masters-how-3d-printing-is-enabling-the-most-complex-puzzles-ever-created/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:thumbnail url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-25-32-pm.png?w=150" />
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-25-32-pm.png?w=150" medium="image">
+			<media:title type="html">3D printed puzzle by Oskar van Deventer</media:title>
+		</media:content>
+
+		<media:content url="http://2.gravatar.com/avatar/5a66d8eda897aab3ae47a6780970e93b?s=96&#38;d=retro&#38;r=PG" medium="image">
+			<media:title type="html">signejb</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-25-at-4-57-56-pm.png?w=300" medium="image">
+			<media:title type="html">3D printed Tube Maze puzzle by Oskar van Deventer</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-4-21-09-pm.png?w=708" medium="image">
+			<media:title type="html">Oskar van Deventer newspaper clipping</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-30-42-pm.png" medium="image">
+			<media:title type="html">Oskar van Deventer poses with his array of puzzles 3D printed via Shapeways. </media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1414.jpg?w=708" medium="image">
+			<media:title type="html">George Miller poses in his home in San Francisco with his favorite puzzle. It is very tactile, making it ideal for children with Autism. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/screen-shot-2013-07-26-at-3-56-13-pm.png?w=300" medium="image">
+			<media:title type="html">The &#34;Jumble Pebble&#34; puzzle, sold by Oskar van Deventer on Shapeways.</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1367.jpg?w=708" medium="image">
+			<media:title type="html">George Miller has brought many of his puzzle creations to market. In his San Francisco home, he displays many of the original prototypes and the finished, packaged version. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1362.jpg?w=708" medium="image">
+			<media:title type="html">George Miller&#039;s Stratasys Dimension 3D printer prints pieces for a cube puzzle. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1383.jpg?w=708" medium="image">
+			<media:title type="html">George Miller scrapes support structures off of a puzzle he recently pulled from his 3D printer. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1399.jpg?w=708" medium="image">
+			<media:title type="html">George Miller puts together a cube puzzle he 3D printed. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1410.jpg?w=99" medium="image">
+			<media:title type="html">George Miller poses in his home in San Francisco with a 3D printed prototype puzzle and the commercial version. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1417.jpg?w=150" medium="image">
+			<media:title type="html">George Miller poses in his home in San Francisco with the &#34;Superplexus&#34; puzzle designed by Michael McGinnis. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1395.jpg?w=100" medium="image">
+			<media:title type="html">George Miller puts together a cube puzzle he 3D printed. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1397.jpg?w=150" medium="image">
+			<media:title type="html">Pieces of a cube puzzle created and 3D printed by George Miller. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1385.jpg?w=150" medium="image">
+			<media:title type="html">Pieces of a cube puzzle created and 3D printed by George Miller. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1405.jpg?w=150" medium="image">
+			<media:title type="html">George Miller puts together his favorite puzzle. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1373.jpg?w=150" medium="image">
+			<media:title type="html">A 3D printed puzzle designed and printed by George Miller. It is available commercially. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_1369.jpg?w=150" medium="image">
+			<media:title type="html">A 3D printed puzzle designed and printed by George Miller. It is available commercially. Photo by Signe Brewster</media:title>
+		</media:content>
+
+		<media:content url="http://gigaom2.files.wordpress.com/2013/07/img_14061.jpg?w=150" medium="image">
+			<media:title type="html">Every year, George Miller attends the International Puzzle Party. Several hundred people trade puzzles, meaning Miller brings home a huge amount of puzzles each year. He estimates he owns 3000 puzzles. Photo by Signe Brewster</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>
