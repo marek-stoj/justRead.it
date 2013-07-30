@@ -16,7 +16,6 @@ using JsonModel = JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.JsonModel;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
-  // TODO IMM HI: 404 instead of 403? check existence?
   public class SubscriptionsController : FeedbinApiController {
 
     private readonly ISubscriptionRepository _subscriptionRepository;

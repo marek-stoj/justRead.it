@@ -10,6 +10,7 @@ using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
+  // TODO IMM HI: think about returning json in erroneous responses in addition to http status code: status, message, errors
   [FeedbinAuthorize]
   public abstract class FeedbinApiController : ApiController {
 
