@@ -14,6 +14,11 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
     }
 
     public override void RegisterArea(AreaRegistrationContext context) {
+      RegisterSubscriptionsRoutes(context);
+      RegisterFeedsRoutes(context);
+    }
+
+    private static void RegisterSubscriptionsRoutes(AreaRegistrationContext context) {
       context.Routes.MapHttpRoute(
         name: Routes.Subscriptions_GetAll,
         routeTemplate: _UrlPrefix + "subscriptions.json",
@@ -36,19 +41,27 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
         name: Routes.Subscriptions_Delete,
         routeTemplate: _UrlPrefix + "subscriptions/{id}.json",
         defaults: new { controller = "Subscriptions", action = "Delete" },
-        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Delete), });
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Delete), id = @"\d+", });
 
       context.Routes.MapHttpRoute(
         name: Routes.Subscriptions_UpdateViaPatch,
         routeTemplate: _UrlPrefix + "subscriptions/{id}.json",
         defaults: new { controller = "Subscriptions", action = "UpdateViaPatch" },
-        constraints: new { httpMethod = new HttpMethodConstraint(new HttpMethod("PATCH")), });
+        constraints: new { httpMethod = new HttpMethodConstraint(new HttpMethod("PATCH")), id = @"\d+", });
 
       context.Routes.MapHttpRoute(
         name: Routes.Subscriptions_UpdateViaPost,
         routeTemplate: _UrlPrefix + "subscriptions/{id}/update.json",
         defaults: new { controller = "Subscriptions", action = "UpdateViaPost" },
-        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), id = @"\d+", });
+    }
+
+    private static void RegisterFeedsRoutes(AreaRegistrationContext context) {
+      context.Routes.MapHttpRoute(
+        name: Routes.Feeds_Get,
+        routeTemplate: _UrlPrefix + "feeds/{id}.json",
+        defaults: new { controller = "Feeds", action = "Get" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
     }
 
   }

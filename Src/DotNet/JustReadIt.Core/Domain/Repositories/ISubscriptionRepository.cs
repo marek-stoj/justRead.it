@@ -19,6 +19,8 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     bool UpdateTitle(int userAccountId, int id, string title);
 
+    bool IsSubscribedToFeed(int userAccountId, int feedId);
+
   }
 
 }

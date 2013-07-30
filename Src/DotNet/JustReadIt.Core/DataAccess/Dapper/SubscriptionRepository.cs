@@ -262,6 +262,33 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
+    public bool IsSubscribedToFeed(int userAccountId, int feedId) {
+      using (var db = CreateOpenedConnection()) {
+        int existsInt =
+          db.Query<int>(
+            " select" +
+            "   case when" +
+            "     exists(" +
+            "       select" +
+            "         ufgf.Id" +
+            "       from UserFeedGroupFeed ufgf" +
+            "       join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            "       where 1 = 1" +
+            "         and ufg.UserAccountId = @UserAccountId" +
+            "         and ufgf.FeedId = @FeedId" +
+            "     )" +
+            "     then 1" +
+            "     else 0" +
+            "   end",
+            new {
+              FeedId = feedId,
+              UserAccountId = userAccountId,
+            }).Single();
+
+        return existsInt == 1;
+      }
+    }
+
   }
 
 }

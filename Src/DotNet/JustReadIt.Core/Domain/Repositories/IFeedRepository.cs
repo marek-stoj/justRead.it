@@ -6,6 +6,8 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     IEnumerable<Feed> GetAll();
 
+    Feed FindById(int id);
+
     void Add(Feed feed);
 
     int? FindFeedId(string feedUrl);

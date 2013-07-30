@@ -25,6 +25,19 @@ namespace JustReadIt.Core.DataAccess.Dapper {
 
     }
 
+    public Feed FindById(int id) {
+      using (var db = CreateOpenedConnection()) {
+        Feed feed =
+          db.Query<Feed>(
+            " select * from Feed f where f.Id = @Id",
+            new {
+              Id = id,
+            }).SingleOrDefault();
+
+        return feed;
+      }
+    }
+
     public void Add(Feed feed) {
       Guard.ArgNotNull(feed, "feed");
 
