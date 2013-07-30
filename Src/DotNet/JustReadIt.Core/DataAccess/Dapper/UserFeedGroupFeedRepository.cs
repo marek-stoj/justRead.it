@@ -45,15 +45,16 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int userFeedGroupFeedId =
           db.Query<int>(
             " insert into UserFeedGroupFeed" +
-            " (UserFeedGroupId, FeedId, DateCreated)" +
+            " (UserFeedGroupId, FeedId, DateCreated, CustomTitle)" +
             " values" +
-            " (@UserFeedGroupId, @FeedId, @DateCreated);" +
+            " (@UserFeedGroupId, @FeedId, @DateCreated, @CustomTitle);" +
             " " +
             " select cast(scope_identity() as int);",
             new {
               UserFeedGroupId = userFeedGroupFeed.UserFeedGroupId,
               FeedId = userFeedGroupFeed.FeedId,
               DateCreated = userFeedGroupFeed.DateCreated,
+              CustomTitle = userFeedGroupFeed.CustomTitle,
             })
             .Single();
 

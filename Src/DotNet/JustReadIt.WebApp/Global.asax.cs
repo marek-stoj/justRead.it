@@ -63,6 +63,7 @@ namespace JustReadIt.WebApp {
       HttpContext.Current.User = justReadItPrincipal;
     }
 
+    // TODO IMM HI: think about whether we need to force Web API to always use JSON Media Formatter when binding input models, even if content-type header was not set (it defaults to application/xml then)
     private static void ConfigureJsonFormatter() {
       HttpConfiguration configuration = GlobalConfiguration.Configuration;
 

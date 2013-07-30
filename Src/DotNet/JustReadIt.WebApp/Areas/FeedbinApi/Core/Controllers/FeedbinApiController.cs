@@ -21,6 +21,10 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
           DateTimeStyles.RoundtripKind);
     }
 
+    protected HttpResponseException HttpOk() {
+      return new HttpResponseException(HttpStatusCode.OK);
+    }
+
     protected HttpResponseException HttpBadRequest() {
       return new HttpResponseException(HttpStatusCode.BadRequest);
     }

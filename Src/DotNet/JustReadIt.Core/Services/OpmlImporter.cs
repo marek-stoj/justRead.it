@@ -127,6 +127,7 @@ namespace JustReadIt.Core.Services {
           new UserFeedGroupFeed {
             UserFeedGroupId = userFeedGroupId,
             FeedId = feedId.Value,
+            CustomTitle = null,
           };
 
         _userFeedGroupFeedRepository.Add(userFeedGroupFeed);

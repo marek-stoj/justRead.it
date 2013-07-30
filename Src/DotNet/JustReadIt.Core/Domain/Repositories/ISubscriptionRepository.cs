@@ -15,6 +15,8 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     bool Delete(int userAccountId, int id);
 
+    bool UpdateTitle(int userAccountId, int id, string title);
+
   }
 
 }

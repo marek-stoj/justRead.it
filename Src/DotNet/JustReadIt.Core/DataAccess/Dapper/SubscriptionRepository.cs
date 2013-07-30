@@ -14,6 +14,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
     private const string _SubscriptionProjection =
       "   ufgf.Id," +
       "   ufgf.DateCreated," +
+      "   ufgf.CustomTitle," +
       "   ufg.UserAccountId," +
       "   f.Id," +
       "   f.Title," +
@@ -162,15 +163,16 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int subscriptionId =
           db.Query<int>(
             " insert into UserFeedGroupFeed" +
-            " (UserFeedGroupId, FeedId, DateCreated)" +
+            " (UserFeedGroupId, FeedId, DateCreated, CustomTitle)" +
             " values" +
-            " (@UserFeedGroupId, @FeedId, @DateCreated)" +
+            " (@UserFeedGroupId, @FeedId, @DateCreated, @CustomTitle)" +
             " " +
             " select cast(scope_identity() as int);",
             new {
               UserFeedGroupId = uncategorizedFeedGroupId,
               FeedId = feedId.Value,
               DateCreated = subscription.DateCreated,
+              CustomTitle = subscription.CustomTitle,
             })
             .Single();
 
@@ -198,6 +200,36 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             .Single();
 
         Debug.Assert(affectedRowsCount == 0 || affectedRowsCount == 1, string.Format("Unexpected number of rows affected while deleting subscription. Subscription id: '{0}'. Affected rows count: '{1}'.", id, affectedRowsCount));
+
+        return affectedRowsCount > 0;
+      }
+    }
+
+    public bool UpdateTitle(int userAccountId, int id, string title = null) {
+      if (string.IsNullOrEmpty(title)) {
+        title = null;
+      }
+
+      using (var db = CreateOpenedConnection()) {
+        int affectedRowsCount =
+          db.Query<int>(
+            " update ufgf" +
+            " set CustomTitle = @CustomTitle" +
+            " from UserFeedGroupFeed ufgf" +
+            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            " where 1 = 1" +
+            "   and ufgf.Id = @Id" +
+            "   and ufg.UserAccountId = @UserAccountId;" +
+            " " +
+            " select @@ROWCOUNT;",
+            new {
+              Id = id,
+              UserAccountId = userAccountId,
+              CustomTitle = title,
+            })
+            .Single();
+
+        Debug.Assert(affectedRowsCount == 0 || affectedRowsCount == 1, string.Format("Unexpected number of rows affected while updating subscription title. Subscription id: '{0}'. Affected rows count: '{1}'.", id, affectedRowsCount));
 
         return affectedRowsCount > 0;
       }

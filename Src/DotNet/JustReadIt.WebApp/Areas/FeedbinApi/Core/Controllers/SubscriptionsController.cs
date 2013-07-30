@@ -16,7 +16,7 @@ using JsonModel = JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.JsonModel;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
-  // TODO IMM HI: transactions
+  // TODO IMM HI: 404 instead of 403? check existence?
   public class SubscriptionsController : FeedbinApiController {
 
     private readonly ISubscriptionRepository _subscriptionRepository;
@@ -67,9 +67,13 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     [HttpGet]
     public JsonModel.Subscription Get(int id) {
       int userAccountId = CurrentUserAccountId;
+      Subscription subscription;
 
-      Subscription subscription =
-        _subscriptionRepository.FindById(userAccountId, id);
+      using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
+        subscription = _subscriptionRepository.FindById(userAccountId, id);
+
+        ts.Complete();
+      }
 
       if (subscription == null) {
         throw HttpNotFound();
@@ -83,6 +87,10 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
     [HttpPost]
     public void Create(CreateInputModel input) {
+      if (input == null) {
+        throw HttpBadRequest();
+      }
+
       string feedUrl = input.feed_url;
 
       if (string.IsNullOrEmpty(feedUrl)) {
@@ -119,15 +127,17 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
         string feedContent = fetchFeedResult.FeedContent;
 
         Feeds.Feed feed = _feedParser.Parse(feedContent);
+        string feedTitle = (!string.IsNullOrEmpty(feed.Title) ? feed.Title : CommonResources.UntitledFeedTitle);
 
         var subscription =
           new Subscription {
             UserAccountId = userAccountId,
+            CustomTitle = null,
             Feed =
               new Feed {
                 FeedUrl = feedUrl,
                 SiteUrl = feed.SiteUrl ?? feedUrl,
-                Title = feed.Title ?? CommonResources.UntitledFeedTitle,
+                Title = feedTitle,
               },
           };
 
@@ -142,7 +152,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     }
 
     [HttpDelete]
-    public void Delete([FromUri]int id) {
+    public void Delete(int id) {
       int userAccountId = CurrentUserAccountId;
       bool deleted;
 
@@ -159,9 +169,44 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       throw HttpNoContent();
     }
 
+    [HttpPatch]
+    public void UpdateViaPatch(int id, UpdateInputModel input) {
+      DoUpdate(id, input);
+    }
+
+    [HttpPost]
+    public void UpdateViaPost(int id, UpdateInputModel input) {
+      DoUpdate(id, input);
+    }
+
+    private void DoUpdate(int id, UpdateInputModel input) {
+      if (input == null) {
+        throw HttpBadRequest();
+      }
+
+      int userAccountId = CurrentUserAccountId;
+      bool updated;
+
+      using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
+        updated =
+          _subscriptionRepository.UpdateTitle(
+            userAccountId,
+            id,
+            input.title);
+
+        ts.Complete();
+      }
+
+      if (!updated) {
+        throw HttpNotFound();
+      }
+
+      throw HttpOk();
+    }
+
     private static bool IsRssContentType(string contentType) {
       return contentType.IndexOf("xml", StringComparison.OrdinalIgnoreCase) > -1
-          || contentType.IndexOf("rss", StringComparison.OrdinalIgnoreCase) > -1;
+             || contentType.IndexOf("rss", StringComparison.OrdinalIgnoreCase) > -1;
     }
 
   }

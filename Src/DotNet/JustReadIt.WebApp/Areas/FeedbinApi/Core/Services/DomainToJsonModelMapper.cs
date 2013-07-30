@@ -11,7 +11,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Services {
           Id = subscription.Id,
           FeedId = subscription.Feed.Id,
           CreatedAt = subscription.DateCreated,
-          Title = subscription.Feed.Title,
+          Title = subscription.Title,
           FeedUrl = subscription.Feed.FeedUrl,
           SiteUrl = subscription.Feed.SiteUrl,
         };

@@ -37,6 +37,18 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
         routeTemplate: _UrlPrefix + "subscriptions/{id}.json",
         defaults: new { controller = "Subscriptions", action = "Delete" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Delete), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Subscriptions_UpdateViaPatch,
+        routeTemplate: _UrlPrefix + "subscriptions/{id}.json",
+        defaults: new { controller = "Subscriptions", action = "UpdateViaPatch" },
+        constraints: new { httpMethod = new HttpMethodConstraint(new HttpMethod("PATCH")), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Subscriptions_UpdateViaPost,
+        routeTemplate: _UrlPrefix + "subscriptions/{id}/update.json",
+        defaults: new { controller = "Subscriptions", action = "UpdateViaPost" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
     }
 
   }
