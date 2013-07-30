@@ -59,6 +59,10 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       return new HttpResponseException(httpResponseMessage);
     }
 
+    protected HttpResponseException HttpNoContent() {
+      return new HttpResponseException(HttpStatusCode.NoContent);
+    }
+
     protected string CurrentUsername {
       get {
         IJustReadItPrincipal justReadItPrincipal = GetJustReadItPrincipal();

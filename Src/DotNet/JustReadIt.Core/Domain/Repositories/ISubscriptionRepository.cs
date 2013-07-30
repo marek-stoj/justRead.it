@@ -13,6 +13,8 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     void Add(Subscription subscription);
 
+    bool Delete(int userAccountId, int id);
+
   }
 
 }

@@ -26,7 +26,7 @@ namespace JustReadIt.Core.Services.Feeds {
 
       return
         new FetchFeedResult {
-          ContentType = responseHeaders["Content-Type2"],
+          ContentType = responseHeaders["Content-Type"],
           FeedContent = feedContent,
         };
     }

@@ -16,6 +16,7 @@ using JsonModel = JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.JsonModel;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
+  // TODO IMM HI: transactions
   public class SubscriptionsController : FeedbinApiController {
 
     private readonly ISubscriptionRepository _subscriptionRepository;
@@ -138,6 +139,24 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
         throw HttpCreated(new Dictionary<string, string> { { "Location", apiFeedUrl }, });
       }
+    }
+
+    [HttpDelete]
+    public void Delete([FromUri]int id) {
+      int userAccountId = CurrentUserAccountId;
+      bool deleted;
+
+      using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
+        deleted = _subscriptionRepository.Delete(userAccountId, id);
+
+        ts.Complete();
+      }
+
+      if (!deleted) {
+        throw HttpNotFound();
+      }
+
+      throw HttpNoContent();
     }
 
     private static bool IsRssContentType(string contentType) {

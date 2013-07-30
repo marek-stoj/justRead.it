@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.DataAccess.Dapper.Exceptions;
@@ -176,6 +177,30 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         subscription.Id = subscriptionId;
       }
 
+    }
+
+    public bool Delete(int userAccountId, int id) {
+      using (var db = CreateOpenedConnection()) {
+        int affectedRowsCount =
+          db.Query<int>(
+            " delete UserFeedGroupFeed" +
+            " from UserFeedGroupFeed ufgf" +
+            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            " where 1 = 1" +
+            "   and ufgf.Id = @Id" +
+            "   and ufg.UserAccountId = @UserAccountId;" +
+            " " +
+            " select @@ROWCOUNT;",
+            new {
+              Id = id,
+              UserAccountId = userAccountId,
+            })
+            .Single();
+
+        Debug.Assert(affectedRowsCount == 0 || affectedRowsCount == 1, string.Format("Unexpected number of rows affected while deleting subscription. Subscription id: '{0}'. Affected rows count: '{1}'.", id, affectedRowsCount));
+
+        return affectedRowsCount > 0;
+      }
     }
 
   }

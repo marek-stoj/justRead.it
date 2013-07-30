@@ -10,6 +10,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
     public const string Subscriptions_GetAll = _RouteNamePrefix + "Subscriptions_GetAll";
     public const string Subscriptions_Get = _RouteNamePrefix + "Subscriptions_Get";
     public const string Subscriptions_Create = _RouteNamePrefix + "Subscriptions_Create";
+    public const string Subscriptions_Delete = _RouteNamePrefix + "Subscriptions_Delete";
 
     public static string CreateApiUrlForGetSubscription(UrlHelper urlHelper, int subscriptionId) {
       Guard.ArgNotNull(urlHelper, "urlHelper");
