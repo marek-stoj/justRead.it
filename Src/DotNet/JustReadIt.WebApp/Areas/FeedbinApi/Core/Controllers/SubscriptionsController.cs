@@ -76,7 +76,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       }
 
       if (subscription == null) {
-        throw HttpNotFound();
+        throw HttpForbidden();
       }
 
       JsonModel.Subscription subscriptionModel =
@@ -104,7 +104,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       }
 
       if (!IsRssContentType(fetchFeedResult.ContentType)) {
-        // TODO IMM HI: parse the web page searching for feeds?
+        // TODO IMM HI: parse the web page searching for feeds? implement response 300 - multiple choices; see: https://github.com/feedbin/feedbin-api/blob/master/content/subscriptions.md
         throw HttpUnsupportedMediaType();
       }
 
@@ -154,16 +154,17 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     [HttpDelete]
     public void Delete(int id) {
       int userAccountId = CurrentUserAccountId;
-      bool deleted;
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
-        deleted = _subscriptionRepository.Delete(userAccountId, id);
+        if (!_subscriptionRepository.Exists(userAccountId, id)) {
+          ts.Complete();
+
+          throw HttpForbidden();
+        }
+
+        _subscriptionRepository.Delete(userAccountId, id);
 
         ts.Complete();
-      }
-
-      if (!deleted) {
-        throw HttpNotFound();
       }
 
       throw HttpNoContent();
@@ -185,20 +186,20 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       }
 
       int userAccountId = CurrentUserAccountId;
-      bool updated;
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
-        updated =
-          _subscriptionRepository.UpdateTitle(
-            userAccountId,
-            id,
-            input.title);
+        if (!_subscriptionRepository.Exists(userAccountId, id)) {
+          ts.Complete();
+
+          throw HttpForbidden();
+        }
+
+        _subscriptionRepository.UpdateTitle(
+          userAccountId,
+          id,
+          input.title);
 
         ts.Complete();
-      }
-
-      if (!updated) {
-        throw HttpNotFound();
       }
 
       throw HttpOk();
