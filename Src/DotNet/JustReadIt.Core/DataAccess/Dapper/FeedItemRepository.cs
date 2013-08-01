@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.DataAccess.Dapper.Exceptions;
@@ -11,6 +12,38 @@ namespace JustReadIt.Core.DataAccess.Dapper {
 
     public FeedItemRepository(string connectionString)
       : base(connectionString) {
+    }
+
+    public IEnumerable<FeedItem> Query(int userAccountId, int maxCount, FeedItemFilter feedItemFilter) {
+      Guard.ArgNotNull(feedItemFilter, "feedItemFilter");
+
+      using (var db = CreateOpenedConnection()) {
+        string query =
+          " select top (@MaxCount)" +
+          "   fi.*" +
+          " from FeedItem fi" +
+          " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
+          " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+          " where 1 = 1" +
+          "   and ufg.UserAccountId = @UserAccountId" +
+          (feedItemFilter.FeedId.HasValue
+             ? " and fi.FeedId = @FeedId"
+             : "") +
+          " order by fi.DateCreated desc, fi.Id desc";
+
+        IEnumerable<FeedItem> feedItems =
+          db.Query<FeedItem>(
+            query,
+            new {
+              UserAccountId = userAccountId,
+              MaxCount = maxCount,
+              FeedId = feedItemFilter.FeedId,
+            });
+
+        // TODO IMM HI: handle filter
+
+        return feedItems;
+      }
     }
 
     public void Add(FeedItem feedItem) {
@@ -76,6 +109,22 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             }).Single();
 
         return existsInt == 1;
+      }
+    }
+
+    public FeedItem FindById(int id) {
+      using (var db = CreateOpenedConnection()) {
+        FeedItem feedItem =
+          db.Query<FeedItem>(
+            " select *" +
+            " from FeedItem fi" +
+            " where 1 = 1" +
+            "   and fi.Id = @Id",
+            new {
+              Id = id,
+            }).SingleOrDefault();
+
+        return feedItem;
       }
     }
 

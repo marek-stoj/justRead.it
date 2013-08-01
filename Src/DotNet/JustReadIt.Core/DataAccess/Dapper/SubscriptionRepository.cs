@@ -25,7 +25,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       : base(connectionString) {
     }
 
-    public IEnumerable<Subscription> GetAll(int userAccountId, DateTime? dateCreatedSince) {
+    public IEnumerable<Subscription> Query(int userAccountId, DateTime? dateCreatedSince) {
       using (var db = CreateOpenedConnection()) {
         IEnumerable<Subscription> subscriptions =
           db.Query<Subscription, Feed, Subscription>(
@@ -52,7 +52,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
-    public Subscription FindById(int userAccountId, int id) {
+    public Subscription FindById(int id) {
       using (var db = CreateOpenedConnection()) {
         Subscription subscription =
           db.Query<Subscription, Feed, Subscription>(
@@ -62,7 +62,6 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             " join UserFeedGroupFeed ufgf on ufgf.UserFeedGroupId = ufg.Id" +
             " join Feed f on f.Id = ufgf.FeedId" +
             " where 1 = 1" +
-            "   and ufg.UserAccountId = @UserAccountId" +
             "   and ufgf.Id = @Id",
             (s, f) => {
               s.Feed = f;
@@ -71,7 +70,6 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             },
             new {
               Id = id,
-              UserAccountId = userAccountId,
             }).SingleOrDefault();
 
         return subscription;

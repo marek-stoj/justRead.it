@@ -16,6 +16,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
     public override void RegisterArea(AreaRegistrationContext context) {
       RegisterSubscriptionsRoutes(context);
       RegisterFeedsRoutes(context);
+      RegisterEntriesRoutes(context);
     }
 
     private static void RegisterSubscriptionsRoutes(AreaRegistrationContext context) {
@@ -61,6 +62,26 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
         name: Routes.Feeds_Get,
         routeTemplate: _UrlPrefix + "feeds/{id}.json",
         defaults: new { controller = "Feeds", action = "Get" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Feeds_GetEntries,
+        routeTemplate: _UrlPrefix + "feeds/{id}/entries.json",
+        defaults: new { controller = "Feeds", action = "GetEntries" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
+    }
+
+    private static void RegisterEntriesRoutes(AreaRegistrationContext context) {
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_GetAll,
+        routeTemplate: _UrlPrefix + "entries.json",
+        defaults: new { controller = "Entries", action = "GetAll", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_Get,
+        routeTemplate: _UrlPrefix + "entries/{id}.json",
+        defaults: new { controller = "Entries", action = "Get" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
     }
 

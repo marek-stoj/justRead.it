@@ -15,16 +15,6 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       : base(connectionString) {
     }
 
-    public IEnumerable<Feed> GetAll() {
-      using (var db = CreateOpenedConnection()) {
-        IEnumerable<Feed> feeds =
-          db.Query<Feed>(
-          " select * from Feed");
-
-        return feeds;
-      }
-    }
-
     public IEnumerable<Feed> GetFeedsToCrawl(int maxCount, DateTime maxDateLastCrawlStarted) {
       using (var db = CreateOpenedConnection()) {
         IEnumerable<Feed> feeds =

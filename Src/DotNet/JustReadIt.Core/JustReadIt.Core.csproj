@@ -75,6 +75,7 @@
     <Compile Include="Domain\FeedItem.cs" />
     <Compile Include="Domain\EmailVerificationToken.cs" />
     <Compile Include="Domain\Feed.cs" />
+    <Compile Include="Domain\FeedItemFilter.cs" />
     <Compile Include="Domain\Repositories\IFeedItemRepository.cs" />
     <Compile Include="Domain\Repositories\IEmailVerificationTokenRepository.cs" />
     <Compile Include="Domain\Repositories\ISubscriptionRepository.cs" />

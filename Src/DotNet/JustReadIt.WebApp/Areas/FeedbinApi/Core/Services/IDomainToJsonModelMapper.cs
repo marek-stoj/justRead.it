@@ -9,6 +9,8 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Services {
 
     JsonModel.Feed CreateFeed(Feed feed);
 
+    JsonModel.Entry CreateEntry(FeedItem feedItem);
+
   }
 
 }

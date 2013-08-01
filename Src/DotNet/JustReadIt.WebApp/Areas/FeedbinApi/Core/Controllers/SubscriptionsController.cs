@@ -51,7 +51,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       IEnumerable<Subscription> subscriptions;
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
-        subscriptions = _subscriptionRepository.GetAll(userAccountId, sinceDate);
+        subscriptions = _subscriptionRepository.Query(userAccountId, sinceDate);
 
         ts.Complete();
       }
@@ -69,12 +69,12 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       Subscription subscription;
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
-        subscription = _subscriptionRepository.FindById(userAccountId, id);
+        subscription = _subscriptionRepository.FindById(id);
 
         ts.Complete();
       }
 
-      if (subscription == null) {
+      if (subscription == null || subscription.UserAccountId != userAccountId) {
         throw HttpForbidden();
       }
 

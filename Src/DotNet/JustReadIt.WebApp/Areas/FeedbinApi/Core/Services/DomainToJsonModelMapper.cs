@@ -32,6 +32,23 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Services {
         };
     }
 
+    public JsonModel.Entry CreateEntry(FeedItem feedItem) {
+      Guard.ArgNotNull(feedItem, "feedItem");
+
+      return
+        new JsonModel.Entry {
+          Id = feedItem.Id,
+          FeedId = feedItem.FeedId,
+          Title = feedItem.Title,
+          Url = feedItem.Url,
+          Author = feedItem.Author,
+          Content = feedItem.Content,
+          Summary = feedItem.Summary,
+          Published = feedItem.DatePublished,
+          CreatedAt = feedItem.DateCreated,
+        };
+    }
+
   }
 
 }
