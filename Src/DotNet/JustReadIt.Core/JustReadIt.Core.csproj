@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImmRafSoft.Configuration">
+      <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="ImmRafSoft.Net">
       <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Net.dll</HintPath>
     </Reference>
@@ -39,7 +42,11 @@
     <Reference Include="ImmRafSoft.Xml">
       <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Xml.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Lib\log4net\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
@@ -51,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Guard.cs" />
+    <Compile Include="Common\CommonIoC.cs" />
+    <Compile Include="Common\Logging\Log4NetExtensions.cs" />
     <Compile Include="Common\StringExtensions.cs" />
     <Compile Include="DataAccess\Dapper\FeedItemRepository.cs" />
     <Compile Include="DataAccess\Dapper\EmailVerificationTokenRepository.cs" />
@@ -63,6 +72,7 @@
     <Compile Include="DataAccess\Dapper\FeedRepository.cs" />
     <Compile Include="DataAccess\Dapper\DapperRepository.cs" />
     <Compile Include="DataAccess\Dapper\SqlMapper.cs" />
+    <Compile Include="Domain\FeedItem.cs" />
     <Compile Include="Domain\EmailVerificationToken.cs" />
     <Compile Include="Domain\Feed.cs" />
     <Compile Include="Domain\Repositories\IFeedItemRepository.cs" />

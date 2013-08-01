@@ -55,6 +55,9 @@
     <Reference Include="ImmRafSoft.Validation">
       <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Validation.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Lib\log4net\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
       <HintPath>..\..\..\Lib\ImmRafSoft\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
@@ -323,6 +326,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\FeedbinApi\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -125,16 +125,52 @@ namespace JustReadIt.Core.Services.Feeds {
 
       return
         new FeedItem {
-          DatePublished =
-            syndicationItem.PublishDate != null
-              ? syndicationItem.PublishDate.UtcDateTime
-              : (DateTime?)null,
           Title =
             syndicationItem.Title != null
               ? syndicationItem.Title.Text
               : null,
           Url = itemUrl,
+          DatePublished =
+            syndicationItem.PublishDate != null
+              ? syndicationItem.PublishDate.UtcDateTime
+              : (DateTime?)null,
+          Author =
+            syndicationItem.Authors != null
+              ? CreateAuthorString(syndicationItem)
+              : null,
+          Summary =
+            syndicationItem.Summary != null
+              ? syndicationItem.Summary.Text
+              : null,
+          Content =
+            syndicationItem.Content != null
+              ? CreateContentString(syndicationItem)
+              : null,
         };
+    }
+
+    private static string CreateAuthorString(SyndicationItem syndicationItem) {
+      if (syndicationItem.Authors.Count == 0) {
+        return null;
+      }
+
+      IEnumerable<string> authorsNames =
+        syndicationItem.Authors
+          .Select(sp => sp.Name);
+
+      return
+        string.Join(
+          ", ",
+          authorsNames.Where(n => !n.IsNullOrEmpty()));
+    }
+
+    private static string CreateContentString(SyndicationItem syndicationItem) {
+      var textSyndicationContent = syndicationItem.Content as TextSyndicationContent;
+
+      return
+        textSyndicationContent != null
+          ? textSyndicationContent.Text
+          : null;
     }
 
   }

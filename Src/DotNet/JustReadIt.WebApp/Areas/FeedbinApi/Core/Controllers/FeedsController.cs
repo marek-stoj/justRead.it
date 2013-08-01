@@ -27,7 +27,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     }
 
     public FeedsController()
-      : this(IoC.GetFeedRepository(), IoC.GetSubscriptionRepository(), IoC.GetDomainToJsonModelMapper()) {
+      : this(CommonIoC.GetFeedRepository(), CommonIoC.GetSubscriptionRepository(), IoC.GetDomainToJsonModelMapper()) {
     }
 
     /// <remarks>

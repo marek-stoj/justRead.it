@@ -1,35 +1,31 @@
-﻿using System.Configuration;
-using ImmRafSoft.Net;
-using JustReadIt.Core.DataAccess.Dapper;
-using JustReadIt.Core.Services.Feeds;
+﻿using JustReadIt.Core.Common;
 using JustReadIt.Core.Services.Workers;
+using log4net.Config;
 
 namespace JustReadIt.FeedsCrawlerWorker.ConsoleApp {
 
   internal class Program {
 
-    private const string _ConnectionStringName_JustReadIt = "JustReadIt";
+    private readonly IFeedsCrawler _feedsCrawler;
+
+    public Program(IFeedsCrawler feedsCrawler) {
+      _feedsCrawler = feedsCrawler;
+    }
+
+    public Program()
+      : this(CommonIoC.GetFeedsCrawler()) {
+    }
 
     private static void Main(string[] args) {
-      // TODO IMM HI: common ioc?
-      string connectionString =
-        ConfigurationManager.ConnectionStrings[_ConnectionStringName_JustReadIt]
-          .ConnectionString;
+      var program = new Program();
 
-      var feedRepository = new FeedRepository(connectionString);
-      var feedItemRepository = new FeedItemRepository(connectionString);
-      var webClientFactory = new SmartWebClientFactory();
-      var feedFetcher = new FeedFetcher(webClientFactory);
-      var feedParser = new FeedParser();
+      program.Run(args);
+    }
 
-      var feedsCrawler =
-        new FeedsCrawler(
-          feedRepository,
-          feedItemRepository,
-          feedFetcher,
-          feedParser);
+    private void Run(string[] args) {
+      XmlConfigurator.Configure();
 
-      feedsCrawler.CrawlAllFeeds();
+      _feedsCrawler.CrawlAllFeeds();
     }
 
   }

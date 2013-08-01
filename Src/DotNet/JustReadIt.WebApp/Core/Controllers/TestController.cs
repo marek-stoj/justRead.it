@@ -2,7 +2,6 @@
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Services;
 using JustReadIt.Core.Services.Feeds;
-using JustReadIt.WebApp.Core.App;
 using Io = System.IO;
 
 namespace JustReadIt.WebApp.Core.Controllers {
@@ -12,7 +11,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
 
     [HttpGet]
     public ActionResult ImportOpml() {
-      IOpmlImporter opmlImporter = IoC.GetOpmlImporter();
+      IOpmlImporter opmlImporter = CommonIoC.GetOpmlImporter();
 
       //string opmlXml = Io.File.ReadAllText("C:\\feeds_old_reader_full.opml");
       string opmlXml = Io.File.ReadAllText("C:\\feeds_old_reader_trimmed.opml");

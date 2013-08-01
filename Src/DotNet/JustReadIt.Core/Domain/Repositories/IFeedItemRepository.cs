@@ -2,6 +2,10 @@
 
   public interface IFeedItemRepository {
 
+    void Add(FeedItem feedItem);
+
+    bool Exists(string url);
+
   }
 
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Net.Http.Formatting;
+using System.Reflection;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -10,16 +11,23 @@ using JustReadIt.Core.Common;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
 using JustReadIt.WebApp.Core.App;
 using Newtonsoft.Json;
+using log4net;
+using log4net.Config;
+using JustReadIt.Core.Common.Logging;
 
 namespace JustReadIt.WebApp {
 
   public class MvcApplication : HttpApplication {
+
+    private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
     public MvcApplication() {
       AuthenticateRequest += MvcApplication_AuthenticateRequest;
     }
 
     protected void Application_Start() {
+      XmlConfigurator.Configure();
+
       AreaRegistration.RegisterAllAreas();
 
       WebApiConfig.Register(GlobalConfiguration.Configuration);
@@ -27,6 +35,8 @@ namespace JustReadIt.WebApp {
       RouteConfig.RegisterRoutes(RouteTable.Routes);
 
       ConfigureJsonFormatter();
+
+      _log.InfoIfEnabled(() => "Application has started.");
     }
 
     private static void MvcApplication_AuthenticateRequest(object sender, EventArgs eventArgs) {
@@ -47,7 +57,7 @@ namespace JustReadIt.WebApp {
       IJustReadItPrincipal justReadItPrincipal = cacheService.GetPrincipal(username);
 
       if (justReadItPrincipal == null) {
-        var userAccountRepository = IoC.GetUserAccountRepository();
+        var userAccountRepository = CommonIoC.GetUserAccountRepository();
         int? userAccountId = userAccountRepository.FindUserAccountIdByEmailAddress(username);
 
         if (!userAccountId.HasValue) {

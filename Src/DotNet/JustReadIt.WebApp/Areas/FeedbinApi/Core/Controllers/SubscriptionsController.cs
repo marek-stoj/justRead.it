@@ -36,7 +36,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     }
 
     public SubscriptionsController()
-      : this(IoC.GetSubscriptionRepository(), IoC.GetDomainToJsonModelMapper(), IoC.GetFeedFetcher(), IoC.GetFeedParser()) {
+      : this(CommonIoC.GetSubscriptionRepository(), IoC.GetDomainToJsonModelMapper(), CommonIoC.GetFeedFetcher(), CommonIoC.GetFeedParser()) {
     }
 
     [HttpGet]

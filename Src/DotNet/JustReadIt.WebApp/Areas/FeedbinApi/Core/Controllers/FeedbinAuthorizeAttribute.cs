@@ -1,6 +1,5 @@
 ﻿using JustReadIt.Core.Common;
 using JustReadIt.Core.Services;
-using JustReadIt.WebApp.Core.App;
 using JustReadIt.WebApp.Core.WebApiEx;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
@@ -19,7 +18,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     }
 
     public FeedbinAuthorizeAttribute()
-      : this(IoC.GetMembershipService()) {
+      : this(CommonIoC.GetMembershipService()) {
     }
 
     protected override bool AreCredentialsValid(string username, string password, out int userAccountId) {

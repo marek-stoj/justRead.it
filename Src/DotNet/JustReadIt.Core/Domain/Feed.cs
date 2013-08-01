@@ -12,6 +12,11 @@ namespace JustReadIt.Core.Domain {
 
     public int Id { get; set; }
 
+    public DateTime DateCreated {
+      get { return _dateCreated; }
+      set { _dateCreated = DateTime.SpecifyKind(value, DateTimeKind.Utc); }
+    }
+
     public string Title {
       get { return _title; }
       set { _title = value.TrimmedOrNull(); }
@@ -25,11 +30,6 @@ namespace JustReadIt.Core.Domain {
     public string SiteUrl {
       get { return _siteUrl; }
       set { _siteUrl = value.TrimmedOrNull(); }
-    }
-
-    public DateTime DateCreated {
-      get { return _dateCreated; }
-      set { _dateCreated = DateTime.SpecifyKind(value, DateTimeKind.Utc); }
     }
 
   }

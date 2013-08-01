@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Transactions;
 using JustReadIt.Core.Common;
+using JustReadIt.Core.Common.Logging;
+using JustReadIt.Core.Domain;
 using JustReadIt.Core.Domain.Repositories;
+using log4net;
 
 namespace JustReadIt.Core.Services.Workers {
 
   public class FeedsCrawler : IFeedsCrawler {
+
+    private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
     private const int _FeedsToCrawlBatchSize = 10;
     private static readonly TimeSpan _FeedsCrawlInterval = TimeSpan.FromMinutes(15);
@@ -29,7 +35,7 @@ namespace JustReadIt.Core.Services.Workers {
     }
 
     public void CrawlAllFeeds() {
-      IEnumerable<Domain.Feed> allFeeds;
+      IEnumerable<Feed> allFeeds;
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
         DateTime maxDateLastCrawlStarted =
@@ -43,19 +49,21 @@ namespace JustReadIt.Core.Services.Workers {
         ts.Complete();
       }
 
-      foreach (Domain.Feed feed in allFeeds) {
-        Console.WriteLine("Crawling feed: " + feed.FeedUrl);
+      foreach (Feed feed in allFeeds) {
+        // ReSharper disable AccessToForEachVariableInClosure
+        _log.DebugIfEnabled(() => string.Format("Crawling feed: '{0}'.", feed.FeedUrl));
+        // ReSharper restore AccessToForEachVariableInClosure
 
         try {
           CrawlFeed(feed);
         }
         catch (Exception exc) {
-          Console.WriteLine("Error: {0}", exc);
+          _log.ErrorIfEnabled(() => "Error.", exc);
         }
       }
     }
 
-    private void CrawlFeed(Domain.Feed feed) {
+    private void CrawlFeed(Feed feed) {
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
         _feedRepository.SetDateLastCrawlStarted(feed.Id, DateTime.UtcNow);
 
@@ -69,19 +77,39 @@ namespace JustReadIt.Core.Services.Workers {
         _feedParser.Parse(fetchFeedResult.FeedContent);
 
       foreach (Feeds.FeedItem parsedFeedItem in parsedFeed.Items) {
-        // TODO IMM HI: do we want to keep this try/catch?
         try {
           AddFeedItemIfNeeded(parsedFeedItem, feed.Id);
         }
         catch (Exception exc) {
-          Console.WriteLine("Error: {0}", exc);
+          _log.ErrorIfEnabled(() => "Error.", exc);
         }
       }
     }
 
     private void AddFeedItemIfNeeded(Feeds.FeedItem parsedFeedItem, int feedId) {
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
-        // TODO IMM HI: check and insert if new
+        if (_feedItemRepository.Exists(parsedFeedItem.Url)) {
+          _log.DebugIfEnabled(() => string.Format("Feed item already exists. URL: '{0}'", parsedFeedItem.Url));
+
+          ts.Complete();
+
+          return;
+        }
+
+        _log.DebugIfEnabled(() => string.Format("Adding new feed item. URL: '{0}'", parsedFeedItem.Url));
+
+        var feedItem =
+          new FeedItem {
+            FeedId = feedId,
+            Title = parsedFeedItem.Title,
+            Url = parsedFeedItem.Url,
+            DatePublished = parsedFeedItem.DatePublished,
+            Author = parsedFeedItem.Author,
+            Summary = parsedFeedItem.Summary,
+            Content = parsedFeedItem.Content,
+          };
+
+        _feedItemRepository.Add(feedItem);
 
         ts.Complete();
       }
