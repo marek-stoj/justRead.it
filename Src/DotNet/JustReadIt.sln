@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{7E78DBFA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustReadIt.FeedsFetcher.ConsoleApp", "JustReadIt.FeedsFetcher.ConsoleApp\JustReadIt.FeedsFetcher.ConsoleApp.csproj", "{CF2183BD-55B8-468B-8E0C-154A4195BBA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustReadIt.FeedsCrawlerWorker.ConsoleApp", "JustReadIt.FeedsCrawlerWorker.ConsoleApp\JustReadIt.FeedsCrawlerWorker.ConsoleApp.csproj", "{AC995E62-79EF-4AAB-AF62-0C60D0D27358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{CF2183BD-55B8-468B-8E0C-154A4195BBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF2183BD-55B8-468B-8E0C-154A4195BBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF2183BD-55B8-468B-8E0C-154A4195BBA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC995E62-79EF-4AAB-AF62-0C60D0D27358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC995E62-79EF-4AAB-AF62-0C60D0D27358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC995E62-79EF-4AAB-AF62-0C60D0D27358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC995E62-79EF-4AAB-AF62-0C60D0D27358}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

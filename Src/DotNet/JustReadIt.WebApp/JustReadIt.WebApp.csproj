@@ -147,6 +147,7 @@
     <Compile Include="Areas\FeedbinApi\Core\Services\DomainToJsonModelMapper.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Services\IDomainToJsonModelMapper.cs" />
     <Compile Include="Areas\FeedbinApi\FeedbinApiAreaRegistration.cs" />
+    <Compile Include="Core\App\IoC.cs" />
     <Compile Include="Core\MvcEx\ActionLink.cs" />
     <Compile Include="Core\Services\AspNetCacheService.cs" />
     <Compile Include="Core\Services\ICacheService.cs" />
@@ -159,7 +160,6 @@
     <Compile Include="Core\Controllers\Buttons.cs" />
     <Compile Include="Core\Controllers\TestController.cs" />
     <Compile Include="Core\Controllers\HomeController.cs" />
-    <Compile Include="Core\App\IoC.cs" />
     <Compile Include="Core\Controllers\JustReadItController.cs" />
     <Compile Include="Core\Models\Account\SignInViewModel.cs" />
     <Compile Include="Core\Models\Account\SignUpSuccessViewModel.cs" />

@@ -6,6 +6,7 @@
   FeedUrlChecksum as (checksum(FeedUrl)) persisted not null,
   SiteUrl nvarchar(1024) not null,
   SiteUrlChecksum as (checksum(SiteUrl)) persisted not null,
+  DateLastCrawlStarted datetime null,
   constraint PK_Feed primary key clustered (
     Id asc
   )

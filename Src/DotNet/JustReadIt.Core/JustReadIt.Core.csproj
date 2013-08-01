@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Common\Guard.cs" />
     <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="DataAccess\Dapper\FeedItemRepository.cs" />
     <Compile Include="DataAccess\Dapper\EmailVerificationTokenRepository.cs" />
     <Compile Include="DataAccess\Dapper\Exceptions\InternalException.cs" />
     <Compile Include="DataAccess\Dapper\SubscriptionRepository.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="DataAccess\Dapper\SqlMapper.cs" />
     <Compile Include="Domain\EmailVerificationToken.cs" />
     <Compile Include="Domain\Feed.cs" />
+    <Compile Include="Domain\Repositories\IFeedItemRepository.cs" />
     <Compile Include="Domain\Repositories\IEmailVerificationTokenRepository.cs" />
     <Compile Include="Domain\Repositories\ISubscriptionRepository.cs" />
     <Compile Include="Domain\Repositories\IUserFeedGroupFeedRepository.cs" />
@@ -90,9 +92,11 @@
     <Compile Include="Services\Feeds\FeedItem.cs" />
     <Compile Include="Services\Feeds\FeedParser.cs" />
     <Compile Include="Services\Feeds\FeedParserException.cs" />
+    <Compile Include="Services\Workers\FeedsCrawler.cs" />
     <Compile Include="Services\Feeds\FetchFeedResult.cs" />
     <Compile Include="Services\Feeds\IFeedFetcher.cs" />
     <Compile Include="Services\Feeds\IFeedParser.cs" />
+    <Compile Include="Services\Workers\IFeedsCrawler.cs" />
     <Compile Include="Services\IMailingService.cs" />
     <Compile Include="Services\IMembershipService.cs" />
     <Compile Include="Services\IOpmlImporter.cs" />

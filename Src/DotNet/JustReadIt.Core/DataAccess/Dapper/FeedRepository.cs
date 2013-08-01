@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.DataAccess.Dapper.Exceptions;
@@ -18,11 +19,28 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       using (var db = CreateOpenedConnection()) {
         IEnumerable<Feed> feeds =
           db.Query<Feed>(
-            "select * from Feed");
+          " select * from Feed");
 
         return feeds;
       }
+    }
 
+    public IEnumerable<Feed> GetFeedsToCrawl(int maxCount, DateTime maxDateLastCrawlStarted) {
+      using (var db = CreateOpenedConnection()) {
+        IEnumerable<Feed> feeds =
+          db.Query<Feed>(
+            " select top (@MaxCount)" +
+            "   f.*" +
+            " from Feed f" +
+            " where f.DateLastCrawlStarted is null or f.DateLastCrawlStarted <= @MaxDateLastCrawlStarted" +
+            " order by f.DateCreated desc, f.Id desc",
+            new {
+              MaxCount = maxCount,
+              MaxDateLastCrawlStarted = maxDateLastCrawlStarted,
+            });
+
+        return feeds;
+      }
     }
 
     public Feed FindById(int id) {
@@ -87,6 +105,28 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             .SingleOrDefault();
 
         return feedId;
+      }
+    }
+
+    public bool SetDateLastCrawlStarted(int id, DateTime dateTime) {
+      using (var db = CreateOpenedConnection()) {
+        int affectedRowsCount =
+          db.Query<int>(
+            " update Feed" +
+            " set DateLastCrawlStarted = @DateLastCrawlStarted" +
+            " where 1 = 1" +
+            "   and Id = @Id" +
+            " " +
+            " select @@ROWCOUNT;",
+            new {
+              Id = id,
+              DateLastCrawlStarted = dateTime,
+            })
+            .Single();
+
+        Debug.Assert(affectedRowsCount == 0 || affectedRowsCount == 1, string.Format("Unexpected number of rows affected while updating feed's last date crawl started. Feed id: '{0}'. Affected rows count: '{1}'.", id, affectedRowsCount));
+
+        return affectedRowsCount > 0;
       }
     }
 

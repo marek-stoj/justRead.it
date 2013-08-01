@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
+using JustReadIt.Core.Common;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
 using JustReadIt.WebApp.Core.App;
 using Newtonsoft.Json;

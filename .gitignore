@@ -23,3 +23,5 @@ Src/DotNet/JustReadIt.Core.Tests/bin
 Src/DotNet/JustReadIt.Core.Tests/obj
 Src/DotNet/JustReadIt.FeedsFetcher.ConsoleApp/bin
 Src/DotNet/JustReadIt.FeedsFetcher.ConsoleApp/obj
+Src/DotNet/JustReadIt.FeedsCrawlerWorker.ConsoleApp/bin
+Src/DotNet/JustReadIt.FeedsCrawlerWorker.ConsoleApp/obj
