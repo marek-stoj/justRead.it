@@ -10,6 +10,7 @@ using JustReadIt.Core.Resources;
 using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.Subscriptions;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Services;
+using JustReadIt.WebApp.Areas.FeedbinApi.Core.Utils;
 using JustReadIt.WebApp.Core.App;
 using Feeds = JustReadIt.Core.Services.Feeds;
 using JsonModel = JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.JsonModel;
@@ -45,7 +46,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
 
       DateTime? sinceDate =
         !string.IsNullOrEmpty(since)
-          ? ParseFeedbinDateTime(since)
+          ? ModelUtils.ParseFeedbinDateTime(since)
           : null;
 
       IEnumerable<Subscription> subscriptions;

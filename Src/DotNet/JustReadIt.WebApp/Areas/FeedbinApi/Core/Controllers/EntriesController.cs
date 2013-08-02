@@ -38,7 +38,6 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     ///   - We're limiting number of returned entries to 100 if 'per_page' param is not given.
     ///   - If 'per_page' param is greater than 100, we return 400 - Bad Request.
     /// </remarks>
-    // TODO IMM HI: analyze doc and implement return codes for various situations
     [HttpGet]
     public IEnumerable<JsonModel.Entry> GetAll(int? per_page = null, int? page = null, string since = null, bool? read = null, bool? starred = null, string ids = null) {
       int userAccountId = CurrentUserAccountId;
@@ -71,15 +70,10 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
         feedItems.Select(_domainToJsonModelMapper.CreateEntry)
           .ToList();
 
-      if (entriesModel.Count == 0) {
-        throw HttpNotFound();
-      }
-
       return entriesModel;
     }
 
     [HttpGet]
-    // TODO IMM HI: analyze doc and implement return codes for various situations
     public JsonModel.Entry Get(int id) {
       int userAccountId = CurrentUserAccountId;
       FeedItem feedItem;

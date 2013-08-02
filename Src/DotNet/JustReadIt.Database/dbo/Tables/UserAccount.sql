@@ -1,6 +1,6 @@
 ﻿create table dbo.UserAccount (
   Id int identity(1, 1) not null,
-  DateCreated datetime not null,
+  DateCreated datetime2 not null,
   EmailAddress nvarchar(256) not null,
   PasswordHash nvarchar(32) not null,
   IsEmailAddressVerified bit not null,

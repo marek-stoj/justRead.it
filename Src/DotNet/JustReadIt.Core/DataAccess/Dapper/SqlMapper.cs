@@ -399,7 +399,7 @@ namespace JustReadIt.Core.DataAccess.Dapper
             typeMap[typeof(string)] = DbType.String;
             typeMap[typeof(char)] = DbType.StringFixedLength;
             typeMap[typeof(Guid)] = DbType.Guid;
-            typeMap[typeof(DateTime)] = DbType.DateTime;
+            typeMap[typeof(DateTime)] = DbType.DateTime2;
             typeMap[typeof(DateTimeOffset)] = DbType.DateTimeOffset;
             typeMap[typeof(TimeSpan)] = DbType.Time;
             typeMap[typeof(byte[])] = DbType.Binary;
@@ -417,7 +417,7 @@ namespace JustReadIt.Core.DataAccess.Dapper
             typeMap[typeof(bool?)] = DbType.Boolean;
             typeMap[typeof(char?)] = DbType.StringFixedLength;
             typeMap[typeof(Guid?)] = DbType.Guid;
-            typeMap[typeof(DateTime?)] = DbType.DateTime;
+            typeMap[typeof(DateTime?)] = DbType.DateTime2;
             typeMap[typeof(DateTimeOffset?)] = DbType.DateTimeOffset;
             typeMap[typeof(TimeSpan?)] = DbType.Time;
             typeMap[typeof(Object)] = DbType.Object;

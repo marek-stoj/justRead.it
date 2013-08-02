@@ -7,6 +7,8 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     IEnumerable<Feed> GetFeedsToCrawl(int maxCount, DateTime maxDateLastCrawlStarted);
 
+    bool Exists(int id);
+
     Feed FindById(int id);
 
     void Add(Feed feed);

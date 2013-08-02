@@ -2,7 +2,7 @@
   Id int identity(1, 1) not null,
   UserFeedGroupId int not null,
   FeedId int not null,
-  DateCreated datetime not null,
+  DateCreated datetime2 not null,
   CustomTitle nvarchar(256) null,
   constraint PK_UserFeedGroupFeed primary key clustered (
     Id asc

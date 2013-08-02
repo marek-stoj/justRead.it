@@ -17,19 +17,43 @@ namespace JustReadIt.Core.DataAccess.Dapper {
     public IEnumerable<FeedItem> Query(int userAccountId, int maxCount, FeedItemFilter feedItemFilter) {
       Guard.ArgNotNull(feedItemFilter, "feedItemFilter");
 
+      // TODO IMM HI: handle FeedItemFilter.IsRead
+      // TODO IMM HI: handle FeedItemFilter.IsStarred
+      const string orderBy = " order by fi.DateCreated desc, fi.Id desc ";
+
       using (var db = CreateOpenedConnection()) {
+        bool pageNumberHasValue = feedItemFilter.PageNumber.HasValue;
+
         string query =
-          " select top (@MaxCount)" +
-          "   fi.*" +
-          " from FeedItem fi" +
-          " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
-          " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
-          " where 1 = 1" +
-          "   and ufg.UserAccountId = @UserAccountId" +
+          " with FeedItems as" +
+          " (" +
+          "   select" +
+          (pageNumberHasValue
+             ? " row_number() over(" + orderBy + ") as RowNumber,"
+             : "") +
+          "     fi.*" +
+          "   from FeedItem fi" +
+          "   join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
+          "   join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+          "   where 1 = 1" +
+          "     and ufg.UserAccountId = @UserAccountId" +
           (feedItemFilter.FeedId.HasValue
              ? " and fi.FeedId = @FeedId"
              : "") +
-          " order by fi.DateCreated desc, fi.Id desc";
+          (feedItemFilter.DateCreatedSince.HasValue
+             ? " and fi.DateCreated > @DateCreatedSince"
+             : "") +
+          (feedItemFilter.Ids != null
+             ? " and fi.Id in @Ids"
+             : "") +
+          " )" +
+          " select top (@MaxCount)" +
+          "   *" +
+          " from FeedItems fi" +
+          (pageNumberHasValue
+             ? " where fi.RowNumber between ((@PageNumber - 1) * @MaxCount + 1) and (@PageNumber * @MaxCount)"
+             : "") +
+          orderBy;
 
         IEnumerable<FeedItem> feedItems =
           db.Query<FeedItem>(
@@ -38,9 +62,10 @@ namespace JustReadIt.Core.DataAccess.Dapper {
               UserAccountId = userAccountId,
               MaxCount = maxCount,
               FeedId = feedItemFilter.FeedId,
+              DateCreatedSince = feedItemFilter.DateCreatedSince,
+              PageNumber = feedItemFilter.PageNumber,
+              Ids = feedItemFilter.Ids,
             });
-
-        // TODO IMM HI: handle filter
 
         return feedItems;
       }

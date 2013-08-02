@@ -33,6 +33,30 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
+    public bool Exists(int id) {
+      using (var db = CreateOpenedConnection()) {
+        int existsInt =
+          db.Query<int>(
+            " select" +
+            "   case when" +
+            "     exists(" +
+            "       select" +
+            "         f.Id" +
+            "       from Feed f" +
+            "       where 1 = 1" +
+            "         and f.Id = @Id" +
+            "     )" +
+            "     then 1" +
+            "     else 0" +
+            "   end",
+            new {
+              Id = id,
+            }).Single();
+
+        return existsInt == 1;
+      }
+    }
+
     public Feed FindById(int id) {
       using (var db = CreateOpenedConnection()) {
         Feed feed =

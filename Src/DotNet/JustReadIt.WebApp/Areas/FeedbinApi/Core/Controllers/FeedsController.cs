@@ -75,7 +75,6 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
     ///   - If 'per_page' param is greater than 100, we return 400 - Bad Request.
     /// </remarks>
     [HttpGet]
-    // TODO IMM HI: analyze doc and implement return codes for various situations
     public IEnumerable<JsonModel.Entry> GetEntries(int id, int? per_page = null, int? page = null, string since = null, bool? read = null, bool? starred = null) {
       if (per_page.HasValue && per_page.Value > _MaxEntriesForGetEntriesCount) {
         throw HttpBadRequest();
@@ -85,7 +84,15 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       IEnumerable<FeedItem> feedItems;
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
+        if (!_feedRepository.Exists(id)) {
+          throw HttpNotFound();
+        }
 
+        if (!_subscriptionRepository.IsSubscribedToFeed(userAccountId, id)) {
+          ts.Complete();
+
+          throw HttpForbidden();
+        }
 
         int maxCount;
 
@@ -112,10 +119,6 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
       List<JsonModel.Entry> entriesModel =
         feedItems.Select(_domainToJsonModelMapper.CreateEntry)
           .ToList();
-
-      if (entriesModel.Count == 0) {
-        throw HttpNotFound();
-      }
 
       return entriesModel;
     }

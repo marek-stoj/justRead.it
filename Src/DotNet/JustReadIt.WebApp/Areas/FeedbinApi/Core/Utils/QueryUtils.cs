@@ -1,5 +1,6 @@
 ﻿using System;
 using JustReadIt.Core.Domain;
+using System.Linq;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Utils {
 
@@ -13,10 +14,21 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Utils {
           ? Math.Min(_MaxEntriesForGetAllCount, perPage.Value)
           : _MaxEntriesForGetAllCount;
 
-      // TODO IMM HI: filter
       return
         new FeedItemFilter {
           FeedId = feedId,
+          DateCreatedSince =
+            !string.IsNullOrEmpty(since)
+              ? ModelUtils.ParseFeedbinDateTime(since)
+              : null,
+          PageNumber = page,
+          IsRead = read,
+          IsStarred = starred,
+          Ids =
+            !string.IsNullOrEmpty(ids)
+              ? ids.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                  .Select(int.Parse)
+              : null,
         };
     }
 
