@@ -98,9 +98,11 @@
     </Compile>
     <Compile Include="Services\CreateUserResult.cs" />
     <Compile Include="Services\Exceptions\InternalException.cs" />
+    <Compile Include="Services\Feeds\Exceptions\FeedFetcherException.cs" />
     <Compile Include="Services\Feeds\Feed.cs" />
     <Compile Include="Services\Feeds\FeedFetcher.cs" />
     <Compile Include="Services\Feeds\FeedItem.cs" />
+    <Compile Include="Services\Feeds\Exceptions\FeedNotFoundException.cs" />
     <Compile Include="Services\Feeds\FeedParser.cs" />
     <Compile Include="Services\Feeds\FeedParserException.cs" />
     <Compile Include="Services\Workers\FeedsCrawler.cs" />

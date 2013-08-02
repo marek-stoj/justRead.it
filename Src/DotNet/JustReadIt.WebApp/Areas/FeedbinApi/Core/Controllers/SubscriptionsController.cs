@@ -8,6 +8,7 @@ using JustReadIt.Core.Domain;
 using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Resources;
 using JustReadIt.Core.Services;
+using JustReadIt.Core.Services.Feeds.Exceptions;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.Subscriptions;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Services;
 using JustReadIt.WebApp.Areas.FeedbinApi.Core.Utils;
@@ -97,7 +98,14 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
         throw HttpBadRequest();
       }
 
-      Feeds.FetchFeedResult fetchFeedResult = _feedFetcher.FetchFeed(feedUrl);
+      Feeds.FetchFeedResult fetchFeedResult;
+
+      try {
+        fetchFeedResult = _feedFetcher.FetchFeed(feedUrl);
+      }
+      catch (FeedNotFoundException) {
+        throw HttpNotFound();
+      }
 
       if (fetchFeedResult.ContentType.IsNullOrEmpty()) {
         throw HttpNotFound();

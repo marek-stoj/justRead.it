@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using ImmRafSoft.Net;
 using JustReadIt.Core.Common;
+using JustReadIt.Core.Services.Feeds.Exceptions;
 
 namespace JustReadIt.Core.Services.Feeds {
 
@@ -20,8 +21,21 @@ namespace JustReadIt.Core.Services.Feeds {
       string feedContent;
       WebHeaderCollection responseHeaders;
 
-      using (IWebClient webClient = _webClientFactory.CreateWebClient()) {
-        feedContent = webClient.DownloadString(feedUrl, out responseHeaders);
+      try {
+        using (IWebClient webClient = _webClientFactory.CreateWebClient()) {
+          feedContent = webClient.DownloadString(feedUrl, out responseHeaders);
+        }
+      }
+      catch (WebException exc) {
+        HttpWebResponse httpWebResponse = exc.Response as HttpWebResponse;
+
+        if (httpWebResponse != null) {
+          if (httpWebResponse.StatusCode == HttpStatusCode.NotFound) {
+            throw new FeedNotFoundException(feedUrl);
+          }
+        }
+
+        throw;
       }
 
       return
