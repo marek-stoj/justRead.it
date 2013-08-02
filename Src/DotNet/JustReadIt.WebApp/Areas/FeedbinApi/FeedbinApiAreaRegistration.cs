@@ -146,6 +146,18 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
         routeTemplate: _UrlPrefix + "taggings/{id}.json",
         defaults: new { controller = "Taggings", action = "Get", },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Taggings_Create,
+        routeTemplate: _UrlPrefix + "taggings.json",
+        defaults: new { controller = "Taggings", action = "Create", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Taggings_Delete,
+        routeTemplate: _UrlPrefix + "taggings/{id}.json",
+        defaults: new { controller = "Taggings", action = "Delete", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Delete), id = @"\d+", });
     }
 
   }

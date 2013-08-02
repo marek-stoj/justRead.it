@@ -8,6 +8,10 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     Tagging FindById(int id);
 
+    int? FindIdByFeedId(int userAccountId, int feedId);
+
+    void Add(Tagging tagging);
+
   }
 
 }

@@ -30,11 +30,19 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
 
     public const string Taggings_GetAll = _RouteNamePrefix + "Taggings_GetAll";
     public const string Taggings_Get = _RouteNamePrefix + "Taggings_Get";
+    public const string Taggings_Create = _RouteNamePrefix + "Taggings_Create";
+    public const string Taggings_Delete = _RouteNamePrefix + "Taggings_Delete";
 
     public static string CreateApiUrlForGetSubscription(UrlHelper urlHelper, int subscriptionId) {
       Guard.ArgNotNull(urlHelper, "urlHelper");
 
       return urlHelper.Link(Subscriptions_Get, new { id = subscriptionId, });
+    }
+
+    public static string CreateApiUrlForGetTagging(UrlHelper urlHelper, int taggingId) {
+      Guard.ArgNotNull(urlHelper, "urlHelper");
+
+      return urlHelper.Link(Taggings_Get, new { id = taggingId, });
     }
 
   }

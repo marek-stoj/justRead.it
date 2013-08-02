@@ -147,6 +147,7 @@
     <Compile Include="Areas\FeedbinApi\Core\Models\JsonModel\Feed.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\Subscriptions\CreateInputModel.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\Subscriptions\UpdateInputModel.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Models\Taggings\CreateInputModel.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Utils\ModelUtils.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Utils\QueryUtils.cs" />
     <Compile Include="Areas\FeedbinApi\Routes.cs" />

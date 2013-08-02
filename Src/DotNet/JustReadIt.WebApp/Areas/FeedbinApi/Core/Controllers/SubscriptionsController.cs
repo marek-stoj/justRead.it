@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Transactions;
 using System.Web.Http;
@@ -150,6 +151,8 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
           };
 
         _subscriptionRepository.Add(subscription);
+
+        Debug.Assert(subscription.Id > 0);
 
         apiFeedUrl = Routes.CreateApiUrlForGetSubscription(Url, subscription.Id);
 

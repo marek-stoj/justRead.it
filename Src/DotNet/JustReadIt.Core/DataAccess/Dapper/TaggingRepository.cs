@@ -5,6 +5,7 @@ using JustReadIt.Core.Domain.Repositories;
 
 namespace JustReadIt.Core.DataAccess.Dapper {
 
+  // TODO IMM HI: WRONG TAGGING IDS! WE SHOULD PROBABLY CREATE A NEW JOINING TABLE FOR TAGGINS
   public class TaggingRepository : DapperRepository, ITaggingRepository {
 
     private const string _TaggingProjection =
@@ -50,6 +51,31 @@ namespace JustReadIt.Core.DataAccess.Dapper {
 
         return tagging;
       }
+    }
+
+    // TODO IMM HI: WRONG!
+    public int? FindIdByFeedId(int userAccountId, int feedId) {
+      using (var db = CreateOpenedConnection()) {
+        int? id =
+          db.Query<int?>(
+            " select" +
+            "   ufgf.Id" +
+            " from UserFeedGroupFeed ufgf" +
+            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            " where 1 = 1" +
+            "   and ufg.UserAccountId = @UserAccountId" +
+            "   and ufgf.FeedId = @FeedId" +
+            new {
+              UserAccountId = userAccountId,
+              FeedId = feedId,
+            }).SingleOrDefault();
+
+        return id;
+      }
+    }
+
+    public void Add(Tagging tagging) {
+      // TODO IMM HI: IMPLEMENT!
     }
 
   }
