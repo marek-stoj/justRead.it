@@ -83,6 +83,54 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
         routeTemplate: _UrlPrefix + "entries/{id}.json",
         defaults: new { controller = "Entries", action = "Get" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_GetAllUnread,
+        routeTemplate: _UrlPrefix + "unread_entries.json",
+        defaults: new { controller = "Entries", action = "GetAllUnread", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_GetAllStarred,
+        routeTemplate: _UrlPrefix + "starred_entries.json",
+        defaults: new { controller = "Entries", action = "GetAllStarred", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_CreateUnread,
+        routeTemplate: _UrlPrefix + "unread_entries.json",
+        defaults: new { controller = "Entries", action = "CreateUnread", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_DeleteUnreadViaDelete,
+        routeTemplate: _UrlPrefix + "unread_entries.json",
+        defaults: new { controller = "Entries", action = "DeleteUnreadViaDelete", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Delete), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_DeleteUnreadViaPost,
+        routeTemplate: _UrlPrefix + "unread_entries/delete.json",
+        defaults: new { controller = "Entries", action = "DeleteUnreadViaPost", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_CreateStarred,
+        routeTemplate: _UrlPrefix + "starred_entries.json",
+        defaults: new { controller = "Entries", action = "CreateStarred", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_DeleteStarredViaDelete,
+        routeTemplate: _UrlPrefix + "starred_entries.json",
+        defaults: new { controller = "Entries", action = "DeleteStarredViaDelete", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Delete), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Entries_DeleteStarredViaPost,
+        routeTemplate: _UrlPrefix + "starred_entries/delete.json",
+        defaults: new { controller = "Entries", action = "DeleteStarredViaPost", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
     }
 
   }

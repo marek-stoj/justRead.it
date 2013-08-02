@@ -19,6 +19,14 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
 
     public const string Entries_GetAll = _RouteNamePrefix + "Entries_GetAll";
     public const string Entries_Get = _RouteNamePrefix + "Entries_Get";
+    public const string Entries_GetAllUnread = _RouteNamePrefix + "Entries_GetAllUnread";
+    public const string Entries_GetAllStarred = _RouteNamePrefix + "Entries_GetAllStarred";
+    public const string Entries_CreateUnread = _RouteNamePrefix + "Entries_CreateUnread";
+    public const string Entries_DeleteUnreadViaDelete = _RouteNamePrefix + "Entries_DeleteUnreadViaDelete";
+    public const string Entries_DeleteUnreadViaPost = _RouteNamePrefix + "Entries_DeleteUnreadViaPost";
+    public const string Entries_CreateStarred = _RouteNamePrefix + "Entries_CreateStarred";
+    public const string Entries_DeleteStarredViaDelete = _RouteNamePrefix + "Entries_DeleteStarredViaDelete";
+    public const string Entries_DeleteStarredViaPost = _RouteNamePrefix + "Entries_DeleteStarredViaPost";
 
     public static string CreateApiUrlForGetSubscription(UrlHelper urlHelper, int subscriptionId) {
       Guard.ArgNotNull(urlHelper, "urlHelper");

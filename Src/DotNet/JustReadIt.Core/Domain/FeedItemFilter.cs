@@ -15,7 +15,7 @@ namespace JustReadIt.Core.Domain {
 
     public bool? IsStarred { get; set; }
 
-    public IEnumerable<int> Ids { get; set; }
+    public List<int> Ids { get; set; }
 
   }
 

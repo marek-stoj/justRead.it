@@ -1,4 +1,5 @@
 ﻿using JustReadIt.Core.Common;
+using Newtonsoft.Json;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.Subscriptions {
 
@@ -6,7 +7,8 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.Subscriptions {
 
     private string _feedUrl;
 
-    public string feed_url {
+    [JsonProperty("feed_url")]
+    public string FeedUrl {
       get { return _feedUrl; }
       set { _feedUrl = value.TrimmedOrNull(); }
     }

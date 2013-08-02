@@ -91,7 +91,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
         throw HttpBadRequest();
       }
 
-      string feedUrl = input.feed_url;
+      string feedUrl = input.FeedUrl;
 
       if (string.IsNullOrEmpty(feedUrl)) {
         throw HttpBadRequest();
@@ -197,7 +197,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Controllers {
         _subscriptionRepository.UpdateTitle(
           userAccountId,
           id,
-          input.title);
+          input.Title);
 
         ts.Complete();
       }

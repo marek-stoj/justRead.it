@@ -67,6 +67,8 @@
     <Build Include="dbo\Tables\UserFeedGroup.sql" />
     <Build Include="dbo\Tables\UserFeedGroupFeed.sql" />
     <Build Include="dbo\Tables\EmailVerificationToken.sql" />
+    <Build Include="dbo\Tables\UserReadFeedItem.sql" />
+    <Build Include="dbo\Tables\UserStarredFeedItem.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="JustReadIt.Database.publish.xml" />

@@ -28,6 +28,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Utils {
             !string.IsNullOrEmpty(ids)
               ? ids.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
                   .Select(int.Parse)
+                  .ToList()
               : null,
         };
     }

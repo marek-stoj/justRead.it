@@ -12,6 +12,20 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     FeedItem FindById(int id);
 
+    IEnumerable<int> GetAllUnreadIds(int userAccountId);
+
+    IEnumerable<int> GetAllStarredIds(int userAccountId);
+
+    IEnumerable<int> GetExistingFeedItemIds(int userAccountId, IEnumerable<int> feedItemIds);
+
+    void MarkRead(int userAccountId, IEnumerable<int> feedItemIds);
+
+    void MarkUnread(int userAccountId, IEnumerable<int> feedItemIds);
+
+    void MarkStarred(int userAccountId, IEnumerable<int> feedItemIds);
+
+    void MarkUnstarred(int userAccountId, IEnumerable<int> feedItemIds);
+
   }
 
 }

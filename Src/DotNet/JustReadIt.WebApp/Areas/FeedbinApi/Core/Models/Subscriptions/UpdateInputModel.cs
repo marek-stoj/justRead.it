@@ -1,4 +1,5 @@
 ﻿using JustReadIt.Core.Common;
+using Newtonsoft.Json;
 
 namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.Subscriptions {
 
@@ -6,7 +7,8 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Models.Subscriptions {
 
     private string _title;
 
-    public string title {
+    [JsonProperty("title")]
+    public string Title {
       get { return _title; }
       set { _title = value.TrimmedOrNull(); }
     }

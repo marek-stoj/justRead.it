@@ -153,6 +153,208 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
+    public IEnumerable<int> GetAllUnreadIds(int userAccountId) {
+      using (var db = CreateOpenedConnection()) {
+        IEnumerable<int> ids =
+          db.Query<int>(
+            " select fi.Id" +
+            " from FeedItem fi" +
+            " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
+            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            " where 1 = 1" +
+            "   and ufg.UserAccountId = @UserAccountId" +
+            "   and not exists(" +
+            "     select urfi.Id" +
+            "     from UserReadFeedItem urfi" +
+            "     where 1 = 1" +
+            "       and urfi.UserAccountId = @UserAccountId" +
+            "       and urfi.FeedItemId = fi.Id)" +
+            " order by fi.DateCreated desc, fi.Id desc",
+            new {
+              UserAccountId = userAccountId,
+            });
+
+        return ids;
+      }
+    }
+
+    public IEnumerable<int> GetAllStarredIds(int userAccountId) {
+      using (var db = CreateOpenedConnection()) {
+        IEnumerable<int> ids =
+          db.Query<int>(
+            " select fi.Id" +
+            " from FeedItem fi" +
+            " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
+            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            " where 1 = 1" +
+            "   and ufg.UserAccountId = @UserAccountId" +
+            "   and exists(" +
+            "     select usfi.Id" +
+            "     from UserStarredFeedItem usfi" +
+            "     where 1 = 1" +
+            "       and usfi.UserAccountId = @UserAccountId" +
+            "       and usfi.FeedItemId = fi.Id)" +
+            " order by fi.DateCreated desc, fi.Id desc",
+            new {
+              UserAccountId = userAccountId,
+            });
+
+        return ids;
+      }
+    }
+
+    public IEnumerable<int> GetExistingFeedItemIds(int userAccountId, IEnumerable<int> feedItemIds) {
+      if (feedItemIds == null) {
+        throw new ArgumentNullException("feedItemIds");
+      }
+
+      var feedItemIdsList = feedItemIds.ToList();
+
+      if (feedItemIdsList.Count == 0) {
+        return Enumerable.Empty<int>();
+      }
+
+      using (var db = CreateOpenedConnection()) {
+        IEnumerable<int> existingFeedItemIds =
+          db.Query<int>(
+            " select" +
+            "   fi.Id" +
+            " from FeedItem fi" +
+            " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
+            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            " where 1 = 1" +
+            "   and ufg.UserAccountId = @UserAccountId" +
+            "   and fi.Id in @FeedItemIds" +
+            " order by fi.DateCreated desc, fi.Id desc",
+            new {
+              UserAccountId = userAccountId,
+              FeedItemIds = feedItemIdsList,
+            });
+
+        return existingFeedItemIds;
+      }
+    }
+
+    public void MarkRead(int userAccountId, IEnumerable<int> feedItemIds) {
+      if (feedItemIds == null) {
+        throw new ArgumentNullException("feedItemIds");
+      }
+
+      var feedItemIdsList = feedItemIds.ToList();
+
+      if (feedItemIdsList.Count == 0) {
+        return;
+      }
+
+      DateTime now = DateTime.UtcNow;
+
+      using (var db = CreateOpenedConnection()) {
+        db.Execute(
+          " insert into UserReadFeedItem" +
+          " (" +
+          "   UserAccountId," +
+          "   FeedItemId," +
+          "   DateCreated" +
+          " )" +
+          " select" +
+          "   @UserAccountId," +
+          "   @FeedItemId," +
+          "   @DateCreated" +
+          " where not exists (select Id from UserReadFeedItem urfi where urfi.UserAccountId = @UserAccountId and urfi.FeedItemId = @FeedItemId)",
+          feedItemIdsList.Select(
+            feedItemId =>
+            new {
+              UserAccountId = userAccountId,
+              FeedItemId = feedItemId,
+              DateCreated = now,
+            }));
+      }
+    }
+
+    public void MarkUnread(int userAccountId, IEnumerable<int> feedItemIds) {
+      if (feedItemIds == null) {
+        throw new ArgumentNullException("feedItemIds");
+      }
+
+      var feedItemIdsList = feedItemIds.ToList();
+
+      if (feedItemIdsList.Count == 0) {
+        return;
+      }
+
+      using (var db = CreateOpenedConnection()) {
+        db.Execute(
+          " delete from UserReadFeedItem" +
+          " where 1 = 1" +
+          "   and UserAccountId = @UserAccountId" +
+          "   and FeedItemId in @FeedItemIds",
+          new {
+            UserAccountId = userAccountId,
+            FeedItemIds = feedItemIdsList,
+          });
+      }
+    }
+
+    public void MarkStarred(int userAccountId, IEnumerable<int> feedItemIds) {
+      if (feedItemIds == null) {
+        throw new ArgumentNullException("feedItemIds");
+      }
+
+      var feedItemIdsList = feedItemIds.ToList();
+
+      if (feedItemIdsList.Count == 0) {
+        return;
+      }
+
+      DateTime now = DateTime.UtcNow;
+
+      using (var db = CreateOpenedConnection()) {
+        db.Execute(
+          " insert into UserStarredFeedItem" +
+          " (" +
+          "   UserAccountId," +
+          "   FeedItemId," +
+          "   DateCreated" +
+          " )" +
+          " select" +
+          "   @UserAccountId," +
+          "   @FeedItemId," +
+          "   @DateCreated" +
+          " where not exists (select Id from UserStarredFeedItem urfi where urfi.UserAccountId = @UserAccountId and urfi.FeedItemId = @FeedItemId)",
+          feedItemIdsList.Select(
+            feedItemId =>
+            new {
+              UserAccountId = userAccountId,
+              FeedItemId = feedItemId,
+              DateCreated = now,
+            }));
+      }
+    }
+
+    public void MarkUnstarred(int userAccountId, IEnumerable<int> feedItemIds) {
+      if (feedItemIds == null) {
+        throw new ArgumentNullException("feedItemIds");
+      }
+
+      var feedItemIdsList = feedItemIds.ToList();
+
+      if (feedItemIdsList.Count == 0) {
+        return;
+      }
+
+      using (var db = CreateOpenedConnection()) {
+        db.Execute(
+          " delete from UserStarredFeedItem" +
+          " where 1 = 1" +
+          "   and UserAccountId = @UserAccountId" +
+          "   and FeedItemId in @FeedItemIds",
+          new {
+            UserAccountId = userAccountId,
+            FeedItemIds = feedItemIdsList,
+          });
+      }
+    }
+
   }
 
 }
