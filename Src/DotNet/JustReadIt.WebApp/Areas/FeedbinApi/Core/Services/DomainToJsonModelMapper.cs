@@ -49,6 +49,15 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Services {
         };
     }
 
+    public JsonModel.Tagging CreateTagging(Tagging tagging) {
+      return
+        new JsonModel.Tagging {
+          Id = tagging.Id,
+          FeedId = tagging.FeedId,
+          Name = tagging.Name,
+        };
+    }
+
   }
 
 }

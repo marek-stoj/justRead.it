@@ -11,6 +11,8 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi.Core.Services {
 
     JsonModel.Entry CreateEntry(FeedItem feedItem);
 
+    JsonModel.Tagging CreateTagging(Tagging tagging);
+
   }
 
 }

@@ -12,14 +12,14 @@ namespace JustReadIt.Core.DataAccess.Dapper {
   public class SubscriptionRepository : DapperRepository, ISubscriptionRepository {
 
     private const string _SubscriptionProjection =
-      "   ufgf.Id," +
-      "   ufgf.DateCreated," +
-      "   ufgf.CustomTitle," +
-      "   ufg.UserAccountId," +
-      "   f.Id," +
-      "   f.Title," +
-      "   f.FeedUrl," +
-      "   f.SiteUrl";
+      " ufgf.Id," +
+      " ufgf.DateCreated," +
+      " ufgf.CustomTitle," +
+      " ufg.UserAccountId," +
+      " f.Id," +
+      " f.Title," +
+      " f.FeedUrl," +
+      " f.SiteUrl";
 
     public SubscriptionRepository(string connectionString)
       : base(connectionString) {

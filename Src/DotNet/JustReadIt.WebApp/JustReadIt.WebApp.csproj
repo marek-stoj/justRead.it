@@ -134,11 +134,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\FeedbinApi\Core\Controllers\TaggingsController.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Controllers\EntriesController.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\Entries\DeleteStarredInputModel.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\Entries\DeleteUnreadInputModel.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\Entries\CreateStarredInputModel.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\Entries\CreateUnreadInputModel.cs" />
+    <Compile Include="Areas\FeedbinApi\Core\Models\JsonModel\Tagging.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Models\JsonModel\Entry.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Controllers\FeedsController.cs" />
     <Compile Include="Areas\FeedbinApi\Core\Controllers\FeedbinAuthorizeAttribute.cs" />

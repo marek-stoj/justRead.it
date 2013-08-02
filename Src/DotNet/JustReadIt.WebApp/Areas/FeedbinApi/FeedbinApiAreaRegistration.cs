@@ -17,6 +17,7 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
       RegisterSubscriptionsRoutes(context);
       RegisterFeedsRoutes(context);
       RegisterEntriesRoutes(context);
+      RegisterTaggingsRoutes(context);
     }
 
     private static void RegisterSubscriptionsRoutes(AreaRegistrationContext context) {
@@ -131,6 +132,20 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
         routeTemplate: _UrlPrefix + "starred_entries/delete.json",
         defaults: new { controller = "Entries", action = "DeleteStarredViaPost", },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+    }
+
+    private static void RegisterTaggingsRoutes(AreaRegistrationContext context) {
+      context.Routes.MapHttpRoute(
+        name: Routes.Taggings_GetAll,
+        routeTemplate: _UrlPrefix + "taggings.json",
+        defaults: new { controller = "Taggings", action = "GetAll", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), });
+
+      context.Routes.MapHttpRoute(
+        name: Routes.Taggings_Get,
+        routeTemplate: _UrlPrefix + "taggings/{id}.json",
+        defaults: new { controller = "Taggings", action = "Get", },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
     }
 
   }

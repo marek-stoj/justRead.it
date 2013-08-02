@@ -72,6 +72,9 @@
     <Compile Include="DataAccess\Dapper\FeedRepository.cs" />
     <Compile Include="DataAccess\Dapper\DapperRepository.cs" />
     <Compile Include="DataAccess\Dapper\SqlMapper.cs" />
+    <Compile Include="Domain\Repositories\ITaggingRepository.cs" />
+    <Compile Include="DataAccess\Dapper\TaggingRepository.cs" />
+    <Compile Include="Domain\Tagging.cs" />
     <Compile Include="Domain\FeedItem.cs" />
     <Compile Include="Domain\EmailVerificationToken.cs" />
     <Compile Include="Domain\Feed.cs" />

@@ -28,6 +28,9 @@ namespace JustReadIt.WebApp.Areas.FeedbinApi {
     public const string Entries_DeleteStarredViaDelete = _RouteNamePrefix + "Entries_DeleteStarredViaDelete";
     public const string Entries_DeleteStarredViaPost = _RouteNamePrefix + "Entries_DeleteStarredViaPost";
 
+    public const string Taggings_GetAll = _RouteNamePrefix + "Taggings_GetAll";
+    public const string Taggings_Get = _RouteNamePrefix + "Taggings_Get";
+
     public static string CreateApiUrlForGetSubscription(UrlHelper urlHelper, int subscriptionId) {
       Guard.ArgNotNull(urlHelper, "urlHelper");
 

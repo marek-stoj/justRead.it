@@ -50,12 +50,16 @@ namespace JustReadIt.Core.Common {
       return new FeedItemRepository(_ConnectionString_JustReadIt);
     }
 
-    private static IUserFeedGroupRepository GetUserFeedGroupRepository() {
+    public static IUserFeedGroupRepository GetUserFeedGroupRepository() {
       return new UserFeedGroupRepository(_ConnectionString_JustReadIt);
     }
 
-    private static IUserFeedGroupFeedRepository GetUserFeedGroupFeedRepository() {
+    public static IUserFeedGroupFeedRepository GetUserFeedGroupFeedRepository() {
       return new UserFeedGroupFeedRepository(_ConnectionString_JustReadIt);
+    }
+
+    public static ITaggingRepository GetTaggingRepository() {
+      return new TaggingRepository(_ConnectionString_JustReadIt);
     }
 
     public static IOpmlParser GetOpmlParser() {

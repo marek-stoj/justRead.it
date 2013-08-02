@@ -5,13 +5,17 @@ namespace JustReadIt.Core.Domain {
 
   public class Subscription {
 
+    private DateTime _dateCreated;
     private string _customTitle;
 
     public int Id { get; set; }
 
     public int UserAccountId { get; set; }
 
-    public DateTime DateCreated { get; set; }
+    public DateTime DateCreated {
+      get { return _dateCreated; }
+      set { _dateCreated = DateTime.SpecifyKind(value, DateTimeKind.Utc); }
+    }
 
     /// <summary>
     /// Can be null.
