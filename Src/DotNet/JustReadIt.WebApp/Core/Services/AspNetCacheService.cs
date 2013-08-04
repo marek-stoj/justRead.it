@@ -2,7 +2,7 @@
 using System.Web;
 using System.Web.Caching;
 using JustReadIt.Core.Common;
-using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
+using JustReadIt.WebApp.Core.Security;
 
 namespace JustReadIt.WebApp.Core.Services {
 

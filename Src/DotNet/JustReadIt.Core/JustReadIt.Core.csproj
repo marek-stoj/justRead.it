@@ -72,6 +72,8 @@
     <Compile Include="DataAccess\Dapper\FeedRepository.cs" />
     <Compile Include="DataAccess\Dapper\DapperRepository.cs" />
     <Compile Include="DataAccess\Dapper\SqlMapper.cs" />
+    <Compile Include="Domain\Query\ISubscriptionsQueryDao.cs" />
+    <Compile Include="DataAccess\Dapper\SubscriptionsQueryDao.cs" />
     <Compile Include="Domain\Repositories\ITaggingRepository.cs" />
     <Compile Include="DataAccess\Dapper\TaggingRepository.cs" />
     <Compile Include="Domain\Tagging.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="Domain\Subscription.cs" />
     <Compile Include="Domain\UserAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\Query\Model\Subscription.cs" />
     <Compile Include="Resources\CommonResources.Designer.cs">
       <DependentUpon>CommonResources.resx</DependentUpon>
       <AutoGen>True</AutoGen>

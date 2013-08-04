@@ -4,12 +4,15 @@ using System.Net.Http.Formatting;
 using System.Reflection;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Dispatcher;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using JustReadIt.Core.Common;
-using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
+using JustReadIt.WebApp.Areas.App.Core.Controllers;
 using JustReadIt.WebApp.Core.App;
+using JustReadIt.WebApp.Core.MvcEx;
+using JustReadIt.WebApp.Core.Security;
 using Newtonsoft.Json;
 using log4net;
 using log4net.Config;
@@ -22,7 +25,7 @@ namespace JustReadIt.WebApp {
     private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
     public MvcApplication() {
-      AuthenticateRequest += MvcApplication_AuthenticateRequest;
+      AuthorizeRequest += MvcApplication_AuthorizeRequest;
     }
 
     protected void Application_Start() {
@@ -34,12 +37,22 @@ namespace JustReadIt.WebApp {
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
       RouteConfig.RegisterRoutes(RouteTable.Routes);
 
+      // makes Web API and areas play together nicely (see: http://blogs.infosupport.com/asp-net-mvc-4-rc-getting-webapi-and-areas-to-play-nicely/)
+      GlobalConfiguration.Configuration.Services.Replace(
+        typeof(IHttpControllerSelector),
+        new AreaHttpControllerSelector(
+          GlobalConfiguration.Configuration,
+          new[] {
+            typeof(SubscriptionsController).Assembly,
+            typeof(Areas.Feedbin.Core.Controllers.SubscriptionsController).Assembly,
+          }));
+
       ConfigureJsonFormatter();
 
       _log.InfoIfEnabled(() => "Application has started.");
     }
 
-    private static void MvcApplication_AuthenticateRequest(object sender, EventArgs eventArgs) {
+    private static void MvcApplication_AuthorizeRequest(object sender, EventArgs eventArgs) {
       if (HttpContext.Current.User == null
        || HttpContext.Current.User.Identity == null
        || !HttpContext.Current.User.Identity.IsAuthenticated) {

@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 using JustReadIt.Core.Common;
-using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
+using JustReadIt.WebApp.Core.Security;
 
 namespace JustReadIt.WebApp.Core.WebApiEx {
 

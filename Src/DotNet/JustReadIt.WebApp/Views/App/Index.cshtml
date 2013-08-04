@@ -1,0 +1,84 @@
+﻿@{
+  Layout = null;
+}
+<!DOCTYPE html>
+<html ng-app="JustReadIt">
+@* ReSharper disable Html.PathError *@
+<head>
+  <title>justRead.it</title>
+
+  <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />
+
+  <link href="@Url.Content("~/Static/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
+@* TODO IMM HI: use responsive?
+  <link href="@Url.Content("~/Static/bootstrap/css/bootstrap-responsive.css")" rel="stylesheet" />
+*@
+  <link href="@Url.Content("~/Static/flat-ui/css/flat-ui.css")" rel="stylesheet" />
+  <link href="@Url.Content("~/Static/site/css/app.css")" rel="stylesheet" />
+  <link href="@Url.Content("~/Static/fancybox/jquery.fancybox.css")" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="@Url.Content("~/Static/jquery/jquery-1.10.2.min.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/bootstrap/js/bootstrap.min.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/fancybox/jquery.fancybox.pack.js")"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/underscore/underscore-min.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app.js")"></script>
+</head>
+<body>
+  
+  <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="@Url.Content("~/")" class="brand">JustReadIt</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="span4" ng-controller="SubscriptionsListController">
+        <h3>
+          Subscriptions ({{getSubscrsCount()}})
+        </h3>
+    
+        <ul>
+          <li ng-repeat="subscrGroup in subscrsList.groups">
+            {{subscrGroup.title}}
+            <ul>
+              <li ng-repeat="subscr in subscrGroup.subscriptions">
+                {{subscr.title}}
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="span8">
+        Right
+      </div>
+    </div>
+  </div>
+ 
+  <footer class="footer">
+    <div class="container">
+      @if (Request.IsAuthenticated) {
+        <p>
+          Hello @User.Identity.Name!
+        </p>
+        <p>
+          @Html.ActionLink("Sign Out", "SignOut", "Account")
+        </p>
+      }
+      else {
+        <p>
+          @Html.ActionLink("Sign In", "SignIn", "Account")
+          |
+          @Html.ActionLink("Sign Up", "SignUp", "Account")
+        </p>
+      }
+    </div>
+  </footer> 
+
+</body>
+@* ReSharper restore Html.PathError *@
+</html>

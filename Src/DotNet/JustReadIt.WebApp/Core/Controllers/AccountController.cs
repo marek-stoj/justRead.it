@@ -166,7 +166,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
       string returnUrl = Request.QueryString["ReturnUrl"];
 
       if (string.IsNullOrEmpty(returnUrl) || !IsPathOnSameServer(returnUrl)) {
-        return RedirectToHome();
+        return RedirectToApp();
       }
 
       return Redirect(returnUrl);

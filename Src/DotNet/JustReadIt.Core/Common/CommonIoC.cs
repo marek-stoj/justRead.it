@@ -4,6 +4,7 @@ using ImmRafSoft.Configuration;
 using ImmRafSoft.Net;
 using ImmRafSoft.Security;
 using JustReadIt.Core.DataAccess.Dapper;
+using JustReadIt.Core.Domain.Query;
 using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Services;
 using JustReadIt.Core.Services.Feeds;
@@ -156,6 +157,10 @@ namespace JustReadIt.Core.Common {
           GetFeedItemRepository(),
           GetFeedFetcher(),
           GetFeedParser());
+    }
+
+    public static ISubscriptionsQueryDao GetSubscriptionsQueryDao() {
+      return new SubscriptionsQueryDao(_ConnectionString_JustReadIt);
     }
 
   }

@@ -1,9 +1,6 @@
-﻿using System.Security;
-using System.Web.Mvc;
-using JustReadIt.WebApp.Areas.FeedbinApi.Core.Security;
+﻿using System.Web.Mvc;
 using JustReadIt.WebApp.Core.MvcEx;
 using JustReadIt.WebApp.Core.Resources;
-using System.Web;
 
 namespace JustReadIt.WebApp.Core.Controllers {
 
@@ -27,6 +24,10 @@ namespace JustReadIt.WebApp.Core.Controllers {
       return RedirectToAction("Index", "Home");
     }
 
+    protected ActionResult RedirectToApp() {
+      return RedirectToAction("Index", "App");
+    }
+
     protected MvcModelValidator ModelValidator {
       get {
         if (_modelValidator == null) {
@@ -37,30 +38,6 @@ namespace JustReadIt.WebApp.Core.Controllers {
         }
 
         return _modelValidator;
-      }
-    }
-
-    protected string CurrentUsername {
-      get {
-        IJustReadItPrincipal justReadItPrincipal = HttpContext.User as IJustReadItPrincipal;
-
-        if (justReadItPrincipal == null) {
-          throw new SecurityException("User is not signed in.");
-        }
-
-        return justReadItPrincipal.Identity.Name;
-      }
-    }
-
-    protected int CurrentUserAccountId {
-      get {
-        IJustReadItPrincipal justReadItPrincipal = HttpContext.User as IJustReadItPrincipal;
-
-        if (justReadItPrincipal == null) {
-          throw new SecurityException("User is not signed in.");
-        }
-
-        return justReadItPrincipal.UserAccountId;
       }
     }
 

@@ -20,6 +20,10 @@ namespace JustReadIt.WebApp.Core.Controllers {
 
     [HttpGet]
     public ActionResult Index() {
+      if (Request.IsAuthenticated) {
+        return RedirectToApp();
+      }
+
       return View();
     }
 
