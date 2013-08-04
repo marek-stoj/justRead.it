@@ -15,17 +15,16 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       : base(connectionString) {
     }
 
-    public IEnumerable<Feed> GetFeedsToCrawl(int maxCount, DateTime maxDateLastCrawlStarted) {
+    public IEnumerable<Feed> GetFeedsToCrawl(DateTime maxDateLastCrawlStarted) {
       using (var db = CreateOpenedConnection()) {
         IEnumerable<Feed> feeds =
           db.Query<Feed>(
-            " select top (@MaxCount)" +
+            " select" +
             "   f.*" +
             " from Feed f" +
             " where f.DateLastCrawlStarted is null or f.DateLastCrawlStarted <= @MaxDateLastCrawlStarted" +
             " order by f.DateCreated desc, f.Id desc",
             new {
-              MaxCount = maxCount,
               MaxDateLastCrawlStarted = maxDateLastCrawlStarted,
             });
 

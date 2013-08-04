@@ -5,7 +5,7 @@ namespace JustReadIt.Core.Domain.Repositories {
 
   public interface IFeedRepository {
 
-    IEnumerable<Feed> GetFeedsToCrawl(int maxCount, DateTime maxDateLastCrawlStarted);
+    IEnumerable<Feed> GetFeedsToCrawl(DateTime maxDateLastCrawlStarted);
 
     bool Exists(int id);
 

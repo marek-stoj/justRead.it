@@ -80,29 +80,35 @@ namespace JustReadIt.Core.Services.Feeds {
     }
 
     private static SyndicationLink FindHtmlLink(Collection<SyndicationLink> links) {
-      SyndicationLink siteLink;
+      SyndicationLink htmlLink;
 
-      siteLink =
+      htmlLink =
         links.FirstOrDefault(
           link => !link.MediaType.IsNullOrEmpty() && link.MediaType.ContainsOrdinalIgnoreCase("html"));
 
-      if (siteLink != null) {
-        return siteLink;
+      if (htmlLink != null) {
+        return htmlLink;
       }
 
-      siteLink =
+      htmlLink =
         links.FirstOrDefault(
           link => link.MediaType.IsNullOrEmpty() && "alternate".EqualsOrdinalIgnoreCase(link.RelationshipType));
 
-      if (siteLink != null) {
-        return siteLink;
+      if (htmlLink != null) {
+        return htmlLink;
       }
 
-      siteLink =
+      htmlLink =
         links.FirstOrDefault(
           link => "alternate".EqualsOrdinalIgnoreCase(link.MediaType) && "alternate".EqualsOrdinalIgnoreCase(link.RelationshipType));
 
-      return siteLink;
+      if (htmlLink != null) {
+        return htmlLink;
+      }
+
+      htmlLink = links.FirstOrDefault();
+
+      return htmlLink;
     }
 
     private static string FindAbsoluteUrl(SyndicationLink syndicationLink = null) {

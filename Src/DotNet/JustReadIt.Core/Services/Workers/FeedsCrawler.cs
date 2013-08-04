@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Transactions;
 using JustReadIt.Core.Common;
@@ -14,7 +15,6 @@ namespace JustReadIt.Core.Services.Workers {
 
     private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-    private const int _FeedsToCrawlBatchSize = 10;
     private static readonly TimeSpan _FeedsCrawlInterval = TimeSpan.FromMinutes(15);
 
     private readonly IFeedRepository _feedRepository;
@@ -35,21 +35,20 @@ namespace JustReadIt.Core.Services.Workers {
     }
 
     public void CrawlAllFeeds() {
-      IEnumerable<Feed> allFeeds;
+      // TODO IMM HI: batching?
+      IEnumerable<Feed> feedsBatch;
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
         DateTime maxDateLastCrawlStarted =
           DateTime.UtcNow.Add(-_FeedsCrawlInterval);
 
-        allFeeds =
-          _feedRepository.GetFeedsToCrawl(
-            _FeedsToCrawlBatchSize,
-            maxDateLastCrawlStarted);
+        feedsBatch =
+          _feedRepository.GetFeedsToCrawl(maxDateLastCrawlStarted);
 
         ts.Complete();
       }
 
-      foreach (Feed feed in allFeeds) {
+      foreach (Feed feed in feedsBatch) {
         // ReSharper disable AccessToForEachVariableInClosure
         _log.DebugIfEnabled(() => string.Format("Crawling feed: '{0}'.", feed.FeedUrl));
         // ReSharper restore AccessToForEachVariableInClosure
