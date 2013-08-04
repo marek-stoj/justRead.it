@@ -5,7 +5,9 @@ namespace JustReadIt.Core.Domain.Query {
 
   public interface ISubscriptionsQueryDao {
 
-    IEnumerable<QueryModel.Subscription> GetAll(int userAccountId);
+    IEnumerable<QueryModel.GroupedSubscription> GetGroupedSubscriptions(int userAccountId);
+
+    IEnumerable<QueryModel.FeedItem> GetFeedItems(int userAccountId, int subscriptionId);
 
   }
 

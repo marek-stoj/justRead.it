@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain.Query;
@@ -8,6 +9,7 @@ using JustReadIt.WebApp.Areas.App.Core.Services;
 using JustReadIt.WebApp.Core.Security;
 using QueryModel = JustReadIt.Core.Domain.Query.Model;
 
+// TODO IMM HI: get rid of flickering when changing feed
 namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
 
   public class SubscriptionsController : AppApiController {
@@ -30,10 +32,10 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     [HttpGet]
     public SubscriptionsList GetSubscriptionsList() {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
-      IEnumerable<QueryModel.Subscription> subscriptions;
+      IEnumerable<QueryModel.GroupedSubscription> subscriptions;
 
       using (var ts = TransactionUtils.CreateTransactionScope()) {
-        subscriptions = _subscriptionsQueryDao.GetAll(userAccountId);
+        subscriptions = _subscriptionsQueryDao.GetGroupedSubscriptions(userAccountId);
 
         ts.Complete();
       }
@@ -44,6 +46,24 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
       return subscriptionsList;
     }
 
+    [HttpGet]
+    public FeedItemsList GetItems(int id) {
+      int userAccountId = SecurityUtils.CurrentUserAccountId;
+      IEnumerable<QueryModel.FeedItem> feedItems;
+
+      using (var ts = TransactionUtils.CreateTransactionScope()) {
+        feedItems = _subscriptionsQueryDao.GetFeedItems(userAccountId, id);
+
+        ts.Complete();
+      }
+
+      var feedItemsList =
+        new FeedItemsList {
+          Items = feedItems.Select(_queryModelToJsonModelMapper.CreateFeedItem).ToList(),
+        };
+
+      return feedItemsList;
+    }
 
   }
 

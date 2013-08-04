@@ -61,6 +61,15 @@ namespace JustReadIt.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No summary..
+        /// </summary>
+        public static string NoFeedItemSummary {
+            get {
+                return ResourceManager.GetString("NoFeedItemSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Uncategorized.
         /// </summary>
         public static string UncategorizedFeedGroupTitle {

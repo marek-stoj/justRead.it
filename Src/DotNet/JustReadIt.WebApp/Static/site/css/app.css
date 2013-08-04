@@ -1,3 +1,32 @@
+/* TODO IMM HI: remove? */
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}
+
 body {
-  padding-top: 65px;
+  padding-top: 100px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.single-line {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.feed-item-container {
+  cursor: pointer;
+  border: solid transparent 1px;
+}
+
+.feed-item-container:hover {
+  border: solid #f00 1px;
 }

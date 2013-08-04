@@ -136,6 +136,8 @@
   <ItemGroup>
     <Compile Include="Areas\App\Core\Controllers\AppApiController.cs" />
     <Compile Include="Areas\App\Core\Controllers\SubscriptionsController.cs" />
+    <Compile Include="Areas\App\Core\Models\JsonModel\FeedItemsList.cs" />
+    <Compile Include="Areas\App\Core\Models\JsonModel\FeedItem.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\Subscription.cs" />
     <Compile Include="Areas\App\Core\Services\QueryModelToJsonModelMapper.cs" />
     <Compile Include="Areas\App\Core\Services\IQueryModelToJsonModelMapper.cs" />

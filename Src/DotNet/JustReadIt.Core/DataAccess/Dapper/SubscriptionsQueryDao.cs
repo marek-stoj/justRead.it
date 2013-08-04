@@ -10,10 +10,10 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       : base(connectionString) {
     }
 
-    public IEnumerable<QueryModel.Subscription> GetAll(int userAccountId) {
+    public IEnumerable<QueryModel.GroupedSubscription> GetGroupedSubscriptions(int userAccountId) {
       using (var db = CreateOpenedConnection()) {
         var query =
-          db.Query<QueryModel.Subscription>(
+          db.Query<QueryModel.GroupedSubscription>(
             " with Subscriptions as" +
             " (" +
             "   select" +
@@ -33,6 +33,29 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             " order by s.GroupTitle asc, s.GroupId asc, s.Title asc, s.Id asc",
             new {
               UserAccountId = userAccountId,
+            });
+
+        return query;
+      }
+    }
+
+    public IEnumerable<QueryModel.FeedItem> GetFeedItems(int userAccountId, int subscriptionId) {
+      using (var db = CreateOpenedConnection()) {
+        var query =
+          db.Query<QueryModel.FeedItem>(
+            " select" +
+            "   fi.Id as Id," +
+            "   fi.Title as Title," +
+            "   case when fi.DatePublished is not null then fi.DatePublished else fi.DateCreated end as [Date]," +
+            "   fi.Summary as Summary" +
+            " from FeedItem fi" +
+            " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
+            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            " where ufgf.Id = @SubscriptionId" +
+            " order by fi.DatePublished desc, fi.DateCreated desc, fi.Id desc",
+            new {
+              UserAccountId = userAccountId,
+              SubscriptionId = subscriptionId,
             });
 
         return query;

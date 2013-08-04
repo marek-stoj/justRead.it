@@ -2,7 +2,7 @@
 
 namespace JustReadIt.Core.Domain.Query.Model {
 
-  public class Subscription {
+  public class GroupedSubscription {
 
     private string _title;
     private string _siteUrl;

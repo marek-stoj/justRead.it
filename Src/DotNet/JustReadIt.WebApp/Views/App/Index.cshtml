@@ -38,23 +38,28 @@
   <div class="container">
     <div class="row">
       <div class="span4" ng-controller="SubscriptionsListController">
-        <h3>
-          Subscriptions ({{getSubscrsCount()}})
-        </h3>
-    
-        <ul>
-          <li ng-repeat="subscrGroup in subscrsList.groups">
+        <ul class="nav nav-list" ng-repeat="subscrGroup in subscrsList.groups">
+          <li class="nav-header single-line">
             {{subscrGroup.title}}
-            <ul>
-              <li ng-repeat="subscr in subscrGroup.subscriptions">
-                {{subscr.title}}
-              </li>
-            </ul>
+          </li>
+          <li ng-class="{active: subscr.isSelected}" ng-repeat="subscr in subscrGroup.subscriptions">
+            <a href="#" class="single-line" ng-click="selectSubscr(subscr)">
+              <img class="icon-dynamic-favicon" ng-src="http://immsoft.apphb.com/api/favicons/find-for-url?url={{subscr.siteUrl}}" />
+              {{subscr.title}}
+            </a>
           </li>
         </ul>
       </div>
-      <div class="span8">
-        Right
+      <div class="span8" ng-controller="FeedItemsController">
+        <div class="feed-item-container" ng-repeat="feedItem in feedItemsList.items">
+          <div class="feed-item">
+            <h3>{{feedItem.title}}</h3>
+            <p>{{feedItem.date}}</p>
+            <p>
+              {{feedItem.summary}}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

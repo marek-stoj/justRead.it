@@ -5,6 +5,7 @@
     private const string _RouteNamePrefix = "AppApi_";
 
     public const string Default = _RouteNamePrefix + "Default";
+    public const string Subscriptions_GetItems = _RouteNamePrefix + "Subscriptions_GetItems";
 
   }
 

@@ -6,7 +6,9 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
 
   public interface IQueryModelToJsonModelMapper {
 
-    SubscriptionsList CreateSubscriptionsList(IEnumerable<QueryModel.Subscription> subscriptions);
+    SubscriptionsList CreateSubscriptionsList(IEnumerable<QueryModel.GroupedSubscription> subscriptions);
+
+    FeedItem CreateFeedItem(QueryModel.FeedItem feedItem);
 
   }
 
