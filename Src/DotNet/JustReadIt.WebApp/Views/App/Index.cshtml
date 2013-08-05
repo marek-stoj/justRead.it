@@ -37,27 +37,31 @@
   
   <div class="container">
     <div class="row">
-      <div class="span4" ng-controller="SubscriptionsListController">
-        <ul class="nav nav-list" ng-repeat="subscrGroup in subscrsList.groups">
-          <li class="nav-header single-line">
-            {{subscrGroup.title}}
-          </li>
-          <li ng-class="{active: subscr.isSelected}" ng-repeat="subscr in subscrGroup.subscriptions">
-            <a href="#" class="single-line" ng-click="selectSubscr(subscr)">
-              <img class="icon-dynamic-favicon" ng-src="http://immsoft.apphb.com/api/favicons/find-for-url?url={{subscr.siteUrl}}" />
-              {{subscr.title}}
-            </a>
-          </li>
-        </ul>
+      <div id="subscrs-list-container" class="span4" ng-controller="SubscriptionsListController">
+        <div id="subscrs-list">
+          <ul class="nav nav-list" ng-repeat="subscrGroup in subscrsList.groups">
+            <li class="nav-header single-line">
+              {{subscrGroup.title}}
+            </li>
+            <li ng-class="{active: subscr.isSelected}" ng-repeat="subscr in subscrGroup.subscriptions">
+              <a href="#" class="single-line" ng-click="selectSubscr(subscr)">
+                <img class="icon-dynamic-favicon" ng-src="http://immsoft.apphb.com/api/favicons/find-for-url?url={{subscr.siteUrl}}" />
+                {{subscr.title}}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="span8" ng-controller="FeedItemsController">
-        <div class="feed-item-container" ng-repeat="feedItem in feedItemsList.items">
-          <div class="feed-item">
-            <h3>{{feedItem.title}}</h3>
-            <p>{{feedItem.date}}</p>
-            <p>
-              {{feedItem.summary}}
-            </p>
+      <div id="feed-items-list-container" class="span8" ng-controller="FeedItemsController">
+        <div id="feed-items-list">
+          <div class="feed-item-container" ng-repeat="feedItem in feedItemsList.items">
+            <div class="feed-item">
+              <h3>{{feedItem.title}}</h3>
+              <p>{{feedItem.date}}</p>
+              <p>
+                {{feedItem.summary}}
+              </p>
+            </div>
           </div>
         </div>
       </div>
