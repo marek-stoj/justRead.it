@@ -10,13 +10,43 @@ body {
 }
 
 footer {
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+
+/* TODO IMM HI: remove border */
+#content-container {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 940px;
+  margin-left: -470px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  border: solid black 1px;
 }
 
 #subscrs-list-container,
 #feed-items-list-container {
+  position: absolute;
   height: 100%;
   overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#subscrs-list-container {
+  width: 260px;
+}
+
+#feed-items-list-container {
+  width: 600px;
+  left: 300px;
 }
 
 .nav a,
