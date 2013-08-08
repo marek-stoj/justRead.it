@@ -23,6 +23,12 @@ namespace JustReadIt.WebApp.Areas.App {
         routeTemplate: RouteTemplatePrefix + "subscriptions/{id}/items",
         defaults: new { controller = "Subscriptions", action = "GetItems" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
+
+      context.MapHttpRoute(
+        name: Routes.FeedItems_GetFeedItemContent,
+        routeTemplate: RouteTemplatePrefix + "feeditems/{id}/content",
+        defaults: new { controller = "FeedItems", action = "GetFeedItemContent" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
     }
 
     private string RouteTemplatePrefix {

@@ -55,7 +55,24 @@ function SubscriptionsListController($rootScope, $scope, $resource) {
 function FeedItemsController($rootScope, $scope, $resource) {
   $scope.feedItemsResource = $resource('app/api/subscriptions/:subscrId/items');
 
+  $scope.showFeedItem = function (feedItem) {
+    $rootScope.$emit('showFeedItem', feedItem);
+  };
+
   $rootScope.$on('selectSubscr', function (ev, subscrId) {
     $scope.feedItemsList = $scope.feedItemsResource.get({ subscrId: subscrId });
+  });
+}
+
+function FeedItemReaderController($rootScope, $scope, $resource) {
+  $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
+
+  $rootScope.$on('showFeedItem', function (ev, feedItem) {
+    $scope.feedItemContentsResource.get(
+      { feedItemId: feedItem.id },
+      function(result) {
+        $scope.feedItemContentHtml = result.contentHtml;
+        console.log('content html: ' + $scope.feedItemContentHtml);
+      });
   });
 }

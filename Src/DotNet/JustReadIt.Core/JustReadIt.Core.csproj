@@ -45,6 +45,9 @@
     <Reference Include="log4net">
       <HintPath>..\..\..\Lib\log4net\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="NReadability">
+      <HintPath>..\..\..\Lib\NReadability\NReadability.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -105,8 +108,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MailingResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\ArticlesService.cs" />
     <Compile Include="Services\CreateUserResult.cs" />
     <Compile Include="Services\Exceptions\InternalException.cs" />
+    <Compile Include="Services\FakeUrlFetcher.cs" />
     <Compile Include="Services\Feeds\Exceptions\FeedFetcherException.cs" />
     <Compile Include="Services\Feeds\Feed.cs" />
     <Compile Include="Services\Feeds\FeedFetcher.cs" />
@@ -114,6 +119,7 @@
     <Compile Include="Services\Feeds\Exceptions\FeedNotFoundException.cs" />
     <Compile Include="Services\Feeds\FeedParser.cs" />
     <Compile Include="Services\Feeds\FeedParserException.cs" />
+    <Compile Include="Services\IArticlesService.cs" />
     <Compile Include="Services\Workers\FeedsCrawler.cs" />
     <Compile Include="Services\Feeds\FetchFeedResult.cs" />
     <Compile Include="Services\Feeds\IFeedFetcher.cs" />

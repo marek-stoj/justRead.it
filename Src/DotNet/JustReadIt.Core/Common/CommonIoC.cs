@@ -10,6 +10,7 @@ using JustReadIt.Core.Services;
 using JustReadIt.Core.Services.Feeds;
 using JustReadIt.Core.Services.Opml;
 using JustReadIt.Core.Services.Workers;
+using NReadability;
 
 namespace JustReadIt.Core.Common {
 
@@ -161,6 +162,15 @@ namespace JustReadIt.Core.Common {
 
     public static ISubscriptionsQueryDao GetSubscriptionsQueryDao() {
       return new SubscriptionsQueryDao(_ConnectionString_JustReadIt);
+    }
+
+    public static IUrlFetcher GetUrlFetcher() {
+      // TODO IMM HI: return real fetcher
+      return new FakeUrlFetcher();
+    }
+
+    public static IArticlesService GetArticlesService() {
+      return new ArticlesService(GetUrlFetcher());
     }
 
   }

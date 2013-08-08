@@ -14,6 +14,10 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
       return new HttpResponseException(HttpStatusCode.BadRequest);
     }
 
+    protected HttpResponseException HttpNotFound() {
+      return new HttpResponseException(HttpStatusCode.NotFound);
+    }
+
   }
 
 }

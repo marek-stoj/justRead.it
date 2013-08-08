@@ -12,6 +12,8 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     FeedItem FindById(int id);
 
+    string FindUrlById(int id);
+
     IEnumerable<int> GetAllUnreadIds(int userAccountId);
 
     IEnumerable<int> GetAllStarredIds(int userAccountId);

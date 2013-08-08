@@ -1,0 +1,22 @@
+#feed-item-reader-container {
+  background-color: #ff0000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+  margin: 50px;
+  margin-top: 200px;
+}
+
+#feed-item-reader-content {
+  background-color: #00ff00;
+  position: absolute;
+  width: 940px;
+  margin-left: -470px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}

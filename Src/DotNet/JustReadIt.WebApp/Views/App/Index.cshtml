@@ -13,15 +13,18 @@
 @* TODO IMM HI: use responsive?
   <link href="@Url.Content("~/Static/bootstrap/css/bootstrap-responsive.css")" rel="stylesheet" />
 *@
+@*
   <link href="@Url.Content("~/Static/flat-ui/css/flat-ui.css")" rel="stylesheet" />
+*@
   <link href="@Url.Content("~/Static/site/css/app.css")" rel="stylesheet" />
+  <link href="@Url.Content("~/Static/site/css/app-reader.css")" rel="stylesheet" />
   <link href="@Url.Content("~/Static/fancybox/jquery.fancybox.css")" rel="stylesheet" type="text/css" />
 
   <script type="text/javascript" src="@Url.Content("~/Static/jquery/jquery-1.10.2.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/bootstrap/js/bootstrap.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/fancybox/jquery.fancybox.pack.js")"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/angularjs/angular.min.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/angularjs/angular-resource.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/underscore/underscore-min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/site/js/app.js")"></script>
 </head>
@@ -54,7 +57,7 @@
     <div id="feed-items-list-container" ng-controller="FeedItemsController">
       <div id="feed-items-list">
         <div class="feed-item-container" ng-repeat="feedItem in feedItemsList.items">
-          <div class="feed-item">
+            <div class="feed-item" ng-click="showFeedItem(feedItem)">
             <h3>{{feedItem.title}}</h3>
             <p>{{feedItem.date}}</p>
             <p>
@@ -64,6 +67,11 @@
         </div>
       </div>
     </div>
+    </div>
+  </div>
+  
+  <div id="feed-item-reader-container" ng-controller="FeedItemReaderController">
+    <div id="feed-item-reader-content" ng-bind-html="{{feedItemContentHtml}}">
   </div>
  
   <footer class="footer">

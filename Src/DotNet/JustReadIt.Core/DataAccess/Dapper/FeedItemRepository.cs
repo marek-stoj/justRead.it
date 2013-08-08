@@ -153,6 +153,22 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
+    public string FindUrlById(int id) {
+      using (var db = CreateOpenedConnection()) {
+        string url =
+          db.Query<string>(
+            " select fi.Url" +
+            " from FeedItem fi" +
+            " where 1 = 1" +
+            "   and fi.Id = @Id",
+            new {
+              Id = id,
+            }).SingleOrDefault();
+
+        return url;
+      }
+    }
+
     public IEnumerable<int> GetAllUnreadIds(int userAccountId) {
       using (var db = CreateOpenedConnection()) {
         IEnumerable<int> ids =

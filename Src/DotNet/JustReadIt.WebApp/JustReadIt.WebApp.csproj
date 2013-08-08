@@ -135,6 +135,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\App\Core\Controllers\AppApiController.cs" />
+    <Compile Include="Areas\App\Core\Models\JsonModel\FeedItemContent.cs" />
+    <Compile Include="Areas\App\Core\Controllers\FeedItemsController.cs" />
     <Compile Include="Areas\App\Core\Controllers\SubscriptionsController.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\FeedItemsList.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\FeedItem.cs" />
@@ -227,6 +229,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Static\angularjs\angular-resource.min.js" />
+    <Content Include="Static\angularjs\angular.min.js" />
     <Content Include="Static\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Static\bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="Static\bootstrap\css\bootstrap.css" />
@@ -306,6 +310,7 @@
     <Content Include="Static\flat-ui\images\video\volume-off.png" />
     <Content Include="Static\jquery\jquery-1.10.2.min.js" />
     <Content Include="Static\site\css\app.css" />
+    <Content Include="Static\site\css\app-reader.css" />
     <Content Include="Static\site\css\site.css" />
     <Content Include="Static\site\js\app.js" />
     <Content Include="Static\site\js\site.js" />
