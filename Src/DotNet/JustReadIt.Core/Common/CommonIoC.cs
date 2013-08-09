@@ -165,8 +165,7 @@ namespace JustReadIt.Core.Common {
     }
 
     public static IUrlFetcher GetUrlFetcher() {
-      // TODO IMM HI: return real fetcher
-      return new FakeUrlFetcher();
+      return new UrlFetcher();
     }
 
     public static IArticlesService GetArticlesService() {

@@ -229,6 +229,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Static\site\css\webkit-scrollbars.css" />
+    <Content Include="Static\ui-bootstrap\ui-bootstrap-0.5.0.min.js" />
+    <Content Include="Static\ui-bootstrap\ui-bootstrap-tpls-0.5.0.min.js" />
     <Content Include="Static\angularjs\angular-resource.min.js" />
     <Content Include="Static\angularjs\angular.min.js" />
     <Content Include="Static\bootstrap\css\bootstrap-responsive.css" />
