@@ -394,3 +394,14 @@
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+#feed-item-reader-content blockquote p {
+  margin-bottom: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+#feed-item-reader-content li {
+  line-height: inherit;
+}

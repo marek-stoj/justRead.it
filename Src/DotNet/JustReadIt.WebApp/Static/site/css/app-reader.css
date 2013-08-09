@@ -1,13 +1,44 @@
-#feed-item-reader-content {
-  padding: 10px;
+.modal-backdrop, .modal-backdrop.fade.in {
+  opacity: 0.9;
 }
 
 .feed-item-reader-modal {
-  width: 800px;
-  margin-left: -400px;
+  width: 720px;
+  margin-left: -360px;
 }
 
 /* // TODO IMM HI: max-height in percentage? */
 .feed-item-reader-modal .modal-body {
   max-height: 600px;
+}
+
+#feed-item-reader-content {
+  padding: 20px 40px;
+  font-family: "Cardo", Georgia, serif;
+  font-size: 20px;
+  line-height: 135%;
+  color: #0a0a0a;
+}
+
+#feed-item-reader-content p {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+#feed-item-reader-content blockquote {
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+#feed-item-reader-content li {
+  margin-bottom: 18px;
+}
+
+#feed-item-reader-content h1,
+#feed-item-reader-content h2,
+#feed-item-reader-content h3,
+#feed-item-reader-content h4,
+#feed-item-reader-content h5,
+#feed-item-reader-content h6 {
+  font-family: "PT Sans Narrow", Verdana, sans-serif;
 }

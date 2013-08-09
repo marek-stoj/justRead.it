@@ -108,6 +108,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MailingResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\ArticleContentProcessor.cs" />
     <Compile Include="Services\ArticlesService.cs" />
     <Compile Include="Services\CreateUserResult.cs" />
     <Compile Include="Services\Exceptions\InternalException.cs" />

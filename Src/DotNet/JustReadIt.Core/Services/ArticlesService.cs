@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using JustReadIt.Core.Common;
@@ -40,14 +41,30 @@ namespace JustReadIt.Core.Services {
         new SgmlDomBuilder()
           .BuildDocument(webTranscodingResult.ExtractedContent);
 
-      XElement readInnerDiv = xDocument.GetElementById("readInner");
-      XElement h1Element = readInnerDiv.GetChildrenByTagName("h1").FirstOrDefault();
+      XElement readInnerDivElement = xDocument.GetElementById("readInner");
+      XElement h1Element = readInnerDivElement.GetChildrenByTagName("h1").FirstOrDefault();
 
       if (h1Element != null) {
         h1Element.Remove();
       }
 
-      string contentHtml = readInnerDiv.GetInnerHtml();
+      List<string> removedHyperlinkUrls;
+
+      ArticleContentProcessor.ReplaceHyperlinksWithSpans(
+        readInnerDivElement,
+        out removedHyperlinkUrls);
+
+      // TODO IMM HI: rethink
+      if (removedHyperlinkUrls.Count > 0) {
+        readInnerDivElement.Add(
+          XElement.Parse(
+            "<div><hr /><h5>Links</h5><ol>" +
+            string.Join("", removedHyperlinkUrls.Distinct().Select(url => string.Format("<li><a href=\"{0}\" target=\"_blank\">{0}</a></li>", url)))
+            + "</ol></div>"));
+      }
+
+      // TODO IMM HI: remove alphabet
+      string contentHtml = readInnerDivElement.GetInnerHtml() + "<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd</p>";
 
       return contentHtml;
     }
