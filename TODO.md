@@ -4,12 +4,12 @@ TODO
 MVP
 -----------
 
- - give images inside an article a max width
+ - find other Bootstrap theme for the site
  - use other sans-serif font as a main font
  - use serif font for feed items summaries
- - find other Bootstrap theme for the site
  - move sign out to the header
  - add something to the footer
+ - give images inside an article a max width
  - create UI for importing feeds from OPML
  - add possibility to keep the article unseen
  - add possibilty to toggle display of all feeds vs feeds containing unseen items

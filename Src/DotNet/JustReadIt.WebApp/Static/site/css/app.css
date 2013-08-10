@@ -71,3 +71,7 @@ footer {
 .feed-item-container:hover {
   border: solid #f00 1px;
 }
+
+.feed-item .feed-item-title {
+  font-family: "PT Sans Narrow", Verdana, sans-serif;
+}

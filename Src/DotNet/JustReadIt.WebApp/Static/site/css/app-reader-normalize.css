@@ -406,12 +406,12 @@
   line-height: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#feed-item-reader-content h1,
+#feed-item-reader-content h2,
+#feed-item-reader-content h3,
+#feed-item-reader-content h4,
+#feed-item-reader-content h5,
+#feed-item-reader-content h6 {
   text-transform: inherit;
   font-weight: inherit;
   margin: inherit;
