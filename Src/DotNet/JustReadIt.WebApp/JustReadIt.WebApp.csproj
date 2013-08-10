@@ -134,6 +134,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\WebApiEx\WebApiHandleErrorAttribute.cs" />
+    <Compile Include="Core\MvcEx\WebAppHandleErrorAttribute.cs" />
     <Compile Include="Areas\App\Core\Controllers\AppApiController.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\FeedItemContent.cs" />
     <Compile Include="Areas\App\Core\Controllers\FeedItemsController.cs" />
@@ -218,6 +220,7 @@
     </Compile>
     <Compile Include="Core\Services\FormsAuthenticationService.cs" />
     <Compile Include="Core\Services\IAuthenticationService.cs" />
+    <Compile Include="Core\WebApiEx\ExceptionLoggingHttpControllerActivator.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

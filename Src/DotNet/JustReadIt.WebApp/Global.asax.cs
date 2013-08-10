@@ -13,6 +13,7 @@ using JustReadIt.WebApp.Areas.App.Core.Controllers;
 using JustReadIt.WebApp.Core.App;
 using JustReadIt.WebApp.Core.MvcEx;
 using JustReadIt.WebApp.Core.Security;
+using JustReadIt.WebApp.Core.WebApiEx;
 using Newtonsoft.Json;
 using log4net;
 using log4net.Config;
@@ -35,6 +36,7 @@ namespace JustReadIt.WebApp {
 
       WebApiConfig.Register(GlobalConfiguration.Configuration);
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+      FilterConfig.RegisterGlobalWebApiFilters(GlobalConfiguration.Configuration.Filters);
       RouteConfig.RegisterRoutes(RouteTable.Routes);
 
       // makes Web API and areas play together nicely (see: http://blogs.infosupport.com/asp-net-mvc-4-rc-getting-webapi-and-areas-to-play-nicely/)
@@ -47,9 +49,19 @@ namespace JustReadIt.WebApp {
             typeof(Areas.Feedbin.Core.Controllers.SubscriptionsController).Assembly,
           }));
 
+      GlobalConfiguration.Configuration.Services.Replace(
+        typeof(IHttpControllerActivator),
+        new ExceptionLoggingHttpControllerActivator(GlobalConfiguration.Configuration.Services.GetHttpControllerActivator()));
+
       ConfigureJsonFormatter();
 
       _log.InfoIfEnabled(() => "Application has started.");
+    }
+
+    protected void Application_Error() {
+      Exception lastException = Server.GetLastError();
+
+      _log.ErrorIfEnabled(() => "Application error.", lastException);
     }
 
     private static void MvcApplication_AuthorizeRequest(object sender, EventArgs eventArgs) {
