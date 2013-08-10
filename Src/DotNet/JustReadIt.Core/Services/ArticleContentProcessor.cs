@@ -36,6 +36,14 @@ namespace JustReadIt.Core.Services {
       removedHyperlinkUrls = removedHyperlinkUrlsList;
     }
 
+    public static string ProcessUsingSmartyPants(string articleContent) {
+      Guard.ArgNotNullNorEmpty(articleContent, "articleContent");
+
+      var smartyPants = new SmartyPants();
+
+      return smartyPants.Transform(articleContent, ConversionMode.EducateDefault);
+    }
+
   }
 
 }

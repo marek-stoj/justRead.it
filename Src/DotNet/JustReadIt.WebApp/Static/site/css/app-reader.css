@@ -42,3 +42,7 @@
 #feed-item-reader-content h6 {
   font-family: "PT Sans Narrow", Verdana, sans-serif;
 }
+
+#feed-item-reader-content .links-list a {
+  word-break: break-all;
+}

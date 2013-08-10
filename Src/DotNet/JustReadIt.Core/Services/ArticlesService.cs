@@ -58,13 +58,15 @@ namespace JustReadIt.Core.Services {
       if (removedHyperlinkUrls.Count > 0) {
         readInnerDivElement.Add(
           XElement.Parse(
-            "<div><hr /><h5>Links</h5><ol>" +
+            "<div class=\"links-list\"><hr /><h5>Links</h5><ol>" +
             string.Join("", removedHyperlinkUrls.Distinct().Select(url => string.Format("<li><a href=\"{0}\" target=\"_blank\">{0}</a></li>", url)))
             + "</ol></div>"));
       }
 
       // TODO IMM HI: remove alphabet
       string contentHtml = readInnerDivElement.GetInnerHtml() + "<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd</p>";
+
+      contentHtml = ArticleContentProcessor.ProcessUsingSmartyPants(contentHtml);
 
       return contentHtml;
     }

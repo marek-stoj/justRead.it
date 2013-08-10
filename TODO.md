@@ -4,8 +4,6 @@ TODO
 MVP
 -----------
 
- - break links appended at the end of the article
- - pass the article content through smarty pants
  - style article header
  - style headers (h1, h2, ...) in the reader (bigger font size?)
  - give images inside an article a max width
@@ -64,6 +62,8 @@ HIGH
  - fix ImmSoft's favicon getter so that it supports more sites
  - optimize feeds crawler (parallel fetching?)
  - queue crawl after a user imports OPML/adds a new feed
+ - add possibility to toggle justified/not justified text in article reader
+ - integrate hyphenation when the text is justified in article reader
 
 MEDIUM
 -----------
@@ -74,3 +74,6 @@ LOW
 
 DONE
 -----------
+
+ - break links appended at the end of the article
+ - pass the article content through smarty pants
