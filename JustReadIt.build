@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="JustReadIt" default="all">
+
+  <property name="msbuild.path" value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" />
+
+  <target name="recreate-dirs">
+    <delete dir="Bin" />
+    <mkdir dir="Bin" />
+  </target>
+
+  <target name="load-tasks">
+    <loadtasks path="Lib\Imm.NAnt" />
+  </target>
+
+  <target name="build">
+    <!-- Build JustReadIt.sln. -->
+    <exec program="${msbuild.path}">
+      <arg value="Src\DotNet\JustReadIt.sln" />
+      <arg value="/t:Build" />
+      <arg value="/p:Configuration=Release" />
+    </exec>
+  </target>
+
+  <target name="publish" depends="build recreate-dirs">
+    <copy todir="Bin\JustReadIt.WebApp">
+      <fileset basedir="Src\DotNet\JustReadIt.WebApp">
+        <include name="**/*" />
+        <exclude name="**/*.cs" />
+        <exclude name="**/*.csproj" />
+        <exclude name="**/*.user" />
+        <exclude name="**/*.suo" />
+        <exclude name="**/*.DotSettings" />
+        <exclude name="packages.config" />
+        <exclude name="Logs" />
+        <exclude name="Logs/**/*" />
+        <exclude name="App_Start" />
+        <exclude name="App_Start/**/*" />
+        <exclude name="Areas" />
+        <exclude name="Areas/**/*" />
+        <exclude name="**/Core" />
+        <exclude name="**/Core/**/*" />
+        <exclude name="**/obj" />
+        <exclude name="**/obj/**/*" />
+        <exclude name="**/Properties" />
+        <exclude name="**/Properties/**/*" />
+        <exclude name="bin/**/*.xml" />
+        <exclude name="*.Publish.xml" />
+        <exclude name="*IMMDESKTOP*.*" />
+        <exclude name="*.cmd" />
+      </fileset>
+    </copy>
+    
+    <replaceregexp file="Bin\JustReadIt.WebApp\Web.config" regex="&lt;customErrors mode=&quot;[^&quot;]+&quot;" replacement="&lt;customErrors mode=&quot;On&quot;" />
+    <replaceregexp file="Bin\JustReadIt.WebApp\Web.config" regex="&lt;compilation debug=&quot;[^&quot;]+&quot;" replacement="&lt;compilation debug=&quot;false&quot;" />
+  </target>
+  
+  <target name="clean">
+    <delete dir="Bin" />
+  </target>
+  
+  <target name="all">
+    <call target="load-tasks" />
+    <call target="publish" />
+  </target>
+  
+</project>

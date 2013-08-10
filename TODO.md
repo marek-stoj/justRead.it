@@ -75,5 +75,6 @@ LOW
 DONE
 -----------
 
+ - create build script
  - break links appended at the end of the article
  - pass the article content through smarty pants

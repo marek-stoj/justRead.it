@@ -323,7 +323,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Static\site\img\" />
   </ItemGroup>
   <ItemGroup>
