@@ -22,6 +22,7 @@
   </target>
 
   <target name="publish" depends="build recreate-dirs">
+    <!-- Publish JustReadIt.WebApp -->
     <copy todir="Bin\JustReadIt.WebApp">
       <fileset basedir="Src\DotNet\JustReadIt.WebApp">
         <include name="**/*" />
@@ -52,6 +53,13 @@
     
     <replaceregexp file="Bin\JustReadIt.WebApp\Web.config" regex="&lt;customErrors mode=&quot;[^&quot;]+&quot;" replacement="&lt;customErrors mode=&quot;On&quot;" />
     <replaceregexp file="Bin\JustReadIt.WebApp\Web.config" regex="&lt;compilation debug=&quot;[^&quot;]+&quot;" replacement="&lt;compilation debug=&quot;false&quot;" />
+    
+    <!-- Publish JustReadIt.FeedsCrawlerWorker.ConsoleApp -->
+    <copy todir="Bin\JustReadIt.FeedsCrawlerWorker.ConsoleApp">
+      <fileset basedir="Src\DotNet\JustReadIt.FeedsCrawlerWorker.ConsoleApp\bin\Release">
+        <include name="**/*" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="clean">

@@ -63,8 +63,7 @@ namespace JustReadIt.Core.Services {
             + "</ol></div>"));
       }
 
-      // TODO IMM HI: remove alphabet
-      string contentHtml = readInnerDivElement.GetInnerHtml() + "<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd</p>";
+      string contentHtml = readInnerDivElement.GetInnerHtml();
 
       contentHtml = ArticleContentProcessor.ProcessUsingSmartyPants(contentHtml);
 
