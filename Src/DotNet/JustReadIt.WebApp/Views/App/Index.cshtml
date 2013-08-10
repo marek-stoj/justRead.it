@@ -97,7 +97,7 @@
   
   <div modal="isReaderModalOpen" close="closeReaderModal()" options="readerModalOpts" ng-controller="FeedItemReaderController">
     <div class="modal-header">
-      <h3>{{feedItem.title}}</h3>
+      <h2 class="feed-item-title">{{feedItem.title}}</h2>
     </div>
     <div class="modal-body">
       <div id="feed-item-reader-content" ng-bind-html-unsafe="feedItemContentHtml">

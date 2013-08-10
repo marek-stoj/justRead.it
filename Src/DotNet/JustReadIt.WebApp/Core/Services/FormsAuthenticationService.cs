@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Security;
+﻿using System.Web.Security;
 using JustReadIt.Core.Common;
 
 namespace JustReadIt.WebApp.Core.Services {

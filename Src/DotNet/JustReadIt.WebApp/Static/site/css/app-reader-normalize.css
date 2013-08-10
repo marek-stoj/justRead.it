@@ -405,3 +405,14 @@
 #feed-item-reader-content li {
   line-height: inherit;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}

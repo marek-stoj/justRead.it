@@ -58,7 +58,7 @@ namespace JustReadIt.Core.Services {
       if (removedHyperlinkUrls.Count > 0) {
         readInnerDivElement.Add(
           XElement.Parse(
-            "<div class=\"links-list\"><hr /><h5>Links</h5><ol>" +
+            "<div class=\"links-list\"><hr /><h4 class=\"links-list-header\">Links</h4><ol>" +
             string.Join("", removedHyperlinkUrls.Distinct().Select(url => string.Format("<li><a href=\"{0}\" target=\"_blank\">{0}</a></li>", url)))
             + "</ol></div>"));
       }

@@ -12,12 +12,23 @@
   max-height: 600px;
 }
 
+.feed-item-reader-modal .modal-header {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #0a0a0a;
+}
+
+.feed-item-reader-modal .feed-item-title {
+  font-size: 31px;
+  font-weight: bold;
+}
+
 #feed-item-reader-content {
   padding: 20px 40px;
   font-family: "Cardo", Georgia, serif;
   font-size: 20px;
   line-height: 135%;
   color: #0a0a0a;
+  text-rendering: optimizelegibility;
 }
 
 #feed-item-reader-content p {
@@ -30,8 +41,12 @@
   margin-bottom: 22px;
 }
 
+#feed-item-reader-content blockquote p {
+  margin-bottom: 22px;
+}
+
 #feed-item-reader-content li {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 #feed-item-reader-content h1,
@@ -41,6 +56,39 @@
 #feed-item-reader-content h5,
 #feed-item-reader-content h6 {
   font-family: "PT Sans Narrow", Verdana, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 12px;
+}
+
+#feed-item-reader-content h1 {
+  font-size: 31px;
+}
+
+#feed-item-reader-content h2 {
+  font-size: 29px;
+}
+
+#feed-item-reader-content h3 {
+  font-size: 27px;
+}
+
+#feed-item-reader-content h4 {
+  font-size: 25px;
+}
+
+#feed-item-reader-content h5 {
+  font-size: 23px;
+}
+
+#feed-item-reader-content h6 {
+  font-size: 21px;
+}
+
+#feed-item-reader-content .links-list-header {
+  font-size: 19px;
+  text-transform: uppercase;
 }
 
 #feed-item-reader-content .links-list a {

@@ -4,8 +4,6 @@ TODO
 MVP
 -----------
 
- - style article header
- - style headers (h1, h2, ...) in the reader (bigger font size?)
  - give images inside an article a max width
  - use other sans-serif font as a main font
  - use serif font for feed items summaries
@@ -78,3 +76,5 @@ DONE
  - create build script
  - break links appended at the end of the article
  - pass the article content through smarty pants
+ - style article header
+ - style headers (h1, h2, ...) in the reader (bigger font size?)
