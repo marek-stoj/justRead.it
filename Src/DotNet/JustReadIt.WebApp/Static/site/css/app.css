@@ -13,9 +13,13 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 5px;
   text-align: right;
+}
+
+.navbar-inverse .brand {
+  border: none;
 }
 
 #content-container {
@@ -66,10 +70,11 @@ footer {
 .feed-item-container {
   cursor: pointer;
   border: solid transparent 1px;
+  padding: 2px 10px;
 }
 
 .feed-item-container:hover {
-  border: solid #f00 1px;
+  border: solid #bbb 1px;
 }
 
 .feed-item .feed-item-title {

@@ -4,9 +4,7 @@ TODO
 MVP
 -----------
 
- - find other Bootstrap theme for the site
- - use other sans-serif font as a main font
- - use serif font for feed items summaries
+ - find other Bootstrap theme for the site?
  - move sign out to the header
  - add something to the footer
  - give images inside an article a max width
@@ -73,6 +71,7 @@ LOW
 DONE
 -----------
 
+ - use other sans-serif font as a main font
  - create build script
  - break links appended at the end of the article
  - pass the article content through smarty pants

@@ -39,6 +39,11 @@
     <div class="navbar-inner">
       <div class="container">
         <a href="@Url.Content("~/")" class="brand">JustReadIt</a>
+        <ul class="nav pull-right">
+          <li>
+            <a href="#">Import Feeds</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -62,7 +67,7 @@
       </div>
     </div>
     <div id="right-panel-container">
-      <div id="left-panel-header-container">
+      <div id="right-panel-header-container">
         <div id="selected-subscr-container" ng-show="selectedSubscr">
           <div class="row">
             <div class="span5">
@@ -112,17 +117,7 @@
     <div class="container">
       @if (Request.IsAuthenticated) {
         <p>
-          Hello @User.Identity.Name!
-        </p>
-        <p>
           @Html.ActionLink("Sign Out", "SignOut", "Account")
-        </p>
-      }
-      else {
-        <p>
-          @Html.ActionLink("Sign In", "SignIn", "Account")
-          |
-          @Html.ActionLink("Sign Up", "SignUp", "Account")
         </p>
       }
     </div>
