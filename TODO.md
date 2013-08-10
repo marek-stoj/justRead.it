@@ -4,31 +4,33 @@ TODO
 MVP
 -----------
 
- - create UI for importing feeds from OPML
- - give images inside an article a max width
+ - break links appended at the end of the article
+ - pass the article content through smarty pants
+ - style article header
  - style headers (h1, h2, ...) in the reader (bigger font size?)
+ - give images inside an article a max width
  - use other sans-serif font as a main font
  - use serif font for feed items summaries
  - find other Bootstrap theme for the site
+ - move sign out to the header
+ - add something to the footer
+ - create UI for importing feeds from OPML
  - add possibility to keep the article unseen
  - add possibilty to toggle display of all feeds vs feeds containing unseen items
  - style feeds containing unseen items (strong?)
  - style feed items (seen, unseen)
  - style feed items list header
- - break links appended at the end of the article
  - add number of unseen items in a feed?
  - periodically poll the server for new feeds/feed items
- - move sign out to the header
- - add something to the footer
  - create a landing page explaining the main ideas behind the app
  - add possibility to subscribe to new feeds
  - add possibility to unsubscribe from the feed
  - cache article contents
- - style article header
 
 HIGH
 -----------
 
+ - remove floats for images inside an article
  - add possibility to view the original article (link)
  - handle empty lists (display some info)
  - use lazy load of feed items
@@ -36,7 +38,6 @@ HIGH
  - add possibility to sign in using Facebook
  - add possibility to sign in using OpenID
  - add possbility to toggle between displaying only unseen or all feed items
- - pass the article content through smarty pants
  - allow to choose between serif and sans-serif body font
  - handle keys when reading an article (arrows, home/end etc.)
  - add possibility to collapse feeds groups
