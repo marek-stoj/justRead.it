@@ -1,5 +1,3 @@
-// TODO IMM HI: do we really need underscore lib?
-
 angular.module(
   'JustReadIt',
   ['ngResource', 'ui.bootstrap', 'ngUpload'],
@@ -70,6 +68,33 @@ function SubscriptionsListController($rootScope, $scope, $resource) {
   $rootScope.$on('onSubscriptionsImported', function(ev) {
     $scope.refreshSubscrsList();
   });
+  
+  $rootScope.$on('onUnreadFeedItemMarkedAsRead', function(ev, feedItem) {
+    var flatSubscriptionsList =
+      _.reduce(
+        $scope.subscrsList.groups,
+        function(memo, group) {
+          return memo.concat(group.subscriptions);
+        },
+        []);
+
+    var subscription =
+      _.find(flatSubscriptionsList, function(s) {
+        return s.feedId === feedItem.feedId;
+      });
+
+    if (subscription) {
+      subscription.unreadItemsCount--;
+      
+      if (subscription.unreadItemsCount < 0) {
+        subscription.unreadItemsCount = 0;
+      }
+      
+      if (subscription.unreadItemsCount === 0) {
+        subscription.containsUnreadItems = false;
+      }
+    }
+  });
 }
 
 function FeedItemsController($rootScope, $scope, $resource) {
@@ -86,6 +111,7 @@ function FeedItemsController($rootScope, $scope, $resource) {
 
 function FeedItemReaderController($rootScope, $scope, $resource) {
   $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
+  $scope.markFeedItemAsReadResource = $resource('app/api/feeditems/:feedItemId/mark-as-read', { feedItemId: '@feedItemId' });
 
   $scope.closeReaderModal = function() {
     $scope.isReaderModalOpen = false;
@@ -100,6 +126,12 @@ function FeedItemReaderController($rootScope, $scope, $resource) {
 
   $rootScope.$on('showFeedItem', function(ev, feedItem) {
     $scope.feedItem = feedItem;
+
+    if (!$scope.feedItem.isRead) {
+      $scope.feedItem.isRead = true;
+      $scope.markFeedItemAsReadResource.save({ feedItemId: $scope.feedItem.id }); // TODO IMM HI: there has to be a better way to sync server model
+      $rootScope.$emit('onUnreadFeedItemMarkedAsRead', feedItem); // TODO IMM HI: there has to be a better way for this as well ;)
+    }
 
     $scope.isReaderModalOpen = true;
     $scope.feedItemContentHtml = '<div>Loading...</div>';

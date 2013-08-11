@@ -26,6 +26,14 @@ namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
       set { _siteUrl = value.TrimmedOrNull(); }
     }
 
+    [JsonProperty("unreadItemsCount")]
+    public int UnreadItemsCount { get; set; }
+
+    [JsonProperty("containsUnreadItems")]
+    public bool ContainsUnreadItems {
+      get { return UnreadItemsCount > 0; }
+    }
+
   }
 
 }

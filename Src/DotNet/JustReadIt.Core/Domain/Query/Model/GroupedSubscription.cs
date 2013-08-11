@@ -27,6 +27,8 @@ namespace JustReadIt.Core.Domain.Query.Model {
       set { _siteUrl = value.TrimmedOrNull(); }
     }
 
+    public int UnreadItemsCount { get; set; }
+
   }
 
 }

@@ -22,7 +22,22 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             "     ufgf.Id as Id," +
             "     f.Id as FeedId," +
             "     case when ufgf.CustomTitle is not null then ufgf.CustomTitle else f.Title end as Title," +
-            "     f.SiteUrl as SiteUrl" +
+            "     f.SiteUrl as SiteUrl," +
+            "     (" +
+            "       select" +
+            "         count(*)" +
+            "       from FeedItem fi" +
+            "       where 1 = 1" +
+            "         and fi.FeedId = ufgf.FeedId" +
+            "         and not exists" +
+            "             (" +
+            "               select urfi.Id" +
+            "               from UserReadFeedItem urfi" +
+            "               where 1 = 1" +
+            "                 and urfi.UserAccountId = @UserAccountId" +
+            "                 and urfi.FeedItemId = fi.Id" +
+            "             )" +
+            "     ) as UnreadItemsCount" +
             "   from UserFeedGroupFeed ufgf" +
             "   join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
             "   join Feed f on f.Id = ufgf.FeedId" +
@@ -45,9 +60,23 @@ namespace JustReadIt.Core.DataAccess.Dapper {
           db.Query<QueryModel.FeedItem>(
             " select" +
             "   fi.Id as Id," +
+            "   fi.FeedId as FeedId," +
             "   fi.Title as Title," +
             "   case when fi.DatePublished is not null then fi.DatePublished else fi.DateCreated end as [Date]," +
-            "   fi.Summary as Summary" +
+            "   fi.Summary as Summary," +
+            "   (" +
+            "     select case when" +
+            "       exists" +
+            "       (" +
+            "         select urfi.Id" +
+            "         from UserReadFeedItem urfi" +
+            "         where 1 = 1" +
+            "           and urfi.UserAccountId = @UserAccountId" +
+            "           and urfi.FeedItemId = fi.Id)" +
+            "     then 1" +
+            "     else 0" +
+            "     end" +
+            "   ) as IsRead" +
             " from FeedItem fi" +
             " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
             " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +

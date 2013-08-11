@@ -11,6 +11,8 @@ namespace JustReadIt.Core.Domain.Query.Model {
 
     public int Id { get; set; }
 
+    public int FeedId { get; set; }
+
     public string Title {
       get { return _title; }
       set { _title = value.TrimmedOrNull(); }
@@ -25,6 +27,8 @@ namespace JustReadIt.Core.Domain.Query.Model {
       get { return _summary; }
       set { _summary = value.TrimmedOrNull(); }
     }
+
+    public bool IsRead { get; set; }
 
   }
 

@@ -3,6 +3,7 @@ using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Areas.App.Core.Models.JsonModel;
+using JustReadIt.WebApp.Core.Security;
 
 namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
 
@@ -20,7 +21,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     public FeedItemsController()
-    : this(CommonIoC.GetFeedItemRepository(), CommonIoC.GetArticlesService()) {
+      : this(CommonIoC.GetFeedItemRepository(), CommonIoC.GetArticlesService()) {
     }
 
     [HttpGet]
@@ -45,6 +46,17 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
         new FeedItemContent {
           ContentHtml = articleContentHtml,
         };
+    }
+
+    [HttpPost]
+    public void MarkAsRead(int id) {
+      int userAccountId = SecurityUtils.CurrentUserAccountId;
+
+      using (var ts = TransactionUtils.CreateTransactionScope()) {
+        _feedItemRepository.MarkRead(userAccountId, new[] { id });
+
+        ts.Complete();
+      }
     }
 
   }

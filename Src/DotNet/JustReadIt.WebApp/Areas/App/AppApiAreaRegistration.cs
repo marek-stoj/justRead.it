@@ -25,16 +25,22 @@ namespace JustReadIt.WebApp.Areas.App {
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
 
       context.MapHttpRoute(
+        name: Routes.Subscriptions_Import,
+        routeTemplate: RouteTemplatePrefix + "subscriptions/import",
+        defaults: new { controller = "Subscriptions", action = "Import" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+
+      context.MapHttpRoute(
         name: Routes.FeedItems_GetFeedItemContent,
         routeTemplate: RouteTemplatePrefix + "feeditems/{id}/content",
         defaults: new { controller = "FeedItems", action = "GetFeedItemContent" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
 
       context.MapHttpRoute(
-        name: Routes.Subscriptions_Import,
-        routeTemplate: RouteTemplatePrefix + "subscriptions/import",
-        defaults: new { controller = "Subscriptions", action = "Import" },
-        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+        name: Routes.FeedItems_MarkAsRead,
+        routeTemplate: RouteTemplatePrefix + "feeditems/{id}/mark-as-read",
+        defaults: new { controller = "FeedItems", action = "MarkAsRead" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), id = @"\d+", });
     }
 
     private string RouteTemplatePrefix {

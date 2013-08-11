@@ -56,6 +56,16 @@ footer {
   overflow-y: scroll;
 }
 
+#feed-items-list .is-read {
+  zoom: 1;
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+}
+
+#subscrs-list li.contains-unread-items {
+  font-weight: bold;
+}
+
 .nav a,
 .navbar a {
   text-decoration: none;

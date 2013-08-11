@@ -33,6 +33,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
                     FeedId = gs.FeedId,
                     Title = gs.Title,
                     SiteUrl = gs.SiteUrl,
+                    UnreadItemsCount = gs.UnreadItemsCount,
                   }).ToList(),
             }
         );
@@ -62,9 +63,11 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
       return
         new FeedItem {
           Id = feedItem.Id,
+          FeedId = feedItem.FeedId,
           Title = feedItem.Title,
           Date = feedItem.Date.ToShortDateString(),
           Summary = summary,
+          IsRead = feedItem.IsRead,
         };
     }
 

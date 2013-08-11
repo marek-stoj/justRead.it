@@ -1,5 +1,4 @@
-﻿using System;
-using JustReadIt.Core.Common;
+﻿using JustReadIt.Core.Common;
 using Newtonsoft.Json;
 
 namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
@@ -11,6 +10,9 @@ namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
 
     [JsonProperty("id")]
     public int Id { get; set; }
+
+    [JsonProperty("feedId")]
+    public int FeedId { get; set; }
 
     [JsonProperty("title")]
     public string Title {
@@ -26,6 +28,9 @@ namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
       get { return _summary; }
       set { _summary = value.TrimmedOrNull(); }
     }
+
+    [JsonProperty("isRead")]
+    public bool IsRead { get; set; }
 
   }
 

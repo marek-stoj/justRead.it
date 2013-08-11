@@ -57,10 +57,11 @@
             <li class="nav-header single-line">
               {{subscrGroup.title}}
             </li>
-            <li ng-class="{active: subscr.isSelected}" ng-repeat="subscr in subscrGroup.subscriptions">
+            <li ng-class="{'active': subscr.isSelected, 'contains-unread-items': subscr.containsUnreadItems}" ng-repeat="subscr in subscrGroup.subscriptions">
               <a href="#" class="single-line" ng-click="selectSubscr(subscr)">
                 <img class="icon-dynamic-favicon" ng-src="http://immsoft.apphb.com/api/favicons/find-for-url?url={{subscr.siteUrl}}" />
-                {{subscr.title}}
+                @* // TODO IMM HI: remove or style better unread items count *@
+                ({{subscr.unreadItemsCount}}) {{subscr.title}}
               </a>
             </li>
           </ul>
@@ -87,7 +88,7 @@
       </div>
       <div id="feed-items-list-container" ng-controller="FeedItemsController">
         <div id="feed-items-list">
-          <div class="feed-item-container" ng-repeat="feedItem in feedItemsList.items">
+          <div class="feed-item-container" ng-class="{'is-read': feedItem.isRead}" ng-repeat="feedItem in feedItemsList.items">
             <div class="feed-item" ng-click="showFeedItem(feedItem)">
               <h3 class="feed-item-title">{{feedItem.title}}</h3>
               <p>{{feedItem.date}}</p>
