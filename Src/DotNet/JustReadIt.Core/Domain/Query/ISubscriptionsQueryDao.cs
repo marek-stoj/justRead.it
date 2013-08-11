@@ -7,7 +7,7 @@ namespace JustReadIt.Core.Domain.Query {
 
     IEnumerable<QueryModel.GroupedSubscription> GetGroupedSubscriptions(int userAccountId);
 
-    IEnumerable<QueryModel.FeedItem> GetFeedItems(int userAccountId, int subscriptionId);
+    IEnumerable<QueryModel.FeedItem> GetFeedItems(int userAccountId, int subscriptionId, bool returnRead);
 
   }
 

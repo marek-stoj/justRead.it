@@ -54,34 +54,44 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
-    public IEnumerable<QueryModel.FeedItem> GetFeedItems(int userAccountId, int subscriptionId) {
+    public IEnumerable<QueryModel.FeedItem> GetFeedItems(int userAccountId, int subscriptionId, bool returnRead) {
       using (var db = CreateOpenedConnection()) {
         var query =
           db.Query<QueryModel.FeedItem>(
+            " with FeedItems as" +
+            " (" +
+            "   select" +
+            "     fi.Id as Id," +
+            "     fi.FeedId as FeedId," +
+            "     fi.Title as Title," +
+            "     case when fi.DatePublished is not null then fi.DatePublished else fi.DateCreated end as [Date]," +
+            "     fi.Summary as Summary," +
+            "     (" +
+            "       select case when" +
+            "         exists" +
+            "         (" +
+            "           select urfi.Id" +
+            "           from UserReadFeedItem urfi" +
+            "           where 1 = 1" +
+            "             and urfi.UserAccountId = @UserAccountId" +
+            "             and urfi.FeedItemId = fi.Id)" +
+            "       then 1" +
+            "       else 0" +
+            "       end" +
+            "     ) as IsRead" +
+            "   from FeedItem fi" +
+            "   join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
+            "   join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+            "   where 1 = 1" +
+            "     and ufg.UserAccountId = @UserAccountId" +
+            "     and ufgf.Id = @SubscriptionId" +
+            " )" +
             " select" +
-            "   fi.Id as Id," +
-            "   fi.FeedId as FeedId," +
-            "   fi.Title as Title," +
-            "   case when fi.DatePublished is not null then fi.DatePublished else fi.DateCreated end as [Date]," +
-            "   fi.Summary as Summary," +
-            "   (" +
-            "     select case when" +
-            "       exists" +
-            "       (" +
-            "         select urfi.Id" +
-            "         from UserReadFeedItem urfi" +
-            "         where 1 = 1" +
-            "           and urfi.UserAccountId = @UserAccountId" +
-            "           and urfi.FeedItemId = fi.Id)" +
-            "     then 1" +
-            "     else 0" +
-            "     end" +
-            "   ) as IsRead" +
-            " from FeedItem fi" +
-            " join UserFeedGroupFeed ufgf on ufgf.FeedId = fi.FeedId" +
-            " join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
-            " where ufgf.Id = @SubscriptionId" +
-            " order by fi.DatePublished desc, fi.DateCreated desc, fi.Id desc",
+            "   *" +
+            " from FeedItems fi" +
+            " where 1 = 1" +
+            (!returnRead ? "and fi.IsRead = 0" : "") +
+            " order by fi.[Date] desc, fi.Id desc",
             new {
               UserAccountId = userAccountId,
               SubscriptionId = subscriptionId,

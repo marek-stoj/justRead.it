@@ -4,6 +4,8 @@ using System.Web.Http.Routing;
 using System.Web.Mvc;
 using JustReadIt.WebApp.Core.MvcEx;
 
+// TODO IMM HI: 404 on some js.map file (see errors in logs)
+
 namespace JustReadIt.WebApp.Areas.App {
 
   public class AppApiAreaRegistration : AreaRegistration {

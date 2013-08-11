@@ -62,12 +62,12 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     [HttpGet]
-    public FeedItemsList GetItems(int id) {
+    public FeedItemsList GetItems(int id, bool returnRead) {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
       IEnumerable<QueryModel.FeedItem> feedItems;
 
       using (var ts = TransactionUtils.CreateTransactionScope()) {
-        feedItems = _subscriptionsQueryDao.GetFeedItems(userAccountId, id);
+        feedItems = _subscriptionsQueryDao.GetFeedItems(userAccountId, id, returnRead);
 
         ts.Complete();
       }

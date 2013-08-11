@@ -11,7 +11,6 @@
   <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />
 
   <link href="@Url.Content("~/Static/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
-  <link href="@Url.Content("~/Static/flat-ui/css/flat-ui.css")" rel="stylesheet" />
   <link href="@Url.Content("~/Static/site/css/app.css")" rel="stylesheet" />
   <link href="@Url.Content("~/Static/fancybox/jquery.fancybox.css")" rel="stylesheet" type="text/css" />
   <link href="@Url.Content("~/Static/site/css/app-reader-normalize.css")" rel="stylesheet" />
@@ -68,7 +67,7 @@
         </div>
       </div>
     </div>
-    <div id="right-panel-container">
+    <div id="right-panel-container" ng-controller="FeedItemsController">
       <div id="right-panel-header-container">
         <div id="selected-subscr-container" ng-show="selectedSubscr">
           <div class="row">
@@ -81,12 +80,19 @@
               <a ng-href="{{selectedSubscr.siteUrl}}" target="_blank">
                 <i class="icon-globe"></i> Visit Site
               </a>
-              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span8">
+              <label class="checkbox">
+                <input type="checkbox" name="showReadItems" ng-model="showReadItems" /> Show read items
+              </label>
+            </div>
           </div>
           <hr />
         </div>
       </div>
-      <div id="feed-items-list-container" ng-controller="FeedItemsController">
+      <div id="feed-items-list-container">
         <div id="feed-items-list">
           <div class="feed-item-container" ng-class="{'is-read': feedItem.isRead}" ng-repeat="feedItem in feedItemsList.items">
             <div class="feed-item" ng-click="showFeedItem(feedItem)">
