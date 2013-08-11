@@ -8,7 +8,6 @@ MVP
  - move sign out to the header
  - add something to the footer
  - give images inside an article a max width
- - create UI for importing feeds from OPML
  - add possibility to keep the article unseen
  - add possibilty to toggle display of all feeds vs feeds containing unseen items
  - style feeds containing unseen items (strong?)
@@ -71,6 +70,7 @@ LOW
 DONE
 -----------
 
+ - create UI for importing feeds from OPML
  - use other sans-serif font as a main font
  - create build script
  - break links appended at the end of the article

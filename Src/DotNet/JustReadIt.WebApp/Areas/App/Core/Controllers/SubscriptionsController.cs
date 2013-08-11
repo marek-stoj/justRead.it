@@ -1,5 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Reflection;
+using System.Web;
 using System.Web.Http;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain.Query;
@@ -7,26 +14,34 @@ using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Areas.App.Core.Models.JsonModel;
 using JustReadIt.WebApp.Areas.App.Core.Services;
 using JustReadIt.WebApp.Core.Security;
+using log4net;
 using QueryModel = JustReadIt.Core.Domain.Query.Model;
+using JustReadIt.Core.Common.Logging;
 
 // TODO IMM HI: get rid of flickering when changing feed
+
 namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
 
   public class SubscriptionsController : AppApiController {
 
+    private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+
     private readonly ISubscriptionsQueryDao _subscriptionsQueryDao;
     private readonly IQueryModelToJsonModelMapper _queryModelToJsonModelMapper;
+    private readonly IOpmlImporter _opmlImporter;
 
-    public SubscriptionsController(ISubscriptionsQueryDao subscriptionsQueryDao, IQueryModelToJsonModelMapper queryModelToJsonModelMapper) {
+    public SubscriptionsController(ISubscriptionsQueryDao subscriptionsQueryDao, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter) {
       Guard.ArgNotNull(subscriptionsQueryDao, "_subscriptionsQueryDao");
       Guard.ArgNotNull(queryModelToJsonModelMapper, "QueryModelToJsonModelMapper");
+      Guard.ArgNotNull(opmlImporter, "opmlImporter");
 
       _subscriptionsQueryDao = subscriptionsQueryDao;
       _queryModelToJsonModelMapper = queryModelToJsonModelMapper;
+      _opmlImporter = opmlImporter;
     }
 
     public SubscriptionsController()
-      : this(CommonIoC.GetSubscriptionsQueryDao(), IoC.GetQueryModelToJsonModelMapper()) {
+      : this(CommonIoC.GetSubscriptionsQueryDao(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter()) {
     }
 
     [HttpGet]
@@ -63,6 +78,56 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
         };
 
       return feedItemsList;
+    }
+
+    [HttpPost]
+    public HttpResponseMessage Import() {
+      HttpFileCollection uploadedFiles = HttpContext.Current.Request.Files;
+      HttpPostedFile uploadedFile = uploadedFiles.Count > 0 ? uploadedFiles[0] : null;
+
+      if (uploadedFile == null
+       || uploadedFile.ContentLength == 0
+       || uploadedFile.FileName.IsNullOrEmpty()) {
+        return PlainJson(new ImportSubscriptionsResult { Status = ImportSubscriptionsResultStatus.Failed_NoFileUploaded, });
+      }
+
+      string fileExtension = Path.GetExtension(uploadedFile.FileName);
+
+      if (!".opml".EqualsOrdinalIgnoreCase(fileExtension)
+       && !".xml".EqualsOrdinalIgnoreCase(fileExtension)) {
+        return PlainJson(new ImportSubscriptionsResult { Status = ImportSubscriptionsResultStatus.Failed_UnsupportedFileExtension, });
+      }
+
+      string opmlXml;
+
+      using (var sr = new StreamReader(uploadedFile.InputStream)) {
+        opmlXml = sr.ReadToEnd();
+      }
+
+      int userAccountId = SecurityUtils.CurrentUserAccountId;
+
+      try {
+        _opmlImporter.Import(opmlXml, userAccountId);
+      }
+      catch (Exception exc) {
+        _log.ErrorIfEnabled(() => "Unhandled exception during import.", exc);
+
+        return PlainJson(new ImportSubscriptionsResult { Status = ImportSubscriptionsResultStatus.Failed_UnknownError, });
+      }
+
+      return PlainJson(new ImportSubscriptionsResult { Status = ImportSubscriptionsResultStatus.Success, });
+    }
+
+    /// <remarks>
+    /// Needed for IE because it tries to download the response when it's type is application/json (sic!).
+    /// </remarks>
+    private HttpResponseMessage PlainJson<T>(T value) {
+      HttpResponseMessage response =
+        Request.CreateResponse(HttpStatusCode.OK, value);
+
+      response.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("text/plain");
+
+      return response;
     }
 
   }

@@ -1,4 +1,5 @@
-﻿@{
+﻿@using JustReadIt.WebApp.Areas.App
+@{
   Layout = null;
 }
 <!DOCTYPE html>
@@ -17,12 +18,8 @@
   <link href="@Url.Content("~/Static/site/css/app-reader.css")" rel="stylesheet" />
   <link href="@Url.Content("~/Static/site/css/webkit-scrollbars.css")" rel="stylesheet" />
   
-  @* // TODO IMM HI: remove not needed fonts *@
-  <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic,700" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">  
-  <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic,700&subset=latin,greek-ext,greek,latin-ext" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
 
   <script type="text/javascript" src="@Url.Content("~/Static/jquery/jquery-1.10.2.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/bootstrap/js/bootstrap.min.js")"></script>
@@ -31,6 +28,7 @@
   <script type="text/javascript" src="@Url.Content("~/Static/angularjs/angular-resource.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/ui-bootstrap/ui-bootstrap-0.5.0.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/underscore/underscore-min.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/ngUpload/ng-upload.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/site/js/app.js")"></script>
 </head>
 <body ng-controller="AppController">
@@ -41,7 +39,10 @@
         <a href="@Url.Content("~/")" class="brand">JustReadIt</a>
         <ul class="nav pull-right">
           <li>
-            <a href="#">Import Feeds</a>
+            <a href="#" ng-click="openImportSubscriptionsModal()">Import Subscriptions</a>
+          </li>
+          <li>
+            @Html.ActionLink("Sign Out", "SignOut", "Account")
           </li>
         </ul>
       </div>
@@ -71,7 +72,7 @@
         <div id="selected-subscr-container" ng-show="selectedSubscr">
           <div class="row">
             <div class="span5">
-              <h2>
+              <h2 class="selected-subscr-title">
                 {{selectedSubscr.title}}
               </h2>
             </div>
@@ -109,17 +110,48 @@
       </div>
     </div>
     <div class="modal-footer">
-      <button class="btn btn-warning cancel" ng-click="closeReaderModal()">Close</button>
+      <button class="btn" ng-click="closeReaderModal()">Close</button>
     </div>
+  </div>
+ 
+  <div modal="isImportSubscriptionsModalOpen" close="closeImportSubscriptionsModal()" options="importSubscriptionsModalOpts" ng-controller="ImportSubscriptionsController">
+    <form class="modal-form" action="@Routes.GetUrl(Url, Routes.Subscriptions_Import)" method="POST" ng-upload>
+      <div class="modal-header">
+        <h2 class="feed-item-title">Import Subscriptions</h2>
+      </div>
+      <div class="modal-body">
+        <p>
+          Select an OPML file to import your subscriptions.
+        </p>
+        
+        <input type="file" name="opmlFile" />
+      </div>
+      <div class="modal-footer">
+        <div class="alert {{feedbackMessageClass}} pull-left" ng-show="feedbackMessage">
+          {{feedbackMessage}}
+        </div>
+        <button type="button" class="btn btn-primary" upload-submit="onUploadSubmit(content, completed)" ng-disabled="isImportButtonDisabled">Import</button>
+        <button type="button" class="btn" ng-click="closeImportSubscriptionsModal()">Close</button>
+      </div>
+    </form>
   </div>
  
   <footer class="footer">
     <div class="container">
-      @if (Request.IsAuthenticated) {
-        <p>
-          @Html.ActionLink("Sign Out", "SignOut", "Account")
-        </p>
-      }
+      <p class="pull-left">
+        @{
+          int year = DateTime.UtcNow.Year;
+          string copyYears = "2012";
+
+          if (year > 2012) {
+            copyYears += " - " + year;
+          }
+        }
+        &copy; Copyright @copyYears by justRead.it
+      </p>
+      <p class="pull-right">
+        Contact: <i class="icon-envelope" style="vertical-align: middle; margin-bottom: 2px;"></i> <a href="mailto:marek.stoj@gmail.com">e-mail</a>
+      </p>
     </div>
   </footer> 
 

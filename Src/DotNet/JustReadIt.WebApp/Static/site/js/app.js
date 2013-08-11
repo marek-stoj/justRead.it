@@ -2,7 +2,7 @@
 
 angular.module(
   'JustReadIt',
-  ['ngResource', 'ui.bootstrap'],
+  ['ngResource', 'ui.bootstrap', 'ngUpload'],
   function($routeProvider, $locationProvider, $httpProvider) {
     var interceptor =
     [
@@ -19,7 +19,7 @@ angular.module(
 
           if (status === 401 || status === 403) {
             window.location = "/Account/SignIn";
-            
+
             return null;
           }
 
@@ -36,37 +36,50 @@ angular.module(
   });
 
 function AppController($rootScope, $scope) {
-  $rootScope.$on('selectSubscr', function (ev, subscr) {
+  $scope.openImportSubscriptionsModal = function() {
+    $rootScope.$emit('openImportSubscriptionsModal');
+  };
+
+  $rootScope.$on('selectSubscr', function(ev, subscr) {
     $scope.selectedSubscr = subscr;
   });
 }
 
 function SubscriptionsListController($rootScope, $scope, $resource) {
   $scope.subscrsResource = $resource('app/api/subscriptions');
-  $scope.subscrsList = $scope.subscrsResource.get();
+
+  $scope.refreshSubscrsList = function() {
+    $scope.subscrsList = $scope.subscrsResource.get();
+  };
+
+  $scope.refreshSubscrsList();
 
   var prevSelectedSubscr = null;
 
-  $scope.selectSubscr = function (subscr) {
+  $scope.selectSubscr = function(subscr) {
     if (prevSelectedSubscr !== null) {
       prevSelectedSubscr.isSelected = false;
     }
-    
+
     subscr.isSelected = true;
     prevSelectedSubscr = subscr;
 
     $rootScope.$emit('selectSubscr', subscr);
   };
+
+  $rootScope.$on('onSubscriptionsImported', function(ev) {
+    $scope.refreshSubscrsList();
+  });
 }
 
 function FeedItemsController($rootScope, $scope, $resource) {
   $scope.feedItemsResource = $resource('app/api/subscriptions/:subscrId/items');
 
-  $scope.showFeedItem = function (feedItem) {
+  $scope.showFeedItem = function(feedItem) {
     $rootScope.$emit('showFeedItem', feedItem);
   };
 
-  $rootScope.$on('selectSubscr', function (ev, subscr) {
+  $rootScope.$on('selectSubscr', function(ev, subscr) {
     $scope.feedItemsList = $scope.feedItemsResource.get({ subscrId: subscr.id });
   });
 }
@@ -74,21 +87,18 @@ function FeedItemsController($rootScope, $scope, $resource) {
 function FeedItemReaderController($rootScope, $scope, $resource) {
   $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
 
-  $scope.openReaderModal = function () {
-    $scope.isReaderModalOpen = true;
-  };
-
-  $scope.closeReaderModal = function () {
+  $scope.closeReaderModal = function() {
     $scope.isReaderModalOpen = false;
   };
 
+  // TODO IMM HI: common modal opts
   $scope.readerModalOpts = {
     dialogClass: 'modal feed-item-reader-modal',
     backdropFade: true,
     dialogFade: true
   };
 
-  $rootScope.$on('showFeedItem', function (ev, feedItem) {
+  $rootScope.$on('showFeedItem', function(ev, feedItem) {
     $scope.feedItem = feedItem;
 
     $scope.isReaderModalOpen = true;
@@ -96,8 +106,54 @@ function FeedItemReaderController($rootScope, $scope, $resource) {
 
     $scope.feedItemContentsResource.get(
       { feedItemId: feedItem.id },
-      function (result) {
+      function(result) {
         $scope.feedItemContentHtml = result.contentHtml;
       });
+  });
+}
+
+function ImportSubscriptionsController($rootScope, $scope, $timeout) {
+  $scope.closeImportSubscriptionsModal = function() {
+    $scope.isImportSubscriptionsModalOpen = false;
+  };
+
+  // TODO IMM HI: common modal opts
+  $scope.importSubscriptionsModalOpts = {
+    backdropFade: true,
+    dialogFade: true
+  };
+
+  $scope.onUploadSubmit = function(content, completed) {
+    if (!completed) {
+      return;
+    }
+
+    // TODO IMM HI: what about localization?
+    if (content.status === 'Success') {
+      $scope.feedbackMessage = 'Import was successful!';
+      $scope.feedbackMessageClass = 'alert-success';
+      $timeout(function() {
+        $scope.isImportButtonDisabled = true;
+      }, 1);
+      $rootScope.$emit('onSubscriptionsImported');
+    }
+    else if (content.status === 'Failed_NoFileUploaded') {
+      $scope.feedbackMessage = 'Please select a file first.';
+      $scope.feedbackMessageClass = 'alert-error';
+    }
+    else if (content.status === 'Failed_UnsupportedFileExtension') {
+      $scope.feedbackMessage = 'Unsupported file type.';
+      $scope.feedbackMessageClass = 'alert-error';
+    }
+    else {
+      $scope.feedbackMessage = 'Import failed.';
+      $scope.feedbackMessageClass = 'alert-error';
+    }
+  };
+
+  $rootScope.$on('openImportSubscriptionsModal', function(ev) {
+    $scope.feedbackMessage = null;
+    $scope.isImportButtonDisabled = false;
+    $scope.isImportSubscriptionsModalOpen = true;
   });
 }
