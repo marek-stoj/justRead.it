@@ -236,6 +236,11 @@
     <Content Include="Static\ngUpload\ng-upload.min.js" />
     <Content Include="Static\site\css\app-reader-normalize.css" />
     <Content Include="Static\site\css\webkit-scrollbars.css" />
+    <Content Include="Static\site\js\app\AppController.js" />
+    <Content Include="Static\site\js\app\SubscriptionsListController.js" />
+    <Content Include="Static\site\js\app\FeedItemsController.js" />
+    <Content Include="Static\site\js\app\FeedItemReaderController.js" />
+    <Content Include="Static\site\js\app\ImportSubscriptionsController.js" />
     <Content Include="Static\ui-bootstrap\ui-bootstrap-0.5.0.min.js" />
     <Content Include="Static\ui-bootstrap\ui-bootstrap-tpls-0.5.0.min.js" />
     <Content Include="Static\angularjs\angular-resource.min.js" />
@@ -267,7 +272,7 @@
     <Content Include="Static\site\css\app.css" />
     <Content Include="Static\site\css\app-reader.css" />
     <Content Include="Static\site\css\site.css" />
-    <Content Include="Static\site\js\app.js" />
+    <Content Include="Static\site\js\app\app.js" />
     <Content Include="Static\site\js\site.js" />
     <Content Include="Static\underscore\underscore-min.js" />
     <Content Include="Web.config" />
