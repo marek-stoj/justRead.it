@@ -2,29 +2,28 @@
 @model IndexViewModel
 
 <div class="container">
-  <div class="demo-headline">
-    <h1 class="demo-logo">
-      <div class="logo"></div>
-      justRead.it
-      <small>it's all about the reading experience</small>
-    </h1>
+  <div class="hero-unit" style="margin-top: 50px;">
+    <h1>justRead.it</h1>
+    <p style="margin-top: 10px;">
+      it's all about the reading experience
+    </p>
+    <p>
+      @if (Request.IsAuthenticated) {
+        <p>
+          Hello @User.Identity.Name!
+        </p>
+        <p>
+          @Html.ActionLink("Sign Out", "SignOut", "Account", null, new { @class = "btn btn-primary btn-large" })
+        </p>
+      }
+      else {
+        <p>
+          @Html.ActionLink("Sign Up", "SignUp", "Account", null, new { @class = "btn btn-primary" })
+          @Html.ActionLink("Sign In", "SignIn", "Account", null, new { @class = "btn btn-primary btn-success" })
+        </p>
+      }
+    </p>
   </div>
-  
-  @if (Request.IsAuthenticated) {
-    <p>
-      Hello @User.Identity.Name!
-    </p>
-    <p>
-      @Html.ActionLink("Sign Out", "SignOut", "Account")
-    </p>
-  }
-  else {
-    <p>
-      @Html.ActionLink("Sign In", "SignIn", "Account")
-      |
-      @Html.ActionLink("Sign Up", "SignUp", "Account")
-    </p>
-  }
 </div>
 
 <footer id="footer" class="navbar navbar-fixed-bottom">
