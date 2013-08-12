@@ -1,4 +1,4 @@
-angular.module(
+var app = angular.module(
   'JustReadIt',
   ['ngResource', 'ui.bootstrap', 'ngUpload'],
   function($routeProvider, $locationProvider, $httpProvider) {
@@ -33,7 +33,7 @@ angular.module(
     $httpProvider.responseInterceptors.push(interceptor);
   });
 
-function AppController($rootScope, $scope) {
+app.controller('AppController', ['$rootScope', '$scope', function($rootScope, $scope) {
   $scope.openImportSubscriptionsModal = function() {
     $rootScope.$emit('openImportSubscriptionsModal');
   };
@@ -41,9 +41,9 @@ function AppController($rootScope, $scope) {
   $rootScope.$on('selectSubscr', function(ev, subscr) {
     $scope.selectedSubscr = subscr;
   });
-}
+}]);
 
-function SubscriptionsListController($rootScope, $scope, $resource) {
+app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
   $scope.subscrsResource = $resource('app/api/subscriptions');
 
   $scope.refreshSubscrsList = function() {
@@ -68,7 +68,7 @@ function SubscriptionsListController($rootScope, $scope, $resource) {
   $rootScope.$on('onSubscriptionsImported', function(ev) {
     $scope.refreshSubscrsList();
   });
-  
+
   $rootScope.$on('onUnreadFeedItemMarkedAsRead', function(ev, feedItem) {
     var flatSubscriptionsList =
       _.reduce(
@@ -85,19 +85,19 @@ function SubscriptionsListController($rootScope, $scope, $resource) {
 
     if (subscription) {
       subscription.unreadItemsCount--;
-      
+
       if (subscription.unreadItemsCount < 0) {
         subscription.unreadItemsCount = 0;
       }
-      
+
       if (subscription.unreadItemsCount === 0) {
         subscription.containsUnreadItems = false;
       }
     }
   });
-}
+}]);
 
-function FeedItemsController($rootScope, $scope, $resource) {
+app.controller('FeedItemsController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
   $scope.feedItemsResource = $resource('app/api/subscriptions/:subscrId/items?returnRead=:returnRead');
   $scope.showReadItems = false; // TODO IMM HI: get from user prefs
 
@@ -126,9 +126,9 @@ function FeedItemsController($rootScope, $scope, $resource) {
   $rootScope.$on('selectSubscr', function(ev, subscr) {
     $scope.reloadItems();
   });
-}
+}]);
 
-function FeedItemReaderController($rootScope, $scope, $resource) {
+app.controller('FeedItemReaderController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
   $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
   $scope.markFeedItemAsReadResource = $resource('app/api/feeditems/:feedItemId/mark-as-read', { feedItemId: '@feedItemId' });
 
@@ -161,9 +161,9 @@ function FeedItemReaderController($rootScope, $scope, $resource) {
         $scope.feedItemContentHtml = result.contentHtml;
       });
   });
-}
+}]);
 
-function ImportSubscriptionsController($rootScope, $scope, $timeout) {
+app.controller('ImportSubscriptionsController', ['$rootScope', '$scope', '$timeout', function($rootScope, $scope, $timeout) {
   $scope.closeImportSubscriptionsModal = function() {
     $scope.isImportSubscriptionsModalOpen = false;
   };
@@ -207,4 +207,4 @@ function ImportSubscriptionsController($rootScope, $scope, $timeout) {
     $scope.isImportButtonDisabled = false;
     $scope.isImportSubscriptionsModalOpen = true;
   });
-}
+}]);
