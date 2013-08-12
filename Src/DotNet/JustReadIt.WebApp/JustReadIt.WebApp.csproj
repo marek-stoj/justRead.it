@@ -253,21 +253,6 @@
     <Content Include="Static\bootstrap\img\glyphicons-halflings.png" />
     <Content Include="Static\bootstrap\js\bootstrap.js" />
     <Content Include="Static\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Static\fancybox\blank.gif" />
-    <Content Include="Static\fancybox\fancybox_loading%402x.gif" />
-    <Content Include="Static\fancybox\fancybox_loading.gif" />
-    <Content Include="Static\fancybox\fancybox_overlay.png" />
-    <Content Include="Static\fancybox\fancybox_sprite%402x.png" />
-    <Content Include="Static\fancybox\fancybox_sprite.png" />
-    <Content Include="Static\fancybox\helpers\fancybox_buttons.png" />
-    <Content Include="Static\fancybox\helpers\jquery.fancybox-buttons.css" />
-    <Content Include="Static\fancybox\helpers\jquery.fancybox-buttons.js" />
-    <Content Include="Static\fancybox\helpers\jquery.fancybox-media.js" />
-    <Content Include="Static\fancybox\helpers\jquery.fancybox-thumbs.css" />
-    <Content Include="Static\fancybox\helpers\jquery.fancybox-thumbs.js" />
-    <Content Include="Static\fancybox\jquery.fancybox.css" />
-    <Content Include="Static\fancybox\jquery.fancybox.js" />
-    <Content Include="Static\fancybox\jquery.fancybox.pack.js" />
     <Content Include="Static\jquery\jquery-1.10.2.min.js" />
     <Content Include="Static\site\css\app.css" />
     <Content Include="Static\site\css\app-reader.css" />
@@ -285,7 +270,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Fancybox.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />

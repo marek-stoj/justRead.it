@@ -27,12 +27,6 @@ namespace JustReadIt.WebApp.Core.Controllers {
       return View();
     }
 
-    // TODO IMM HI: remove
-    [HttpGet]
-    public ActionResult Fancybox() {
-      return View();
-    }
-
   }
 
 }
