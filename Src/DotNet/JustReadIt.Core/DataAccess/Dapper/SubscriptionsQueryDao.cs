@@ -41,6 +41,8 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             "   from UserFeedGroupFeed ufgf" +
             "   join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
             "   join Feed f on f.Id = ufgf.FeedId" +
+            "   where 1 = 1" +
+            "     and ufg.UserAccountId = @UserAccountId" +
             " )" +
             " select" +
             "   *" +
