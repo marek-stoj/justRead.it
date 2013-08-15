@@ -66,6 +66,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             "     fi.Id as Id," +
             "     fi.FeedId as FeedId," +
             "     fi.Title as Title," +
+            "     fi.Url as Url," +
             "     case when fi.DatePublished is not null then fi.DatePublished else fi.DateCreated end as [Date]," +
             "     fi.Summary as Summary," +
             "     (" +

@@ -29,6 +29,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
     [JsonProperty("unreadItemsCount")]
     public int UnreadItemsCount { get; set; }
 
+    // TODO IMM HI: instead of returning this as json property, maybe we could define a function on a subscription prototype
     [JsonProperty("containsUnreadItems")]
     public bool ContainsUnreadItems {
       get { return UnreadItemsCount > 0; }

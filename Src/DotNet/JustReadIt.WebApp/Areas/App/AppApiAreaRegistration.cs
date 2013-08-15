@@ -39,9 +39,9 @@ namespace JustReadIt.WebApp.Areas.App {
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
 
       context.MapHttpRoute(
-        name: Routes.FeedItems_MarkAsRead,
-        routeTemplate: RouteTemplatePrefix + "feeditems/{id}/mark-as-read",
-        defaults: new { controller = "FeedItems", action = "MarkAsRead" },
+        name: Routes.FeedItems_ToggleIsRead,
+        routeTemplate: RouteTemplatePrefix + "feeditems/{id}/toggle-is-read",
+        defaults: new { controller = "FeedItems", action = "ToggleIsRead" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), id = @"\d+", });
     }
 

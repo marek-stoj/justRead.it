@@ -136,6 +136,11 @@
   <ItemGroup>
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResultStatus.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResult.cs" />
+    <Compile Include="Core\Resources\CommonResources.Designer.cs">
+      <DependentUpon>CommonResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Core\WebApiEx\WebApiHandleErrorAttribute.cs" />
     <Compile Include="Core\MvcEx\WebAppHandleErrorAttribute.cs" />
     <Compile Include="Areas\App\Core\Controllers\AppApiController.cs" />
@@ -291,6 +296,11 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ButtonResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Core\Resources\CommonResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Core\Resources\ValidationResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ValidationResources.Designer.cs</LastGenOutput>
@@ -311,6 +321,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\App\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\App\Partials\FeedItemReader.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\App\Partials\ImportSubscriptions.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\App\Partials\Footer.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

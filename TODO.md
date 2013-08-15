@@ -4,25 +4,21 @@ TODO
 MVP
 -----------
 
- - find other Bootstrap theme for the site?
- - move sign out to the header
- - add something to the footer
- - give images inside an article a max width
  - add possibility to keep the article unseen
  - add possibilty to toggle display of all feeds vs feeds containing unseen items
- - style feeds containing unseen items (strong?)
- - style feed items (seen, unseen)
  - style feed items list header
- - add number of unseen items in a feed?
  - periodically poll the server for new feeds/feed items
  - create a landing page explaining the main ideas behind the app
  - add possibility to subscribe to new feeds
  - add possibility to unsubscribe from the feed
+ - give images inside an article a max width
  - cache article contents
+ - add possibility to mark all feeds as seen
 
 HIGH
 -----------
 
+ - find other Bootstrap theme for the site?
  - remove floats for images inside an article
  - add possibility to view the original article (link)
  - handle empty lists (display some info)
@@ -30,7 +26,6 @@ HIGH
  - add possibility to sign in using Google
  - add possibility to sign in using Facebook
  - add possibility to sign in using OpenID
- - add possbility to toggle between displaying only unseen or all feed items
  - allow to choose between serif and sans-serif body font
  - handle keys when reading an article (arrows, home/end etc.)
  - add possibility to collapse feeds groups
@@ -70,6 +65,12 @@ LOW
 DONE
 -----------
 
+ - add possbility to toggle between displaying only unseen or all feed items
+ - add number of unseen items in a feed?
+ - style feeds containing unseen items (strong?)
+ - style feed items (seen, unseen)
+ - move sign out to the header
+ - add something to the footer
  - create UI for importing feeds from OPML
  - use other sans-serif font as a main font
  - create build script

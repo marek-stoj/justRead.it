@@ -1,13 +1,20 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Reflection;
+using System.Web.Http;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Areas.App.Core.Models.JsonModel;
+using JustReadIt.WebApp.Core.Resources;
 using JustReadIt.WebApp.Core.Security;
+using log4net;
+using JustReadIt.Core.Common.Logging;
 
 namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
 
   public class FeedItemsController : AppApiController {
+
+    private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
     private readonly IFeedItemRepository _feedItemRepository;
     private readonly IArticlesService _articlesService;
@@ -38,22 +45,37 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
         ts.Complete();
       }
 
-      string articleContentHtml =
-        _articlesService.GetArticleContentHtml(
-          feedItemUrl);
+      string contentHtml;
+
+      try {
+        contentHtml =
+          _articlesService.GetArticleContentHtml(feedItemUrl);
+      }
+      catch (Exception exc) {
+        _log.ErrorIfEnabled(() => "Error while getting article content HTML - returning generic message to the user.", exc);
+
+        contentHtml =
+          CommonResources.CouldntLoadArticleContentHtmlTemplate
+            .Replace("${originalUrl}", feedItemUrl);
+      }
 
       return
         new FeedItemContent {
-          ContentHtml = articleContentHtml,
+          ContentHtml = contentHtml,
         };
     }
 
     [HttpPost]
-    public void MarkAsRead(int id) {
+    public void ToggleIsRead(int id, bool isRead) {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
 
       using (var ts = TransactionUtils.CreateTransactionScope()) {
-        _feedItemRepository.MarkRead(userAccountId, new[] { id });
+        if (isRead) {
+          _feedItemRepository.MarkRead(userAccountId, new[] { id });
+        }
+        else {
+          _feedItemRepository.MarkUnread(userAccountId, new[] { id });
+        }
 
         ts.Complete();
       }

@@ -6,6 +6,7 @@ namespace JustReadIt.Core.Domain.Query.Model {
   public class FeedItem {
 
     private string _title;
+    private string _url;
     private DateTime _date;
     private string _summary;
 
@@ -16,6 +17,11 @@ namespace JustReadIt.Core.Domain.Query.Model {
     public string Title {
       get { return _title; }
       set { _title = value.TrimmedOrNull(); }
+    }
+
+    public string Url {
+      get { return _url; }
+      set { _url = value.TrimmedOrNull(); }
     }
 
     public DateTime Date {

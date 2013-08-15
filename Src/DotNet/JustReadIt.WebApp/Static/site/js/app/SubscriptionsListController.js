@@ -24,7 +24,7 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
     $scope.refreshSubscrsList();
   });
 
-  $rootScope.$on('onUnreadFeedItemMarkedAsRead', function(ev, feedItem) {
+  $rootScope.$on('onFeedItemIsReadChanged', function(ev, feedItem) {
     var flatSubscriptionsList =
       _.reduce(
         $scope.subscrsList.groups,
@@ -39,14 +39,23 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
       });
 
     if (subscription) {
-      subscription.unreadItemsCount--;
+      if (feedItem.isRead) {
+        subscription.unreadItemsCount--;
 
-      if (subscription.unreadItemsCount < 0) {
-        subscription.unreadItemsCount = 0;
+        if (subscription.unreadItemsCount < 0) {
+          subscription.unreadItemsCount = 0;
+        }
+
+        if (subscription.unreadItemsCount === 0) {
+          subscription.containsUnreadItems = false;
+        }
       }
-
-      if (subscription.unreadItemsCount === 0) {
-        subscription.containsUnreadItems = false;
+      else {
+        subscription.unreadItemsCount++;
+        
+        if (subscription.unreadItemsCount > 0) {
+          subscription.containsUnreadItems = true;
+        }
       }
     }
   });

@@ -57,13 +57,19 @@
         <div id="subscrs-list">
           <ul class="nav nav-list" ng-repeat="subscrGroup in subscrsList.groups">
             <li class="nav-header single-line">
-              {{subscrGroup.title}}
+              <span class="subscr-group-header">
+                {{subscrGroup.title}}
+              </span>
             </li>
             <li ng-class="{'active': subscr.isSelected, 'contains-unread-items': subscr.containsUnreadItems}" ng-repeat="subscr in subscrGroup.subscriptions">
               <a href="#" class="single-line" ng-click="selectSubscr(subscr)">
-                <img class="icon-dynamic-favicon" ng-src="http://immsoft.apphb.com/api/favicons/find-for-url?url={{subscr.siteUrl}}" />
-                @* // TODO IMM HI: remove or style better unread items count *@
-                ({{subscr.unreadItemsCount}}) {{subscr.title}}
+                <span class="unread-items-count">
+                  {{subscr.unreadItemsCount}}
+                </span>
+                <img class="icon-dynamic-favicon" ng-src="@Url.Action("GetFavicon")?url={{subscr.siteUrl}}" />
+                <span class="subscr-title">
+                  {{subscr.title}}                  
+                </span>
               </a>
             </li>
           </ul>
@@ -88,7 +94,7 @@
           <div class="row">
             <div class="span8">
               <label class="checkbox">
-                <input type="checkbox" name="showReadItems" ng-model="showReadItems" /> Show read items
+                <input type="checkbox" name="showReadItems" ng-model="showReadItems" /> Show seen items
               </label>
             </div>
           </div>
@@ -111,59 +117,11 @@
     </div>
   </div>
   
-  <div modal="isReaderModalOpen" close="closeReaderModal()" options="readerModalOpts" ng-controller="FeedItemReaderController">
-    <div class="modal-header">
-      <h2 class="feed-item-title">{{feedItem.title}}</h2>
-    </div>
-    <div class="modal-body">
-      <div id="feed-item-reader-content" ng-bind-html-unsafe="feedItemContentHtml">
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn" ng-click="closeReaderModal()">Close</button>
-    </div>
-  </div>
- 
-  <div modal="isImportSubscriptionsModalOpen" close="closeImportSubscriptionsModal()" options="importSubscriptionsModalOpts" ng-controller="ImportSubscriptionsController">
-    <form class="modal-form" action="@Routes.GetUrl(Url, Routes.Subscriptions_Import)" method="POST" ng-upload>
-      <div class="modal-header">
-        <h2 class="feed-item-title">Import Subscriptions</h2>
-      </div>
-      <div class="modal-body">
-        <p>
-          Select an OPML file to import your subscriptions.
-        </p>
-        
-        <input type="file" name="opmlFile" />
-      </div>
-      <div class="modal-footer">
-        <div class="alert {{feedbackMessageClass}} pull-left" ng-show="feedbackMessage">
-          {{feedbackMessage}}
-        </div>
-        <button type="button" class="btn btn-primary" upload-submit="onUploadSubmit(content, completed)" ng-disabled="isImportButtonDisabled">Import</button>
-        <button type="button" class="btn" ng-click="closeImportSubscriptionsModal()">Close</button>
-      </div>
-    </form>
-  </div>
- 
-  <footer class="footer">
-    <div class="container">
-      <p class="pull-left">
-        @{
-          int year = DateTime.UtcNow.Year;
-          string copyYears = "2013";
+  @Html.Partial("Partials/FeedItemReader")
+  
+  @Html.Partial("Partials/ImportSubscriptions")
 
-          if (year > 2013) {
-            copyYears += " - " + year;
-          }
-        }
-        &copy; Copyright @copyYears by justRead.it
-      </p>
-      <p class="pull-right">
-        Contact: <i class="icon-envelope" style="vertical-align: middle; margin-bottom: 2px;"></i> <a href="mailto:marek.stoj@gmail.com">e-mail</a>
-      </p>
-    </div>
-  </footer> 
+  @Html.Partial("Partials/Footer")
 
 </body>
 @* ReSharper restore Html.PathError *@

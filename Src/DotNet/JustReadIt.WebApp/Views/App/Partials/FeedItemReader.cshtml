@@ -1,0 +1,24 @@
+﻿<div modal="isReaderModalOpen" close="closeReaderModal()" options="readerModalOpts" ng-controller="FeedItemReaderController">
+  <div class="modal-header">
+    <h2 class="feed-item-title">
+      <a href="{{feedItem.url}}" target="_blank">
+        {{feedItem.title}}
+      </a>
+    </h2>
+  </div>
+  <div class="modal-body">
+    <div id="feed-item-reader-content" ng-bind-html-unsafe="feedItemContentHtml">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div id="feed-item-reader-actions-container">
+      <button type="button" class="btn" ng-show="feedItem.isRead" ng-click="markAsUnread(feedItem)">
+        <i class="icon-eye-open"></i> Keep unseen
+      </button>
+      <button type="button" class="btn" ng-hide="feedItem.isRead" ng-click="markAsRead(feedItem)">
+        <i class="icon-eye-close"></i> Mark as seen
+      </button>
+    </div>
+    <button type="button" class="btn btn-info" ng-click="closeReaderModal()">Close</button>
+  </div>
+</div>

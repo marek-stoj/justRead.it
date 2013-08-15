@@ -62,7 +62,27 @@ footer {
   opacity: 0.4;
 }
 
-#subscrs-list li.contains-unread-items {
+#subscrs-list li.nav-header {
+  padding-left: 10px;
+}
+
+#subscrs-list .subscr-group-header {
+  font-size: 13px;
+}
+
+#subscrs-list .subscr-title {
+  font-size: 13px;
+}
+
+#subscrs-list .unread-items-count {
+  display: inline-block;
+  font-size: 11px;
+  min-width: 20px;
+  margin-right: 5px;
+  text-align: right;
+}
+
+#subscrs-list li.contains-unread-items .subscr-title {
   font-weight: bold;
 }
 

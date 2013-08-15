@@ -7,6 +7,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
 
     private string _title;
     private string _summary;
+    private string _url;
 
     [JsonProperty("id")]
     public int Id { get; set; }
@@ -18,6 +19,12 @@ namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
     public string Title {
       get { return _title; }
       set { _title = value.TrimmedOrNull(); }
+    }
+
+    [JsonProperty("url")]
+    public string Url {
+      get { return _url; }
+      set { _url = value.TrimmedOrNull(); }
     }
 
     [JsonProperty("date")]

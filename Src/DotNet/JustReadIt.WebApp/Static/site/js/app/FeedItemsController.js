@@ -25,6 +25,7 @@ app.controller('FeedItemsController', ['$rootScope', '$scope', '$resource', func
   });
 
   $rootScope.$on('selectSubscr', function(ev, subscr) {
+    $scope.showReadItems = false;
     $scope.reloadItems();
   });
 }]);

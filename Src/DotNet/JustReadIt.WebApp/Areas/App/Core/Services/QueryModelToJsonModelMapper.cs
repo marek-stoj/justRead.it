@@ -65,6 +65,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
           Id = feedItem.Id,
           FeedId = feedItem.FeedId,
           Title = feedItem.Title,
+          Url = feedItem.Url,
           Date = feedItem.Date.ToShortDateString(),
           Summary = summary,
           IsRead = feedItem.IsRead,

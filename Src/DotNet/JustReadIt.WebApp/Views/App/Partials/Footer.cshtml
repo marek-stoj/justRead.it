@@ -1,0 +1,18 @@
+﻿<footer class="footer">
+  <div class="container">
+    <p class="pull-left">
+      @{
+        int year = DateTime.UtcNow.Year;
+        string copyYears = "2013";
+
+        if (year > 2013) {
+          copyYears += " - " + year;
+        }
+      }
+      &copy; Copyright @copyYears by justRead.it
+    </p>
+    <p class="pull-right">
+      Contact: <i class="icon-envelope" style="vertical-align: middle; margin-bottom: 2px;"></i> <a href="mailto:marek.stoj@gmail.com">e-mail</a>
+    </p>
+  </div>
+</footer> 

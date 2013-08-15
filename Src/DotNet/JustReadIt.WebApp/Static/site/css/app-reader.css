@@ -22,6 +22,15 @@
   font-weight: bold;
 }
 
+.feed-item-reader-modal .feed-item-title a {
+  color: inherit;
+}
+
+#feed-item-reader-actions-container {
+  display: inline-block;
+  margin-right: 20px;
+}
+
 #feed-item-reader-content {
   padding: 20px 40px;
   font-family: "Cardo", Georgia, serif;
@@ -91,6 +100,7 @@
   text-transform: uppercase;
 }
 
+#feed-item-reader-content a,
 #feed-item-reader-content .links-list a {
   word-break: break-all;
 }

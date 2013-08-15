@@ -1,6 +1,6 @@
 app.controller('FeedItemReaderController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
   $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
-  $scope.markFeedItemAsReadResource = $resource('app/api/feeditems/:feedItemId/mark-as-read', { feedItemId: '@feedItemId' });
+  $scope.toggleFeedItemIsReadResource = $resource('app/api/feeditems/:feedItemId/toggle-is-read?isRead=:isRead', { feedItemId: '@feedItemId', isRead: '@isRead' });
 
   $scope.closeReaderModal = function() {
     $scope.isReaderModalOpen = false;
@@ -13,14 +13,32 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', '$resource',
     dialogFade: true
   };
 
+  $scope.markAsRead = function(feedItem) {
+    toggleFeedItemIsRead(feedItem, true);
+  };
+
+  $scope.markAsUnread = function(feedItem) {
+    toggleFeedItemIsRead(feedItem, false);
+  };
+
+  var toggleFeedItemIsRead = function(feedItem, isRead) {
+    if (feedItem.isRead === isRead) {
+      return;
+    }
+
+    feedItem.isRead = isRead;
+    
+    // TODO IMM HI: there has to be a better way to sync server model
+    $scope.toggleFeedItemIsReadResource.save({ feedItemId: $scope.feedItem.id, isRead: isRead });
+    
+    // TODO IMM HI: there has to be a better way for communicating between controllers as well ;)
+    $rootScope.$emit('onFeedItemIsReadChanged', feedItem);
+  };
+
   $rootScope.$on('showFeedItem', function(ev, feedItem) {
     $scope.feedItem = feedItem;
 
-    if (!$scope.feedItem.isRead) {
-      $scope.feedItem.isRead = true;
-      $scope.markFeedItemAsReadResource.save({ feedItemId: $scope.feedItem.id }); // TODO IMM HI: there has to be a better way to sync server model
-      $rootScope.$emit('onUnreadFeedItemMarkedAsRead', feedItem); // TODO IMM HI: there has to be a better way for this as well ;)
-    }
+    toggleFeedItemIsRead(feedItem, true);
 
     $scope.isReaderModalOpen = true;
     $scope.feedItemContentHtml = '<div>Loading...</div>';

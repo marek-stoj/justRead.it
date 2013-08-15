@@ -13,7 +13,7 @@ namespace JustReadIt.WebApp.Areas.App {
     public const string Subscriptions_Import = _RouteNamePrefix + "Subscriptions_Import";
 
     public const string FeedItems_GetFeedItemContent = _RouteNamePrefix + "FeedItems_GetFeedItemContent";
-    public const string FeedItems_MarkAsRead = _RouteNamePrefix + "FeedItems_MarkAsRead";
+    public const string FeedItems_ToggleIsRead = _RouteNamePrefix + "FeedItems_ToggleIsRead";
 
     public static string GetUrl(UrlHelper urlHelper, string routeName) {
       Guard.ArgNotNull(routeName, "routeName");

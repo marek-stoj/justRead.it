@@ -1,0 +1,23 @@
+﻿@using JustReadIt.WebApp.Areas.App
+
+<div modal="isImportSubscriptionsModalOpen" close="closeImportSubscriptionsModal()" options="importSubscriptionsModalOpts" ng-controller="ImportSubscriptionsController">
+  <form class="modal-form" action="@Routes.GetUrl(Url, Routes.Subscriptions_Import)" method="POST" ng-upload>
+    <div class="modal-header">
+      <h2 class="feed-item-title">Import Subscriptions</h2>
+    </div>
+    <div class="modal-body">
+      <p>
+        Select an OPML file to import your subscriptions.
+      </p>
+        
+      <input type="file" name="opmlFile" />
+    </div>
+    <div class="modal-footer">
+      <div class="alert {{feedbackMessageClass}} pull-left" ng-show="feedbackMessage">
+        {{feedbackMessage}}
+      </div>
+      <button type="button" class="btn btn-primary" upload-submit="onUploadSubmit(content, completed)" ng-disabled="isImportButtonDisabled">Import</button>
+      <button type="button" class="btn" ng-click="closeImportSubscriptionsModal()">Close</button>
+    </div>
+  </form>
+</div>
