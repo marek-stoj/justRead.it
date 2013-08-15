@@ -11,42 +11,47 @@
 }
 
 <div class="container">
-  <div id="signup-form-container">
-    <h1>
-      Sign Up
-    </h1>
+  <h2>
+    Sign Up
+  </h2>
+  
+  <div class="row">
+    <div class="span6">
+      <div class="sign-form-container">
+        @using (Html.BeginForm()) {
+          @Html.Label("EmailAddress", "E-mail address:")
+          @Html.TextBoxFor(m => m.EmailAddress, new { @class = "email-address-textbox" })
+          @Html.ValidationMessageFor(m => m.EmailAddress, null, new { @class = "help-inline" })
+      
+          @Html.Label("Password", "Password:")
+          @Html.PasswordFor(m => m.Password, new { @class = "password-textbox" })
+          @Html.ValidationMessageFor(m => m.Password, null, new { @class = "help-inline" })
 
-    @using (Html.BeginForm()) {
-      @Html.Label("EmailAddress", "E-mail address:")
-      @Html.TextBoxFor(m => m.EmailAddress, new { @class = "email-address-textbox" })
-      @Html.ValidationMessageFor(m => m.EmailAddress)
-      <br />
-      <br />
+          @Html.Label("PasswordConfirmation", "Password confirmation:")
+          @Html.PasswordFor(m => m.PasswordConfirmation, new { @class = "password-textbox" })
+          @Html.ValidationMessageFor(m => m.PasswordConfirmation, null, new { @class = "help-inline" })
       
-      @Html.Label("Password", "Password:")
-      @Html.PasswordFor(m => m.Password, new { @class = "password-textbox" })
-      @Html.ValidationMessageFor(m => m.Password)
-      <br />
-      <br />
-
-      @Html.Label("PasswordConfirmation", "Password confirmation:")
-      @Html.PasswordFor(m => m.PasswordConfirmation, new { @class = "password-textbox" })
-      @Html.ValidationMessageFor(m => m.PasswordConfirmation)
-      <br />
-      <br />
+          <div class="form-buttons">
+            @Html.Button(Buttons.Account_SignUp, ButtonResources.Account_SignUp, new { @class = "btn btn-primary" })
+          </div>
       
-      <div class="form-buttons">
-        @Html.Button(Buttons.Account_SignUp, ButtonResources.Account_SignUp, new { @class = "btn btn-primary" })
+          if (Model.SignUpFailed) {
+            <div class="form-errors">
+              <span class="field-validation-error">
+                @Model.SignUpFailedMessage
+              </span>
+            </div>
+          }
+        }
       </div>
-      
-      if (Model.SignUpFailed) {
-      <div class="form-errors">
-        <span class="field-validation-error">
-          @Model.SignUpFailedMessage
-        </span>
-      </div>
-      }
-    }
+    </div>
+    <div class="span4">
+      <p>
+        Already signed up? <a href="@Url.Action("SignIn")">Sign in here</a>
+        or <a href="@Url.Action("Index", "Home")">use your existing account</a>
+        from services like Google, Facebook and others.
+      </p>
+    </div>
   </div>
 </div>
 

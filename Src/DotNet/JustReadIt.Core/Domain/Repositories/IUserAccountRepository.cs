@@ -14,7 +14,9 @@
 
     UserAccount FindByAuthProviderId(string authProviderId);
 
-    void VerifyEmailAddress(int userAccountId);
+    void VerifyEmailAddress(int id);
+
+    void SetAuthProviderId(int id, string authProviderId);
 
   }
 

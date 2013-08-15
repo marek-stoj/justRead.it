@@ -1,44 +1,60 @@
 ﻿@using JustReadIt.WebApp.Core.Models.Home
 @model IndexViewModel
 @{
-  Layout = "~/Views/Home/_Layout.cshtml";
+  Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="container">
-  <div class="hero-unit" style="margin-top: 50px;">
-    <h1>justRead.it</h1>
-    <p style="margin-top: 10px;">
-      it's all about the reading experience
-    </p>
-    <p>
-      @if (Request.IsAuthenticated) {
-        <p>
-          Hello @User.Identity.Name!
+  <div id="landing-page-hero-unit" class="hero-unit">
+    <div class="row">
+      <div class="span8">
+        <h1>justRead.it</h1>
+        <p style="margin-top: 10px;">
+          it's all about the reading experience
         </p>
-        <p>
-          @Html.ActionLink("Sign Out", "SignOut", "Account", null, new { @class = "btn btn-primary btn-large" })
-        </p>
-      }
-      else {
-        <p>
-          @Html.ActionLink("Sign Up", "SignUp", "Account", null, new { @class = "btn btn-primary" })
-          @Html.ActionLink("Sign In", "SignIn", "Account", null, new { @class = "btn btn-primary btn-success" })
-        </p>
-      }
-    </p>
+      </div>
+      <div class="span3">
+        <div id="screenshots-carousel" class="carousel slide" data-interval="1000" data-pause="hover">
+@* // TODO IMM HI: remove?
+          <ol class="carousel-indicators">
+            <li data-target="#screenshots-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#screenshots-carousel" data-slide-to="1"></li>
+            <li data-target="#screenshots-carousel" data-slide-to="2"></li>
+          </ol>
+*@
+          <div class="carousel-inner">
+            <div class="active item">
+              <img src="@Url.Content("~/Static/site/img/ss1.jpg")" alt="" />
+            </div>
+            <div class="item">
+              <img src="@Url.Content("~/Static/site/img/ss2.jpg")" alt="" />
+            </div>
+            <div class="item">
+              <img src="@Url.Content("~/Static/site/img/ss3.jpg")" alt="" />
+            </div>
+          </div>
+@* // TODO IMM HI: remove?
+          <a class="carousel-control left" href="#screenshots-carousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#screenshots-carousel" data-slide="next">&rsaquo;</a>
+*@
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="container">
   <h2>Sign In</h2>
 
+  <p>
+    Do you already have an account on one of these sites? Click the logo to sign in with it here:
+  </p>
+  
   @using (Html.BeginForm("SignIn_Do", "Auth", FormMethod.Post, new { id = "openid_form", @class = "form" }))
   {
     <fieldset>
       <div id="openid_choice">
-        <p>
-          Please select your account provider:
-        </p>
-        <div id="openid_btns"></div>
+        <div id="openid_btns">
+        </div>
       </div>
       <div id="openid_input_area">
         <input id="openid_identifier" name="openid_identifier" type="text" value="http://" class="field" />
@@ -50,12 +66,46 @@
       </div>
     </fieldset>
   }
+  
+  <p>
+    If you don't have an account on any of the above, you can sign up or sign in using your e-mail address and a password:
+  </p>
+  
+  <p>
+    <a href="@Url.Action("SignUp", "Account")" class="btn btn-primary">Sign Up</a>
+    <a href="@Url.Action("SignIn", "Account")" class="btn btn-success">Sign In</a>
+  </p>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-left">
+      @{
+        int year = DateTime.UtcNow.Year;
+        string copyYears = "2013";
+
+        if (year > 2013) {
+          copyYears += " - " + year;
+        }
+      }
+      &copy; Copyright @copyYears by justRead.it
+    </p>
+    <p class="pull-right">
+      Contact: <i class="icon-envelope" style="vertical-align: middle; margin-bottom: 2px;"></i> <a href="mailto:marek.stoj@gmail.com">e-mail</a>
+    </p>
+  </div>
+</footer> 
 
 <script type="text/javascript">
   jQuery.noConflict()(function($) {
     $(document).ready(function() {
       openid.init('openid_identifier');
+
+      $('#screenshots-carousel').carousel(
+        {
+          interval: 3000,
+          pause: 'hover'
+        });
     });
   });
 </script>

@@ -70,7 +70,7 @@ namespace JustReadIt.WebApp.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User with this e-mail address is already registered..
+        ///   Looks up a localized string similar to User with this e-mail address has already signed up..
         /// </summary>
         public static string Message_SignUpFailed_EmailAddressExists {
             get {

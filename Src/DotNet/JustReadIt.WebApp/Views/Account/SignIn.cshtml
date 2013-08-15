@@ -10,42 +10,43 @@
 }
 
 <div class="container">
-  <h1>
+  <h2>
     Sign In
-  </h1>
+  </h2>
+  
+  <div class="row">
+    <div class="span6">
+      <div class="sign-form-container" class="col_left">
+        @using (Html.BeginForm()) {
+          @Html.Label("EmailAddress", "E-mail address:")
+          @Html.TextBoxFor(m => m.EmailAddress, new { @class = "email-address-textbox" })
+          @Html.ValidationMessageFor(m => m.EmailAddress, null, new { @class = "help-inline" })
 
-  <div class="col_left">
-    @using (Html.BeginForm()) {
-      @Html.Label("EmailAddress", "E-mail address:")
-      @Html.TextBoxFor(m => m.EmailAddress, new { @class = "email-address-textbox" })
-      @Html.ValidationMessageFor(m => m.EmailAddress)
-      <br />
-      <br />
+          @Html.Label("Password", "Password:")
+          @Html.PasswordFor(m => m.Password, new { @class = "password-textbox" })
+          @Html.ValidationMessageFor(m => m.Password, null, new { @class = "help-inline" })
 
-      @Html.Label("Password", "Password:")
-      @Html.PasswordFor(m => m.Password, new { @class = "password-textbox" })
-      @Html.ValidationMessageFor(m => m.Password)
-      <br />
-      <br />
+          <div class="form-buttons">
+            @Html.Button(Buttons.Account_SignIn, ButtonResources.Account_SignIn, new { @class = "btn btn-primary" })
+          </div>
       
-      <div class="form-buttons">
-        @Html.Button(Buttons.Account_SignIn, ButtonResources.Account_SignIn, new { @class = "btn btn-primary" })
+          if (Model.SignInFailed) {
+            <div class="form-errors">
+              <span class="field-validation-error">
+                @AccountResources.Message_SignInFailed
+              </span>
+            </div>
+          }
+        }
       </div>
-      
-      if (Model.SignInFailed) {
-      <div class="form-errors">
-        <span class="field-validation-error">
-          @AccountResources.Message_SignInFailed
-        </span>
-      </div>
-      }
-    }
-  </div>
-  <div>
-    <strong>Haven't registered yet?
-      <br />
-      @Html.ActionLink("Create an account!", "SignUp")
-    </strong>
+    </div>
+    <div class="span4">
+      <p>
+        Haven't signed up yet? <a href="@Url.Action("SignUp")">Sign up now</a>
+        or <a href="@Url.Action("Index", "Home")">sign in using your existing account</a>
+        from services like Google, Facebook and others.
+      </p>
+    </div>
   </div>
 </div>
 

@@ -17,7 +17,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int existsInt =
           db.Query<int>(
             " select" +
-            "   case when exists(select Id from UserAccount where Id = @Id)" +
+            "   case when exists(select ua.Id from UserAccount ua where ua.Id = @Id)" +
             "     then 1" +
             "     else 0" +
             "   end",
@@ -36,7 +36,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int existsInt =
           db.Query<int>(
             " select" +
-            "   case when exists(select Id from UserAccount where EmailAddress = @EmailAddress)" +
+            "   case when exists(select ua.Id from UserAccount ua where ua.EmailAddress = @EmailAddress)" +
             "     then 1" +
             "     else 0" +
             "   end ",
@@ -86,8 +86,9 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       using (var db = CreateOpenedConnection()) {
         UserAccount userAccount =
           db.Query<UserAccount>(
-            " select * from UserAccount" +
-            " where EmailAddress = @EmailAddress",
+            " select * from UserAccount ua" +
+            " where 1 = 1" +
+            "   and ua.EmailAddress = @EmailAddress",
             new {
               EmailAddress = emailAddress,
             })
@@ -103,8 +104,9 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       using (var db = CreateOpenedConnection()) {
         int? userAccountId =
           db.Query<int?>(
-            " select Id from UserAccount" +
-            " where EmailAddress = @EmailAddress",
+            " select Id from UserAccount ua" +
+            " where 1 = 1" +
+            "   and ua.EmailAddress = @EmailAddress",
             new {
               EmailAddress = emailAddress,
             })
@@ -133,15 +135,32 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
-    public void VerifyEmailAddress(int userAccountId) {
+    public void VerifyEmailAddress(int id) {
       using (var db = CreateOpenedConnection()) {
         db.Execute(
           " update UserAccount" +
           " set IsEmailAddressVerified = @IsEmailAddressVerified" +
-          " where Id = @UserAccountId",
+          " where 1 = 1" +
+          "   and Id = @UserAccountId",
           new {
+            UserAccountId = id,
             IsEmailAddressVerified = true,
-            UserAccountId = userAccountId,
+          });
+      }
+    }
+
+    public void SetAuthProviderId(int id, string authProviderId) {
+      Guard.ArgNotNullNorEmpty(authProviderId, "authProviderId");
+
+      using (var db = CreateOpenedConnection()) {
+        db.Execute(
+          " update UserAccount" +
+          " set AuthProviderId = @AuthProviderId" +
+          " where 1 = 1" +
+          "   and Id = @UserAccountId",
+          new {
+            UserAccountId = id,
+            AuthProviderId = authProviderId,
           });
       }
     }

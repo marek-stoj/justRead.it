@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Transactions;
 using System.Web;
 using System.Web.Mvc;
 using DotNetOpenAuth.Messaging;
@@ -14,6 +16,7 @@ using ImmRafSoft.Net;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain;
 using JustReadIt.Core.Domain.Repositories;
+using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Core.App;
 using JustReadIt.WebApp.Core.MvcEx;
 using JustReadIt.WebApp.Core.Resources;
@@ -136,7 +139,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
         string authProviderId = string.Format("http://twitter.com/{0}/{1}", userId, screenName);
         bool isNewAccount;
 
-        CreateUserAccountIfNeeded(
+        CreateOrUpdateUserAccountIfNeeded(
           authProviderId,
           out isNewAccount,
           emailAddress: null,
@@ -193,7 +196,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
       string userName = userInfo.UserName;
       bool isNewAccount;
 
-      CreateUserAccountIfNeeded(
+      CreateOrUpdateUserAccountIfNeeded(
         authProviderId, out isNewAccount,
         email,
         userName);
@@ -239,7 +242,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
       string userName = userInfo.Name;
       bool isNewAccount;
 
-      CreateUserAccountIfNeeded(
+      CreateOrUpdateUserAccountIfNeeded(
         authProviderId,
         out isNewAccount,
         email,
@@ -359,7 +362,7 @@ namespace JustReadIt.WebApp.Core.Controllers {
 
           bool isNewAccount;
 
-          CreateUserAccountIfNeeded(
+          CreateOrUpdateUserAccountIfNeeded(
             authProviderId,
             out isNewAccount,
             email,
@@ -378,12 +381,37 @@ namespace JustReadIt.WebApp.Core.Controllers {
       }
     }
 
-    private void CreateUserAccountIfNeeded(string authProviderId, out bool isNewAccount, string emailAddress = null, string displayName = null) {
-      UserAccount userAccount =
-        _userAccountRepository.FindByAuthProviderId(
-          authProviderId);
+    private void CreateOrUpdateUserAccountIfNeeded(string authProviderId, out bool isNewAccount, string emailAddress = null, string displayName = null) {
+      using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
+        UserAccount userAccount =
+          _userAccountRepository.FindByAuthProviderId(
+            authProviderId);
 
-      if (userAccount == null) {
+        if (userAccount != null) {
+          isNewAccount = false;
+
+          ts.Complete();
+
+          return;
+        }
+
+        if (!emailAddress.IsNullOrEmpty()) {
+          userAccount = _userAccountRepository.FindByEmailAddress(emailAddress);
+
+          if (userAccount != null) {
+            isNewAccount = false;
+
+            _userAccountRepository.VerifyEmailAddress(userAccount.Id);
+            _userAccountRepository.SetAuthProviderId(userAccount.Id, authProviderId);
+
+            ts.Complete();
+
+            return;
+          }
+        }
+
+        Debug.Assert(userAccount == null);
+
         isNewAccount = true;
 
         userAccount =
@@ -393,9 +421,14 @@ namespace JustReadIt.WebApp.Core.Controllers {
           };
 
         _userAccountRepository.Add(userAccount);
-      }
-      else {
-        isNewAccount = false;
+
+        Debug.Assert(userAccount.Id > 0);
+
+        if (!emailAddress.IsNullOrEmpty()) {
+          _userAccountRepository.VerifyEmailAddress(userAccount.Id);
+        }
+
+        ts.Complete();
       }
     }
 

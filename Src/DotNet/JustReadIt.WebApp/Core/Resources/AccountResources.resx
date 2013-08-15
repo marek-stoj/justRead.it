@@ -121,6 +121,6 @@
     <value>Invalid e-mail address or password.</value>
   </data>
   <data name="Message_SignUpFailed_EmailAddressExists" xml:space="preserve">
-    <value>User with this e-mail address is already registered.</value>
+    <value>User with this e-mail address has already signed up.</value>
   </data>
 </root>

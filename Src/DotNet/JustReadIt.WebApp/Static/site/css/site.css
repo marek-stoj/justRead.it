@@ -1,7 +1,51 @@
+body {
+  padding-top: 100px;
+}
+
+#landing-page-hero-unit {
+  padding: 25px;
+}
+
+#screenshots-carousel {
+  width: 300px;
+  height: 225px;
+  margin: 0;
+}
+
+#screenshots-carousel .carousel-control {
+  top: 50%;
+}
+
 #footer .footer-banner {
   min-height: 1px;
 }
 
+.sign-form-container .help-inline {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.sign-form-container .form-buttons {
+  margin-top: 10px;
+}
+
 .field-validation-error {
-  color: #ff0000;
+  color: #b94a48;
+}
+
+.form-errors {
+  margin-top: 10px;
+}
+
+.form-errors span {
+  display: block;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  text-align: right;
 }

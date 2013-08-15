@@ -257,6 +257,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Static\site\img\ss1.jpg" />
+    <Content Include="Static\site\img\ss2.jpg" />
+    <Content Include="Static\site\img\ss3.jpg" />
     <Content Include="Static\ngUpload\ng-upload.min.js" />
     <Content Include="Static\openid\js\openid-en.js" />
     <Content Include="Static\openid\images\openid-inputicon.gif" />
@@ -293,15 +296,13 @@
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Static\site\img\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_Layout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JustReadIt.Core\JustReadIt.Core.csproj">
