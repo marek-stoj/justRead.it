@@ -120,6 +120,12 @@
   <data name="InvalidValue" xml:space="preserve">
     <value>Invalid value.</value>
   </data>
+  <data name="OpenIdIdentifierIsRequired" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="OpenIdUserNameIsRequired" xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
   <data name="SettingsViewModel_EmailAddressIsAlreadyInUse" xml:space="preserve">
     <value>This e-mail address is used by someone else.</value>
   </data>

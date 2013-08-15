@@ -8,9 +8,11 @@
 
     void Add(UserAccount userAccount);
 
-    UserAccount FindUserAccountByEmailAddress(string emailAddress);
+    UserAccount FindByEmailAddress(string emailAddress);
 
-    int? FindUserAccountIdByEmailAddress(string emailAddress);
+    int? FindIdByEmailAddress(string emailAddress);
+
+    UserAccount FindByAuthProviderId(string authProviderId);
 
     void VerifyEmailAddress(int userAccountId);
 

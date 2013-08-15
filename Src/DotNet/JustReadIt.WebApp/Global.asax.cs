@@ -83,7 +83,7 @@ namespace JustReadIt.WebApp {
 
       if (justReadItPrincipal == null) {
         var userAccountRepository = CommonIoC.GetUserAccountRepository();
-        int? userAccountId = userAccountRepository.FindUserAccountIdByEmailAddress(username);
+        int? userAccountId = userAccountRepository.FindIdByEmailAddress(username);
 
         if (!userAccountId.HasValue) {
           return;

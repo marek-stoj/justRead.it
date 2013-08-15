@@ -76,7 +76,7 @@ namespace JustReadIt.Core.Services {
       Guard.ArgNotNullNorEmpty(password, "password");
 
       UserAccount userAccount =
-        _userAccountRepository.FindUserAccountByEmailAddress(emailAddress);
+        _userAccountRepository.FindByEmailAddress(emailAddress);
 
       if (userAccount == null || !userAccount.IsEmailAddressVerified) {
         userAccountId = -1;
@@ -95,7 +95,7 @@ namespace JustReadIt.Core.Services {
       Guard.ArgNotNullNorEmpty(emailAddress, "emailAddress");
 
       int? userAccountId =
-        _userAccountRepository.FindUserAccountIdByEmailAddress(emailAddress);
+        _userAccountRepository.FindIdByEmailAddress(emailAddress);
 
       return userAccountId;
     }

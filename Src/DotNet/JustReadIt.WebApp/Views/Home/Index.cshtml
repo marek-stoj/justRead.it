@@ -1,6 +1,8 @@
 ﻿@using JustReadIt.WebApp.Core.Models.Home
 @model IndexViewModel
-
+@{
+  Layout = "~/Views/Home/_Layout.cshtml";
+}
 <div class="container">
   <div class="hero-unit" style="margin-top: 50px;">
     <h1>justRead.it</h1>
@@ -25,3 +27,35 @@
     </p>
   </div>
 </div>
+
+<div class="container">
+  <h2>Sign In</h2>
+
+  @using (Html.BeginForm("SignIn_Do", "Auth", FormMethod.Post, new { id = "openid_form", @class = "form" }))
+  {
+    <fieldset>
+      <div id="openid_choice">
+        <p>
+          Please select your account provider:
+        </p>
+        <div id="openid_btns"></div>
+      </div>
+      <div id="openid_input_area">
+        <input id="openid_identifier" name="openid_identifier" type="text" value="http://" class="field" />
+        <input id="openid_submit" type="submit" value="Sign-In" />
+      </div>
+      <div style="margin-left: 10px;">
+        @Html.ValidationMessage("openid_username")
+        @Html.ValidationMessage("openid_identifier")
+      </div>
+    </fieldset>
+  }
+</div>
+
+<script type="text/javascript">
+  jQuery.noConflict()(function($) {
+    $(document).ready(function() {
+      openid.init('openid_identifier');
+    });
+  });
+</script>

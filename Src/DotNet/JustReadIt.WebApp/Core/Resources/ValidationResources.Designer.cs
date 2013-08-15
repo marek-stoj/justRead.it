@@ -70,6 +70,24 @@ namespace JustReadIt.WebApp.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This field is required..
+        /// </summary>
+        internal static string OpenIdIdentifierIsRequired {
+            get {
+                return ResourceManager.GetString("OpenIdIdentifierIsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is required..
+        /// </summary>
+        internal static string OpenIdUserNameIsRequired {
+            get {
+                return ResourceManager.GetString("OpenIdUserNameIsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This e-mail address is used by someone else..
         /// </summary>
         internal static string SettingsViewModel_EmailAddressIsAlreadyInUse {

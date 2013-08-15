@@ -6,6 +6,7 @@ namespace JustReadIt.Core.Domain {
   public class UserAccount {
 
     private DateTime _dateCreated;
+    private string _authProviderId;
     private string _emailAddress;
     private string _passwordHash;
 
@@ -21,12 +22,23 @@ namespace JustReadIt.Core.Domain {
       set { _emailAddress = value.TrimmedOrNull(); }
     }
 
+    public bool IsEmailAddressVerified { get; set; }
+
+    /// <summary>
+    /// Can be null.
+    /// </summary>
+    public string AuthProviderId {
+      get { return _authProviderId; }
+      set { _authProviderId = value.TrimmedOrNull(); }
+    }
+
+    /// <summary>
+    /// Can be null.
+    /// </summary>
     public string PasswordHash {
       get { return _passwordHash; }
       set { _passwordHash = value.TrimmedOrNull(); }
     }
-
-    public bool IsEmailAddressVerified { get; set; }
 
   }
 

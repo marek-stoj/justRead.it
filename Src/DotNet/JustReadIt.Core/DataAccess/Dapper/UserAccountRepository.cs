@@ -62,16 +62,17 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int userAccountId =
           db.Query<int>(
             " insert into UserAccount" +
-            " (DateCreated, EmailAddress, PasswordHash, IsEmailAddressVerified)" +
+            " (DateCreated, EmailAddress, IsEmailAddressVerified, AuthProviderId, PasswordHash)" +
             " values" +
-            " (@DateCreated, @EmailAddress, @PasswordHash, @IsEmailAddressVerified);" +
+            " (@DateCreated, @EmailAddress, @IsEmailAddressVerified, @AuthProviderId, @PasswordHash);" +
             " " +
             " select cast(scope_identity() as int);",
             new {
               DateCreated = now,
               EmailAddress = userAccount.EmailAddress,
-              PasswordHash = userAccount.PasswordHash,
               IsEmailAddressVerified = false,
+              AuthProviderId = userAccount.AuthProviderId,
+              PasswordHash = userAccount.PasswordHash,
             })
             .Single();
 
@@ -79,7 +80,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
-    public UserAccount FindUserAccountByEmailAddress(string emailAddress) {
+    public UserAccount FindByEmailAddress(string emailAddress) {
       Guard.ArgNotNullNorEmpty(emailAddress, "emailAddress");
 
       using (var db = CreateOpenedConnection()) {
@@ -96,7 +97,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
-    public int? FindUserAccountIdByEmailAddress(string emailAddress) {
+    public int? FindIdByEmailAddress(string emailAddress) {
       Guard.ArgNotNullNorEmpty(emailAddress, "emailAddress");
 
       using (var db = CreateOpenedConnection()) {
@@ -110,6 +111,25 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             .SingleOrDefault();
 
         return userAccountId;
+      }
+    }
+
+    public UserAccount FindByAuthProviderId(string authProviderId) {
+      Guard.ArgNotNullNorEmpty(authProviderId, "authProviderId");
+
+      using (var db = CreateOpenedConnection()) {
+        UserAccount userAccount =
+          db.Query<UserAccount>(
+            " select" +
+            "  *" +
+            " from UserAccount ua" +
+            " where 1 = 1" +
+            "   and ua.AuthProviderId = @AuthProviderId",
+            new {
+              AuthProviderId = authProviderId
+            }).SingleOrDefault();
+
+        return userAccount;
       }
     }
 

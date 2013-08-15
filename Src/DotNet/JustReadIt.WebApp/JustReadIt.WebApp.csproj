@@ -41,6 +41,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNetOpenAuth">
+      <HintPath>..\..\..\Lib\DotNetOpenAuth\DotNetOpenAuth.dll</HintPath>
+    </Reference>
     <Reference Include="ImmRafSoft.Configuration">
       <HintPath>..\..\..\Lib\ImmRafSoft\ImmRafSoft.Configuration.dll</HintPath>
     </Reference>
@@ -136,11 +139,27 @@
   <ItemGroup>
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResultStatus.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResult.cs" />
+    <Compile Include="Core\Controllers\AuthController.cs" />
+    <Compile Include="Core\MvcEx\UrlHelperExtensions.cs" />
     <Compile Include="Core\Resources\CommonResources.Designer.cs">
       <DependentUpon>CommonResources.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Core\Security\SocialAuth\Facebook\FacebookClient.cs" />
+    <Compile Include="Core\Security\SocialAuth\Facebook\IFacebookClient.cs" />
+    <Compile Include="Core\Security\SocialAuth\Facebook\UserInfo.cs" />
+    <Compile Include="Core\Security\SocialAuth\OAuth\DbTokenStore.cs" />
+    <Compile Include="Core\Security\SocialAuth\OAuth\ITokenStore.cs" />
+    <Compile Include="Core\Security\SocialAuth\OAuth\ITwitterConsumer.cs" />
+    <Compile Include="Core\Security\SocialAuth\OAuth\PersistentOAuthTokenManager.cs" />
+    <Compile Include="Core\Security\SocialAuth\OAuth\TransientOAuthTokenManager.cs" />
+    <Compile Include="Core\Security\SocialAuth\OAuth\TwitterConsumer.cs" />
+    <Compile Include="Core\Security\SocialAuth\OpenId\IOpenIdRelyingParty.cs" />
+    <Compile Include="Core\Security\SocialAuth\OpenId\OpenIdRelyingParty.cs" />
+    <Compile Include="Core\Security\SocialAuth\WindowsLive\IWindowsLiveClient.cs" />
+    <Compile Include="Core\Security\SocialAuth\WindowsLive\UserInfo.cs" />
+    <Compile Include="Core\Security\SocialAuth\WindowsLive\WindowsLiveClient.cs" />
     <Compile Include="Core\WebApiEx\WebApiHandleErrorAttribute.cs" />
     <Compile Include="Core\MvcEx\WebAppHandleErrorAttribute.cs" />
     <Compile Include="Areas\App\Core\Controllers\AppApiController.cs" />
@@ -239,7 +258,13 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Static\ngUpload\ng-upload.min.js" />
+    <Content Include="Static\openid\js\openid-en.js" />
+    <Content Include="Static\openid\images\openid-inputicon.gif" />
+    <Content Include="Static\openid\js\openid-jquery.js" />
+    <Content Include="Static\openid\images\openid-providers-en.png" />
+    <Content Include="Static\openid\css\openid-shadow.css" />
     <Content Include="Static\site\css\app-reader-normalize.css" />
+    <Content Include="Static\site\css\site-openid.css" />
     <Content Include="Static\site\css\webkit-scrollbars.css" />
     <Content Include="Static\site\js\app\AppController.js" />
     <Content Include="Static\site\js\app\SubscriptionsListController.js" />
@@ -276,8 +301,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JustReadIt.Core\JustReadIt.Core.csproj">
