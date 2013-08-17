@@ -160,8 +160,8 @@ namespace JustReadIt.Core.Common {
           GetFeedParser());
     }
 
-    public static ISubscriptionsQueryDao GetSubscriptionsQueryDao() {
-      return new SubscriptionsQueryDao(_ConnectionString_JustReadIt);
+    public static ISubscriptionQueryDao GetSubscriptionQueryDao() {
+      return new SubscriptionQueryDao(_ConnectionString_JustReadIt);
     }
 
     public static IUrlFetcher GetUrlFetcher() {

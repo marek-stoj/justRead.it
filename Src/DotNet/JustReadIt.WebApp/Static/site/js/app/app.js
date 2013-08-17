@@ -1,4 +1,5 @@
 var app = angular.module('JustReadIt', ['ngResource', 'ui.bootstrap', 'ngUpload'], function($routeProvider, $locationProvider, $httpProvider) {
+  
   var interceptor =
   [
     '$rootScope',
@@ -28,4 +29,5 @@ var app = angular.module('JustReadIt', ['ngResource', 'ui.bootstrap', 'ngUpload'
     }];
 
   $httpProvider.responseInterceptors.push(interceptor);
+  
 });

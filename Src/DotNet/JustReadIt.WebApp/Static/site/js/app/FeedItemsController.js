@@ -1,5 +1,7 @@
 app.controller('FeedItemsController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
+  
   $scope.feedItemsResource = $resource('app/api/subscriptions/:subscrId/items?returnRead=:returnRead');
+  $scope.markAllFeedItemsAsReadResource = $resource('app/api/subscriptions/:subscrId/mark-all-items-as-read', { subscrId: '@subscrId' });
   $scope.showReadItems = false; // TODO IMM HI: get from user prefs
 
   $scope.showFeedItem = function(feedItem) {
@@ -18,6 +20,26 @@ app.controller('FeedItemsController', ['$rootScope', '$scope', '$resource', func
         });
   };
 
+  $scope.markAllItemsAsRead = function() {
+    var selectedSubscr = $scope.selectedSubscr;
+
+    $scope.markAllFeedItemsAsReadResource.save(
+      {
+        subscrId: selectedSubscr.id
+      });
+    
+    if ($scope.showReadItems) {
+      _.each($scope.feedItemsList.items, function(feedItem) {
+        feedItem.isRead = true;
+      });
+    }
+    else {
+      $scope.feedItemsList.items = [];
+    }
+
+    $rootScope.$emit('onAllItemsMarkedAsRead', selectedSubscr);
+  };
+
   $scope.$watch('showReadItems', function(newValue, oldValue) {
     if (newValue !== oldValue) {
       $scope.reloadItems();
@@ -28,4 +50,5 @@ app.controller('FeedItemsController', ['$rootScope', '$scope', '$resource', func
     $scope.showReadItems = false;
     $scope.reloadItems();
   });
+  
 }]);

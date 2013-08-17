@@ -1,4 +1,5 @@
 app.controller('ImportSubscriptionsController', ['$rootScope', '$scope', '$timeout', function($rootScope, $scope, $timeout) {
+  
   $scope.closeImportSubscriptionsModal = function() {
     $scope.isImportSubscriptionsModalOpen = false;
   };
@@ -42,4 +43,5 @@ app.controller('ImportSubscriptionsController', ['$rootScope', '$scope', '$timeo
     $scope.isImportButtonDisabled = false;
     $scope.isImportSubscriptionsModalOpen = true;
   });
+  
 }]);

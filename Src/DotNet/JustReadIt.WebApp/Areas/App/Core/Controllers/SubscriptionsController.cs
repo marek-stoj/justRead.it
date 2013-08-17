@@ -10,6 +10,7 @@ using System.Web;
 using System.Web.Http;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Domain.Query;
+using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Areas.App.Core.Models.JsonModel;
 using JustReadIt.WebApp.Areas.App.Core.Services;
@@ -26,22 +27,25 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
 
     private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-    private readonly ISubscriptionsQueryDao _subscriptionsQueryDao;
+    private readonly ISubscriptionQueryDao _subscriptionQueryDao;
+    private readonly ISubscriptionRepository _subscriptionRepository;
     private readonly IQueryModelToJsonModelMapper _queryModelToJsonModelMapper;
     private readonly IOpmlImporter _opmlImporter;
 
-    public SubscriptionsController(ISubscriptionsQueryDao subscriptionsQueryDao, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter) {
-      Guard.ArgNotNull(subscriptionsQueryDao, "_subscriptionsQueryDao");
+    public SubscriptionsController(ISubscriptionQueryDao subscriptionQueryDao, ISubscriptionRepository subscriptionRepository, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter) {
+      Guard.ArgNotNull(subscriptionQueryDao, "subscriptionQueryDao");
+      Guard.ArgNotNull(subscriptionRepository, "subscriptionRepository");
       Guard.ArgNotNull(queryModelToJsonModelMapper, "QueryModelToJsonModelMapper");
       Guard.ArgNotNull(opmlImporter, "opmlImporter");
 
-      _subscriptionsQueryDao = subscriptionsQueryDao;
+      _subscriptionQueryDao = subscriptionQueryDao;
+      _subscriptionRepository = subscriptionRepository;
       _queryModelToJsonModelMapper = queryModelToJsonModelMapper;
       _opmlImporter = opmlImporter;
     }
 
     public SubscriptionsController()
-      : this(CommonIoC.GetSubscriptionsQueryDao(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter()) {
+      : this(CommonIoC.GetSubscriptionQueryDao(), CommonIoC.GetSubscriptionRepository(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter()) {
     }
 
     [HttpGet]
@@ -50,7 +54,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
       IEnumerable<QueryModel.GroupedSubscription> subscriptions;
 
       using (var ts = TransactionUtils.CreateTransactionScope()) {
-        subscriptions = _subscriptionsQueryDao.GetGroupedSubscriptions(userAccountId);
+        subscriptions = _subscriptionQueryDao.GetGroupedSubscriptions(userAccountId);
 
         ts.Complete();
       }
@@ -67,7 +71,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
       IEnumerable<QueryModel.FeedItem> feedItems;
 
       using (var ts = TransactionUtils.CreateTransactionScope()) {
-        feedItems = _subscriptionsQueryDao.GetFeedItems(userAccountId, id, returnRead);
+        feedItems = _subscriptionQueryDao.GetFeedItems(userAccountId, id, returnRead);
 
         ts.Complete();
       }
@@ -78,6 +82,19 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
         };
 
       return feedItemsList;
+    }
+
+    [HttpPost]
+    public HttpResponseMessage MarkAllItemsAsRead(int id) {
+      int userAccountId = SecurityUtils.CurrentUserAccountId;
+
+      using (var ts = TransactionUtils.CreateTransactionScope()) {
+        _subscriptionRepository.MarkAllItemsAsRead(userAccountId, id);
+
+        ts.Complete();
+      }
+
+      throw HttpOk();
     }
 
     [HttpPost]

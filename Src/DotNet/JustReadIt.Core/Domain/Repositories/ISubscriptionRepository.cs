@@ -21,6 +21,8 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     bool IsSubscribedToFeed(int userAccountId, int feedId);
 
+    void MarkAllItemsAsRead(int userAccountId, int id);
+
   }
 
 }

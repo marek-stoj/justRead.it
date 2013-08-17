@@ -287,6 +287,46 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
+    public void MarkAllItemsAsRead(int userAccountId, int id) {
+      DateTime now = DateTime.UtcNow;
+
+      using (var db = CreateOpenedConnection()) {
+        db.Execute(
+          " insert into UserReadFeedItem" +
+          " ( UserAccountId ," +
+          "   FeedItemId ," +
+          "   DateCreated" +
+          " )" +
+          " select" +
+          "   @UserAccountId," +
+          "   fi.Id," +
+          "   @DateCreated" +
+          " from FeedItem fi" +
+          " where 1 = 1" +
+          "   and fi.FeedId in" +
+          "   (" +
+          "     select ufgf.FeedId" +
+          "     from UserFeedGroupFeed ufgf" +
+          "     join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
+          "     where 1 = 1" +
+          "       and ufgf.Id = @Id" +
+          "       and ufg.UserAccountId = @UserAccountId" +
+          "       and not exists" +
+          "         (" +
+          "           select urfi.Id from UserReadFeedItem urfi" +
+          "           where 1 = 1" +
+          "             and urfi.UserAccountId = @UserAccountId" +
+          "             and urfi.FeedItemId = fi.Id" +
+          "         )" +
+          "   )",
+          new {
+            Id = id,
+            UserAccountId = userAccountId,
+            DateCreated = now,
+          });
+      }
+    }
+
   }
 
 }

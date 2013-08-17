@@ -1,4 +1,5 @@
 app.controller('FeedItemReaderController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
+  
   $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
   $scope.toggleFeedItemIsReadResource = $resource('app/api/feeditems/:feedItemId/toggle-is-read?isRead=:isRead', { feedItemId: '@feedItemId', isRead: '@isRead' });
 
@@ -49,4 +50,5 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', '$resource',
         $scope.feedItemContentHtml = result.contentHtml;
       });
   });
+  
 }]);

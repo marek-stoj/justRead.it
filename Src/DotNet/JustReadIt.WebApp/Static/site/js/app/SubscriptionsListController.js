@@ -1,4 +1,5 @@
 app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
+
   $scope.subscrsResource = $resource('app/api/subscriptions');
 
   $scope.refreshSubscrsList = function() {
@@ -52,11 +53,17 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
       }
       else {
         subscription.unreadItemsCount++;
-        
+
         if (subscription.unreadItemsCount > 0) {
           subscription.containsUnreadItems = true;
         }
       }
     }
   });
+
+  $rootScope.$on('onAllItemsMarkedAsRead', function(ev, subscr) {
+    subscr.unreadItemsCount = 0;
+    subscr.containsUnreadItems = false;
+  });
+
 }]);

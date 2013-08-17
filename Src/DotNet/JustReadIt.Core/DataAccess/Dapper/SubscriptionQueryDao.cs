@@ -4,9 +4,9 @@ using QueryModel = JustReadIt.Core.Domain.Query.Model;
 
 namespace JustReadIt.Core.DataAccess.Dapper {
 
-  public class SubscriptionsQueryDao : DapperRepository, ISubscriptionsQueryDao {
+  public class SubscriptionQueryDao : DapperRepository, ISubscriptionQueryDao {
 
-    public SubscriptionsQueryDao(string connectionString)
+    public SubscriptionQueryDao(string connectionString)
       : base(connectionString) {
     }
 
