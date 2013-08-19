@@ -11,12 +11,24 @@ app.controller('FeedItemsController', ['$rootScope', '$scope', '$resource', func
   $scope.reloadItems = function() {
     var selectedSubscr = $scope.selectedSubscr;
     var showReadItems = $scope.showReadItems;
+    
+    if ($scope.feedItemsList) {
+      $scope.feedItemsList.containsUnreadItems = function() {
+        return false;
+      };
+    }
 
     $scope.feedItemsList =
-      $scope.feedItemsResource.get(
-        {
+      $scope.feedItemsResource.get({
           subscrId: selectedSubscr.id,
           returnRead: showReadItems
+        },
+        function() {
+          $scope.feedItemsList.containsUnreadItems = function() {
+            return _.some(this.items, function(feedItem) {
+              return !feedItem.isRead;
+            });
+          };
         });
   };
 

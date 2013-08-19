@@ -51,8 +51,14 @@
   </div>
 
   <div id="content-container">
-    <div id="left-panel-container">
-      <div id="subscrs-list-container" ng-controller="SubscriptionsListController">
+    <div id="left-panel-container" ng-controller="SubscriptionsListController">
+      <div>
+        <label class="checkbox">
+          <input type="checkbox" name="showFeedsWithoutUnreadItems" ng-model="showFeedsWithoutUnreadItems" /> Show empty feeds
+        </label>
+        <hr />
+      </div>
+      <div id="subscrs-list-container">
         <div id="subscrs-list">
           <ul class="nav nav-list" ng-repeat="subscrGroup in subscrsList.groups">
             <li class="nav-header single-line">
@@ -60,14 +66,17 @@
                 {{subscrGroup.title}}
               </span>
             </li>
-            <li ng-class="{'active': subscr.isSelected, 'contains-unread-items': subscr.containsUnreadItems}" ng-repeat="subscr in subscrGroup.subscriptions">
+            <li class="nothing-to-see" ng-hide="subscrGroup.containsVisibleFeeds()">
+              Nothing to see here
+            </li>
+            <li ng-class="{'active': subscr.isSelected, 'contains-unread-items': subscr.containsUnreadItems()}" ng-show="subscr.isVisible()" ng-repeat="subscr in subscrGroup.subscriptions">
               <a href="#" class="single-line" ng-click="selectSubscr(subscr)">
                 <span class="unread-items-count">
                   {{subscr.unreadItemsCount}}
                 </span>
                 <img class="icon-dynamic-favicon" ng-src="@Url.Action("GetFavicon")?url={{subscr.siteUrl}}" />
                 <span class="subscr-title">
-                  {{subscr.title}}                  
+                  {{subscr.title}}
                 </span>
               </a>
             </li>
@@ -92,10 +101,12 @@
           </div>
           <div class="row">
             <div class="span8">
-              <label class="checkbox">
-                <input type="checkbox" name="showReadItems" ng-model="showReadItems" /> Show seen items
-              </label>
-              <button type="button" class="btn" ng-click="markAllItemsAsRead()">Mark all as seen</button>
+              <form class="form-inline pull-right">
+                <label class="checkbox">
+                  <input type="checkbox" name="showReadItems" ng-model="showReadItems" /> Show seen items
+                </label>
+                <button type="button" class="btn" ng-click="markAllItemsAsRead()">Mark all as seen</button>
+              </form>
             </div>
           </div>
           <hr />
@@ -103,6 +114,9 @@
       </div>
       <div id="feed-items-list-container">
         <div id="feed-items-list">
+          <div class="nothing-to-see" ng-show="!feedItemsList.containsUnreadItems()">
+            Nothing to see here
+          </div>
           <div class="feed-item-container" ng-class="{'is-read': feedItem.isRead}" ng-repeat="feedItem in feedItemsList.items">
             <div class="feed-item" ng-click="showFeedItem(feedItem)">
               <h3 class="feed-item-title">{{feedItem.title}}</h3>

@@ -1,9 +1,31 @@
 app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
 
   $scope.subscrsResource = $resource('app/api/subscriptions');
+  $scope.showFeedsWithoutUnreadItems = false; // TODO IMM HI: get from user prefs
 
   $scope.refreshSubscrsList = function() {
-    $scope.subscrsList = $scope.subscrsResource.get();
+    $scope.subscrsList =
+      $scope.subscrsResource.get(function() {
+        // TODO IMM HI: shouldn't we use real classes for view models?
+        _.each($scope.subscrsList.groups, function(subscrGroup) {
+          _.each(subscrGroup.subscriptions, function(subscr) {
+            subscr.containsUnreadItems = function() {
+              return this.unreadItemsCount > 0;
+            };
+
+            subscr.isVisible = function() {
+              return this.unreadItemsCount > 0 || $scope.showFeedsWithoutUnreadItems;
+            };
+          });
+
+          subscrGroup.containsVisibleFeeds = function() {
+            return subscrGroup.subscriptions.length > 0
+              && _.some(subscrGroup.subscriptions, function(subscr) {
+                return subscr.isVisible();
+              });
+          };
+        });
+      });
   };
 
   $scope.refreshSubscrsList();
@@ -46,24 +68,15 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
         if (subscription.unreadItemsCount < 0) {
           subscription.unreadItemsCount = 0;
         }
-
-        if (subscription.unreadItemsCount === 0) {
-          subscription.containsUnreadItems = false;
-        }
       }
       else {
         subscription.unreadItemsCount++;
-
-        if (subscription.unreadItemsCount > 0) {
-          subscription.containsUnreadItems = true;
-        }
       }
     }
   });
 
   $rootScope.$on('onAllItemsMarkedAsRead', function(ev, subscr) {
     subscr.unreadItemsCount = 0;
-    subscr.containsUnreadItems = false;
   });
 
 }]);
