@@ -15,10 +15,8 @@
   <link href="@Url.Content("~/Static/site/css/app-reader.css")" rel="stylesheet" />
   <link href="@Url.Content("~/Static/site/css/webkit-scrollbars.css")" rel="stylesheet" />
   
-@* // TODO IMM HI: uncomment
   <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic,700&subset=latin,greek-ext,greek,latin-ext" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
-*@
 
   <script type="text/javascript" src="@Url.Content("~/Static/jquery/jquery-1.10.2.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/bootstrap/js/bootstrap.min.js")"></script>
@@ -67,9 +65,7 @@
                 <span class="unread-items-count">
                   {{subscr.unreadItemsCount}}
                 </span>
-@* // TODO IMM HI: uncomment
                 <img class="icon-dynamic-favicon" ng-src="@Url.Action("GetFavicon")?url={{subscr.siteUrl}}" />
-*@
                 <span class="subscr-title">
                   {{subscr.title}}                  
                 </span>
