@@ -33,6 +33,12 @@ namespace JustReadIt.WebApp.Areas.App {
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), id = @"\d+", });
 
       context.MapHttpRoute(
+        name: Routes.Subscriptions_Add,
+        routeTemplate: RouteTemplatePrefix + "subscriptions/add",
+        defaults: new { controller = "Subscriptions", action = "Add" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+
+      context.MapHttpRoute(
         name: Routes.Subscriptions_Import,
         routeTemplate: RouteTemplatePrefix + "subscriptions/import",
         defaults: new { controller = "Subscriptions", action = "Import" },

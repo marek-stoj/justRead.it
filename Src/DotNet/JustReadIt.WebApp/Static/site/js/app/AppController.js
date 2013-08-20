@@ -4,6 +4,10 @@ app.controller('AppController', ['$rootScope', '$scope', function($rootScope, $s
     $rootScope.$emit('openImportSubscriptionsModal');
   };
 
+  $scope.openAddSubscriptionModal = function() {
+    $rootScope.$emit('openAddSubscriptionModal');
+  };
+
   $rootScope.$on('selectSubscr', function(ev, subscr) {
     $scope.selectedSubscr = subscr;
   });

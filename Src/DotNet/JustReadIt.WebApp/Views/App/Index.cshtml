@@ -27,10 +27,11 @@
   <script type="text/javascript" src="@Url.Content("~/Static/ngUpload/ng-upload.min.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/app.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/AppController.js")"></script>
-  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/FeedItemReaderController.js")"></script>
-  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/FeedItemsController.js")"></script>
-  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/ImportSubscriptionsController.js")"></script>
   <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/SubscriptionsListController.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/FeedItemsController.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/FeedItemReaderController.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/AddSubscriptionController.js")"></script>
+  <script type="text/javascript" src="@Url.Content("~/Static/site/js/app/ImportSubscriptionsController.js")"></script>
 </head>
 <body ng-controller="AppController">
   
@@ -53,9 +54,14 @@
   <div id="content-container">
     <div id="left-panel-container" ng-controller="SubscriptionsListController">
       <div>
-        <label class="checkbox">
-          <input type="checkbox" name="showFeedsWithoutUnreadItems" ng-model="showFeedsWithoutUnreadItems" /> Show empty feeds
-        </label>
+        <form class="form-inline">
+          <button type="button" class="btn" ng-click="openAddSubscriptionModal()">
+            <i class="icon icon-plus-sign"></i>
+          </button>
+          <label class="checkbox">
+            <input type="checkbox" name="showFeedsWithoutUnreadItems" ng-model="showFeedsWithoutUnreadItems" /> Show empty feeds
+          </label>
+        </form>
         <hr />
       </div>
       <div id="subscrs-list-container">
@@ -133,7 +139,9 @@
   
   @Html.Partial("Partials/FeedItemReader")
   
-  @Html.Partial("Partials/ImportSubscriptions")
+  @Html.Partial("Partials/AddSubscriptionDialog")
+
+  @Html.Partial("Partials/ImportSubscriptionsDialog")
 
   @Html.Partial("Partials/Footer")
 

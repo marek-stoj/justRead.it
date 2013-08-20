@@ -31,3 +31,23 @@ var app = angular.module('JustReadIt', ['ngResource', 'ui.bootstrap', 'ngUpload'
   $httpProvider.responseInterceptors.push(interceptor);
   
 });
+
+// TODO IMM HI: xxx remove
+var x = 1;
+
+app.directive('focusMe', function($timeout) {
+  return {
+    link: function(scope, element, attrs) {
+      scope.$watch(attrs.focusMe, function(value) {
+        // TODO IMM HI: xxx why is it called multiple times?
+        console.log('watching ' + (x++));
+
+        if (value === true) {
+          $timeout(function() {
+            element[0].focus();
+          });
+        }
+      });
+    }
+  };
+});

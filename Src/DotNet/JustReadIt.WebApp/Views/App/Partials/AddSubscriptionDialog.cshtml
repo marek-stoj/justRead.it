@@ -1,0 +1,30 @@
+﻿@using JustReadIt.WebApp.Areas.App
+
+<div modal="isAddSubscriptionModalOpen" close="closeAddSubscriptionModal()" options="addSubscriptionModalOpts" ng-controller="AddSubscriptionController">
+  <form class="modal-form" class="form-inline" action="@Routes.GetUrl(Url, Routes.Subscriptions_Add)" method="POST">
+    <div class="modal-header">
+      <h2 class="feed-item-title">Add Subscription</h2>
+    </div>
+    <div class="modal-body">
+      <label for="url">URL of the feed</label>      
+      <input id="url" type="text" name="url" value="" class="input-xlarge" focus-me="isAddSubscriptionModalOpen" />
+      
+      <label for="category">Select existing category &hellip;</label>
+      <select id="category" name="category" multiple="multiple">
+        <option>Uncategorized</option>
+        <option>Entertainment</option>
+        <option>Friends</option>
+      </select>
+
+      <label for="newCategory">&hellip; or enter a name of a new category:</label>
+      <input id="newCategory" type="text" name="newCategory" value="" />
+    </div>
+    <div class="modal-footer">
+      <div class="alert {{feedbackMessageClass}} pull-left" ng-show="feedbackMessage">
+        {{feedbackMessage}}
+      </div>
+      <button type="button" class="btn btn-primary" ng-click="addSubscription()" ng-disabled="isSubscribeButtonDisabled">Subscribe</button>
+      <button type="button" class="btn" ng-click="closeAddSubscriptionModal()">Close</button>
+    </div>
+  </form>
+</div>

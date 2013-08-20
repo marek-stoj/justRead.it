@@ -270,6 +270,7 @@
     <Content Include="Static\site\css\site-openid.css" />
     <Content Include="Static\site\css\webkit-scrollbars.css" />
     <Content Include="Static\site\js\app\AppController.js" />
+    <Content Include="Static\site\js\app\AddSubscriptionController.js" />
     <Content Include="Static\site\js\app\SubscriptionsListController.js" />
     <Content Include="Static\site\js\app\FeedItemsController.js" />
     <Content Include="Static\site\js\app\FeedItemReaderController.js" />
@@ -296,7 +297,9 @@
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\App\Partials\AddSubscriptionDialog.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -351,7 +354,7 @@
     <Content Include="Views\App\Partials\FeedItemReader.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\App\Partials\ImportSubscriptions.cshtml" />
+    <Content Include="Views\App\Partials\ImportSubscriptionsDialog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\App\Partials\Footer.cshtml" />

@@ -98,6 +98,12 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     [HttpPost]
+    public HttpResponseMessage Add(string url) {
+      // TODO IMM HI: implement
+      throw new NotSupportedException();
+    }
+
+    [HttpPost]
     public HttpResponseMessage Import() {
       HttpFileCollection uploadedFiles = HttpContext.Current.Request.Files;
       HttpPostedFile uploadedFile = uploadedFiles.Count > 0 ? uploadedFiles[0] : null;
