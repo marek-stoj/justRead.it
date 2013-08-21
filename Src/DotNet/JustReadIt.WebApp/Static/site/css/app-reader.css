@@ -103,4 +103,5 @@
 #feed-item-reader-content a,
 #feed-item-reader-content .links-list a {
   word-break: break-all;
+  word-wrap: break-word;
 }
