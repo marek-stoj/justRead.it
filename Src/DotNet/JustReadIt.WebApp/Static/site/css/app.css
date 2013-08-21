@@ -128,3 +128,7 @@ footer {
 #subscrs-list .nothing-to-see {
   font-size: 13px;
 }
+
+.field-validation-error {
+  color: #b94a48;
+}

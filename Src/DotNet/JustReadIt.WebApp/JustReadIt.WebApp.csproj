@@ -137,6 +137,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionInputModel.cs" />
+    <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionOutputModel.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResultStatus.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResult.cs" />
     <Compile Include="Core\Controllers\AuthController.cs" />

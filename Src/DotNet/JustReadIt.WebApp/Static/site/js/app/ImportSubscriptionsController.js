@@ -1,14 +1,10 @@
-app.controller('ImportSubscriptionsController', ['$rootScope', '$scope', '$timeout', function($rootScope, $scope, $timeout) {
+app.controller('ImportSubscriptionsController', ['$rootScope', '$scope', 'commonOptionsSvc', '$timeout', function($rootScope, $scope, commonOptionsSvc, $timeout) {
   
   $scope.closeImportSubscriptionsModal = function() {
     $scope.isImportSubscriptionsModalOpen = false;
   };
 
-  // TODO IMM HI: common modal opts
-  $scope.importSubscriptionsModalOpts = {
-    backdropFade: true,
-    dialogFade: true
-  };
+  $scope.importSubscriptionsModalOpts = commonOptionsSvc.modalOpts;
 
   $scope.onUploadSubmit = function(content, completed) {
     if (!completed) {

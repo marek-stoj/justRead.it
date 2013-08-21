@@ -3,6 +3,10 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
   $scope.subscrsResource = $resource('app/api/subscriptions');
   $scope.showFeedsWithoutUnreadItems = false; // TODO IMM HI: get from user prefs
 
+  $scope.openAddSubscriptionModal = function() {
+    $rootScope.$emit('openAddSubscriptionModal');
+  };
+
   $scope.refreshSubscrsList = function() {
     $scope.subscrsList =
       $scope.subscrsResource.get(function() {

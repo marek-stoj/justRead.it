@@ -14,6 +14,8 @@ MVP
  - give images inside an article a max width
  - cache article contents
  - add possibility to mark all feeds as seen
+ - handle code in articles
+ - handle math in articles (eg. http://symbo1ics.com/blog/?p=2055)
 
 HIGH
 -----------

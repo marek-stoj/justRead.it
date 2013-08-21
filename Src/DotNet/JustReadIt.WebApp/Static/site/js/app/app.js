@@ -32,6 +32,13 @@ var app = angular.module('JustReadIt', ['ngResource', 'ui.bootstrap', 'ngUpload'
   
 });
 
+app.service('commonOptionsSvc', function() {
+  this.modalOpts = {
+    backdropFade: true,
+    dialogFade: true
+  };
+});
+
 // TODO IMM HI: xxx remove
 var x = 1;
 
@@ -40,8 +47,9 @@ app.directive('focusMe', function($timeout) {
     link: function(scope, element, attrs) {
       scope.$watch(attrs.focusMe, function(value) {
         // TODO IMM HI: xxx why is it called multiple times?
+        console.log(element);
         console.log('watching ' + (x++));
-
+        
         if (value === true) {
           $timeout(function() {
             element[0].focus();

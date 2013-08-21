@@ -98,9 +98,21 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     [HttpPost]
-    public HttpResponseMessage Add(string url) {
-      // TODO IMM HI: implement
-      throw new NotSupportedException();
+    public AddSubscriptionOutputModel Add(AddSubscriptionInputModel inputModel) {
+      Uri feedUri;
+
+      if (!Uri.TryCreate(inputModel.Url, UriKind.Absolute, out feedUri)
+       || (!feedUri.Scheme.EqualsOrdinalIgnoreCase("http") && !feedUri.Scheme.EqualsOrdinalIgnoreCase("https"))) {
+        return
+          new AddSubscriptionOutputModel {
+            IsUrlValid = false,
+          };
+      }
+
+      return
+        new AddSubscriptionOutputModel {
+          IsUrlValid = true,
+        };
     }
 
     [HttpPost]

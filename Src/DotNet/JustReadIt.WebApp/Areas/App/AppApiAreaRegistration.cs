@@ -16,21 +16,16 @@ namespace JustReadIt.WebApp.Areas.App {
 
     public override void RegisterArea(AreaRegistrationContext context) {
       context.MapHttpRoute(
-        name: Routes.Default,
-        routeTemplate: RouteTemplatePrefix + "{controller}/{id}",
-        defaults: new { id = RouteParameter.Optional });
+        name: Routes.Subscriptions_GetList,
+        routeTemplate: RouteTemplatePrefix + "subscriptions",
+        defaults: new { controller = "Subscriptions", action = "GetSubscriptionsList" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), });
 
       context.MapHttpRoute(
         name: Routes.Subscriptions_GetItems,
         routeTemplate: RouteTemplatePrefix + "subscriptions/{id}/items",
         defaults: new { controller = "Subscriptions", action = "GetItems" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get), id = @"\d+", });
-
-      context.MapHttpRoute(
-        name: Routes.Subscriptions_MarkAllItemsAsRead,
-        routeTemplate: RouteTemplatePrefix + "subscriptions/{id}/mark-all-items-as-read",
-        defaults: new { controller = "Subscriptions", action = "MarkAllItemsAsRead" },
-        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), id = @"\d+", });
 
       context.MapHttpRoute(
         name: Routes.Subscriptions_Add,
@@ -43,6 +38,12 @@ namespace JustReadIt.WebApp.Areas.App {
         routeTemplate: RouteTemplatePrefix + "subscriptions/import",
         defaults: new { controller = "Subscriptions", action = "Import" },
         constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), });
+
+      context.MapHttpRoute(
+        name: Routes.Subscriptions_MarkAllItemsAsRead,
+        routeTemplate: RouteTemplatePrefix + "subscriptions/{id}/mark-all-items-as-read",
+        defaults: new { controller = "Subscriptions", action = "MarkAllItemsAsRead" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post), id = @"\d+", });
 
       context.MapHttpRoute(
         name: Routes.FeedItems_GetFeedItemContent,

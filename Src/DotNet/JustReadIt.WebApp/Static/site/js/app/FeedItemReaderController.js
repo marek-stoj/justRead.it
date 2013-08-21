@@ -1,4 +1,4 @@
-app.controller('FeedItemReaderController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
+app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptionsSvc', '$resource', function($rootScope, $scope, commonOptionsSvc, $resource) {
   
   $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
   $scope.toggleFeedItemIsReadResource = $resource('app/api/feeditems/:feedItemId/toggle-is-read?isRead=:isRead', { feedItemId: '@feedItemId', isRead: '@isRead' });
@@ -7,12 +7,8 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', '$resource',
     $scope.isReaderModalOpen = false;
   };
 
-  // TODO IMM HI: common modal opts
-  $scope.readerModalOpts = {
-    dialogClass: 'modal feed-item-reader-modal',
-    backdropFade: true,
-    dialogFade: true
-  };
+  $scope.readerModalOpts = commonOptionsSvc.modalOpts;
+  $scope.readerModalOpts.dialogClass = 'modal feed-item-reader-modal';
 
   $scope.markAsRead = function(feedItem) {
     toggleFeedItemIsRead(feedItem, true);

@@ -9,6 +9,7 @@ namespace JustReadIt.WebApp.Areas.App {
 
     public const string Default = _RouteNamePrefix + "Default";
 
+    public const string Subscriptions_GetList = _RouteNamePrefix + "Subscriptions_GetList";
     public const string Subscriptions_GetItems = _RouteNamePrefix + "Subscriptions_GetItems";
     public const string Subscriptions_MarkAllItemsAsRead = _RouteNamePrefix + "Subscriptions_MarkAllItemsAsRead";
     public const string Subscriptions_Add = _RouteNamePrefix + "Subscriptions_Add";
