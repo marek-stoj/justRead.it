@@ -141,6 +141,7 @@
     <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionOutputModel.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResultStatus.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResult.cs" />
+    <Compile Include="Controllers\JasmineController.cs" />
     <Compile Include="Core\Controllers\AuthController.cs" />
     <Compile Include="Core\MvcEx\UrlHelperExtensions.cs" />
     <Compile Include="Core\Resources\CommonResources.Designer.cs">
@@ -257,8 +258,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Static\jasmine\jasmine.css" />
+    <Content Include="Static\jasmine\jasmine_favicon.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Static\jasmine\jasmine-html.js" />
+    <Content Include="Static\jasmine\jasmine.js" />
     <Content Include="Static\site\img\ss1.jpg" />
     <Content Include="Static\site\img\ss2.jpg" />
     <Content Include="Static\site\img\ss3.jpg" />
@@ -273,6 +278,8 @@
     <Content Include="Static\site\css\webkit-scrollbars.css" />
     <Content Include="Static\site\js\app\AppController.js" />
     <Content Include="Static\site\js\app\AddSubscriptionController.js" />
+    <Content Include="Static\site\js\app\ObjectSyncer.js" />
+    <Content Include="Static\site\js\app\specs\ObjectSyncer.spec.js" />
     <Content Include="Static\site\js\app\SubscriptionsListController.js" />
     <Content Include="Static\site\js\app\FeedItemsController.js" />
     <Content Include="Static\site\js\app\FeedItemReaderController.js" />
@@ -361,6 +368,10 @@
   <ItemGroup>
     <Content Include="Views\App\Partials\Footer.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Jasmine\SpecRunner.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
