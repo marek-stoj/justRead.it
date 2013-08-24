@@ -220,8 +220,25 @@ describe('ObjectSyncer', function() {
       objectSyncer.sync(dstObj, srcObj, 'id');
 
       // assert
-      // TODO IMM HI: xxx asserts
-      expect(true).toBeTruthy();
+      expect(dstObj.groups.length).toEqual(3);
+
+      expect(dstObj.groups[0].id).toEqual(1);
+      expect(dstObj.groups[0].title).toEqual('Group 1 (updated)');
+      expect(dstObj.groups[0].subscriptions.length).toEqual(3);
+      expect(dstObj.groups[0].subscriptions[0].id).toEqual(11);
+      expect(dstObj.groups[0].subscriptions[0].title).toEqual('Subscr 1.1 (updated)');
+      expect(dstObj.groups[0].subscriptions[1].id).toEqual(12);
+      expect(dstObj.groups[0].subscriptions[2].id).toEqual(13);
+
+      expect(dstObj.groups[1].id).toEqual(3);
+      expect(dstObj.groups[1].title).toEqual('Group 3');
+      expect(dstObj.groups[1].subscriptions.length).toEqual(3);
+      
+      expect(dstObj.groups[2].id).toEqual(4);
+      expect(dstObj.groups[2].title).toEqual('Group 4');
+      expect(dstObj.groups[2].subscriptions.length).toEqual(1);
+      expect(dstObj.groups[2].subscriptions[0].id).toEqual(43);
+      expect(dstObj.groups[2].subscriptions[0].title).toEqual('Subscr 4.3 (updated)');
     });
   });
 });
