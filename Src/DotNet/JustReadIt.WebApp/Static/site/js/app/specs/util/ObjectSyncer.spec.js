@@ -36,6 +36,17 @@ describe('ObjectSyncer', function() {
       }).toThrow();
     });
 
+    it('should throw if the destination object is an array and the source object is not an array', function() {
+      // arrange
+      var dstObj = [];
+      var srcObj = { id: 1 };
+
+      // act & assert
+      expect(function() {
+        objectSyncer.sync(dstObj, srcObj, 'id');
+      }).toThrow();
+    });
+
     it('should add an object to an array if the object doesnt\'t exist', function() {
       // arrange
       var dstObj = [];
@@ -60,20 +71,6 @@ describe('ObjectSyncer', function() {
       // assert
       expect(dstObj.length).toEqual(1);
       expect(dstObj[0].id).toEqual(1);
-    });
-
-    it('should handle nested arrays', function() {
-      // arrange
-      var dstObj = [];
-      var srcObj = [[{ id: 1, prop1: 'hello' }]];
-
-      // act
-      objectSyncer.sync(dstObj, srcObj, 'id');
-
-      // assert
-      expect(dstObj.length).toEqual(1);
-      expect(dstObj[0].length).toEqual(1);
-      expect(dstObj[0][0].id).toEqual(1);
     });
 
     it('should add missing array item at an appropriate index', function() {
@@ -224,10 +221,12 @@ describe('ObjectSyncer', function() {
 
       expect(dstObj.groups[0].id).toEqual(1);
       expect(dstObj.groups[0].title).toEqual('Group 1 (updated)');
+      expect(dstObj.groups[0].isCollapsed).toBeTruthy();
       expect(dstObj.groups[0].subscriptions.length).toEqual(3);
       expect(dstObj.groups[0].subscriptions[0].id).toEqual(11);
       expect(dstObj.groups[0].subscriptions[0].title).toEqual('Subscr 1.1 (updated)');
       expect(dstObj.groups[0].subscriptions[1].id).toEqual(12);
+      expect(dstObj.groups[0].subscriptions[1].isSelected).toBeTruthy();
       expect(dstObj.groups[0].subscriptions[2].id).toEqual(13);
 
       expect(dstObj.groups[1].id).toEqual(3);
@@ -239,6 +238,33 @@ describe('ObjectSyncer', function() {
       expect(dstObj.groups[2].subscriptions.length).toEqual(1);
       expect(dstObj.groups[2].subscriptions[0].id).toEqual(43);
       expect(dstObj.groups[2].subscriptions[0].title).toEqual('Subscr 4.3 (updated)');
+    });
+    
+    it('should throw if source array element doesn\'t have unique property', function() {
+      // arrange
+      var dstObj = {};
+      var srcObj = [{ title: 'title' }];
+
+      // act & assert
+      expect(function() {
+        objectSyncer.sync(dstObj, srcObj, 'id');
+      }).toThrow();
+    });
+    
+    it('should handle properties that are functions', function() {
+      // arrange
+      var dstObj = {};
+
+      var srcObj = {
+        sayHello: function() {
+        }
+      };
+
+      // act
+      objectSyncer.sync(dstObj, srcObj, 'id');
+      
+      // assert
+      expect(_.isFunction(dstObj.sayHello)).toBeTruthy();
     });
   });
 });

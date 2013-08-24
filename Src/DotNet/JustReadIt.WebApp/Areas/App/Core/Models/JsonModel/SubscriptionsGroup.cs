@@ -9,6 +9,9 @@ namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
     private string _title;
     private List<Subscription> _subscriptions;
 
+    [JsonProperty("id")]
+    public int Id { get; set; }
+
     [JsonProperty("title")]
     public string Title {
       get { return _title; }

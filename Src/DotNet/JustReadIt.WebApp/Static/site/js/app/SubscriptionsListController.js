@@ -1,4 +1,4 @@
-app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', function($rootScope, $scope, $resource) {
+app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', 'objectSyncer', function($rootScope, $scope, $resource, objectSyncer) {
 
   $scope.subscrsResource = $resource('app/api/subscriptions');
   $scope.showFeedsWithoutUnreadItems = false; // TODO IMM HI: get from user prefs
@@ -8,10 +8,10 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
   };
 
   $scope.refreshSubscrsList = function() {
-    $scope.subscrsList =
+    var subscrsList =
       $scope.subscrsResource.get(function() {
         // TODO IMM HI: shouldn't we use real classes for view models?
-        _.each($scope.subscrsList.groups, function(subscrGroup) {
+        _.each(subscrsList.groups, function(subscrGroup) {
           _.each(subscrGroup.subscriptions, function(subscr) {
             subscr.containsUnreadItems = function() {
               return this.unreadItemsCount > 0;
@@ -29,6 +29,12 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
               });
           };
         });
+        
+        if ($scope.subscrsList === undefined) {
+          $scope.subscrsList = {};
+        }
+
+        objectSyncer.sync($scope.subscrsList, subscrsList);
       });
   };
 

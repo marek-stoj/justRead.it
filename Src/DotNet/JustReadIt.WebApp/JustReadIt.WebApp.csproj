@@ -278,8 +278,8 @@
     <Content Include="Static\site\css\webkit-scrollbars.css" />
     <Content Include="Static\site\js\app\AppController.js" />
     <Content Include="Static\site\js\app\AddSubscriptionController.js" />
-    <Content Include="Static\site\js\app\ObjectSyncer.js" />
-    <Content Include="Static\site\js\app\specs\ObjectSyncer.spec.js" />
+    <Content Include="Static\site\js\app\util\ObjectSyncer.js" />
+    <Content Include="Static\site\js\app\specs\util\ObjectSyncer.spec.js" />
     <Content Include="Static\site\js\app\SubscriptionsListController.js" />
     <Content Include="Static\site\js\app\FeedItemsController.js" />
     <Content Include="Static\site\js\app\FeedItemReaderController.js" />
@@ -369,7 +369,7 @@
     <Content Include="Views\App\Partials\Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Jasmine\SpecRunner.cshtml" />
+    <Content Include="Views\Jasmine\Run.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

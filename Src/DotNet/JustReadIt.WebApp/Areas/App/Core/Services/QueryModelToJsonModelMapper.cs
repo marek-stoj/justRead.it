@@ -20,11 +20,12 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
       var subscriptionGroups =
         (
           from s in subscriptions
-          group s by s.GroupTitle
+          group s by new Tuple<int, string>(s.GroupId, s.GroupTitle)
           into g
           select
             new SubscriptionsGroup {
-              Title = g.Key,
+              Id = g.Key.Item1,
+              Title = g.Key.Item2,
               Subscriptions =
                 g.Select(
                   gs =>

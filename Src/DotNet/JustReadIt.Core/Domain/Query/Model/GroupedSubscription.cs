@@ -12,6 +12,8 @@ namespace JustReadIt.Core.Domain.Query.Model {
 
     public int FeedId { get; set; }
 
+    public int GroupId { get; set; }
+
     public string GroupTitle {
       get { return _groupTitle; }
       set { _groupTitle = value.TrimmedOrNull(); }

@@ -39,6 +39,14 @@ app.service('commonOptionsSvc', function() {
   };
 });
 
+app.service('objectSyncer', function() {
+  var _objectSyncer = new ObjectSyncer();
+
+  this.sync = function(dstObj, srcObj) {
+    _objectSyncer.sync(dstObj, srcObj, 'id');
+  };
+});
+
 // TODO IMM HI: xxx remove
 var x = 1;
 
