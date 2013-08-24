@@ -1,4 +1,4 @@
-app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', 'objectSyncer', function($rootScope, $scope, $resource, objectSyncer) {
+app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', '$timeout', 'objectSyncer', function($rootScope, $scope, $resource, $timeout, objectSyncer) {
 
   $scope.subscrsResource = $resource('app/api/subscriptions');
   $scope.showFeedsWithoutUnreadItems = false; // TODO IMM HI: get from user prefs
@@ -38,7 +38,11 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
       });
   };
 
-  $scope.refreshSubscrsList();
+  (function refreshSubscrsListPeriodically() {
+    $scope.refreshSubscrsList();
+
+    $timeout(refreshSubscrsListPeriodically, 900);
+  })();
 
   var prevSelectedSubscr = null;
 
