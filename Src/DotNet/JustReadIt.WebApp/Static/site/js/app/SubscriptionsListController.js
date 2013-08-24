@@ -41,7 +41,7 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
   (function refreshSubscrsListPeriodically() {
     $scope.refreshSubscrsList();
 
-    $timeout(refreshSubscrsListPeriodically, 900);
+    $timeout(refreshSubscrsListPeriodically, 900000);
   })();
 
   var prevSelectedSubscr = null;
