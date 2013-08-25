@@ -1,20 +1,15 @@
-﻿@using JustReadIt.WebApp.Areas.App
-
-<div modal="isAddSubscriptionModalOpen" close="closeAddSubscriptionModal()" options="addSubscriptionModalOpts" ng-controller="AddSubscriptionController">
-  <form name="addSubscriptionForm" class="modal-form" class="form-inline" action="@Routes.GetUrl(Url, Routes.Subscriptions_Add)" method="POST">
+﻿<div modal="isAddSubscriptionModalOpen" close="closeAddSubscriptionModal()" options="addSubscriptionModalOpts" ng-controller="AddSubscriptionController">
+  <form name="addSubscriptionForm" class="modal-form" method="POST">
     <div class="modal-header">
       <h2 class="feed-item-title">Add Subscription</h2>
     </div>
     <div class="modal-body">
       <label for="url">URL of the feed</label>      
-      <input id="url" type="text" name="url" value="" class="input-xlarge" ng-model="url" focus-me="isAddSubscriptionModalOpen" />
+      <input id="url" type="text" name="url" value="" class="input-xxlarge" ng-model="url" focus-me="isAddSubscriptionModalOpen" />
       <span class="field-validation-error help-inline" ng-show="addSubscriptionForm.url.$error.isValid">URL is invalid.</span>
       
       <label for="category">Select existing category &hellip;</label>
-      <select id="category" name="category" multiple="multiple" ng-model="category">
-        <option>Uncategorized</option>
-        <option>Entertainment</option>
-        <option>Friends</option>
+      <select id="category" name="category" size="5" ng-model="category" ng-options="cat for cat in categories">
       </select>
 
       <label for="newCategory">&hellip; or enter a name of a new category:</label>

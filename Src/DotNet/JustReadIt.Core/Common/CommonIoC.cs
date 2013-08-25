@@ -172,6 +172,15 @@ namespace JustReadIt.Core.Common {
       return new ArticlesService(GetUrlFetcher());
     }
 
+    public static ISubscriptionsService GetSubscriptionsService() {
+      return
+        new SubscriptionsService(
+          GetFeedFetcher(),
+          GetFeedParser(),
+          GetSubscriptionRepository(),
+          GetUserFeedGroupRepository());
+    }
+
   }
 
 }

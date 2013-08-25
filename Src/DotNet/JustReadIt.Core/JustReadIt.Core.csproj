@@ -121,7 +121,9 @@
     <Compile Include="Services\Feeds\FeedParser.cs" />
     <Compile Include="Services\Feeds\FeedParserException.cs" />
     <Compile Include="Services\IArticlesService.cs" />
+    <Compile Include="Services\ISubscriptionsService.cs" />
     <Compile Include="Services\SmartyPants.cs" />
+    <Compile Include="Services\SubscriptionsService.cs" />
     <Compile Include="Services\Workers\FeedsCrawler.cs" />
     <Compile Include="Services\Feeds\FetchFeedResult.cs" />
     <Compile Include="Services\Feeds\IFeedFetcher.cs" />

@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 
 namespace JustReadIt.WebApp.Areas.App.Core.Models.JsonModel {
 
-  public class ImportSubscriptionsResult {
+  public class ImportSubscriptionsOutputModel {
 
     [JsonProperty("status")]
     [JsonConverter(typeof(StringEnumConverter))]

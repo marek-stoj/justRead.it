@@ -139,8 +139,9 @@
   <ItemGroup>
     <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionInputModel.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionOutputModel.cs" />
+    <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionResultStatus.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResultStatus.cs" />
-    <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResult.cs" />
+    <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsOutputModel.cs" />
     <Compile Include="Controllers\JasmineController.cs" />
     <Compile Include="Core\Controllers\AuthController.cs" />
     <Compile Include="Core\MvcEx\UrlHelperExtensions.cs" />
@@ -278,6 +279,7 @@
     <Content Include="Static\site\css\webkit-scrollbars.css" />
     <Content Include="Static\site\js\app\AppController.js" />
     <Content Include="Static\site\js\app\AddSubscriptionController.js" />
+    <Content Include="Static\site\js\app\AppModel.js" />
     <Content Include="Static\site\js\app\util\ObjectSyncer.js" />
     <Content Include="Static\site\js\app\specs\util\ObjectSyncer.spec.js" />
     <Content Include="Static\site\js\app\SubscriptionsListController.js" />

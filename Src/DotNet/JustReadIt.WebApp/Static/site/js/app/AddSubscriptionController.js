@@ -1,4 +1,4 @@
-app.controller('AddSubscriptionController', ['$rootScope', '$scope', 'commonOptionsSvc', '$resource', '$timeout', function($rootScope, $scope, commonOptionsSvc, $resource, $timeout) {
+app.controller('AddSubscriptionController', ['$rootScope', '$scope', 'appModel', 'commonOptionsSvc', '$resource', '$timeout', function($rootScope, $scope, appModel, commonOptionsSvc, $resource, $timeout) {
   
   $scope.addSubscrResource = $resource('app/api/subscriptions/add');
 
@@ -8,18 +8,49 @@ app.controller('AddSubscriptionController', ['$rootScope', '$scope', 'commonOpti
 
   $scope.addSubscriptionModalOpts = commonOptionsSvc.modalOpts;
 
+  var _handleAddSubscriptionResponse = function(response) {
+    if (response.status === 'Success') {
+      $scope.feedbackMessage = 'Subscribed successfully!';
+      $scope.feedbackMessageClass = 'alert-success';
+
+      $rootScope.$emit('onSubscriptionAdded', response.subscriptionId);
+    }
+    else if (response.status == 'Failed_InvalidInputData') {
+      $scope.feedbackMessage = 'Invalid input data.';
+      $scope.feedbackMessageClass = 'alert-warn';
+      
+      $scope.addSubscriptionForm.url.$setValidity('isValid', response.isUrlValid);
+    }
+    else {
+      $scope.feedbackMessage = 'Failed to subscribe.';
+      $scope.feedbackMessageClass = 'alert-error';
+    }
+  };
+
   $scope.addSubscription = function() {
-    // TODO IMM HI: xxx category
+    var subscrCategory =
+      $scope.newCategory !== undefined && $.trim($scope.newCategory) !== ''
+        ? $scope.newCategory
+        : $scope.category;
+
     $scope.addSubscrResource.save({
       url: $scope.url,
+      category: subscrCategory
     }, function(response) {
-      $scope.addSubscriptionForm.url.$setValidity('isValid', response.isUrlValid);
+      _handleAddSubscriptionResponse(response);
     });
   };
 
   $rootScope.$on('openAddSubscriptionModal', function(ev) {
+    $scope.categories = appModel.model.getAllCategories();
+
+    $scope.url = null;
+    $scope.category = 'Uncategorized';
+    $scope.newCategory = '';
+
     $scope.feedbackMessage = null;
-    $scope.isImportButtonDisabled = false;
+    $scope.isSubscribeButtonDisabled = false;
+
     $scope.isAddSubscriptionModalOpen = true;
   });
   

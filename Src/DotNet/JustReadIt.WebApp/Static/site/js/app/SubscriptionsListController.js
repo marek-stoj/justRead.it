@@ -1,13 +1,43 @@
-app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resource', '$timeout', 'objectSyncer', function($rootScope, $scope, $resource, $timeout, objectSyncer) {
+app.controller('SubscriptionsListController', ['$rootScope', '$scope', 'appModel', '$resource', '$timeout', 'objectSyncer', function($rootScope, $scope, appModel, $resource, $timeout, objectSyncer) {
 
   $scope.subscrsResource = $resource('app/api/subscriptions');
   $scope.showFeedsWithoutUnreadItems = false; // TODO IMM HI: get from user prefs
+
+  var _getAllSubscriptions = function() {
+    if (!$scope.subscrsList || !$scope.subscrsList.groups) {
+      return [];
+    }
+
+    var flatSubscrs =
+      _.reduce($scope.subscrsList.groups, function(memo, group) {
+        return memo.concat(group.subscriptions);
+      }, []);
+
+    return flatSubscrs;
+  };
+
+  var _selectSubscrById = function(subscrId) {
+    if (!$scope.subscrsList || !$scope.subscrsList.groups) {
+      return;
+    }
+
+    var allSubscrs = _getAllSubscriptions();
+
+    var subscrToSelect =
+      _.find(allSubscrs, function(subscr) {
+        return subscr.id === subscrId;
+      });
+
+    if (subscrToSelect !== undefined) {
+      $scope.selectSubscr(subscrToSelect);
+    }
+  };
 
   $scope.openAddSubscriptionModal = function() {
     $rootScope.$emit('openAddSubscriptionModal');
   };
 
-  $scope.refreshSubscrsList = function() {
+  $scope.refreshSubscrsList = function(onFinishedCallback) {
     var subscrsList =
       $scope.subscrsResource.get(function() {
         // TODO IMM HI: shouldn't we use real classes for view models?
@@ -35,6 +65,12 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
         }
 
         objectSyncer.sync($scope.subscrsList, subscrsList);
+
+        appModel.model.setSubscrsList($scope.subscrsList);
+
+        if (onFinishedCallback !== undefined) {
+          onFinishedCallback();
+        }
       });
   };
 
@@ -56,9 +92,15 @@ app.controller('SubscriptionsListController', ['$rootScope', '$scope', '$resourc
 
     $rootScope.$emit('selectSubscr', subscr);
   };
-
+  
   $rootScope.$on('onSubscriptionsImported', function(ev) {
     $scope.refreshSubscrsList();
+  });
+
+  $rootScope.$on('onSubscriptionAdded', function(ev, subscriptionId) {
+    $scope.refreshSubscrsList(function() {
+      _selectSubscrById(subscriptionId);
+    });
   });
 
   $rootScope.$on('onFeedItemIsReadChanged', function(ev, feedItem) {

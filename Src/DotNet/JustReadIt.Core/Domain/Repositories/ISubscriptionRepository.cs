@@ -13,7 +13,9 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     int? FindIdByFeedUrl(int userAccountId, string feedUrl);
 
-    void Add(Subscription subscription);
+    /// <param name="subscription"></param>
+    /// <param name="groupId">Optional group id. If not given - the subscription will be added to the special Uncategorized group.</param>
+    void Add(Subscription subscription, int? groupId = null);
 
     bool Delete(int userAccountId, int id);
 

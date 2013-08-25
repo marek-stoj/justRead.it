@@ -125,7 +125,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       }
     }
 
-    public void Add(Subscription subscription) {
+    public void Add(Subscription subscription, int? groupId = null) {
       Guard.ArgNotNull(subscription, "subscription");
 
       if (subscription.Id != 0) {
@@ -168,21 +168,30 @@ namespace JustReadIt.Core.DataAccess.Dapper {
               .Single();
         }
 
-        int? uncategorizedFeedGroupId =
-          db.Query<int?>(
-            " select" +
-            "   ufg.Id" +
-            " from UserFeedGroup ufg" +
-            " where 1 = 1" +
-            "   and ufg.UserAccountId = @UserAccountId" +
-            "   and ufg.SpecialType = @SpecialUserFeedGroupType",
-            new {
-              UserAccountId = subscription.UserAccountId,
-              SpecialUserFeedGroupType = SpecialUserFeedGroupType.Uncategorized.ToString(),
-            }).SingleOrDefault();
+        int userFeedGroupId;
 
-        if (!uncategorizedFeedGroupId.HasValue) {
-          throw new InternalException(string.Format("Uncategorized feed group doesn't exist. User account id: '{0}'.", subscription.UserAccountId));
+        if (groupId.HasValue) {
+          userFeedGroupId = groupId.Value;
+        }
+        else {
+          int? uncategorizedFeedGroupId =
+            db.Query<int?>(
+              " select" +
+              "   ufg.Id" +
+              " from UserFeedGroup ufg" +
+              " where 1 = 1" +
+              "   and ufg.UserAccountId = @UserAccountId" +
+              "   and ufg.SpecialType = @SpecialUserFeedGroupType",
+              new {
+                UserAccountId = subscription.UserAccountId,
+                SpecialUserFeedGroupType = SpecialUserFeedGroupType.Uncategorized.ToString(),
+              }).SingleOrDefault();
+
+          if (!uncategorizedFeedGroupId.HasValue) {
+            throw new InternalException(string.Format("Uncategorized feed group doesn't exist. User account id: '{0}'.", subscription.UserAccountId));
+          }
+
+          userFeedGroupId = uncategorizedFeedGroupId.Value;
         }
 
         int subscriptionId =
@@ -194,7 +203,7 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             " " +
             " select cast(scope_identity() as int);",
             new {
-              UserFeedGroupId = uncategorizedFeedGroupId,
+              UserFeedGroupId = userFeedGroupId,
               FeedId = feedId.Value,
               DateCreated = subscription.DateCreated,
               CustomTitle = subscription.CustomTitle,
@@ -203,7 +212,6 @@ namespace JustReadIt.Core.DataAccess.Dapper {
 
         subscription.Id = subscriptionId;
       }
-
     }
 
     public bool Delete(int userAccountId, int id) {

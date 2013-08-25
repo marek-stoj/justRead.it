@@ -32,6 +32,10 @@ var app = angular.module('JustReadIt', ['ngResource', 'ui.bootstrap', 'ngUpload'
   
 });
 
+app.service('appModel', function() {
+  this.model = new AppModel();
+});
+
 app.service('commonOptionsSvc', function() {
   this.modalOpts = {
     backdropFade: true,
