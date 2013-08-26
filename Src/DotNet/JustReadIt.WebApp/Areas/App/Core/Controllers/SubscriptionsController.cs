@@ -10,6 +10,7 @@ using System.Web;
 using System.Web.Http;
 using JustReadIt.Core.Common;
 using JustReadIt.Core.Services;
+using JustReadIt.Core.Services.Workers;
 using JustReadIt.WebApp.Areas.App.Core.Services;
 using JustReadIt.WebApp.Core.Security;
 using log4net;
@@ -28,19 +29,22 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     private readonly ISubscriptionsService _subscriptionsService;
     private readonly IQueryModelToJsonModelMapper _queryModelToJsonModelMapper;
     private readonly IOpmlImporter _opmlImporter;
+    private readonly IFeedsCrawler _feedsCrawler;
 
-    public SubscriptionsController(ISubscriptionsService subscriptionsService, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter) {
+    public SubscriptionsController(ISubscriptionsService subscriptionsService, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter, IFeedsCrawler feedsCrawler) {
       Guard.ArgNotNull(subscriptionsService, "subscriptionsService");
       Guard.ArgNotNull(queryModelToJsonModelMapper, "QueryModelToJsonModelMapper");
       Guard.ArgNotNull(opmlImporter, "opmlImporter");
+      Guard.ArgNotNull(feedsCrawler, "feedsCrawler");
 
       _subscriptionsService = subscriptionsService;
       _queryModelToJsonModelMapper = queryModelToJsonModelMapper;
       _opmlImporter = opmlImporter;
+      _feedsCrawler = feedsCrawler;
     }
 
     public SubscriptionsController()
-      : this(CommonIoC.GetSubscriptionsService(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter()) {
+      : this(CommonIoC.GetSubscriptionsService(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter(), CommonIoC.GetFeedsCrawler()) {
     }
 
     [HttpGet]
@@ -93,15 +97,18 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
           };
       }
 
+      string feedUrl = feedUri.ToString();
+
       int userAccountId = SecurityUtils.CurrentUserAccountId;
 
       // TODO IMM HI: xxx handle errors
-      // TODO IMM HI: xxx crawl feed when adding a new one
       int subscriptionId =
         _subscriptionsService.Subscribe(
           userAccountId,
-          inputModel.Url,
+          feedUrl,
           inputModel.Category);
+
+      _feedsCrawler.CrawlFeedIfNeeded(feedUrl);
 
       return
         new JsonModel.AddSubscriptionOutputModel {

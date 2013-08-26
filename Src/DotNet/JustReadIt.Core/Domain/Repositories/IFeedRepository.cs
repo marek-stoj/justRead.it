@@ -11,11 +11,15 @@ namespace JustReadIt.Core.Domain.Repositories {
 
     Feed FindById(int id);
 
+    Feed FindByFeedUrl(string feedUrl);
+
     void Add(Feed feed);
 
     int? FindFeedId(string feedUrl);
 
     bool SetDateLastCrawlStarted(int id, DateTime dateTime);
+
+    DateTime? GetDateLastCrawlStarted(int id);
 
   }
 

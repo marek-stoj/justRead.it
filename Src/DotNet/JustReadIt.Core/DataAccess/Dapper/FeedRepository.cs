@@ -22,7 +22,9 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             " select" +
             "   f.*" +
             " from Feed f" +
-            " where f.DateLastCrawlStarted is null or f.DateLastCrawlStarted <= @MaxDateLastCrawlStarted" +
+            " where 1 = 1" +
+            "   and (f.DateLastCrawlStarted is null" +
+            "     or f.DateLastCrawlStarted <= @MaxDateLastCrawlStarted)" +
             " order by f.DateCreated desc, f.Id desc",
             new {
               MaxDateLastCrawlStarted = maxDateLastCrawlStarted,
@@ -60,9 +62,34 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       using (var db = CreateOpenedConnection()) {
         Feed feed =
           db.Query<Feed>(
-            " select * from Feed f where f.Id = @Id",
+            " select" +
+            "   f.*" +
+            " from Feed f" +
+            " where 1 = 1" +
+            "   and f.Id = @Id",
             new {
               Id = id,
+            }).SingleOrDefault();
+
+        return feed;
+      }
+    }
+
+    public Feed FindByFeedUrl(string feedUrl) {
+      Guard.ArgNotNullNorEmpty(feedUrl, "feedUrl");
+
+      using (var db = CreateOpenedConnection()) {
+        Feed feed =
+          db.Query<Feed>(
+            " select" +
+            "   f.*" +
+            " from Feed f" +
+            " where 1 = 1" +
+            "   and f.FeedUrlChecksum = checksum(@FeedUrl)" +
+            "   and f.FeedUrl = @FeedUrl",
+            new
+            {
+              FeedUrl = feedUrl,
             }).SingleOrDefault();
 
         return feed;
@@ -110,10 +137,11 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         int? feedId =
           db.Query<int?>(
             " select" +
-            "   Id" +
-            " from Feed" +
-            " where FeedUrlChecksum = checksum(@FeedUrl)" +
-            "   and FeedUrl = @FeedUrl",
+            "   f.Id" +
+            " from Feed f" +
+            " where 1 = 1" +
+            "   and f.FeedUrlChecksum = checksum(@FeedUrl)" +
+            "   and f.FeedUrl = @FeedUrl",
             new { FeedUrl = feedUrl })
             .SingleOrDefault();
 
@@ -140,6 +168,30 @@ namespace JustReadIt.Core.DataAccess.Dapper {
         Debug.Assert(affectedRowsCount == 0 || affectedRowsCount == 1, string.Format("Unexpected number of rows affected while updating feed's last date crawl started. Feed id: '{0}'. Affected rows count: '{1}'.", id, affectedRowsCount));
 
         return affectedRowsCount > 0;
+      }
+    }
+
+    public DateTime? GetDateLastCrawlStarted(int id)
+    {
+      using (var db = CreateOpenedConnection()) {
+        DateTime? dateLastCrawlStarted =
+          db.Query<DateTime?>(
+            " select" +
+            "   f.DateLastCrawlStarted" +
+            " from Feed f" +
+            " where 1 = 1" +
+            "   and f.Id = @Id",
+            new {
+              Id = id
+            })
+            .SingleOrDefault();
+
+        if (dateLastCrawlStarted.HasValue) {
+          dateLastCrawlStarted = 
+            DateTime.SpecifyKind(dateLastCrawlStarted.Value, DateTimeKind.Utc);
+        }
+
+        return dateLastCrawlStarted;
       }
     }
 

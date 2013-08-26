@@ -39,7 +39,7 @@ namespace JustReadIt.Core.Services.Workers {
 
       using (TransactionScope ts = TransactionUtils.CreateTransactionScope()) {
         DateTime maxDateLastCrawlStarted =
-          DateTime.UtcNow.Add(-_FeedsCrawlInterval);
+          CreateMaxDateLastCrawlStarted();
 
         feedsBatch =
           _feedRepository.GetFeedsToCrawl(maxDateLastCrawlStarted);
@@ -59,6 +59,42 @@ namespace JustReadIt.Core.Services.Workers {
           _log.ErrorIfEnabled(() => "Error.", exc);
         }
       }
+    }
+
+    public void CrawlFeedIfNeeded(string feedUrl) {
+      Guard.ArgNotNullNorEmpty(feedUrl, "feedUrl");
+
+      Feed feed;
+
+      using (var ts = TransactionUtils.CreateTransactionScope()) {
+        feed = _feedRepository.FindByFeedUrl(feedUrl);
+
+        if (feed == null) {
+          ts.Complete();
+
+          throw new ArgumentException(string.Format("Feed with URL '{0}' doesn't exist.", feedUrl), "feedUrl");
+        }
+
+        ts.Complete();
+      }
+
+      DateTime? dateLastCrawlStarted;
+
+      using (var ts = TransactionUtils.CreateTransactionScope())
+      {
+        dateLastCrawlStarted =
+          _feedRepository.GetDateLastCrawlStarted(feed.Id);
+
+        ts.Complete();
+      }
+
+      if (dateLastCrawlStarted.HasValue
+        && dateLastCrawlStarted.Value > CreateMaxDateLastCrawlStarted()) {
+        // the feed has been crawled recently - no need to do this now
+        return;
+      }
+
+      CrawlFeed(feed);
     }
 
     private void CrawlFeed(Feed feed) {
@@ -111,6 +147,10 @@ namespace JustReadIt.Core.Services.Workers {
 
         ts.Complete();
       }
+    }
+
+    private static DateTime CreateMaxDateLastCrawlStarted() {
+      return DateTime.UtcNow.Add(-_FeedsCrawlInterval);
     }
 
   }
