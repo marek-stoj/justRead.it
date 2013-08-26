@@ -178,7 +178,8 @@ namespace JustReadIt.Core.Common {
           GetFeedFetcher(),
           GetFeedParser(),
           GetSubscriptionRepository(),
-          GetUserFeedGroupRepository());
+          GetUserFeedGroupRepository(),
+          GetSubscriptionQueryDao());
     }
 
   }

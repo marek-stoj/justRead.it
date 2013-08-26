@@ -1,5 +1,8 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using JustReadIt.Core.Common;
+using JustReadIt.Core.Domain.Query;
+using JustReadIt.Core.Domain.Query.Model;
 using JustReadIt.Core.Domain.Repositories;
 
 namespace JustReadIt.Core.Services {
@@ -10,17 +13,20 @@ namespace JustReadIt.Core.Services {
     private readonly Feeds.IFeedParser _feedParser;
     private readonly ISubscriptionRepository _subscriptionRepository;
     private readonly IUserFeedGroupRepository _userFeedGroupRepository;
+    private readonly ISubscriptionQueryDao _subscriptionQueryDao;
 
-    public SubscriptionsService(Feeds.IFeedFetcher feedFetcher, Feeds.IFeedParser feedParser, ISubscriptionRepository subscriptionRepository, IUserFeedGroupRepository userFeedGroupRepository) {
+    public SubscriptionsService(Feeds.IFeedFetcher feedFetcher, Feeds.IFeedParser feedParser, ISubscriptionRepository subscriptionRepository, IUserFeedGroupRepository userFeedGroupRepository, ISubscriptionQueryDao subscriptionQueryDao) {
       Guard.ArgNotNull(feedFetcher, "feedFetcher");
       Guard.ArgNotNull(feedParser, "feedParser");
       Guard.ArgNotNull(subscriptionRepository, "subscriptionRepository");
       Guard.ArgNotNull(userFeedGroupRepository, "userFeedGroupRepository");
+      Guard.ArgNotNull(subscriptionQueryDao, "subscriptionQueryDao");
 
       _feedFetcher = feedFetcher;
       _feedParser = feedParser;
       _subscriptionRepository = subscriptionRepository;
       _userFeedGroupRepository = userFeedGroupRepository;
+      _subscriptionQueryDao = subscriptionQueryDao;
     }
 
     public int Subscribe(int userAccountId, string url, string groupTitle) {
@@ -83,6 +89,36 @@ namespace JustReadIt.Core.Services {
         ts.Complete();
 
         return newSubscription.Id;
+      }
+    }
+
+    public IEnumerable<GroupedSubscription> GetGroupedSubscriptions(int userAccountId) {
+      using (var ts = TransactionUtils.CreateTransactionScope()) {
+        IEnumerable<GroupedSubscription> groupedSubscriptions =
+          _subscriptionQueryDao.GetGroupedSubscriptions(userAccountId);
+
+        ts.Complete();
+
+        return groupedSubscriptions;
+      }
+    }
+
+    public IEnumerable<FeedItem> GetFeedItems(int userAccountId, int subscriptionId, bool returnRead) {
+      using (var ts = TransactionUtils.CreateTransactionScope()) {
+        IEnumerable<FeedItem> feedItems =
+          _subscriptionQueryDao.GetFeedItems(userAccountId, subscriptionId, returnRead);
+
+        ts.Complete();
+
+        return feedItems;
+      }
+    }
+
+    public void MarkAllItemsAsRead(int userAccountId, int subscriptionId) {
+      using (var ts = TransactionUtils.CreateTransactionScope()) {
+        _subscriptionRepository.MarkAllItemsAsRead(userAccountId, subscriptionId);
+
+        ts.Complete();
       }
     }
 

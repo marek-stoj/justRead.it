@@ -9,8 +9,6 @@ using System.Reflection;
 using System.Web;
 using System.Web.Http;
 using JustReadIt.Core.Common;
-using JustReadIt.Core.Domain.Query;
-using JustReadIt.Core.Domain.Repositories;
 using JustReadIt.Core.Resources;
 using JustReadIt.Core.Services;
 using JustReadIt.WebApp.Areas.App.Core.Services;
@@ -19,9 +17,9 @@ using log4net;
 using JustReadIt.Core.Common.Logging;
 using JsonModel = JustReadIt.WebApp.Areas.App.Core.Models.JsonModel;
 using QueryModel = JustReadIt.Core.Domain.Query.Model;
-using DomainModel = JustReadIt.Core.Domain;
 
 // TODO IMM HI: get rid of flickering when changing feed
+// TODO IMM HI: xxx always return all groups even if there are no feeds
 
 namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
 
@@ -29,41 +27,30 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
 
     private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-    // TODO IMM HI: xxx refactor into SubscriptionsService
-    private readonly ISubscriptionQueryDao _subscriptionQueryDao;
-    private readonly ISubscriptionRepository _subscriptionRepository;
+    private readonly ISubscriptionsService _subscriptionsService;
     private readonly IQueryModelToJsonModelMapper _queryModelToJsonModelMapper;
     private readonly IOpmlImporter _opmlImporter;
-    private readonly ISubscriptionsService _subscriptionsService;
 
-    public SubscriptionsController(ISubscriptionQueryDao subscriptionQueryDao, ISubscriptionRepository subscriptionRepository, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter, ISubscriptionsService subscriptionsService) {
-      Guard.ArgNotNull(subscriptionQueryDao, "subscriptionQueryDao");
-      Guard.ArgNotNull(subscriptionRepository, "subscriptionRepository");
+    public SubscriptionsController(ISubscriptionsService subscriptionsService, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter) {
+      Guard.ArgNotNull(subscriptionsService, "subscriptionsService");
       Guard.ArgNotNull(queryModelToJsonModelMapper, "QueryModelToJsonModelMapper");
       Guard.ArgNotNull(opmlImporter, "opmlImporter");
-      Guard.ArgNotNull(subscriptionsService, "subscriptionsService");
 
-      _subscriptionQueryDao = subscriptionQueryDao;
-      _subscriptionRepository = subscriptionRepository;
+      _subscriptionsService = subscriptionsService;
       _queryModelToJsonModelMapper = queryModelToJsonModelMapper;
       _opmlImporter = opmlImporter;
-      _subscriptionsService = subscriptionsService;
     }
 
     public SubscriptionsController()
-      : this(CommonIoC.GetSubscriptionQueryDao(), CommonIoC.GetSubscriptionRepository(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter(), CommonIoC.GetSubscriptionsService()) {
+      : this(CommonIoC.GetSubscriptionsService(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter()) {
     }
 
     [HttpGet]
     public JsonModel.SubscriptionsList GetSubscriptionsList() {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
-      IEnumerable<QueryModel.GroupedSubscription> subscriptions;
 
-      using (var ts = TransactionUtils.CreateTransactionScope()) {
-        subscriptions = _subscriptionQueryDao.GetGroupedSubscriptions(userAccountId);
-
-        ts.Complete();
-      }
+      IEnumerable<QueryModel.GroupedSubscription> subscriptions =
+        _subscriptionsService.GetGroupedSubscriptions(userAccountId);
 
       JsonModel.SubscriptionsList subscriptionsList =
         _queryModelToJsonModelMapper.CreateSubscriptionsList(subscriptions);
@@ -81,13 +68,9 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     [HttpGet]
     public JsonModel.FeedItemsList GetItems(int id, bool returnRead) {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
-      IEnumerable<QueryModel.FeedItem> feedItems;
 
-      using (var ts = TransactionUtils.CreateTransactionScope()) {
-        feedItems = _subscriptionQueryDao.GetFeedItems(userAccountId, id, returnRead);
-
-        ts.Complete();
-      }
+      IEnumerable<QueryModel.FeedItem> feedItems =
+        _subscriptionsService.GetFeedItems(userAccountId, id, returnRead);
 
       var feedItemsList =
         new JsonModel.FeedItemsList {
@@ -101,11 +84,7 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     public HttpResponseMessage MarkAllItemsAsRead(int id) {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
 
-      using (var ts = TransactionUtils.CreateTransactionScope()) {
-        _subscriptionRepository.MarkAllItemsAsRead(userAccountId, id);
-
-        ts.Complete();
-      }
+      _subscriptionsService.MarkAllItemsAsRead(userAccountId, id);
 
       throw HttpOk();
     }
