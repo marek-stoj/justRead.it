@@ -4,8 +4,6 @@ namespace JustReadIt.Core.Domain.Query.Model {
 
   public class GroupedSubscription {
 
-    private string _title;
-    private string _siteUrl;
     private string _groupTitle;
 
     public int GroupId { get; set; }
@@ -16,22 +14,7 @@ namespace JustReadIt.Core.Domain.Query.Model {
       set { _groupTitle = value.TrimmedOrNull(); }
     }
 
-    public int? Id { get; set; }
-
-    public int? FeedId { get; set; }
-
-    public string Title {
-      get { return _title; }
-      set { _title = value.TrimmedOrNull(); }
-    }
-
-    public string SiteUrl {
-      get { return _siteUrl; }
-      set { _siteUrl = value.TrimmedOrNull(); }
-    }
-
-    public int? UnreadItemsCount { get; set; }
+    public GroupedSubscriptionInfo SubscriptionInfo { get; set; }
 
   }
-
 }

@@ -28,15 +28,15 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
               Title = g.Key.Item2,
               Subscriptions =
                 g
-                .Where(gs => gs.Id.HasValue && gs.FeedId.HasValue && gs.UnreadItemsCount.HasValue)
+                .Where(gs => gs.SubscriptionInfo != null)
                 .Select(
                   gs =>
                   new Subscription {
-                    Id = gs.Id.Value,
-                    FeedId = gs.FeedId.Value,
-                    Title = gs.Title,
-                    SiteUrl = gs.SiteUrl,
-                    UnreadItemsCount = gs.UnreadItemsCount.Value,
+                    Id = gs.SubscriptionInfo.Id,
+                    FeedId = gs.SubscriptionInfo.FeedId,
+                    Title = gs.SubscriptionInfo.Title,
+                    SiteUrl = gs.SubscriptionInfo.SiteUrl,
+                    UnreadItemsCount = gs.SubscriptionInfo.UnreadItemsCount,
                   }).ToList(),
             }
         );

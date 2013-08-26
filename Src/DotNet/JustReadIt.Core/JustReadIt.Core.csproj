@@ -80,6 +80,7 @@
     <Compile Include="Domain\Query\ISubscriptionQueryDao.cs" />
     <Compile Include="DataAccess\Dapper\SubscriptionQueryDao.cs" />
     <Compile Include="Domain\Query\Model\FeedItem.cs" />
+    <Compile Include="Domain\Query\Model\GroupedSubscriptionInfo.cs" />
     <Compile Include="Domain\Repositories\ITaggingRepository.cs" />
     <Compile Include="DataAccess\Dapper\TaggingRepository.cs" />
     <Compile Include="Domain\Tagging.cs" />
