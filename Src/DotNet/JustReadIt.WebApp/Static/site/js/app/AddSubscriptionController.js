@@ -28,6 +28,13 @@ app.controller('AddSubscriptionController', ['$rootScope', '$scope', 'appModel',
   };
 
   $scope.addSubscription = function() {
+    var ajaxLoaderTimeoutPromise =
+      $timeout(function() {
+        $scope.isAjaxLoaderVisible = true;
+      }, 250);
+
+    $scope.isSubscribeButtonDisabled = true;
+
     var subscrCategory =
       $scope.newCategory !== undefined && $.trim($scope.newCategory) !== ''
         ? $scope.newCategory
@@ -37,6 +44,11 @@ app.controller('AddSubscriptionController', ['$rootScope', '$scope', 'appModel',
       url: $scope.url,
       category: subscrCategory
     }, function(response) {
+      $timeout.cancel(ajaxLoaderTimeoutPromise);
+
+      $scope.isAjaxLoaderVisible = false;
+      $scope.isSubscribeButtonDisabled = false;
+
       _handleAddSubscriptionResponse(response);
     });
   };

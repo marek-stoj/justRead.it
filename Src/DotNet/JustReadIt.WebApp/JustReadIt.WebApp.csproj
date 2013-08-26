@@ -265,6 +265,7 @@
     <Content Include="Global.asax" />
     <Content Include="Static\jasmine\jasmine-html.js" />
     <Content Include="Static\jasmine\jasmine.js" />
+    <Content Include="Static\site\img\ajax-loader.gif" />
     <Content Include="Static\site\img\ss1.jpg" />
     <Content Include="Static\site\img\ss2.jpg" />
     <Content Include="Static\site\img\ss3.jpg" />

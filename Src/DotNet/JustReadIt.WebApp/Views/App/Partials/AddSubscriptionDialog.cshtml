@@ -16,6 +16,9 @@
       <input id="newCategory" type="text" name="newCategory" value="" ng-model="newCategory" />
     </div>
     <div class="modal-footer">
+      <div class="pull-left" ng-show="isAjaxLoaderVisible">
+        <img src="@Url.Content("~/Static/site/img/ajax-loader.gif")" alt="" />
+      </div>
       <div class="alert {{feedbackMessageClass}} pull-left" ng-show="feedbackMessage">
         {{feedbackMessage}}
       </div>
