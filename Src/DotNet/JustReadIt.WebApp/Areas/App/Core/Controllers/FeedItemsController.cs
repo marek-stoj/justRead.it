@@ -54,6 +54,10 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
       catch (Exception exc) {
         _log.ErrorIfEnabled(() => "Error while getting article content HTML - returning generic message to the user.", exc);
 
+        contentHtml = null;
+      }
+
+      if (string.IsNullOrEmpty(contentHtml)) {
         contentHtml =
           CommonResources.CouldntLoadArticleContentHtmlTemplate
             .Replace("${originalUrl}", feedItemUrl);

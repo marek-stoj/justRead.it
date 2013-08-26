@@ -169,7 +169,7 @@ namespace JustReadIt.Core.Common {
     }
 
     public static IArticlesService GetArticlesService() {
-      return new ArticlesService(GetUrlFetcher());
+      return new ArticlesService(GetUrlFetcher(), GetWebClientFactory());
     }
 
     public static ISubscriptionsService GetSubscriptionsService() {
