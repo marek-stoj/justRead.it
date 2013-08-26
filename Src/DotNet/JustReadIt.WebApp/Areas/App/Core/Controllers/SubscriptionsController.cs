@@ -19,11 +19,12 @@ using JsonModel = JustReadIt.WebApp.Areas.App.Core.Models.JsonModel;
 using QueryModel = JustReadIt.Core.Domain.Query.Model;
 
 // TODO IMM HI: get rid of flickering when changing feed
-// TODO IMM HI: xxx always return all groups even if there are no feeds
 
-namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
+namespace JustReadIt.WebApp.Areas.App.Core.Controllers
+{
 
-  public class SubscriptionsController : AppApiController {
+  public class SubscriptionsController : AppApiController
+  {
 
     private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -31,7 +32,8 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     private readonly IQueryModelToJsonModelMapper _queryModelToJsonModelMapper;
     private readonly IOpmlImporter _opmlImporter;
 
-    public SubscriptionsController(ISubscriptionsService subscriptionsService, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter) {
+    public SubscriptionsController(ISubscriptionsService subscriptionsService, IQueryModelToJsonModelMapper queryModelToJsonModelMapper, IOpmlImporter opmlImporter)
+    {
       Guard.ArgNotNull(subscriptionsService, "subscriptionsService");
       Guard.ArgNotNull(queryModelToJsonModelMapper, "QueryModelToJsonModelMapper");
       Guard.ArgNotNull(opmlImporter, "opmlImporter");
@@ -42,38 +44,35 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     public SubscriptionsController()
-      : this(CommonIoC.GetSubscriptionsService(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter()) {
+      : this(CommonIoC.GetSubscriptionsService(), IoC.GetQueryModelToJsonModelMapper(), CommonIoC.GetOpmlImporter())
+    {
     }
 
     [HttpGet]
-    public JsonModel.SubscriptionsList GetSubscriptionsList() {
+    public JsonModel.SubscriptionsList GetSubscriptionsList()
+    {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
 
-      IEnumerable<QueryModel.GroupedSubscription> subscriptions =
+      IEnumerable<QueryModel.GroupedSubscription> groupedSubscriptions =
         _subscriptionsService.GetGroupedSubscriptions(userAccountId);
 
       JsonModel.SubscriptionsList subscriptionsList =
-        _queryModelToJsonModelMapper.CreateSubscriptionsList(subscriptions);
-
-      if (subscriptionsList.Groups.Count == 0) {
-        subscriptionsList.Groups.Add(
-          new JsonModel.SubscriptionsGroup {
-            Title = CommonResources.UncategorizedFeedGroupTitle,
-          });
-      }
+        _queryModelToJsonModelMapper.CreateSubscriptionsList(groupedSubscriptions);
 
       return subscriptionsList;
     }
 
     [HttpGet]
-    public JsonModel.FeedItemsList GetItems(int id, bool returnRead) {
+    public JsonModel.FeedItemsList GetItems(int id, bool returnRead)
+    {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
 
       IEnumerable<QueryModel.FeedItem> feedItems =
         _subscriptionsService.GetFeedItems(userAccountId, id, returnRead);
 
       var feedItemsList =
-        new JsonModel.FeedItemsList {
+        new JsonModel.FeedItemsList
+        {
           Items = feedItems.Select(_queryModelToJsonModelMapper.CreateFeedItem).ToList(),
         };
 
@@ -81,7 +80,8 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     [HttpPost]
-    public HttpResponseMessage MarkAllItemsAsRead(int id) {
+    public HttpResponseMessage MarkAllItemsAsRead(int id)
+    {
       int userAccountId = SecurityUtils.CurrentUserAccountId;
 
       _subscriptionsService.MarkAllItemsAsRead(userAccountId, id);
@@ -90,13 +90,16 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     [HttpPost]
-    public JsonModel.AddSubscriptionOutputModel Add(JsonModel.AddSubscriptionInputModel inputModel) {
+    public JsonModel.AddSubscriptionOutputModel Add(JsonModel.AddSubscriptionInputModel inputModel)
+    {
       Uri feedUri;
 
       if (!Uri.TryCreate(inputModel.Url, UriKind.Absolute, out feedUri)
-       || (!feedUri.Scheme.EqualsOrdinalIgnoreCase("http") && !feedUri.Scheme.EqualsOrdinalIgnoreCase("https"))) {
+          || (!feedUri.Scheme.EqualsOrdinalIgnoreCase("http") && !feedUri.Scheme.EqualsOrdinalIgnoreCase("https")))
+      {
         return
-          new JsonModel.AddSubscriptionOutputModel {
+          new JsonModel.AddSubscriptionOutputModel
+          {
             Status = JsonModel.AddSubscriptionResultStatus.Failed_InvalidInputData,
             IsUrlValid = false,
           };
@@ -113,7 +116,8 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
           inputModel.Category);
 
       return
-        new JsonModel.AddSubscriptionOutputModel {
+        new JsonModel.AddSubscriptionOutputModel
+        {
           Status = JsonModel.AddSubscriptionResultStatus.Success,
           IsUrlValid = true,
           SubscriptionId = subscriptionId,
@@ -121,35 +125,41 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     }
 
     [HttpPost]
-    public HttpResponseMessage Import() {
+    public HttpResponseMessage Import()
+    {
       HttpFileCollection uploadedFiles = HttpContext.Current.Request.Files;
       HttpPostedFile uploadedFile = uploadedFiles.Count > 0 ? uploadedFiles[0] : null;
 
       if (uploadedFile == null
-       || uploadedFile.ContentLength == 0
-       || uploadedFile.FileName.IsNullOrEmpty()) {
-         return PlainJson(new JsonModel.ImportSubscriptionsOutputModel { Status = JsonModel.ImportSubscriptionsResultStatus.Failed_NoFileUploaded, });
+          || uploadedFile.ContentLength == 0
+          || uploadedFile.FileName.IsNullOrEmpty())
+      {
+        return PlainJson(new JsonModel.ImportSubscriptionsOutputModel { Status = JsonModel.ImportSubscriptionsResultStatus.Failed_NoFileUploaded, });
       }
 
       string fileExtension = Path.GetExtension(uploadedFile.FileName);
 
       if (!".opml".EqualsOrdinalIgnoreCase(fileExtension)
-       && !".xml".EqualsOrdinalIgnoreCase(fileExtension)) {
-         return PlainJson(new JsonModel.ImportSubscriptionsOutputModel { Status = JsonModel.ImportSubscriptionsResultStatus.Failed_UnsupportedFileExtension, });
+          && !".xml".EqualsOrdinalIgnoreCase(fileExtension))
+      {
+        return PlainJson(new JsonModel.ImportSubscriptionsOutputModel { Status = JsonModel.ImportSubscriptionsResultStatus.Failed_UnsupportedFileExtension, });
       }
 
       string opmlXml;
 
-      using (var sr = new StreamReader(uploadedFile.InputStream)) {
+      using (var sr = new StreamReader(uploadedFile.InputStream))
+      {
         opmlXml = sr.ReadToEnd();
       }
 
       int userAccountId = SecurityUtils.CurrentUserAccountId;
 
-      try {
+      try
+      {
         _opmlImporter.Import(opmlXml, userAccountId);
       }
-      catch (Exception exc) {
+      catch (Exception exc)
+      {
         _log.ErrorIfEnabled(() => "Unhandled exception during import.", exc);
 
         return PlainJson(new JsonModel.ImportSubscriptionsOutputModel { Status = JsonModel.ImportSubscriptionsResultStatus.Failed_UnknownError, });
@@ -161,7 +171,8 @@ namespace JustReadIt.WebApp.Areas.App.Core.Controllers {
     /// <remarks>
     /// Needed for IE because it tries to download the response when it's type is application/json (sic!).
     /// </remarks>
-    private HttpResponseMessage PlainJson<T>(T value) {
+    private HttpResponseMessage PlainJson<T>(T value)
+    {
       HttpResponseMessage response =
         Request.CreateResponse(HttpStatusCode.OK, value);
 

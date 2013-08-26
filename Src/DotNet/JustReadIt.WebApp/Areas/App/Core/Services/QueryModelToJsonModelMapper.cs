@@ -12,14 +12,14 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
 
     private const int _MaxSummaryLength = 256;
 
-    public SubscriptionsList CreateSubscriptionsList(IEnumerable<QueryModel.GroupedSubscription> subscriptions) {
-      if (subscriptions == null) {
-        throw new ArgumentNullException("subscriptions");
+    public SubscriptionsList CreateSubscriptionsList(IEnumerable<QueryModel.GroupedSubscription> groupedSubscriptions) {
+      if (groupedSubscriptions == null) {
+        throw new ArgumentNullException("groupedSubscriptions");
       }
 
       var subscriptionGroups =
         (
-          from s in subscriptions
+          from s in groupedSubscriptions
           group s by new Tuple<int, string>(s.GroupId, s.GroupTitle)
           into g
           select
@@ -27,14 +27,16 @@ namespace JustReadIt.WebApp.Areas.App.Core.Services {
               Id = g.Key.Item1,
               Title = g.Key.Item2,
               Subscriptions =
-                g.Select(
+                g
+                .Where(gs => gs.Id.HasValue && gs.FeedId.HasValue && gs.UnreadItemsCount.HasValue)
+                .Select(
                   gs =>
                   new Subscription {
-                    Id = gs.Id,
-                    FeedId = gs.FeedId,
+                    Id = gs.Id.Value,
+                    FeedId = gs.FeedId.Value,
                     Title = gs.Title,
                     SiteUrl = gs.SiteUrl,
-                    UnreadItemsCount = gs.UnreadItemsCount,
+                    UnreadItemsCount = gs.UnreadItemsCount.Value,
                   }).ToList(),
             }
         );

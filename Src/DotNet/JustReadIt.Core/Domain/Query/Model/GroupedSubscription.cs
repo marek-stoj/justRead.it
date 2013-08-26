@@ -8,16 +8,17 @@ namespace JustReadIt.Core.Domain.Query.Model {
     private string _siteUrl;
     private string _groupTitle;
 
-    public int Id { get; set; }
-
-    public int FeedId { get; set; }
-
     public int GroupId { get; set; }
 
-    public string GroupTitle {
+    public string GroupTitle
+    {
       get { return _groupTitle; }
       set { _groupTitle = value.TrimmedOrNull(); }
     }
+
+    public int? Id { get; set; }
+
+    public int? FeedId { get; set; }
 
     public string Title {
       get { return _title; }
@@ -29,7 +30,7 @@ namespace JustReadIt.Core.Domain.Query.Model {
       set { _siteUrl = value.TrimmedOrNull(); }
     }
 
-    public int UnreadItemsCount { get; set; }
+    public int? UnreadItemsCount { get; set; }
 
   }
 

@@ -38,9 +38,9 @@ namespace JustReadIt.Core.DataAccess.Dapper {
             "                 and urfi.FeedItemId = fi.Id" +
             "             )" +
             "     ) as UnreadItemsCount" +
-            "   from UserFeedGroupFeed ufgf" +
-            "   join UserFeedGroup ufg on ufg.Id = ufgf.UserFeedGroupId" +
-            "   join Feed f on f.Id = ufgf.FeedId" +
+            "   from UserFeedGroup ufg" +
+            "   left join UserFeedGroupFeed ufgf on ufgf.UserFeedGroupId = ufg.Id" +
+            "   left join Feed f on f.Id = ufgf.FeedId" +
             "   where 1 = 1" +
             "     and ufg.UserAccountId = @UserAccountId" +
             " )" +
