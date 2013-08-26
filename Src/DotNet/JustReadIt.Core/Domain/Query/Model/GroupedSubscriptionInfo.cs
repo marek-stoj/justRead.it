@@ -1,9 +1,9 @@
 ﻿using JustReadIt.Core.Common;
 
-namespace JustReadIt.Core.Domain.Query.Model
-{
-  public class GroupedSubscriptionInfo
-  {
+namespace JustReadIt.Core.Domain.Query.Model {
+
+  public class GroupedSubscriptionInfo {
+
     private string _title;
     private string _siteUrl;
 
@@ -11,18 +11,18 @@ namespace JustReadIt.Core.Domain.Query.Model
 
     public int FeedId { get; set; }
 
-    public string Title
-    {
+    public string Title {
       get { return _title; }
       set { _title = value.TrimmedOrNull(); }
     }
 
-    public string SiteUrl
-    {
+    public string SiteUrl {
       get { return _siteUrl; }
       set { _siteUrl = value.TrimmedOrNull(); }
     }
 
     public int UnreadItemsCount { get; set; }
+
   }
+
 }

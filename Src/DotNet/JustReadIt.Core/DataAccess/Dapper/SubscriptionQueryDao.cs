@@ -10,10 +10,8 @@ namespace JustReadIt.Core.DataAccess.Dapper {
       : base(connectionString) {
     }
 
-    public IEnumerable<QueryModel.GroupedSubscription> GetGroupedSubscriptions(int userAccountId)
-    {
-      using (var db = CreateOpenedConnection())
-      {
+    public IEnumerable<QueryModel.GroupedSubscription> GetGroupedSubscriptions(int userAccountId) {
+      using (var db = CreateOpenedConnection()) {
         var query =
           db.Query<QueryModel.GroupedSubscription, QueryModel.GroupedSubscriptionInfo, QueryModel.GroupedSubscription>(
             " with Subscriptions as" +

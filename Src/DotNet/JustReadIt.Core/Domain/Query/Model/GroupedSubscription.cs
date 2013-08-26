@@ -8,8 +8,7 @@ namespace JustReadIt.Core.Domain.Query.Model {
 
     public int GroupId { get; set; }
 
-    public string GroupTitle
-    {
+    public string GroupTitle {
       get { return _groupTitle; }
       set { _groupTitle = value.TrimmedOrNull(); }
     }
@@ -17,4 +16,5 @@ namespace JustReadIt.Core.Domain.Query.Model {
     public GroupedSubscriptionInfo SubscriptionInfo { get; set; }
 
   }
+
 }
