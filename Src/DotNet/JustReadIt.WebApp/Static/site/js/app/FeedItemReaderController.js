@@ -11,23 +11,23 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptio
   $scope.readerModalOpts.dialogClass = 'modal feed-item-reader-modal';
 
   $scope.markAsRead = function(feedItem) {
-    toggleFeedItemIsRead(feedItem, true);
+    _toggleFeedItemIsRead(feedItem, true);
   };
 
   $scope.markAsUnread = function(feedItem) {
-    toggleFeedItemIsRead(feedItem, false);
+    _toggleFeedItemIsRead(feedItem, false);
   };
-
-  var toggleFeedItemIsRead = function(feedItem, isRead) {
+  
+  var _toggleFeedItemIsRead = function(feedItem, isRead) {
     if (feedItem.isRead === isRead) {
       return;
     }
 
     feedItem.isRead = isRead;
-    
+
     // TODO IMM HI: there has to be a better way to sync server model
     $scope.toggleFeedItemIsReadResource.save({ feedItemId: $scope.feedItem.id, isRead: isRead });
-    
+
     // TODO IMM HI: there has to be a better way for communicating between controllers as well ;)
     $rootScope.$emit('onFeedItemIsReadChanged', feedItem);
   };
@@ -35,7 +35,7 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptio
   $rootScope.$on('showFeedItem', function(ev, feedItem) {
     $scope.feedItem = feedItem;
 
-    toggleFeedItemIsRead(feedItem, true);
+    _toggleFeedItemIsRead(feedItem, true);
 
     $scope.isReaderModalOpen = true;
     $scope.feedItemContentHtml = '<div>Loading...</div>';
@@ -48,3 +48,9 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptio
   });
   
 }]);
+
+$(document).ready(function() {
+  // TODO IMM HI: yyy
+  $(document).mouseup(function(ev) {
+  });
+});

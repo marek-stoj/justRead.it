@@ -281,6 +281,7 @@
     <Content Include="Static\site\js\app\AppController.js" />
     <Content Include="Static\site\js\app\AddSubscriptionController.js" />
     <Content Include="Static\site\js\app\AppModel.js" />
+    <Content Include="Static\site\js\app\util\util.js" />
     <Content Include="Static\site\js\app\util\ObjectSyncer.js" />
     <Content Include="Static\site\js\app\specs\util\ObjectSyncer.spec.js" />
     <Content Include="Static\site\js\app\SubscriptionsListController.js" />

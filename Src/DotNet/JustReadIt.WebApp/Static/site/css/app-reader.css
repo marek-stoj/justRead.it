@@ -105,3 +105,12 @@
   word-break: break-all;
   word-wrap: break-word;
 }
+
+.share-link {
+  color: #666;
+}
+
+.share-link,
+.share-link:hover {
+  text-decoration: none;
+}

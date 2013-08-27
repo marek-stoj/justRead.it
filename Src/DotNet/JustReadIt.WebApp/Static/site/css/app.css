@@ -134,3 +134,9 @@ footer {
 .field-validation-error {
   color: #b94a48;
 }
+
+.dynamic-favicon {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+}

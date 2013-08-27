@@ -11,6 +11,15 @@
     </div>
   </div>
   <div class="modal-footer">
+    <div class="pull-left">
+      <a href="#" class="share-link" title="Share the article on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{feedItem.url | encodeUrl}}', 'facebook-share-dialog', 'width=626,height=436'); return false;">
+        <i class="icon-facebook-sign icon-2x"></i>
+      </a>
+      &nbsp;
+      <a ng-href="https://twitter.com/intent/tweet?text={{feedItem.title | encodeUrl}}&amp;url={{feedItem.url | encodeUrl}}" title="Tweet the article" class="share-link twitter-share-button">
+        <i class="icon-twitter-sign icon-2x"></i>
+      </a>
+    </div>
     <div id="feed-item-reader-actions-container">
       <button type="button" class="btn" ng-show="feedItem.isRead" ng-click="markAsUnread(feedItem)">
         <i class="icon-eye-open"></i> Keep unseen

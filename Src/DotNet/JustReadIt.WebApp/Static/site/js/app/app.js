@@ -71,3 +71,7 @@ app.directive('focusMe', function($timeout) {
     }
   };
 });
+
+app.filter('encodeUrl', function() {
+  return encodeURIComponent;
+});
