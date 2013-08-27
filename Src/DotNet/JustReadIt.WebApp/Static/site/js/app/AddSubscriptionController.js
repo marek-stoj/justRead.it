@@ -56,6 +56,16 @@ app.controller('AddSubscriptionController', ['$rootScope', '$scope', 'appModel',
   $rootScope.$on('openAddSubscriptionModal', function(ev) {
     $scope.categories = appModel.model.getAllCategories();
 
+    var indexOfUncategorizedCategory =
+      _.findIndex($scope.categories, function(category) {
+        return category === 'Uncategorized'; // TODO IMM HI: what about localization?
+      });
+
+    if (indexOfUncategorizedCategory > -1) {
+      $scope.categories.splice(0, 0, $scope.categories[indexOfUncategorizedCategory]);
+      $scope.categories.splice(indexOfUncategorizedCategory + 1, 1);
+    }
+
     $scope.url = null;
     $scope.category = 'Uncategorized';
     $scope.newCategory = '';

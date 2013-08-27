@@ -287,6 +287,8 @@
     <Content Include="Static\site\js\app\FeedItemsController.js" />
     <Content Include="Static\site\js\app\FeedItemReaderController.js" />
     <Content Include="Static\site\js\app\ImportSubscriptionsController.js" />
+    <Content Include="Static\site\js\specs\underscore-ex.spec.js" />
+    <Content Include="Static\site\js\underscore-ex.js" />
     <Content Include="Static\ui-bootstrap\ui-bootstrap-0.5.0.min.js" />
     <Content Include="Static\ui-bootstrap\ui-bootstrap-tpls-0.5.0.min.js" />
     <Content Include="Static\angularjs\angular-resource.min.js" />
