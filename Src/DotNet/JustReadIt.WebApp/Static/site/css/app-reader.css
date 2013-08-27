@@ -114,3 +114,7 @@
 .share-link:hover {
   text-decoration: none;
 }
+
+#feed-item-reader-ctx-menu {
+  z-index: 9999;
+}

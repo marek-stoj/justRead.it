@@ -1,9 +1,12 @@
-app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptionsSvc', '$resource', function($rootScope, $scope, commonOptionsSvc, $resource) {
+app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptionsSvc', '$resource', '$timeout', function($rootScope, $scope, commonOptionsSvc, $resource, $timeout) {
   
   $scope.feedItemContentsResource = $resource('app/api/feeditems/:feedItemId/content');
   $scope.toggleFeedItemIsReadResource = $resource('app/api/feeditems/:feedItemId/toggle-is-read?isRead=:isRead', { feedItemId: '@feedItemId', isRead: '@isRead' });
 
+  $scope.isReaderModalOpen = false;
+
   $scope.closeReaderModal = function() {
+    _closeTextSelectionContextMenu();
     $scope.isReaderModalOpen = false;
   };
 
@@ -32,6 +35,53 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptio
     $rootScope.$emit('onFeedItemIsReadChanged', feedItem);
   };
 
+  var _openTextSelectionContextMenu = function(x, y, selectedText) {
+    $('#feed-item-reader-ctx-menu')
+      .css({ left: x + 'px', top: y + 'px' })
+      .show();
+  };
+
+  var _closeTextSelectionContextMenu = function() {
+    $('#feed-item-reader-ctx-menu')
+      .hide();
+  };
+
+  $(document).ready(function() {
+    $(document).mouseup(function(ev) {
+      if (!$scope.isReaderModalOpen) {
+        return;
+      }
+
+      var $target = $(ev.target);
+
+      if ($target.attr('id') === 'feed-item-reader-ctx-menu'
+       || $target.parents('#feed-item-reader-ctx-menu').length > 0) {
+        return;
+      }
+
+      $timeout(function() {
+        var selectedText = jri.util.getSelectedText();
+
+        if (selectedText === null || selectedText === '') {
+          return;
+        }
+
+        _openTextSelectionContextMenu(ev.pageX, ev.pageY, selectedText);
+      }, 1);
+    });
+
+    $(document).mousedown(function(ev) {
+      var $target = $(ev.target);
+
+      if ($target.attr('id') === 'feed-item-reader-ctx-menu'
+       || $target.parents('#feed-item-reader-ctx-menu').length > 0) {
+        return;
+      }
+
+      _closeTextSelectionContextMenu();
+    });
+  });
+
   $rootScope.$on('showFeedItem', function(ev, feedItem) {
     $scope.feedItem = feedItem;
 
@@ -48,9 +98,3 @@ app.controller('FeedItemReaderController', ['$rootScope', '$scope', 'commonOptio
   });
   
 }]);
-
-$(document).ready(function() {
-  // TODO IMM HI: yyy
-  $(document).mouseup(function(ev) {
-  });
-});

@@ -12,11 +12,11 @@
   </div>
   <div class="modal-footer">
     <div class="pull-left">
-      <a href="#" class="share-link" title="Share the article on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{feedItem.url | encodeUrl}}', 'facebook-share-dialog', 'width=626,height=436'); return false;">
+      <a href="#" class="share-link" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{feedItem.url | encodeUrl}}', 'facebook-share-dialog', 'width=626,height=436'); return false;">
         <i class="icon-facebook-sign icon-2x"></i>
       </a>
       &nbsp;
-      <a ng-href="https://twitter.com/intent/tweet?text={{feedItem.title | encodeUrl}}&amp;url={{feedItem.url | encodeUrl}}" title="Tweet the article" class="share-link twitter-share-button">
+      <a ng-href="https://twitter.com/intent/tweet?text={{feedItem.title | encodeUrl}}&amp;url={{feedItem.url | encodeUrl}}" title="Share on Twitter" class="share-link twitter-share-button">
         <i class="icon-twitter-sign icon-2x"></i>
       </a>
     </div>
@@ -31,3 +31,23 @@
     <button type="button" class="btn btn-info" ng-click="closeReaderModal()">Close</button>
   </div>
 </div>
+
+<ul id="feed-item-reader-ctx-menu" class="dropdown-menu dropdown-context">
+  <li>
+    <a href="#">
+      Copy to clipboard
+    </a>
+  </li>
+  <li class="divider">
+  </li>
+  <li>
+    <a href="#">
+      Share on Facebook
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      Share on Twitter
+    </a>
+  </li>
+</ul>

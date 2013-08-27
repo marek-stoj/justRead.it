@@ -16,13 +16,13 @@ jri.util.getSelectedText = function() {
   }
 
   if (typeof(t) === 'undefined' || t === null || t === undefined) {
-    return '';
+    return null;
   }
 
   t = t.toString();
 
   if (t === null || t === undefined || t.length == 0) {
-    return '';
+    return null;
   }
 
   return t;
