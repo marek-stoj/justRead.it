@@ -4,12 +4,11 @@ TODO
 MVP
 -----------
 
- - add possibility to keep the article unseen
- - add possibilty to toggle display of all feeds vs feeds containing unseen items
+ - add possibility to share a quote to Facebook
+ - add possibility to share a quote to Twitter (with a dedicated URL for the quote if it's too long?)
+ - add possibility to create a reader for an arbitrary article url
  - style feed items list header
- - periodically poll the server for new feeds/feed items
  - create a landing page explaining the main ideas behind the app
- - add possibility to subscribe to new feeds
  - add possibility to unsubscribe from the feed
  - give images inside an article a max width
  - cache article contents
@@ -40,8 +39,6 @@ HIGH
  - add possibility to check a text selection in a dictionary (Wordnik?)
  - add possibility to do a Google search on a text selection
  - add possibility to do a Wikipedia search on a text selection
- - add possibility to share a quote to Facebook
- - add possibility to share a quote to Twitter (with a dedicated URL for the quote if it's too long?)
  - add possibility to create highlights
  - add possibility to attach notes to text selection
  - add possibility to export OPML
@@ -80,3 +77,7 @@ DONE
  - pass the article content through smarty pants
  - style article header
  - style headers (h1, h2, ...) in the reader (bigger font size?)
+ - add possibility to keep the article unseen
+ - add possibilty to toggle display of all feeds vs feeds containing unseen items
+ - periodically poll the server for new feeds/feed items
+ - add possibility to subscribe to new feeds

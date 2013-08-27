@@ -17,7 +17,7 @@ app.controller('AddSubscriptionController', ['$rootScope', '$scope', 'appModel',
     }
     else if (response.status == 'Failed_InvalidInputData') {
       $scope.feedbackMessage = 'Invalid input data.';
-      $scope.feedbackMessageClass = 'alert-warn';
+      $scope.feedbackMessageClass = 'alert-error';
       
       $scope.addSubscriptionForm.url.$setValidity('isValid', response.isUrlValid);
     }
