@@ -41,6 +41,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="DotNetOpenAuth">
       <HintPath>..\..\..\Lib\DotNetOpenAuth\DotNetOpenAuth.dll</HintPath>
     </Reference>
@@ -78,6 +81,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -135,15 +141,20 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionInputModel.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionOutputModel.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\AddSubscriptionResultStatus.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsResultStatus.cs" />
     <Compile Include="Areas\App\Core\Models\JsonModel\ImportSubscriptionsOutputModel.cs" />
-    <Compile Include="Controllers\JasmineController.cs" />
+    <Compile Include="Core\Controllers\JasmineController.cs" />
     <Compile Include="Core\Controllers\AuthController.cs" />
+    <Compile Include="Core\MvcEx\ScriptBundleExtensions.cs" />
     <Compile Include="Core\MvcEx\UrlHelperExtensions.cs" />
     <Compile Include="Core\Resources\CommonResources.Designer.cs">
       <DependentUpon>CommonResources.resx</DependentUpon>
@@ -259,6 +270,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Static\font-awesome\font-awesome.css" />
+    <Content Include="Static\google-fonts\cardo.css" />
+    <Content Include="Static\google-fonts\pt-sans-narrow.css" />
     <Content Include="Static\jasmine\jasmine.css" />
     <Content Include="Static\jasmine\jasmine_favicon.png" />
     <Content Include="favicon.ico" />
@@ -278,18 +292,18 @@
     <Content Include="Static\site\css\app-reader-normalize.css" />
     <Content Include="Static\site\css\site-openid.css" />
     <Content Include="Static\site\css\webkit-scrollbars.css" />
-    <Content Include="Static\site\js\app\AppController.js" />
-    <Content Include="Static\site\js\app\AddSubscriptionController.js" />
-    <Content Include="Static\site\js\app\AppModel.js" />
+    <Content Include="Static\site\js\app\controllers\AppController.js" />
+    <Content Include="Static\site\js\app\controllers\AddSubscriptionController.js" />
+    <Content Include="Static\site\js\app\models\AppModel.js" />
     <Content Include="Static\site\js\app\util\util.js" />
     <Content Include="Static\site\js\app\util\ObjectSyncer.js" />
     <Content Include="Static\site\js\app\specs\util\ObjectSyncer.spec.js" />
-    <Content Include="Static\site\js\app\SubscriptionsListController.js" />
-    <Content Include="Static\site\js\app\FeedItemsController.js" />
-    <Content Include="Static\site\js\app\FeedItemReaderController.js" />
-    <Content Include="Static\site\js\app\ImportSubscriptionsController.js" />
+    <Content Include="Static\site\js\app\controllers\SubscriptionsListController.js" />
+    <Content Include="Static\site\js\app\controllers\FeedItemsController.js" />
+    <Content Include="Static\site\js\app\controllers\FeedItemReaderController.js" />
+    <Content Include="Static\site\js\app\controllers\ImportSubscriptionsController.js" />
     <Content Include="Static\site\js\specs\underscore-ex.spec.js" />
-    <Content Include="Static\site\js\underscore-ex.js" />
+    <Content Include="Static\underscore\underscore-ex.js" />
     <Content Include="Static\ui-bootstrap\ui-bootstrap-0.5.0.min.js" />
     <Content Include="Static\ui-bootstrap\ui-bootstrap-tpls-0.5.0.min.js" />
     <Content Include="Static\angularjs\angular-resource.min.js" />
@@ -302,7 +316,7 @@
     <Content Include="Static\bootstrap\img\glyphicons-halflings.png" />
     <Content Include="Static\bootstrap\js\bootstrap.js" />
     <Content Include="Static\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Static\jquery\jquery-1.10.2.min.js" />
+    <Content Include="Static\jquery\jquery.min.js" />
     <Content Include="Static\site\css\app.css" />
     <Content Include="Static\site\css\app-reader.css" />
     <Content Include="Static\site\css\site.css" />

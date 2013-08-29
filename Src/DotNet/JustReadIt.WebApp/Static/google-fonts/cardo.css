@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cardo'), local('Cardo-Regular'), url(http://themes.googleusercontent.com/static/fonts/cardo/v5/KYTG5_s7vohs8t4mKNMCzw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cardo Bold'), local('Cardo-Bold'), url(http://themes.googleusercontent.com/static/fonts/cardo/v5/DUJaw6tPqjP42e2INR-_3w.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cardo Italic'), local('Cardo-Italic'), url(http://themes.googleusercontent.com/static/fonts/cardo/v5/B2CEKMs_krtVdDvfYAfvag.woff) format('woff');
+}

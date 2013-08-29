@@ -6,9 +6,11 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Http.Dispatcher;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using JustReadIt.Core.Common;
+using JustReadIt.WebApp.App_Start;
 using JustReadIt.WebApp.Areas.App.Core.Controllers;
 using JustReadIt.WebApp.Core.App;
 using JustReadIt.WebApp.Core.MvcEx;
@@ -38,6 +40,7 @@ namespace JustReadIt.WebApp {
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
       FilterConfig.RegisterGlobalWebApiFilters(GlobalConfiguration.Configuration.Filters);
       RouteConfig.RegisterRoutes(RouteTable.Routes);
+      BundleConfig.RegisterBundles(BundleTable.Bundles);
 
       // makes Web API and areas play together nicely (see: http://blogs.infosupport.com/asp-net-mvc-4-rc-getting-webapi-and-areas-to-play-nicely/)
       GlobalConfiguration.Configuration.Services.Replace(
